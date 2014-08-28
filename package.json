@@ -1,0 +1,27 @@
+{
+  "name": "docs.npmjs.com",
+  "version": "1.0.0",
+  "description": "The place where all things npm will one day be documented",
+  "main": "index.js",
+  "scripts": {
+    "start": "harp server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/npm/docs.npmjs.com"
+  },
+  "keywords": [
+    "npm",
+    "docs",
+    "documentation"
+  ],
+  "author": "Zeke Sikelianos <zeke@sikelianos.com> (http://zeke.sikelianos.com/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/npm/docs.npmjs.com/issues"
+  },
+  "homepage": "https://github.com/npm/docs.npmjs.com",
+  "dependencies": {
+    "harp": "^0.13.0"
+  }
+}
