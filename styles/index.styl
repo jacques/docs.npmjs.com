@@ -41,7 +41,11 @@ section
   position relative
   margin 0 auto
   max-width sectionWidth
-  padding 15px
+  padding 0 15px
+
+p
+  line-height 1.5
+  font-weight 400
 
 nav
   position fixed
@@ -50,21 +54,19 @@ nav
   width navWidth
   h2
     padding-left 12px
-
   a
     display block
     line-height 2.2
     padding 0px 10px
     margin 5px 0
-    // border-radius 3px
     text-decoration none
     color rgba(npmred, 0.6)
     transition all 0.2s
     border-left 3px solid transparent
     &.active, &:hover
-      // background #F0F0F0
       border-left 3px solid npmred
       color rgba(npmred, 1)
+
 
 @media only screen and (max-width: navWidth + sectionWidth)
   nav

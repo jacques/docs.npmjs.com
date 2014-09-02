@@ -19,16 +19,12 @@ html
           img(src="/images/npm-logo.png")
           = "Documentation"
 
-    div.content
+    nav
+      h2 Contents
+      for doc, slug in public._data
+        a(href="/#{slug}" class=(current.source === slug ? "active" : ""))= doc.title
 
-      nav
-
-        h2 Contents
-
-        for doc, slug in public._data
-          a(href="/#{slug}" class=(current.source === slug ? "active" : ""))= doc.title
-
-      section
-        != yield
+    section
+      != yield
 
     footer
