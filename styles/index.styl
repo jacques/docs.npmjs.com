@@ -3,6 +3,14 @@ codefonts = 'Source Code Pro', 'Courier', sans-serif
 
 npmred = #cb3837
 
+sectionWidth = 600px
+navWidth = 200px
+
+*, *:before, *:after
+  -moz-box-sizing: border-box
+  -webkit-box-sizing: border-box
+  box-sizing: border-box
+
 body
   font-family fonts
   color #333
@@ -20,12 +28,47 @@ header
     vertical-align top
     font-size 36px
     color rgba(black, 1)
+    font-weight 300
     img
       display inline-block
       max-height 50px
       margin-right 15px
 
+h2
+  font-weight 400
+
 section
   position relative
   margin 0 auto
-  max-width 600px
+  max-width sectionWidth
+  padding 15px
+
+nav
+  position fixed
+  top 110px
+  left 20px
+  width navWidth
+  h2
+    padding-left 12px
+
+  a
+    display block
+    line-height 2.2
+    padding 0px 10px
+    margin 5px 0
+    // border-radius 3px
+    text-decoration none
+    color rgba(npmred, 0.6)
+    transition all 0.2s
+    border-left 3px solid transparent
+    &.active, &:hover
+      // background #F0F0F0
+      border-left 3px solid npmred
+      color rgba(npmred, 1)
+
+@media only screen and (max-width: navWidth + sectionWidth)
+  nav
+    position relative
+    top 0
+    left 0
+    width 100%

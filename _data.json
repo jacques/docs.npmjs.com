@@ -1,0 +1,14 @@
+{
+  "index": {
+    "title": "Installing npme"
+  },
+  "publish": {
+    "title": "Publishing a Module"
+  },
+  "scoped-modules": {
+    "title": "Scoped Modules"
+  },
+  "enterprise": {
+    "title": "Enterprise"
+  }
+}
