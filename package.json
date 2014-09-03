@@ -4,7 +4,7 @@
   "description": "The place where all things npm will one day be documented",
   "main": "index.js",
   "scripts": {
-    "start": "harp server"
+    "start": "node ./node_modules/.bin/harp server"
   },
   "repository": {
     "type": "git",
