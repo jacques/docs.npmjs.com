@@ -2,6 +2,8 @@ fonts = 'Source Sans Pro', 'Lucida Grande', sans-serif
 codefonts = 'Source Code Pro', 'Courier', sans-serif
 
 npmred = #cb3837
+subpage-link-color = #999
+subpage-link-color-active = #333
 
 sectionWidth = 600px
 navWidth = 200px
@@ -16,6 +18,7 @@ body
   color #333
   margin 0
   padding 0
+  font-size 16px
 
 a
   color npmred
@@ -66,6 +69,17 @@ nav
     &.active, &:hover
       border-left 3px solid npmred
       color rgba(npmred, 1)
+    &.subpage
+      color subpage-link-color
+      border-left-color transparent
+      padding-left 20px
+      font-size 14px
+      // &:before
+      //   content: "\2022"
+      //   padding-right 6px
+      &:hover, &.active
+        color: subpage-link-color-active
+        border-left-color subpage-link-color
 
 
 @media only screen and (max-width: navWidth + sectionWidth)

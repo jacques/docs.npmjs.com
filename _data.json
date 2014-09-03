@@ -2,13 +2,26 @@
   "index": {
     "title": "Installing npme"
   },
-  "publish": {
-    "title": "Publishing a Module"
-  },
   "scoped-modules": {
-    "title": "Scoped Modules"
+    "title": "Scoped Modules",
+    "subpages": {
+      "deux": {
+        "title": "Start Scoping"
+      },
+      "trois": {
+        "title": "Finish Scoping"
+      }
+    }
   },
   "enterprise": {
-    "title": "Enterprise"
+    "title": "Enterprise",
+    "subpages": {
+      "foo": {
+        "title": "Always be Enterprising"
+      },
+      "trois": {
+        "title": "Fin"
+      }
+    }
   }
 }

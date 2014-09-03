@@ -22,7 +22,10 @@ html
     nav
       h2 Contents
       for doc, slug in public._data
-        a(href="/#{slug}" class=(current.source === slug ? "active" : ""))= doc.title
+        a(href="/#{slug}" class=(current.path[0] === slug ? "active" : ""))= doc.title
+        if doc.subpages
+          for subpage, subslug in doc.subpages
+            a.subpage(href="/#{slug}/#{subslug}" class=(current.source === subslug && current.path[0] === slug ? "active" : ""))= subpage.title
 
     section
       != yield
