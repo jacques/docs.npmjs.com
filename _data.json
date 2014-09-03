@@ -1,27 +1,28 @@
 {
   "index": {
-    "title": "Installing npme"
-  },
-  "scoped-modules": {
-    "title": "Scoped Modules",
-    "subpages": {
-      "deux": {
-        "title": "Start Scoping"
-      },
-      "trois": {
-        "title": "Finish Scoping"
-      }
-    }
+    "title": "npm Documentation"
   },
   "enterprise": {
-    "title": "Enterprise",
+    "title": "npm Enterprise",
     "subpages": {
-      "foo": {
-        "title": "Always be Enterprising"
+      "requirements": {
+        "title": "Requirements"
       },
-      "trois": {
-        "title": "Fin"
+      "installation": {
+        "title": "Installation"
+      },
+      "updating": {
+        "title": "Updating"
+      },
+      "whitelist": {
+        "title": "Managing whitelists"
+      },
+      "github": {
+        "title": "GitHub integration"
       }
     }
+  },
+  "using-enterprise": {
+    "title": "Using npm Enterprise"
   }
 }
