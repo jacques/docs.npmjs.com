@@ -1,6 +1,17 @@
 {
   "index": {
-    "title": "Installing npme"
+    "title": "npm Documentation"
+  },
+  "enterprise": {
+    "title": "npm Enterprise",
+    "subpages": {
+      "foo": {
+        "title": "Always be Enterprising"
+      },
+      "trois": {
+        "title": "Fin"
+      }
+    }
   },
   "scoped-modules": {
     "title": "Scoped Modules",
@@ -10,17 +21,6 @@
       },
       "trois": {
         "title": "Finish Scoping"
-      }
-    }
-  },
-  "enterprise": {
-    "title": "Enterprise",
-    "subpages": {
-      "foo": {
-        "title": "Always be Enterprising"
-      },
-      "trois": {
-        "title": "Fin"
       }
     }
   }

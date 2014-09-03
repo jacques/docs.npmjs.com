@@ -1,7 +1,8 @@
 doctype html
 html
   head
-    title npm docs
+    title
+      = public._data[current.source].title
 
     meta(name="viewport" content="width=device-width, initial-scale=1")
     meta(name="description" content="The place where all things npm will one day be documented")
@@ -26,6 +27,7 @@ html
         if doc.subpages
           for subpage, subslug in doc.subpages
             a.subpage(href="/#{slug}/#{subslug}" class=(current.source === subslug && current.path[0] === slug ? "active" : ""))= subpage.title
+      a(href="https://www.npmjs.org")="npm Home"
 
     section
       != yield
