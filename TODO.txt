@@ -1,0 +1,4 @@
+- enterprise: architecture outline
+- requirements: disk space
+- installation: interview questions and answers
+- mirroring the registry (skim and fullfat)
