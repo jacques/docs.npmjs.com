@@ -5,6 +5,9 @@
   "enterprise": {
     "title": "npm Enterprise",
     "subpages": {
+      "intro": {
+        "title": "Quick start"
+      },
       "requirements": {
         "title": "Requirements"
       },
