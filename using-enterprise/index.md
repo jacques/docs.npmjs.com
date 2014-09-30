@@ -12,7 +12,7 @@ npm Enterprise requires a 2.x version of the npm client. You can get this
 by running
 
 ```bash
-[sudo] npm install npm@2.0.0-beta.2 -g
+[sudo] npm install npm@2.0.0 -g
  ```
 
 ## Authenticating
