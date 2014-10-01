@@ -1,3 +1,7 @@
+<!--
+title: GitHub integration
+-->
+
 ## Integrates with GitHub and GitHub Enterprise
 
 If your organization uses GitHub or GitHub Enterprise, npmE can be configured

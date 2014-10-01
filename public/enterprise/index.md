@@ -1,3 +1,7 @@
+<!--
+title: npm Enterprise
+-->
+
 # npm Enterprise
 
 npm Enterprise is an on-premises solution for securely sharing and distributing

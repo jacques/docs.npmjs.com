@@ -1,3 +1,7 @@
+<!--
+title: Quick start
+-->
+
 <h1>Getting Started with npm Enterprise</h1>
 <p>npm Enterprise makes it possible for your team to take all of the experience and best practices they've developed working with public npm and apply that to the management of your private packages.</p>
 

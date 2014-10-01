@@ -1,3 +1,7 @@
+<!--
+title: Managing whitelists
+-->
+
 ## Selectively mirror the public registry
 
 npmE goes beyond a simple local cache of the registry. It allows you to

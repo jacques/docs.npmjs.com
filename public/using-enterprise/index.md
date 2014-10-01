@@ -1,3 +1,7 @@
+<!--
+title: Using npm Enterprise
+-->
+
 ## Private, scoped modules
 
 Lots of companies using Node.js love the "many small modules" pattern that is
