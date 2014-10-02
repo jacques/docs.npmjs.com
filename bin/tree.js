@@ -17,7 +17,6 @@ var content = {
   pages: []
 }
 
-
 var contentFile = path.resolve(__dirname, "../content.json")
 
 // Walk the content directory tree
@@ -34,7 +33,12 @@ emitter.on("file", function(filename,stat){
   // Look for an HTML comment in the file, then parse each
   // colon-delimited line within as metadata
   if (page.content.match(front)) {
-    front.exec(page.content)[1].split("\n").forEach(function(line) {
+    var frontmatter = front.exec(page.content)[1]
+    frontmatter = frontmatter
+      .replace(/\n  /, " ") // treat two-space indentation as a newline
+      .replace(/\s{2,}/g, " ") // remove excess spaces
+
+    frontmatter.split("\n").forEach(function(line) {
       var parts = line.trim().split(": ")
       page[parts[0]] = parts[1]
     })
