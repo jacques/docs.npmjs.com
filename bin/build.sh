@@ -1,8 +1,5 @@
 #!/bin/sh
 
-echo "Installing latest npm"
-npm install npm --save
-
 echo "Copying npm docs to content directory"
 cp -r node_modules/npm/doc/ content/
 
