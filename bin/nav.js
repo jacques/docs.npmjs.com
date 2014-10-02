@@ -16,12 +16,12 @@ var output = content.sections.map(function(section) {
   // so lowercased sections that ought to be be uppercase (like API and CLI)
   // can be selected and transformed using CSS. :)
   if (section.hasIndexPage) {
-    out += fmt("<h2 title=\"%s\" class=\"hasIndexPage\"><a href=\"%s\">%s</a></h2>", section.href, section.title, section.title)
+    out += fmt("<h2 title=\"%s\" class=\"hasIndexPage\"><a href=\"%s\">%s</a></h2>", section.title, section.href, section.title)
   } else {
     out += fmt("<h2 title=\"%s\">%s</h2>", section.title, section.title)
   }
 
-  out += content.pages
+  var links = content.pages
     .filter(function(page) {
       return page.section && page.section === section.id
     })
@@ -29,6 +29,8 @@ var output = content.sections.map(function(section) {
       return fmt("<a href=\"%s\" class=\"sublink\">%s</a>", page.href, page.title)
     })
     .join("\n")
+
+  out += fmt("<div class=\"links\">%s</div>", links)
 
   return fmt("<section id=\"nav-%s\">%s</section>", section.id, out)
 
