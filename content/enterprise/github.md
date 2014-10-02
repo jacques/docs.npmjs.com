@@ -1,6 +1,8 @@
 <!--
 title: GitHub integration
 keywords: github, git, enterprise
+description: If your organization uses GitHub or GitHub Enterprise, npmE can be configured
+  to automatically use them for login and access control.
 -->
 
 ## Integrates with GitHub and GitHub Enterprise
