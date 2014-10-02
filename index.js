@@ -12,12 +12,11 @@ app.use(express.static(__dirname + "/public"))
 app.use(harp.mount(__dirname + "/public"))
 hbs.registerPartials(__dirname + "/views/partials")
 
-// All the content is in content.json
-// Convert Base64-encoded content back to regular strings
+// Fetch all the content, and convert Base64-encoded
+// content back to regular strings
 var content = require(path.resolve(__dirname, "content.json"))
 content.pages = content.pages.map(function(page) {
   page.content = (new Buffer(page.content, "base64")).toString()
-  page.contentHTML = (new Buffer(page.contentHTML, "base64")).toString()
   return page
 })
 

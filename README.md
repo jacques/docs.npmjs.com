@@ -47,6 +47,9 @@ The [content.json](/content.json) file is served publicly at `/content.json`
 with CORS support, allowing browsers on other domains to fetch all the npm
 documentation and accompanying metadata with a single HTTP call.
 
+The `content` property in each page object is Base64 encoded so it doesn't
+break JSON.
+
 ## Deployment
 
 ```sh

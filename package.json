@@ -28,10 +28,11 @@
     "express": "^4.9.5",
     "harp": "^0.13.0",
     "hbs": "^2.7.0",
+    "html-frontmatter": "^1.0.0",
     "js-beautify": "^1.5.2",
     "lodash": "^2.4.1",
     "marked": "^0.3.2",
-    "npm": "^2.0.2",
+    "npm": "next",
     "walkdir": "0.0.7"
   }
 }

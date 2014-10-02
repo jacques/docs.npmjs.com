@@ -3,57 +3,48 @@
 // Walk the content directory looking for markdown files
 // and build an object of all the pages and sections (directories)
 
-var path = require("path")
-var fs = require("fs")
-var marked = require("marked")
-var fmt = require("util").format
-var _ = require("lodash")
-var compact = _.compact
-var uniq = _.uniq
-var pluck = _.pluck
-var front = new RegExp("<!--\n([^]*)\n-->")
+var path        = require("path")
+var fs          = require("fs")
+var marked      = require("marked")
+var fmt         = require("util").format
+var _           = require("lodash")
+var compact     = _.compact
+var uniq        = _.uniq
+var pluck       = _.pluck
+var merge       = _.merge
+var fm          = require("html-frontmatter")
+var contentFile = path.resolve(__dirname, "../content.json")
 var content = {
   sections: [],
   pages: []
 }
-
-var contentFile = path.resolve(__dirname, "../content.json")
 
 // Walk the content directory tree
 var emitter = require("walkdir")(path.resolve(__dirname,  "../content/"))
 
 emitter.on("file", function(filename,stat){
 
-  // Skip non-markdown files
-  if (!filename.match(/\.md$/)) return
+  // We only want .html and .md files
+  if (!filename.match(/\.(md|html)$/)) return
 
   var page = {}
   page.content = fs.readFileSync(filename).toString()
 
   // Look for an HTML comment in the file, then parse each
   // colon-delimited line within as metadata
-  if (page.content.match(front)) {
-    var frontmatter = front.exec(page.content)[1]
-    frontmatter = frontmatter
-      .replace(/\n  /, " ") // treat two-space indentation as a newline
-      .replace(/\s{2,}/g, " ") // remove excess spaces
+  merge(page, fm(page.content))
 
-    frontmatter.split("\n").forEach(function(line) {
-      var parts = line.trim().split(": ")
-      page[parts[0]] = parts[1]
-    })
-  }
-
-  page.contentHTML = marked(page.content)
+  // Convert markdown to HTML
+  if (filename.match(/\.md$/))
+    page.content = marked(page.content)
 
   // Base64 encode content so it can be saved as JSON
   page.content = new Buffer(page.content).toString('base64')
-  page.contentHTML = new Buffer(page.contentHTML).toString('base64')
 
   // Clean up the filename
   filename = filename
     .replace(/.*\/content\//, "") // remove basepath
-    .replace(/\.md$/, "")        // remove extension
+    .replace(/\.md$/, "")         // remove extension
 
   // Use filename as title if not specified in frontmatter
   // (and remove superfluous npm- prefix)
