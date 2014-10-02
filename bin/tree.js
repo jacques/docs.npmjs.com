@@ -24,27 +24,45 @@ var emitter = require("walkdir")(path.resolve(__dirname,  "../content/"))
 
 emitter.on("file", function(filename,stat){
 
-  // We only want .html and .md files
-  if (!filename.match(/\.(md|html)$/)) return
+  // We only want markdown files
+  if (!filename.match(/\.md$/)) return
 
   var page = {}
   page.content = fs.readFileSync(filename).toString()
 
-  // Look for an HTML comment in the file, then parse each
-  // colon-delimited line within as metadata
+  // Look for HTML frontmatter
   merge(page, fm(page.content))
 
-  // Convert markdown to HTML
-  if (filename.match(/\.md$/))
-    page.content = marked(page.content)
+  // Look for man-pagey frontmatter
 
-  // Base64 encode content so it can be saved as JSON
+  // Example:
+  // npm-completion(1) -- Tab Completion for npm
+  // ===========================================
+
+  var manPattern = new RegExp("^(.*) -- (.*)\n=+\n")
+  if (page.content.match(manPattern)) {
+    var manHead = manPattern.exec(page.content)
+    page.heading = manHead[2]
+    page.content = page.content.replace(manHead[0], "")
+    // console.log(manHead)
+  }
+
+  // Convert markdown to HTML
+  page.content = page.content
+    .replace(/## SYNOPSIS/g, "## Synopsis")
+    .replace(/## DESCRIPTION/g, "## Description")
+    .replace(/## SEE ALSO/g, "## See Also")
+
+  // Convert markdown to HTML
+  page.content = marked(page.content)
+
+  // Encode content so it can be saved as JSON
   page.content = new Buffer(page.content).toString('base64')
 
   // Clean up the filename
   filename = filename
     .replace(/.*\/content\//, "") // remove basepath
-    .replace(/\.md$/, "")         // remove extension
+    .replace(/\.md$/, "")  // remove extension
 
   // Use filename as title if not specified in frontmatter
   // (and remove superfluous npm- prefix)
