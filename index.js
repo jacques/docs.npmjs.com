@@ -21,15 +21,15 @@ content.pages = content.pages.map(function(page) {
   return page
 })
 
+app.get("/content.json", cors(), function(req, res) {
+  res.json(content)
+})
+
 app.get("/*", function(req, res) {
   var page = find(content.pages, function(page){
     return page.href === req.path
   })
   res.render("page", page)
-})
-
-app.get("/content.json", cors(), function(req, res) {
-  res.json(content)
 })
 
 app.listen(app.get("port"), function() {

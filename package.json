@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
+    "prepublish": "npm run build",
     "build": "bin/build.sh"
   },
   "repository": {
@@ -23,6 +24,7 @@
   },
   "homepage": "https://github.com/npm/docs.npmjs.com",
   "dependencies": {
+    "cors": "^2.4.2",
     "express": "^4.9.5",
     "harp": "^0.13.0",
     "hbs": "^2.7.0",
