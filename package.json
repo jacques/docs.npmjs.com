@@ -4,7 +4,8 @@
   "description": "The place where all things npm will one day be documented",
   "main": "index.js",
   "scripts": {
-    "start": "node ./node_modules/.bin/harp server"
+    "start": "node index.js",
+    "build": "bin/build.sh"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,13 @@
   },
   "homepage": "https://github.com/npm/docs.npmjs.com",
   "dependencies": {
-    "harp": "^0.13.0"
+    "express": "^4.9.5",
+    "harp": "^0.13.0",
+    "hbs": "^2.7.0",
+    "js-beautify": "^1.5.2",
+    "lodash": "^2.4.1",
+    "marked": "^0.3.2",
+    "npm": "^2.0.2",
+    "walkdir": "0.0.7"
   }
 }

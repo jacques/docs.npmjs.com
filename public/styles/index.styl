@@ -55,17 +55,21 @@ p
   font-weight 400
 
 nav
-  position fixed
+  position absolute
   top 110px
   left 20px
   width navWidth
   h2
     padding-left 12px
+
+    &[title="api"], &[title="cli"]
+      text-transform uppercase
+
   a
     display block
-    line-height 2.2
+    line-height 1.5
     padding 0px 10px
-    margin 5px 0
+    margin 2px 0
     text-decoration none
     color rgba(npmred, 0.6)
     transition all 0.2s
@@ -85,6 +89,9 @@ nav
         color: subpage-link-color-active
         border-left-color subpage-link-color
 
+footer
+  a
+    display block
 
 @media only screen and (max-width: navWidth + sectionWidth)
   nav

@@ -1,5 +1,6 @@
 <!--
 title: GitHub integration
+keywords: github, git, enterprise
 -->
 
 ## Integrates with GitHub and GitHub Enterprise

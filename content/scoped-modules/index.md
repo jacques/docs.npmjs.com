@@ -1,3 +1,7 @@
+<!--
+title: Scoped Modules
+-->
+
 ## Scoped Modules
 
 Pinterest small batch pop-up lomo, fixie Cosby sweater farm-to-table fap

@@ -2,7 +2,9 @@ node_modules
 .env
 .idea
 
-public/api/
-public/cli/
-public/files/
-public/misc/
+content/api/
+content/cli/
+content/files/
+content/misc/
+content.json
+views/partials/nav.hbs
