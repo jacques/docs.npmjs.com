@@ -11,12 +11,25 @@
 
 <body>
   <header>
-    <section>
-      <h1><img src="/images/npm-logo.png">Documentation</h1>
-    </section>
   </header>
-  <nav>{{> nav}}</nav>
-  <section>{{{content}}}</section>
+
+  <nav>
+    <div id="logo">
+      <img src="/images/npm.svg" class="npm">
+      <img src="/images/doc.svg" class="doc">
+    </div>
+    {{> nav}}
+  </nav>
+
+  <div class="container">
+    <div id="page">
+      {{#if heading}}
+      <h1>{{heading}}</h1>
+      {{/if}}
+
+      {{{content}}}
+    </div>
+  </div>
 
   <script>
     (function(i, s, o, g, r, a, m) {

@@ -6,7 +6,7 @@ subpage-link-color = #999
 subpage-link-color-active = #333
 
 sectionWidth = 600px
-navWidth = 200px
+navWidth = 300px
 
 *, *:before, *:after
   -moz-box-sizing: border-box
@@ -24,18 +24,22 @@ a
   color npmred
 
 header
-  border-top 10px solid npmred
+  background npmred
+  height 7px
 
-  h1
-    line-height 40px
-    vertical-align top
-    font-size 36px
-    color rgba(black, 1)
-    font-weight 300
-    img
-      display inline-block
-      max-height 50px
-      margin-right 15px
+#logo
+  float none
+  clear both
+  overflow hidden
+  img
+    display block
+    float left
+    max-height 50px
+    margin 0
+    padding 0
+    font-size 0
+    &.doc
+      opacity 0.8
 
 h1
   font-weight 400
@@ -44,11 +48,16 @@ h1
 h2
   font-weight 400
 
-section
+.container
   position relative
   margin 0 auto
   max-width sectionWidth
   padding 0 15px
+
+#page
+
+  h2
+    text-transform capitalize
 
 p
   line-height 1.5
@@ -56,7 +65,7 @@ p
 
 nav
   position absolute
-  top 110px
+  top 30px
   left 20px
   width navWidth
   h2
@@ -64,6 +73,9 @@ nav
 
     &[title="api"], &[title="cli"]
       text-transform uppercase
+
+  // section > a
+  //   display none
 
   a
     display block
