@@ -35,36 +35,11 @@ The copied and generated files are [ignored](/.gitignore) for two reasons:
 
 ## HTML Frontmatter
 
-When the build process runs, it looks for metadata in markdown files in the following format:
+Read all about it on the [html-frontmatter](https://www.npmjs.org/package/html-frontmatter) README.
 
-```html
-<!--
-title: GitHub integration
-keywords: github, git, enterprise
-description: If your organization uses GitHub or GitHub Enterprise, npmE can be configured
-  to automatically use them for login and access control.
--->
-```
-
-See an example in [content/enterprise/github.md](/content/enterprise/github.md).
-
-This metadata is then added to [content.json](/content.json), and looks like this:
-
-```json
-{
-  "title": "GitHub integration",
-  "keywords": "github, git, enterprise",
-  "description": "If your organization...etc"
-}
-```
-
-If the file has a `title` property in its frontmatter, it will be used for
+If a file has a `title` property in its frontmatter, it will be used for
 the `<title>` of the rendered HTML page. If `title` is absent from the
 frontmatter, the filename (without the .md extension) is used.
-
-Frontmatter values can span multiple lines for longer strings like
-description text. To make a value multiline, simply indent it with two or
-more spaces on subsequent lines.  
 
 ## Webservice
 
