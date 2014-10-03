@@ -25,8 +25,8 @@ triggers `npm run build`, which does the following:
 1. Reads the contents of each markdown file.
 1. Parses [HTML Frontmatter](#html-frontmatter) from the markdown files
 1. Converts markdown to HTML
-1. Writes [content.json](/content.json) with Base64-encoded markdown contents AND HTML contents
-1. Writes [content.lite.json](/content.lite.json) with the same thing minus file contents.
+1. Writes [content.json](/content.json) with HTML content of each file included.
+1. Writes [content.lite.json](/content.lite.json) with the same data minus the file content.
 
 The copied and generated files are [ignored](/.gitignore) for two reasons:
 
@@ -46,9 +46,6 @@ frontmatter, the filename (without the .md extension) is used.
 The [content.json](/content.json) file is served publicly at `/content.json`
 with CORS support, allowing browsers on other domains to fetch all the npm
 documentation and accompanying metadata with a single HTTP call.
-
-The `content` property in each page object is Base64 encoded so it doesn't
-break JSON.
 
 ## Deployment
 

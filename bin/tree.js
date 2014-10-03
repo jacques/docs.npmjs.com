@@ -56,9 +56,6 @@ emitter.on("file", function(filename,stat){
   // Convert markdown to HTML
   page.content = marked(page.content)
 
-  // Encode content so it can be saved as JSON
-  page.content = new Buffer(page.content).toString('base64')
-
   // Clean up the filename
   filename = filename
     .replace(/.*\/content\//, "") // remove basepath
