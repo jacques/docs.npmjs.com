@@ -2,11 +2,11 @@ fonts = 'Source Sans Pro', 'Lucida Grande', sans-serif
 codefonts = 'Source Code Pro', 'Courier', sans-serif
 
 npmred = #cb3837
-subpage-link-color = #999
-subpage-link-color-active = #333
+subpage-link-color = #666
+subpage-link-color-active = npmred
 
 sectionWidth = 600px
-navWidth = 300px
+navWidth = 240px
 
 *, *:before, *:after
   -moz-box-sizing: border-box
@@ -28,19 +28,7 @@ header
   height 7px
 
 #logo
-  float none
-  clear both
-  overflow hidden
-  img
-    display block
-    float left
-    max-height 50px
-    margin 0
-    padding 0
-    font-size 0
-    &.doc
-      opacity 0.1
-      margin-left 7px
+  max-width 100%
 
 h1
   font-weight 400
@@ -56,7 +44,8 @@ h2
   padding 0 15px
 
 #page
-  margin-top 80px
+  margin-top 40px
+  transform translateX(-120px)
 
   h1
     font-size 36px
@@ -72,7 +61,8 @@ p
 nav
   position absolute
   top 30px
-  left 20px
+  right 40px
+  margin-bottom 100px
   width navWidth
   h2
     font-size 18px
@@ -90,26 +80,25 @@ nav
     a
       display block
       line-height 1.5
-      padding 0px 10px
+      // padding 0px 10px
       margin 2px 0
       text-decoration none
-      color rgba(npmred, 0.6)
-      transition all 0.2s
-      border-left 3px solid transparent
-      &.active, &:hover
-        border-left 3px solid npmred
-        color rgba(npmred, 1)
-      &.subpage
-        color subpage-link-color
-        border-left-color transparent
-        padding-left 20px
-        font-size 14px
-        // &:before
-        //   content: "\2022"
-        //   padding-right 6px
-        &:hover, &.active
-          color: subpage-link-color-active
-          border-left-color subpage-link-color
+      // color rgba(npmred, 0.6)
+      // transition all 0.2s
+      // border-left 3px solid transparent
+      color subpage-link-color
+      // padding-left 20px
+      font-size 14px
+      // &:before
+      //   content: "\2022"
+      //   padding-right 6px
+      &:hover, &.active
+        color subpage-link-color-active
+        text-decoration underline
+        // border-left-color subpage-link-color
+        // border-left 3px solid npmred
+        // color rgba(npmred, 1)
+
 
 footer
   a
