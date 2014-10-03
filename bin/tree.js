@@ -45,7 +45,6 @@ emitter.on("file", function(filename,stat){
     var manHead = manPattern.exec(page.content)
     page.heading = manHead[2]
     page.content = page.content.replace(manHead[0], "")
-    // console.log(manHead)
   }
 
   // Convert markdown to HTML
