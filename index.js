@@ -4,25 +4,13 @@ var harp = require("harp")
 var path = require("path")
 var cors = require("cors")
 var find = require("lodash").find
-
-hbs.registerHelper("equal", function(lvalue, rvalue, options) {
-  if (arguments.length < 3)
-    throw new Error("Handlebars Helper equal needs 2 parameters")
-  if (lvalue != rvalue) {
-    return options.inverse(this)
-  } else {
-    return options.fn(this)
-  }
-})
-
-
 var app = express()
 app.set("view engine", "hbs")
 app.set("port", (process.env.PORT || 5000))
 app.use(express.static(__dirname + "/public"))
 app.use(harp.mount(__dirname + "/public"))
 hbs.registerPartials(__dirname + "/views/partials")
-
+hbs.registerHelper("equal", require("handlebars-helper-equal"))
 
 // Fetch all the content, and convert Base64-encoded
 // content back to regular strings
