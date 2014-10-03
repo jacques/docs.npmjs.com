@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "prepublish": "npm run build",
+    "postinstall": "npm run build",
     "build": "bin/build.sh"
   },
   "repository": {
