@@ -27,3 +27,6 @@ publishing of that package to users who have commit access to the repo.
 npmE uses OAuth to interact with GitHub, and will support any other OAuth2
 providers. A standalone solution for authentication and authorization is
 coming soon.
+
+
+<meta name="mascot" content="Octocat">

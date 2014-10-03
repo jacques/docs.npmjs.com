@@ -7,7 +7,7 @@ subpage-link-color-active = npmred
 
 sectionWidth = 600px
 navWidth = 240px
-headerHeight = 150px
+headerHeight = 180px
 
 *, *:before, *:after
   -moz-box-sizing: border-box
@@ -25,8 +25,13 @@ a
   color npmred
 
 header
-  background npmred
   height headerHeight
+  -webkit-box-shadow: inset 0px -30px 30px 0px rgba(0,0,0,0.15);
+  -moz-box-shadow: inset 0px -30px 30px 0px rgba(0,0,0,0.15);
+  box-shadow: inset 0px -30px 30px 0px rgba(0,0,0,0.15);
+  background npmred url("/images/tiling-hexagons2.png")
+  // border-bottom 5px solid darken(npmred, 50%)
+  border-bottom 8px solid darken(npmred, 100%)
 
 #logo
   max-width 100px
