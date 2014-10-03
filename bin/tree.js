@@ -14,6 +14,7 @@ var pluck       = _.pluck
 var merge       = _.merge
 var fm          = require("html-frontmatter")
 var contentFile = path.resolve(__dirname, "../content.json")
+var liteFile = path.resolve(__dirname, "../content.lite.json")
 var content = {
   sections: [],
   pages: []
@@ -84,22 +85,37 @@ emitter.on("end",function(){
 
   var sections = compact(uniq(pluck(content.pages, 'section'))).sort()
 
-  content.sections = sections.map(function(section) {
+  content.sections = sections.map(function(id) {
+    var section = {
+      id: id,
+      title: id
+    }
 
     // Look for a page named "index" in this section
     var indexPage = _.find(content.pages, function(page) {
-      return path.basename(page.href) === "index" && page.section === section
+      return path.basename(page.href) === "index" && page.section === section.id
     })
 
-    return {
-      id: section,
-      href: "/" + section,
-      title: (indexPage ? indexPage.title : section),
-      hasIndexPage: !!indexPage
+    // Inherit title and href from index page
+    if (indexPage) {
+      section.title = indexPage.title
+      section.href = indexPage.href
     }
+
+    return section
   })
 
   fs.writeFileSync(contentFile, JSON.stringify(content, null, 2))
   console.log("Wrote %s", path.relative(process.cwd(), contentFile))
+
+  var lite = merge({}, content)
+  lite.pages = lite.pages.map(function(page){
+    delete page.content
+    return page
+  })
+
+  fs.writeFileSync(liteFile, JSON.stringify(lite, null, 2))
+  console.log("Wrote %s", path.relative(process.cwd(), liteFile))
+
 
 })

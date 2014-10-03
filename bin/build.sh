@@ -13,4 +13,3 @@ cp -r node_modules/npm/doc/files content/
 cp -r node_modules/npm/doc/misc content/
 
 ./bin/tree.js
-./bin/nav.js
