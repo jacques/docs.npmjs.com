@@ -9,7 +9,7 @@ text-color = #333
 sectionWidth = 640px
 navWidth = 240px
 headerHeight = 20px
-homepageWidth = 1000px
+homepageWidth = 1100px
 
 centeredColumn(w)
   position relative
@@ -24,7 +24,7 @@ body
   color text-color
   margin 0
   padding 0
-  font-size 16px
+  font-size 18px
 
 a
   color npmred
@@ -79,8 +79,8 @@ p
 .faint
   opacity 0.7
 
-// [title="CLI"], [title="CLI"]
-//   text-transform uppercase
+.italic
+  font-style italic
 
 [title="CLI"]
   &:after
@@ -158,10 +158,12 @@ nav
       display inline-block
       // min-width 150px
       text-decoration none
-      font-size 18px
+      // font-size 18px
       font-weight 600
       &:hover
         text-decoration underline
+    span
+      font-size 16px
 
 footer
   margin 150px 0 0 0
