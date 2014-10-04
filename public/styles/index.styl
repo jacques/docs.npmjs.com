@@ -117,13 +117,22 @@ nav
 
 // Hide the nav on the home page
 [data-page=index]
+
+  #logo
+    display none
+
   nav
     display none
+
+  header
+    height 100px
 
   h1
     color black
     text-align center
     font-size 50px
+    padding-top 10px
+    // padding-top 120px
 
   h2
     centeredColumn homepageWidth
@@ -138,9 +147,6 @@ nav
     padding 0
     line-height 2
     centeredColumn homepageWidth
-    // -webkit-columns 300px 3
-    // -moz-columns 300px 3
-    // columns 300px 3
     -webkit-columns 3
     -moz-columns 3
     columns 3
@@ -156,10 +162,6 @@ nav
       font-weight 600
       &:hover
         text-decoration underline
-
-    // .heading
-    //   display block
-
 
 footer
   margin 150px 0 0 0
