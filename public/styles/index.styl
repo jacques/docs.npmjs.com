@@ -9,10 +9,14 @@ text-color = #333
 sectionWidth = 640px
 navWidth = 240px
 headerHeight = 20px
+homepageWidth = 1000px
 
-*, *:before, *:after
-  -moz-box-sizing: border-box
-  -webkit-box-sizing: border-box
+centeredColumn(w)
+  position relative
+  margin 0 auto
+  max-width w
+
+*
   box-sizing: border-box
 
 body
@@ -41,33 +45,33 @@ header
   top headerHeight + 30px
   left 30px
   width 100px
-  // img
-
 
 .container
-  position relative
-  margin 0 auto
-  max-width sectionWidth
+  centeredColumn sectionWidth
   padding 0 15px
+
+h1
+  font-size 36px
+  font-weight 600
+  letter-spacing -0.6px
 
 #page
   margin-top 30px
   transform translateX(-120px)
 
-  h1
-    font-size 36px
-    font-weight 600
-    letter-spacing -0.6px
+h1
+  font-size 36px
+  font-weight 600
+  letter-spacing -0.6px
 
-  h2
-    font-size 24px
-    // text-transform capitalize
-    font-weight 600
-    a
-      color text-color
-      &:hover
-        color npmred
-
+h2
+  font-size 24px
+  // text-transform capitalize
+  font-weight 600
+  a
+    color text-color
+    &:hover
+      color npmred
 p
   line-height 1.5
   font-weight 400
@@ -75,22 +79,12 @@ p
 .faint
   opacity 0.7
 
-ul.pages
-  list-style none
-  margin 0
-  padding 0
-  line-height 2
+// [title="CLI"], [title="CLI"]
+//   text-transform uppercase
 
-  a
-    display inline-block
-    // min-width 150px
-    text-decoration none
-    font-size 18px
-    font-weight 600
-
-[title="api"], [title="cli"]
-  text-transform uppercase
-
+[title="CLI"]
+  &:after
+    content "(Command Line Interface)"
 
 nav
   position absolute
@@ -125,6 +119,46 @@ nav
 [data-page=index]
   nav
     display none
+
+  h1
+    color black
+    text-align center
+    font-size 50px
+
+  h2
+    centeredColumn homepageWidth
+    margin-top 60px
+    margin-bottom 10px
+    &:after
+      color rgba(text-color, 0.4)
+
+  ul.pages
+    list-style none
+    margin 0
+    padding 0
+    line-height 2
+    centeredColumn homepageWidth
+    // -webkit-columns 300px 3
+    // -moz-columns 300px 3
+    // columns 300px 3
+    -webkit-columns 3
+    -moz-columns 3
+    columns 3
+    -webkit-column-gap 60px
+    -moz-column-gap 60px
+    column-gap 60px
+
+    a
+      display inline-block
+      // min-width 150px
+      text-decoration none
+      font-size 18px
+      font-weight 600
+      &:hover
+        text-decoration underline
+
+    // .heading
+    //   display block
 
 
 footer
