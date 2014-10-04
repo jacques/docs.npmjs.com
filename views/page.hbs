@@ -6,8 +6,15 @@
     {{{ page.content }}}
 
     <p class="faint italic">
-      Page last modified {{{ page.modified }}}
+      Last modified {{page.modified}}.
     </p>
+
+    {{#if page.edit_url}}
+      <p class="faint italic">
+         Want to help improve this document?
+         <a href="{{page.edit_url}}">Submit a pull request!</a>
+      </p>
+    {{/if}}
 
   </div>
 </div>

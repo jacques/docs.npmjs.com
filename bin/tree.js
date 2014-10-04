@@ -38,11 +38,6 @@ emitter.on("file", function(filename,stat){
   merge(page, fm(page.content))
 
   // Look for man-pagey frontmatter
-
-  // Example:
-  // npm-completion(1) -- Tab Completion for npm
-  // ===========================================
-
   var manPattern = new RegExp("^(.*) -- (.*)\n=+\n")
   if (page.content.match(manPattern)) {
     var manHead = manPattern.exec(page.content)
@@ -73,6 +68,11 @@ emitter.on("file", function(filename,stat){
   if (filename.match(/\//))
     page.section = filename.split("/")[0]
 
+  if (["api", "cli", "files", "misc"].indexOf(page.section) > -1) {
+    page.edit_url = "https://github.com/npm/npm/edit/master/doc/" + filename + ".md"
+  } else if (page.section) {
+    page.edit_url = "https://github.com/npm/docs.npmjs.com/edit/master/content/" + filename + ".md"
+  }
   page.href = "/" + filename
 
   content.pages.push(page)
@@ -89,7 +89,7 @@ emitter.on("end",function(){
     var section = {
       id: id,
       title: id
-        .replace(/^cli$/, "The npm Command Line tool")
+        .replace(/^cli$/, "The npm Command Line client")
         .replace(/^api$/, "API")
         .replace(/^files$/, "Files")
         .replace(/^misc$/, "Miscellaneous")
