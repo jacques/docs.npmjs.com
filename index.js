@@ -18,6 +18,9 @@ hbs.registerHelper("equal", require("handlebars-helper-equal"))
 app.get("/", function(req, res) {
   res.render("index", {
     content: content,
+    recentlyUpdatedPages: content.pages.sort(function(a, b) {
+      return new Date(b.modified) - new Date(a.modified);
+    }).slice(0, 10),
     pageId: "index"
   })
 })

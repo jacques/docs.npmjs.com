@@ -12,6 +12,16 @@
   {{/each}}
 </ul>
 
+<h2>Recently Updated</h2>
+<ul class="pages">
+  {{#each recentlyUpdatedPages}}
+    <li>
+      <a href="{{href}}">{{title}}</a>
+      {{#if heading}}<span class="faint heading">{{heading}}</span>{{/if}}
+    </li>
+  {{/each}}
+</ul>
+
 {{#each content.sections}}
   <section id="{{id}}">
 
