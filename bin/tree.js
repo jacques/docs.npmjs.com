@@ -31,6 +31,9 @@ emitter.on("file", function(filename,stat){
   var page = {}
   page.content = fs.readFileSync(filename).toString()
 
+  // Get modified date
+  page.modified = fs.statSync(filename).mtime
+
   // Look for HTML frontmatter
   merge(page, fm(page.content))
 
