@@ -82,9 +82,14 @@ emitter.on("end",function(){
   var sections = compact(uniq(pluck(content.pages, 'section'))).sort()
 
   content.sections = sections.map(function(id) {
+
     var section = {
       id: id,
       title: id
+        .replace(/^cli$/, "The npm Command Line tool")
+        .replace(/^api$/, "API")
+        .replace(/^files$/, "Files")
+        .replace(/^misc$/, "Miscellaneous")
     }
 
     // Look for a page named "index" in this section
