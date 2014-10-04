@@ -1,5 +1,6 @@
 <!--
 title: Quick start
+featured: true
 -->
 
 <h1>Getting Started with npm Enterprise</h1>
