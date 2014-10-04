@@ -29,7 +29,7 @@
     "handlebars-helper-equal": "^1.0.0",
     "harp": "^0.13.0",
     "hbs": "^2.7.0",
-    "html-frontmatter": "^1.0.0",
+    "html-frontmatter": "^1.2.1",
     "js-beautify": "^1.5.2",
     "lodash": "^2.4.1",
     "marked": "^0.3.2",

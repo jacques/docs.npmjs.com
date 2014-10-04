@@ -1,5 +1,6 @@
 <!--
 title: npm Enterprise
+featured: true
 -->
 
 # npm Enterprise
