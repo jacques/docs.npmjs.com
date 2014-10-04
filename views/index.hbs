@@ -1,0 +1,29 @@
+<div id="page">
+  <h1>These are the docs you're looking for.</h1>
+
+  {{#each content.sections}}
+    <section id="{{id}}">
+
+      <h2 title="{{title}}">
+        {{#if href}}
+          <a href="{{href}}">{{title}}</a>
+        {{else}}
+          {{title}}
+        {{/if}}
+      </h2>
+
+      <ul class="pages">
+        {{#each ../content.pages}}
+            {{#equal ../id section}}
+              <li>
+                <a href="{{href}}">{{title}}</a>
+                {{#if heading}}<span class="faint">{{heading}}</span>{{/if}}
+              </li>
+            {{/equal}}
+        {{/each}}
+      </ul>
+
+    </section>
+  {{/each}}
+
+</div>

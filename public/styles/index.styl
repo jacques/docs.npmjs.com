@@ -4,10 +4,11 @@ codefonts = 'Source Code Pro', 'Courier', sans-serif
 npmred = #cb3837
 subpage-link-color = #666
 subpage-link-color-active = npmred
+text-color = #333
 
-sectionWidth = 600px
+sectionWidth = 640px
 navWidth = 240px
-headerHeight = 180px
+headerHeight = 20px
 
 *, *:before, *:after
   -moz-box-sizing: border-box
@@ -16,7 +17,7 @@ headerHeight = 180px
 
 body
   font-family fonts
-  color #333
+  color text-color
   margin 0
   padding 0
   font-size 16px
@@ -26,18 +27,21 @@ a
 
 header
   height headerHeight
+  background npmred
   -webkit-box-shadow: inset 0px -30px 30px 0px rgba(0,0,0,0.15);
   -moz-box-shadow: inset 0px -30px 30px 0px rgba(0,0,0,0.15);
   box-shadow: inset 0px -30px 30px 0px rgba(0,0,0,0.15);
-  background npmred url("/images/tiling-hexagons2.png")
+  // background npmred url("/images/tiling-hexagons2.png")
   // border-bottom 5px solid darken(npmred, 50%)
-  border-bottom 8px solid darken(npmred, 100%)
+  // border-bottom 8px solid darken(npmred, 100%)
 
 #logo
-  max-width 100px
+  display block
   position absolute
   top headerHeight + 30px
   left 30px
+  width 100px
+  // img
 
 
 .container
@@ -57,12 +61,36 @@ header
 
   h2
     font-size 24px
-    text-transform capitalize
+    // text-transform capitalize
     font-weight 600
+    a
+      color text-color
+      &:hover
+        color npmred
 
 p
   line-height 1.5
   font-weight 400
+
+.faint
+  opacity 0.7
+
+ul.pages
+  list-style none
+  margin 0
+  padding 0
+  line-height 2
+
+  a
+    display inline-block
+    // min-width 150px
+    text-decoration none
+    font-size 18px
+    font-weight 600
+
+[title="api"], [title="cli"]
+  text-transform uppercase
+
 
 nav
   position absolute
@@ -70,13 +98,11 @@ nav
   right 40px
   margin-bottom 100px
   width navWidth
+
   h2
     font-size 18px
     font-weight 600
     padding-left 0
-    // text-transform capitalize
-    &[title="api"], &[title="cli"]
-      text-transform uppercase
     a
       text-decoration none
 
@@ -86,24 +112,19 @@ nav
     a
       display block
       line-height 1.5
-      // padding 0px 10px
       margin 2px 0
       text-decoration none
-      // color rgba(npmred, 0.6)
-      // transition all 0.2s
-      // border-left 3px solid transparent
       color subpage-link-color
-      // padding-left 20px
       font-size 14px
-      // &:before
-      //   content: "\2022"
-      //   padding-right 6px
       &:hover, &.active
         color subpage-link-color-active
         text-decoration underline
-        // border-left-color subpage-link-color
-        // border-left 3px solid npmred
-        // color rgba(npmred, 1)
+
+
+// Hide the nav on the home page
+[data-page=index]
+  nav
+    display none
 
 
 footer

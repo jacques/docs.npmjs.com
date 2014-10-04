@@ -15,6 +15,13 @@ app.use(harp.mount(__dirname + "/public"))
 hbs.registerPartials(__dirname + "/views/partials")
 hbs.registerHelper("equal", require("handlebars-helper-equal"))
 
+app.get("/", function(req, res) {
+  res.render("index", {
+    content: content,
+    pageId: "index"
+  })
+})
+
 app.get("/content.json", cors(), function(req, res) {
   res.json(content)
 })
