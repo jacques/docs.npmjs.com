@@ -82,17 +82,18 @@ emitter.on("file", function(filename,stat){
 
 emitter.on("end",function(){
 
-  var sections = compact(uniq(pluck(content.pages, 'section'))).sort()
+  // var sections = compact(uniq(pluck(content.pages, 'section'))).sort()
+  var sections = ["misc", "enterprise", "cli", "files", "api"]
 
   content.sections = sections.map(function(id) {
 
     var section = {
       id: id,
       title: id
-        .replace(/^cli$/, "The npm Command Line client")
-        .replace(/^api$/, "Using npm in your Node programs")
-        .replace(/^files$/, "Files")
-        .replace(/^misc$/, "Miscellaneous")
+        .replace(/^cli$/, "The Command Line Client")
+        .replace(/^api$/, "Using npm Programmatically")
+        .replace(/^files$/, "Configuring npm")
+        .replace(/^misc$/, "Using npm")
     }
 
     // Look for a page named "index" in this section
