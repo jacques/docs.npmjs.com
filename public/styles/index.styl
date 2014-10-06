@@ -10,6 +10,7 @@ sectionWidth = 640px
 navWidth = 240px
 headerHeight = 20px
 homepageWidth = 1100px
+mobileColumnMaxWidth = 480px
 
 centeredColumn(w)
   position relative
@@ -167,8 +168,42 @@ footer
     color rgba(text-color 0.6)
 
 @media only screen and (max-width: navWidth + sectionWidth)
+
+  #logo
+    display block
+    position absolute
+    width 200px
+    top 20px
+    left 50%
+    transform translateX(-50%)
+
+    // width 100px
+
   nav
+    display none
     position relative
     top 0
     left 0
     width 100%
+
+  header
+    display none
+
+  #page
+    margin-top 100px
+    transform translateX(0)
+    padding 10px
+
+
+  [data-page=index]
+    section
+      padding 50px 20px 0 20px
+
+    h2
+      centeredColumn(mobileColumnMaxWidth)
+
+    ul.pages
+      -webkit-columns 1
+      -moz-columns 1
+      columns 1
+      centeredColumn(mobileColumnMaxWidth)
