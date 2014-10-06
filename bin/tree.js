@@ -90,7 +90,7 @@ emitter.on("end",function(){
       id: id,
       title: id
         .replace(/^cli$/, "The npm Command Line client")
-        .replace(/^api$/, "API")
+        .replace(/^api$/, "Using npm in your Node programs")
         .replace(/^files$/, "Files")
         .replace(/^misc$/, "Miscellaneous")
     }
