@@ -1,5 +1,5 @@
 <!--
-title: Quick start
+title: Quick start for npm Enterprise
 featured: true
 -->
 
@@ -115,4 +115,4 @@ sudo apt-get install nodejs
 <ol>
     <li>On your server, run <code>npme add-package packagename</code>. This will trigger mirroring of the package and its dependencies.</li>
 </ol>
-<p><strong>Test: </strong>Look in <code>/etc/npme/packages</code> to see what packages have been mirrored..</p>
+<p><strong>Test: </strong>Look in <code>/etc/npme/packages</code> to see what packages have been mirrored.</p>
