@@ -82,6 +82,10 @@ emitter.on("file", function(filename,stat){
 
 emitter.on("end",function(){
 
+  content.pages = _.sortBy(content.pages, function(page) {
+    return page.title.toLowerCase();
+  })
+
   // var sections = compact(uniq(pluck(content.pages, 'section'))).sort()
   var sections = ["misc", "enterprise", "cli", "files", "api"]
 
