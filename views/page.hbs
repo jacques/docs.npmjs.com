@@ -5,9 +5,11 @@
     {{/if}}
     {{{ page.content }}}
 
-    <p class="faint italic">
-      Last modified {{page.modified}}.
-    </p>
+    {{#if page.edit_url}}
+      <p class="faint italic">
+        Last modified {{page.modified}}.
+      </p>
+    {{/if}}
 
     {{#if page.edit_url}}
       <p class="faint italic">
