@@ -1,5 +1,5 @@
 <!--
-title: Quick start
+title: Quick start for npm Enterprise
 featured: true
 -->
 
