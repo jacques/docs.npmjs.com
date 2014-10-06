@@ -89,10 +89,10 @@ emitter.on("end",function(){
     var section = {
       id: id,
       title: id
-        .replace(/^cli$/, "The npm Command Line client")
-        .replace(/^api$/, "Using npm in your Node programs")
-        .replace(/^files$/, "Files")
-        .replace(/^misc$/, "Miscellaneous")
+        .replace(/^cli$/, "The Command Line Client")
+        .replace(/^api$/, "Using npm Programmatically")
+        .replace(/^files$/, "Configuring npm")
+        .replace(/^misc$/, "Using npm")
     }
 
     // Look for a page named "index" in this section
