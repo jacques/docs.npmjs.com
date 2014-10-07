@@ -11,6 +11,17 @@
   <meta name="description" content="The place where all things npm will one day be documented">
   <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,400italic|Source+Code+Pro:400,600,700" rel="stylesheet" type="text/css">
   <link rel="stylesheet" type="text/css" href="/styles/index.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+  <script>
+    $(function() {
+      $("nav h2 a").on("click", function(e) {
+        $(this).closest("section").toggleClass("active")
+        return false
+      })
+    })
+  </script>
+
 </head>
 
 <body data-page="{{pageId}}">
@@ -24,20 +35,16 @@
 
   <nav>
     {{#each content.sections}}
-      <section id="{{id}}">
+      <section id="{{id}}" {{#equal id ../page.section}}class="active"{{/equal}}>
 
         <h2 title="{{title}}">
-          {{#if href}}
-            <a href="{{href}}">{{title}}</a>
-          {{else}}
-            {{title}}
-          {{/if}}
+          <a href="#">{{title}}</a>
         </h2>
 
         <div class="pages">
           {{#each ../content.pages}}
               {{#equal ../id section}}
-                <a href="{{href}}">{{title}}</a>
+                <a href="{{href}}" {{#equal ../href ../../../page.href}}class="active"{{/equal}}>{{title}}</a>
               {{/equal}}
           {{/each}}
         </div>
