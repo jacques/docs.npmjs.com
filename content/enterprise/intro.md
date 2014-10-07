@@ -22,6 +22,15 @@ featured: true
     </ol>
 </p>
 
+<h2>Tested and Approved Linux Repos</h2>
+
+<p>npm Enterprise will run on most Linux distros.   The npme installer has been thoroughly tested on the following images:</p>
+<ul>
+    <li><p><a href="http://releases.ubuntu.com/trusty/">Ubuntu 14.04.1 LTS (Trusty Tahr)</a></p>
+    <p>On AWS, select an <a href="http://cloud-images.ubuntu.com/locator/ec2/">amd64 Trusty AMI<a/>.</p>
+    </li>
+</ul>
+
 <h2>Configuring the server</h2>
 <a href="https://www.youtube.com/watch?v=EK4fv4iC-4Y#t=64">video</a>
 
