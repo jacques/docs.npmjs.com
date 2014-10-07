@@ -5,18 +5,21 @@
     {{/if}}
     {{{ page.content }}}
 
-    {{#if page.edit_url}}
-      <p class="faint italic">
-        Last modified {{page.modified}}.
-      </p>
-    {{/if}}
+    <p class="colophon">
+      {{#if page.modifiedPretty}}
+        Last modified {{page.modifiedPretty}}
+      {{/if}}
+      &nbsp;
+      &nbsp;
+      &nbsp;
+      &nbsp;
+      &nbsp;
+      {{#if page.edit_url}}
+        Typo?
+        <a href="{{page.edit_url}}">Pull request!</a>
+      {{/if}}
 
-    {{#if page.edit_url}}
-      <p class="faint italic">
-         Want to help improve this document?
-         <a href="{{page.edit_url}}">Submit a pull request!</a>
-      </p>
-    {{/if}}
+    </p>
 
   </div>
 </div>
