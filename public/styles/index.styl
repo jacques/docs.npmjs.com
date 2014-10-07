@@ -1,28 +1,5 @@
-fonts = 'Source Sans Pro', 'Lucida Grande', sans-serif
-codefonts = 'Source Code Pro', 'Courier', sans-serif
-
-npmred = #cb3837
-subpage-link-color = #666
-subpage-link-color-active = npmred
-text-color = #333
-text-font-size = 18px
-
-sectionWidth = 640px
-navWidth = 240px
-headerHeight = 20px
-homepageWidth = 1100px
-mobileColumnMaxWidth = 480px
-
-centeredColumn(w)
-  position relative
-  margin 0 auto
-  max-width w
-
-pushLeft(n)
-  -webkit-transform translateX(n)
-  -moz-transform translateX(n)
-  transform translateX(n)
-
+@import "_config"
+@import "_homepage"
 
 *
   box-sizing border-box
@@ -48,7 +25,8 @@ header
   position absolute
   top headerHeight + 30px
   left 40px
-  width 100px
+  width 130px
+  // transition all 0.3s
 
 .container
   centeredColumn sectionWidth
@@ -106,38 +84,31 @@ pre code
 .italic
   font-style italic
 
-[title="CLI"]
-  &:after
-    content "(Command Line Interface)"
-
 nav
   position absolute
   top headerHeight + 100px
-  left 40px
+  left 0px
+  padding 0 0 100px 40px
   margin-bottom 100px
   width navWidth
 
   section.active
     h2
       a
-        color text-color
+        color npmred
     .pages
       display block
-      // max-height 3000px
 
   h2
-    font-size 20px
+    font-size 18px
     font-weight 600
     padding-left 0
     a
       text-decoration none
-      color rgba(text-color, 0.5)
+      color text-color
 
   .pages
     display none
-    // max-height 0
-    // overflow hidden
-    // transition all 0.3s
 
     a
       display block
@@ -149,76 +120,10 @@ nav
       font-size 15px
       border-left 3px solid transparent
       transition all 0.2s
-      // transition border 1s
       &:hover, &.active
         color subpage-link-color-active
         text-decoration none
         border-color subpage-link-color-active
-
-
-
-[data-page=index]
-
-  #logo
-    position relative
-    top 0
-    left 0
-    display block
-    width 100%
-    // background yellow
-    text-align center
-    img
-      display inline-block
-      max-width 300px
-      margin-top 40px
-
-  nav
-    display none
-
-  h1
-    color black
-    text-align center
-    font-size 50px
-    padding-top 10px
-    text-transform lowercase
-    // padding-top 120px
-
-  h2
-    text-transform lowercase
-    centeredColumn homepageWidth
-    margin-top 60px
-    margin-bottom 10px
-    &:after
-      color rgba(text-color, 0.4)
-
-  ul.pages
-    list-style none
-    margin 0
-    padding 0
-    line-height 2
-    centeredColumn homepageWidth
-    -webkit-columns 3
-    -moz-columns 3
-    columns 3
-    -webkit-column-gap 60px
-    -moz-column-gap 60px
-    column-gap 60px
-
-    li
-      column-break-inside avoid
-      -webkit-column-break-inside avoid
-      -moz-column-break-inside avoid
-
-    a
-      display inline-block
-      // min-width 150px
-      text-decoration none
-      // font-size 18px
-      font-weight 600
-      &:hover
-        text-decoration underline
-    span
-      font-size 16px
 
 footer
   margin 150px 0 100px 0
@@ -232,12 +137,20 @@ footer
     text-align center
     color rgba(text-color 0.7)
 
-@media only screen and (max-width: navWidth + sectionWidth)
+
+@media only screen and (max-width: breakpoint)
 
   #logo
-    // display block
-    // position absolute
-    // width 200px
+    position relative
+    top 0
+    left 0
+    display block
+    width 100%
+    text-align center
+    img
+      display inline-block
+      max-width 300px
+      margin-top 40px
 
   nav
     display none
@@ -250,22 +163,5 @@ footer
     display none
 
   #page
-    margin-top 100px
-    -webkit-transform translateX(0)
-    -moz-transform translateX(0)
-    transform translateX(0)
+    margin-top 0px
     padding 10px
-
-
-  [data-page=index]
-    section
-      padding 50px 20px 0 20px
-
-    h2
-      centeredColumn(mobileColumnMaxWidth)
-
-    ul.pages
-      -webkit-columns 1
-      -moz-columns 1
-      columns 1
-      centeredColumn(mobileColumnMaxWidth)

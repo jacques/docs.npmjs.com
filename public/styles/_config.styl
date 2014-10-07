@@ -1,0 +1,25 @@
+fonts = 'Source Sans Pro', 'Lucida Grande', sans-serif
+codefonts = 'Source Code Pro', 'Courier', sans-serif
+
+npmred = #cb3837
+subpage-link-color = #666
+subpage-link-color-active = npmred
+text-color = #333
+text-font-size = 18px
+
+sectionWidth = 640px
+navWidth = 240px
+headerHeight = 20px
+homepageWidth = 1100px
+mobileColumnMaxWidth = 480px
+breakpoint = navWidth*2 + sectionWidth
+
+centeredColumn(w)
+  position relative
+  margin 0 auto
+  max-width w
+
+pushLeft(n)
+  -webkit-transform translateX(n)
+  -moz-transform translateX(n)
+  transform translateX(n)
