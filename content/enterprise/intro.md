@@ -27,7 +27,7 @@ featured: true
 <p>npm Enterprise will run on most Linux distros.   The npme installer has been thoroughly tested on the following images:</p>
 <ul>
     <li><p><a href="http://releases.ubuntu.com/trusty/">Ubuntu 14.04.1 LTS (Trusty Tahr)</a></p>
-    <p>On AWS, select an <a href="http://cloud-images.ubuntu.com/locator/ec2/">amd64 Trusty AMI<a/>.</p>
+    <p>On AWS, select an <a href="http://cloud-images.ubuntu.com/locator/ec2/">amd64 Trusty AMI</a>.</p>
     </li>
 </ul>
 
