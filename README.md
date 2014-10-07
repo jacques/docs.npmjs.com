@@ -26,7 +26,6 @@ triggers `npm run build`, which does the following:
 1. Parses [HTML Frontmatter](#html-frontmatter) from the markdown files
 1. Converts markdown to HTML
 1. Writes [content.json](/content.json) with HTML content of each file included.
-1. Writes [content.lite.json](/content.lite.json) with the same data minus the file content.
 
 The copied and generated files are [ignored](/.gitignore) for two reasons:
 

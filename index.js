@@ -4,9 +4,17 @@ var harp = require("harp")
 var path = require("path")
 var cors = require("cors")
 var find = require("lodash").find
-var content = require(path.resolve(__dirname, "content.json"))
-var contentLite = require(path.resolve(__dirname, "content.lite.json"))
+var merge = require("lodash").merge
 
+// Load section and page data
+var content = require(path.resolve(__dirname, "content.json"))
+var lite = merge({}, content)
+lite.pages = lite.pages.map(function(page){
+  delete page.content
+  return page
+})
+
+// Configure Express
 var app = express()
 app.set("view engine", "hbs")
 app.set("port", (process.env.PORT || 5000))
@@ -28,7 +36,7 @@ app.get("/content.json", cors(), function(req, res) {
 })
 
 app.get("/content.lite.json", cors(), function(req, res) {
-  res.json(contentLite)
+  res.json(lite)
 })
 
 app.get("/*", function(req, res) {
