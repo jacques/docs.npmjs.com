@@ -18,8 +18,16 @@ centeredColumn(w)
   margin 0 auto
   max-width w
 
+pushLeft(n)
+  -webkit-transform translateX(n)
+  -moz-transform translateX(n)
+  transform translateX(n)
+
+
 *
-  box-sizing: border-box
+  box-sizing border-box
+  -moz-box-sizing border-box
+  -webkit-box-sizing border-box
 
 body
   font-family fonts
@@ -152,7 +160,17 @@ nav
 [data-page=index]
 
   #logo
-    display none
+    position relative
+    top 0
+    left 0
+    display block
+    width 100%
+    // background yellow
+    text-align center
+    img
+      display inline-block
+      max-width 300px
+      margin-top 40px
 
   nav
     display none
@@ -204,6 +222,11 @@ nav
 
 footer
   margin 150px 0 100px 0
+
+  .logo img
+    max-width 300px
+    margin-bottom 40px
+
   p
     font-size 16px
     text-align center
@@ -212,16 +235,9 @@ footer
 @media only screen and (max-width: navWidth + sectionWidth)
 
   #logo
-    display block
-    position absolute
-    width 200px
-    top 20px
-    left 50%
-    -webkit-transform translateX(-50%)
-    -moz-transform translateX(-50%)
-    transform translateX(-50%)
-
-    // width 100px
+    // display block
+    // position absolute
+    // width 200px
 
   nav
     display none
