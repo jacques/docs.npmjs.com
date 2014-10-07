@@ -84,7 +84,7 @@ emitter.on("file", function(filename,stat){
     page.edit_url = "https://github.com/npm/docs.npmjs.com/edit/master/content/" + filename + ".md"
   }
 
-  page.href = "/" + filename
+  page.href = "/" + filename.replace(/\/npm-/, "/")
 
   content.pages.push(page)
 
