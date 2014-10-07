@@ -1,5 +1,5 @@
 <!--
-title: npm Enterprise
+title: Intro
 featured: true
 -->
 

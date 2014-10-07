@@ -2,7 +2,7 @@
 title: Using npm Enterprise
 -->
 
-## Private, scoped modules
+# Private, scoped modules
 
 Lots of companies using Node.js love the "many small modules" pattern that is
 part of the Node culture. However, splitting internal applications and private
