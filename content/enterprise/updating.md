@@ -1,10 +1,10 @@
 <!--
-title: Updating the software
+title: Updating
 -->
 
-## npm Enterprise can self-update
+## Updating npm Enterprise
 
-Simply run
+npm Enterprise can self-update. Simply run
 
 ```bash
 npme update
