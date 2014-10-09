@@ -1,9 +1,10 @@
 <!--
 title: Requirements
+order: 3
 -->
 
 
-## npmE installation requirements
+# npmE installation requirements
 
 npmE has been extensively tested on CentOS 6.5 and Ubuntu 14 (Trusty), and is
 supported on most recent public Linux distributions. It can run inside a

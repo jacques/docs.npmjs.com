@@ -1,5 +1,6 @@
 <!--
-title: Updating the software
+title: Updating
+order: 7
 -->
 
 ## npm Enterprise can self-update

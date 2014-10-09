@@ -1,5 +1,6 @@
 <!--
 title: Whitelists
+order: 5
 -->
 
 ## Selectively mirror the public registry
