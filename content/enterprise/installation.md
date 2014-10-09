@@ -9,7 +9,7 @@ As you would expect, npmE is installed using npm! Our installation process asks
 you a series of simple questions about your local environment, and sets up all
 the services it needs to run.
 
-To get started, [sign up for a trial license](https://www.npmjs.com/enterprise#contact)
+To get started, [sign up for a trial license](http://www.npmjs.com/enterprise#contact)
 for npm Enterprise. Make sure you have a machine that meets the
 [installation requirements](/enterprise/requirements), including an npm client
 version 2.x and the latest version of node.js.
@@ -49,4 +49,3 @@ to be an npm user.
 
 You received this via email when you signed up for the trial. It looks like
 `xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx`.
-
