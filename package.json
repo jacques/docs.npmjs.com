@@ -6,7 +6,9 @@
   "scripts": {
     "start": "node index.js",
     "postinstall": "npm run build",
-    "build": "bin/build.sh"
+    "build": "bin/build.sh",
+    "pretest": "npm run build",
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -36,5 +38,9 @@
     "npm": "latest",
     "strftime": "^0.8.2",
     "walkdir": "0.0.7"
+  },
+  "devDependencies": {
+    "mocha": "^1.21.4",
+    "nodemon": "^1.2.1"
   }
 }
