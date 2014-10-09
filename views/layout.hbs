@@ -42,10 +42,8 @@
         </h2>
 
         <div class="pages">
-          {{#each ../content.pages}}
-              {{#equal ../id section}}
-                <a href="{{href}}" {{#equal ../href ../../../page.href}}class="active"{{/equal}}>{{title}}</a>
-              {{/equal}}
+          {{#each pages}}
+            <a href="{{href}}" {{#equal href ../../page.href}}class="active"{{/equal}}>{{title}}</a>
           {{/each}}
         </div>
 
