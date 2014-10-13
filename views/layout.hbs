@@ -55,6 +55,33 @@
 
   {{{body}}}
 
+  <div class="toc">
+    {{#each content.sections}}
+      <section id="{{id}}">
+
+        <h2 title="{{title}}">
+          {{#if href}}
+            <a href="{{href}}">{{title}}</a>
+          {{else}}
+            {{title}}
+          {{/if}}
+        </h2>
+
+        <ul class="pageColumns">
+          {{#each ../content.pages}}
+              {{#equal ../id section}}
+                <li>
+                  <a href="{{href}}">{{title}}</a>
+                  {{#if heading}}<span class="faint heading">{{heading}}</span>{{/if}}
+                </li>
+              {{/equal}}
+          {{/each}}
+        </ul>
+
+      </section>
+    {{/each}}
+  </div>
+
   <footer>
     <div class="container">
 

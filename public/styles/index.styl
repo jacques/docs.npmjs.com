@@ -1,5 +1,6 @@
 @import "_config"
 @import "_homepage"
+@import "_404"
 
 *
   box-sizing border-box
@@ -26,7 +27,6 @@ header
   top headerHeight + 30px
   left 40px
   width 130px
-  // transition all 0.3s
 
 .container
   centeredColumn sectionWidth
@@ -165,3 +165,52 @@ footer
   #page
     margin-top 0px
     padding 10px
+
+.toc
+
+  // Disabled on all pages except / and 404
+  display none
+
+  h2
+    text-transform lowercase
+    centeredColumn homepageWidth
+    margin-top 60px
+    margin-bottom 10px
+    &:after
+      color rgba(text-color, 0.4)
+
+ul.pageColumns
+  list-style none
+  margin 0
+  padding 0
+  line-height 2
+  centeredColumn homepageWidth
+  -webkit-columns 3
+  -moz-columns 3
+  columns 3
+  -webkit-column-gap 60px
+  -moz-column-gap 60px
+  column-gap 60px
+
+  li
+    column-break-inside avoid
+    -webkit-column-break-inside avoid
+    -moz-column-break-inside avoid
+
+  a
+    display inline-block
+    text-decoration none
+    font-weight 600
+    &:hover
+      text-decoration underline
+  span
+    font-size 16px
+
+
+@media only screen and (max-width: breakpoint)
+
+  ul.pageColumns
+    -webkit-columns 1
+    -moz-columns 1
+    columns 1
+    centeredColumn(mobileColumnMaxWidth)
