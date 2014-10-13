@@ -1,3 +1,13 @@
 <div class="container">
-  <a href="/"><img src="/images/npm-404-blocky.svg" class="_404" /></a>
+  <a href="/" class="fourohfour">
+    <img src="/images/npm-404-blocky.svg" />
+  </a>
+
+  {{#if suggestions}}
+    <h3>
+      Looking for
+      {{#each suggestions}}{{#unless @first}} or {{/unless}}<a href="{{href}}">{{title}}</a>{{#if @last}}?{{/if}}{{/each}}
+    </h3>
+  {{/if}}
+
 </div>
