@@ -1,6 +1,5 @@
 <!--
 title: Quickstart
-heading: -
 featured: true
 -->
 
