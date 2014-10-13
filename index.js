@@ -45,8 +45,7 @@ app.get("/*", function(req, res) {
   })
 
   if (!page) {
-    return res.render("404", {
-      status: 404,
+    return res.status(404).render("404", {
       url: req.url,
       pageId: "fourohfour",
       content: content
