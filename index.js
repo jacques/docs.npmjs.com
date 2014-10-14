@@ -3,10 +3,9 @@ var hbs = require("hbs")
 var harp = require("harp")
 var path = require("path")
 var cors = require("cors")
-var distance = require("leven")
 var find = require("lodash").find
 var merge = require("lodash").merge
-var sortBy = require("lodash").sortBy
+var suggest = require(__dirname + "/lib/suggestions")
 
 // Load section and page data
 var content = require(path.resolve(__dirname, "content.json"))
@@ -47,34 +46,12 @@ app.get("/*", function(req, res) {
   })
 
   if (!page) {
-
-    var ctx = {
+    return res.status(404).render("404", {
       url: req.url,
       pageId: "fourohfour",
-      content: content
-    }
-
-    // Find pages with similar HREFs
-    var suggestions = content.pages
-      .filter(function(page) {
-        return distance(req.path, page.href) < 4
-      })
-
-    suggestions = sortBy(suggestions, function(page) {
-      return distance(req.path, page.href)
+      content: content,
+      suggestions: suggest(req.path, content.pages)
     })
-      .slice(0,3)
-
-    suggestions.forEach(function(suggestion){
-      console.log(suggestion.href, distance(suggestion.href, req.path))
-    })
-
-    if (suggestions.length) {
-      ctx.suggestions = suggestions
-      ctx.suggestionCount = suggestions.length
-    }
-
-    return res.status(404).render("404", ctx)
   }
 
   res.render("page", {
@@ -84,6 +61,8 @@ app.get("/*", function(req, res) {
 
 })
 
+// This module.parent thing allows us to test the server using
+// supertest without unnecessarily firing up the server.
 if (!module.parent) {
   app.listen(app.get("port"), function() {
     console.log("Running at localhost:" + app.get("port"))
