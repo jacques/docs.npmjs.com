@@ -5,6 +5,7 @@ var path = require("path")
 var cors = require("cors")
 var find = require("lodash").find
 var merge = require("lodash").merge
+var suggest = require(__dirname + "/lib/suggestions")
 
 // Load section and page data
 var content = require(path.resolve(__dirname, "content.json"))
@@ -15,7 +16,7 @@ lite.pages = lite.pages.map(function(page){
 })
 
 // Configure Express
-var app = express()
+var app = module.exports = express()
 app.set("view engine", "hbs")
 app.set("port", (process.env.PORT || 5000))
 app.use(express.static(__dirname + "/public"))
@@ -44,12 +45,26 @@ app.get("/*", function(req, res) {
     return page.href === req.path
   })
 
+  if (!page) {
+    return res.status(404).render("404", {
+      url: req.url,
+      pageId: "fourohfour",
+      content: content,
+      suggestions: suggest(req.path, content.pages)
+    })
+  }
+
   res.render("page", {
     page: page,
     content: content
   })
+
 })
 
-app.listen(app.get("port"), function() {
-  console.log("Running at localhost:" + app.get("port"))
-})
+// This module.parent thing allows us to test the server using
+// supertest without unnecessarily firing up the server.
+if (!module.parent) {
+  app.listen(app.get("port"), function() {
+    console.log("Running at localhost:" + app.get("port"))
+  })
+}
