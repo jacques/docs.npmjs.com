@@ -6,7 +6,7 @@
   {{#if suggestions}}
     <h3>
       Looking for
-      {{#each suggestions}}{{#unless @first}} or {{/unless}}<a href="{{href}}">{{title}}</a>{{#if @last}}?{{/if}}{{/each}}
+      {{#each suggestions}}{{#unless @first}} or {{/unless}}<a href="{{href}}">{{hrefWithoutSlash}}</a>{{#if @last}}?{{/if}}{{/each}}
     </h3>
   {{/if}}
 
