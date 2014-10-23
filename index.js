@@ -32,6 +32,20 @@ app.get("/", function(req, res) {
   })
 })
 
+
+app.get("/_monitor/ping", cors(), function(req, res) {
+  res.status(200).send('pong')
+})
+
+app.get("/_monitor/status", cors(), function(req, res) {
+  res.json({
+    name: "hiring",
+    pid: process.pid,
+    uptime: process.uptime(),
+    rss: process.memoryUsage(),
+  })
+})
+
 app.get("/content.json", cors(), function(req, res) {
   res.json(content)
 })
