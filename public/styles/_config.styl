@@ -23,3 +23,21 @@ pushLeft(n)
   -webkit-transform translateX(n)
   -moz-transform translateX(n)
   transform translateX(n)
+
+columns(n)
+  -webkit-columns n
+  -moz-columns n
+  columns n
+
+column-gap(n)
+  -webkit-column-gap n
+  -moz-column-gap n
+  column-gap n
+
+column-break-inside(n)
+  column-break-inside n
+  -webkit-column-break-inside n
+  -moz-column-break-inside n
+  // Firefox workaround
+  // http://stackoverflow.com/a/7785711
+  page-break-inside n
