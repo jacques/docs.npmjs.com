@@ -54,6 +54,13 @@ app.get("/content.lite.json", cors(), function(req, res) {
   res.json(lite)
 })
 
+app.get("/all", function(req, res) {
+  res.render("multi", {
+    content: content,
+    heading: "All Docs"
+  })
+})
+
 app.get("/*", function(req, res) {
   var page = find(content.pages, function(page) {
     return page.href === req.path
