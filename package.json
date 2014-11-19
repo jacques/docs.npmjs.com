@@ -33,6 +33,7 @@
     "hbs": "^2.7.0",
     "html-frontmatter": "^1.2.1",
     "js-beautify": "^1.5.2",
+    "leven": "^1.0.1",
     "lodash": "^2.4.1",
     "marked": "^0.3.2",
     "npm": "latest",
@@ -41,6 +42,7 @@
   },
   "devDependencies": {
     "mocha": "^1.21.4",
-    "nodemon": "^1.2.1"
+    "nodemon": "^1.2.1",
+    "supertest": "^0.14.0"
   }
 }

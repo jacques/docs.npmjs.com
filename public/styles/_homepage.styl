@@ -1,5 +1,8 @@
 [data-page=index]
 
+  .toc
+    display block
+
   #logo
     position relative
     top 0
@@ -9,7 +12,7 @@
     text-align center
     img
       display inline-block
-      max-width 240px
+      max-width 200px
       margin-top 20px
 
   nav
@@ -23,54 +26,3 @@
     padding 0
     margin 15px 0 0 0
     text-transform lowercase
-
-  h2
-    text-transform lowercase
-    centeredColumn homepageWidth
-    margin-top 60px
-    margin-bottom 10px
-    &:after
-      color rgba(text-color, 0.4)
-
-  ul.pages
-    list-style none
-    margin 0
-    padding 0
-    line-height 2
-    centeredColumn homepageWidth
-    -webkit-columns 3
-    -moz-columns 3
-    columns 3
-    -webkit-column-gap 60px
-    -moz-column-gap 60px
-    column-gap 60px
-
-    li
-      column-break-inside avoid
-      -webkit-column-break-inside avoid
-      -moz-column-break-inside avoid
-
-    a
-      display inline-block
-      text-decoration none
-      font-weight 600
-      &:hover
-        text-decoration underline
-    span
-      font-size 16px
-
-
-@media only screen and (max-width: breakpoint)
-
-  [data-page=index]
-    section
-      padding 50px 20px 0 20px
-
-    h2
-      centeredColumn(mobileColumnMaxWidth)
-
-    ul.pages
-      -webkit-columns 1
-      -moz-columns 1
-      columns 1
-      centeredColumn(mobileColumnMaxWidth)

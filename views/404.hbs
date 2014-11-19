@@ -1,0 +1,13 @@
+<div class="container">
+  <a href="/" class="fourohfour">
+    <img src="/images/npm-404-blocky.svg" />
+  </a>
+
+  {{#if suggestions}}
+    <h3>
+      Looking for
+      {{#each suggestions}}{{#unless @first}} or {{/unless}}<a href="{{href}}">{{hrefWithoutSlash}}</a>{{#if @last}}?{{/if}}{{/each}}
+    </h3>
+  {{/if}}
+
+</div>

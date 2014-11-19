@@ -12,15 +12,7 @@
   <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,400italic|Source+Code+Pro:400,600,700" rel="stylesheet" type="text/css">
   <link rel="stylesheet" type="text/css" href="/styles/index.css">
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
-  <script>
-    $(function() {
-      $("nav h2 a").on("click", function(e) {
-        $(this).closest("section").toggleClass("active")
-        return false
-      })
-    })
-  </script>
+  <script src="/js/main.js"></script>
 
 </head>
 
@@ -49,9 +41,41 @@
 
       </section>
     {{/each}}
+    <a class="smallLink" href="/all">view all on one page</a>
   </nav>
-
   {{{body}}}
+
+  <div class="toc">
+    {{#each content.sections}}
+      <section id="{{id}}">
+
+        <h2 title="{{title}}">
+          {{#if href}}
+            <a href="{{href}}">{{title}}</a>
+          {{else}}
+            {{title}}
+          {{/if}}
+        </h2>
+
+        <ul class="pageColumns">
+          {{#each ../content.pages}}
+              {{#equal ../id section}}
+                <li>
+                  <a href="{{href}}">{{title}}</a>
+                  {{#if heading}}<span class="faint heading">{{heading}}</span>{{/if}}
+                </li>
+              {{/equal}}
+          {{/each}}
+        </ul>
+
+      </section>
+    {{/each}}
+    <section id="viewAll">
+      <h2 title="View All">
+          <a href="/all">View All On One Page</a>
+      </h2>
+    </section>
+  </div>
 
   <footer>
     <div class="container">

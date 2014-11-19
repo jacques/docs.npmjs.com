@@ -80,8 +80,8 @@ describe("content", function() {
       })
       assert(content.pages.length)
       content.pages.forEach(function(page){
-        assert(page.section)
-        assert(section_ids.indexOf(page.section) > -1)
+        assert(page.section, "page has section property")
+        assert(section_ids.indexOf(page.section) > -1, "page doesn't have a section: "+page.title)
       })
     })
 
