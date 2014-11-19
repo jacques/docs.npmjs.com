@@ -1,6 +1,7 @@
 <!--
 title: Intro
 featured: true
+order: 0
 -->
 
 # npm Enterprise
