@@ -60,7 +60,7 @@
         <ul class="pageColumns">
           {{#each pages}}
             <li>
-              <a href="{{href}}">{{order}} {{title}}</a>
+              <a href="{{href}}">{{#if displayOrder}}{{order}} - {{/if}}{{title}}</a>
               {{#if heading}}<span class="faint heading">{{heading}}</span>{{/if}}
             </li>
           {{/each}}
