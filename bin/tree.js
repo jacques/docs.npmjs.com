@@ -19,6 +19,7 @@ var contentFile = path.resolve(__dirname, "../content.json")
 // Flesh out the content object
 var content = {
   sections: [
+    {id: "getting-started", title: "Getting Started"},
     {id: "misc", title: "Using npm"},
     {id: "enterprise", title: "npm Enterprise"},
     {id: "cli", title: "CLI Commands"},
