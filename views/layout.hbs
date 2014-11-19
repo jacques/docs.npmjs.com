@@ -47,26 +47,28 @@
 
   <div class="toc">
     {{#each content.sections}}
-      <section id="{{id}}">
+      {{#if pages.length}}
+        <section id="{{id}}">
 
-        <h2 title="{{title}}">
-          {{#if href}}
-            <a href="{{href}}">{{title}}</a>
-          {{else}}
-            {{title}}
-          {{/if}}
-        </h2>
+          <h2 title="{{title}}">
+            {{#if href}}
+              <a href="{{href}}">{{title}}</a>
+            {{else}}
+              {{title}}
+            {{/if}}
+          </h2>
 
-        <ul class="pageColumns">
-          {{#each pages}}
-            <li>
-              <a href="{{href}}">{{#if displayOrder}}{{order}} - {{/if}}{{title}}</a>
-              {{#if heading}}<span class="faint heading">{{heading}}</span>{{/if}}
-            </li>
-          {{/each}}
-        </ul>
+          <ul class="pageColumns">
+            {{#each pages}}
+              <li>
+                <a href="{{href}}">{{#if displayOrder}}{{order}} - {{/if}}{{title}}</a>
+                {{#if heading}}<span class="faint heading">{{heading}}</span>{{/if}}
+              </li>
+            {{/each}}
+          </ul>
 
-      </section>
+        </section>
+      {{/if}}
     {{/each}}
     <section id="viewAll">
       <h2 title="View All">
@@ -77,13 +79,6 @@
 
   <footer>
     <div class="container">
-
-      <!-- <p>
-        <a href="https://www.npmjs.org" class="logo">
-          <img src="/images/npm.svg">
-        </a>
-      </p> -->
-
       <p>
         This site is a work in progress. If you find bugs or have feature requests, please <a href="https://github.com/npm/docs.npmjs.com/issues">let us know.</a>
       </p>
