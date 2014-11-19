@@ -15,12 +15,12 @@ describe("content", function() {
     assert.equal(typeof content, 'object')
   })
 
-  it("is has a sections array", function() {
+  it("has a sections array", function() {
     assert(content.sections)
     assert(Array.isArray(content.sections))
   })
 
-  it("is has a pages array", function() {
+  it("has a pages array", function() {
     assert(content.pages)
     assert(Array.isArray(content.pages))
   })
@@ -111,6 +111,31 @@ describe("content", function() {
         assert(!iframe.attr("height"))
       })
     })
+
+    describe("edit_url", function() {
+
+      it("is always present", function() {
+        assert(content.pages.length)
+        content.pages.forEach(function(page){
+          assert(page.edit_url)
+        })
+      })
+
+      it("points pages in `api` section to the npm repo", function() {
+
+        var apiPages = content.pages.filter(function(page) {
+          return page.section === "api";
+        })
+        assert(apiPages.length)
+
+        apiPages.forEach(function(page){
+          assert.equal(page.edit_url, "https://github.com/npm/npm/edit/master/doc/" + page.filename)
+        })
+      })
+
+    })
+
+
 
   })
 
