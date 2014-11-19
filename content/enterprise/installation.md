@@ -1,7 +1,7 @@
 <!--
+order: 1
 title: Installation
 featured: true
-order: 1
 -->
 
 # Installing npm Enterprise

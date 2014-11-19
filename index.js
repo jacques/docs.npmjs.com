@@ -7,7 +7,7 @@ var find = require("lodash").find
 var merge = require("lodash").merge
 var isNumber = require("lodash").isNumber
 var sortBy = require("lodash").sortBy
-var every = require("lodash").every
+var any = require("lodash").any
 var suggest = require(__dirname + "/lib/suggestions")
 
 // Load section and page data
@@ -19,10 +19,11 @@ content.sections.forEach(function(section){
     return section.id == page.section
   })
 
-  // Sort section pages by order if every page has an order
-  if (every(section.pages, 'order')) {
+  // Sort section pages if any of the pages have an `order` property
+  // Pages without the order property will come last
+  if (any(section.pages, 'order')) {
     section.pages = sortBy(section.pages, function(page) {
-      return Number(page.order)
+      return Number(page.order || 10000)
     })
   }
 })

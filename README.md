@@ -1,6 +1,34 @@
 # [docs.npmjs.com](https://docs.npmjs.com)
 
-The place where all things npm will one day be documented
+The place where all things npm will one day be documented.
+
+## Editing Content
+
+All the markdown files can be found in the [content](content) directory. Some of these files live here in this repository, others live in other repositories. and are imported during the build process. These imported files are [ignored by git](.gitignore) to prevent people from accidentally editing the wrong files.
+
+- [api](https://github.com/npm/npm/tree/master/doc/api) is copied from npm.
+- [cli](https://github.com/npm/npm/tree/master/doc/cli) is copied from npm.
+- [enterprise](content/enterprise) lives in this repo.
+- [files](https://github.com/npm/npm/tree/master/doc/files) is copied from npm.
+- [misc](https://github.com/npm/npm/tree/master/doc/misc) is copied from npm.
+
+## HTML Frontmatter for Page Metadata
+
+This site uses [html-frontmatter](https://www.npmjs.org/package/html-frontmatter) to add
+metadata to pages.
+
+### title
+
+If a file has a `title` property in its frontmatter, it will be used for
+the `<title>` of the rendered HTML page. If `title` is absent from the
+frontmatter, the filename (without the .md extension) is used.
+
+### order
+
+Pages are sorted alphabetically by default, but the page order per section
+can be overridden by using a numerical `order` frontmatter property. It is
+not necessary to order all pages in a section: Any pages in a section that
+don't have an `order` property will be relegated to the end of that section.
 
 ## Development
 
@@ -17,8 +45,7 @@ Now you have a server running at at [localhost:5000](http://localhost:5000)
 
 ## The Build Process
 
-The `prepublish` task is run automatically after `npm install`. This
-triggers `npm run build`, which does the following:
+The build is run automatically after every `npm install` and before `npm start`. Here's an overview of what it does.
 
 1. Copies [npm documentation](https://github.com/npm/npm/tree/master/doc) from `./node_modules/npm/doc` to `./content`
 1. Walks the [content directory](/content) collecting markdown files.
@@ -31,14 +58,6 @@ The copied and generated files are [ignored](/.gitignore) for two reasons:
 
 1. Keeps the git history uncluttered.
 1. Prevents humans from accidentally editing auto-generated files
-
-## HTML Frontmatter
-
-Read all about it on the [html-frontmatter](https://www.npmjs.org/package/html-frontmatter) README.
-
-If a file has a `title` property in its frontmatter, it will be used for
-the `<title>` of the rendered HTML page. If `title` is absent from the
-frontmatter, the filename (without the .md extension) is used.
 
 ## Webservice
 

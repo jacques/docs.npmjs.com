@@ -1,7 +1,7 @@
 <!--
+order: 2
 title: Quickstart
 featured: true
-order: 2
 -->
 
 <h1>Getting Started with npm Enterprise</h1> <p>npm Enterprise makes it

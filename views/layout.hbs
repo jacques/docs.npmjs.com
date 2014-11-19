@@ -58,13 +58,11 @@
         </h2>
 
         <ul class="pageColumns">
-          {{#each ../content.pages}}
-              {{#equal ../id section}}
-                <li>
-                  <a href="{{href}}">{{title}}</a>
-                  {{#if heading}}<span class="faint heading">{{heading}}</span>{{/if}}
-                </li>
-              {{/equal}}
+          {{#each pages}}
+            <li>
+              <a href="{{href}}">{{#if displayOrder}}{{order}} - {{/if}}{{title}}</a>
+              {{#if heading}}<span class="faint heading">{{heading}}</span>{{/if}}
+            </li>
           {{/each}}
         </ul>
 

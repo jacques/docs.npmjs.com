@@ -1,6 +1,6 @@
 <!--
-title: Using npm Enterprise
 order: 4
+title: Using npm Enterprise
 -->
 
 # Private, scoped modules

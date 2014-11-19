@@ -1,9 +1,9 @@
 <!--
+order: 6
 title: GitHub integration
 keywords: github, git, enterprise
 heading: Use your GitHub account for access control
 featured: true
-order: 6
 -->
 
 ## Integrates with GitHub and GitHub Enterprise
