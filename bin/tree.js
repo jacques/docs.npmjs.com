@@ -19,16 +19,7 @@ var contentFile = path.resolve(__dirname, "../content.json")
 
 // Flesh out the content object
 var content = {
-  sections: [
-    {id: "getting-started", title: "Getting Started"},
-    {id: "misc", title: "Using npm"},
-    {id: "enterprise", title: "npm Enterprise"},
-    {id: "cli", title: "CLI Commands"},
-    {id: "files", title: "Configuring npm"},
-    {id: "api", title: "Using npm programmatically"},
-    {id: "policies", title: "npm policy documents"},
-    {id: "company", title: "About npm inc"},
-  ],
+  sections: require("../sections.json"),
   pages: []
 }
 
