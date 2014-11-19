@@ -26,6 +26,8 @@ var content = {
     {id: "cli", title: "CLI Commands"},
     {id: "files", title: "Configuring npm"},
     {id: "api", title: "Using npm programmatically"},
+    {id: "policies", title: "npm policy documents"},
+    {id: "company", title: "About npm inc"},
   ],
   pages: []
 }

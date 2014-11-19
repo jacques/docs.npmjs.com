@@ -28,6 +28,7 @@
   },
   "homepage": "https://github.com/npm/docs.npmjs.com",
   "dependencies": {
+    "@npm/policies": "git://github.com/npm/policies",
     "cors": "^2.4.2",
     "express": "^4.9.5",
     "handlebars-helper-equal": "^1.0.0",
