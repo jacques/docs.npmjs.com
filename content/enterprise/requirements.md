@@ -35,7 +35,7 @@ The version of npm compatible with npm Enterprise is still in beta, so it
 is not yet bundled with node. To get it, run
 
 ```bash
-sudo npm install npm@2.0.0 -g
+sudo npm install npm -g
 ```
 
 ## Hardware requirements
