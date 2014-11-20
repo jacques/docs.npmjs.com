@@ -1,6 +1,6 @@
 <!--
 order: 0
-title: Intro
+title: Introduction
 featured: true
 -->
 
