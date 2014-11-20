@@ -1,5 +1,6 @@
 <!--
 order: 7
+title: Updating npm Enterprise
 -->
 
 ## Updating npm Enterprise
