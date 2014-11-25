@@ -8,6 +8,7 @@ var fs          = require("fs")
 var marked      = require("marked")
 var fmt         = require("util").format
 var strftime    = require("strftime")
+var cheerio     = require("cheerio")
 var _           = require("lodash")
 var compact     = _.compact
 var uniq        = _.uniq
@@ -64,6 +65,17 @@ emitter.on("file", function(filename,stat){
 
   // Convert markdown to HTML
   page.content = marked(page.content)
+
+  // Wrap YouTube videos so they can be styled.
+  var $ = cheerio.load(page.content)
+  $('iframe[src*="youtube.com"]').each(function(i, elem) {
+    $(this).removeAttr("width")
+    $(this).removeAttr("height")
+    $(this).before(fmt("<div class='youtube-video'>%s</div>", $(this).toString()));
+    $(this).remove()
+  });
+
+  page.content = $.html()
 
   // Remove basepath and extension from filename
   filename = filename

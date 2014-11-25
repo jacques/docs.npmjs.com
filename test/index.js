@@ -1,4 +1,6 @@
 var assert = require("assert")
+var some = require("lodash").some
+var cheerio = require("cheerio")
 
 describe("content", function() {
 
@@ -82,6 +84,31 @@ describe("content", function() {
       content.pages.forEach(function(page){
         assert(page.section, "page has section property")
         assert(section_ids.indexOf(page.section) > -1, "page doesn't have a section: "+page.title)
+      })
+    })
+
+  })
+
+  describe("youtube videos", function() {
+    var iframeSelector = "div.youtube-video iframe"
+    var pagesWithYoutubes
+
+    before(function() {
+      pagesWithYoutubes = content.pages.filter(function(page) {
+        return cheerio.load(page.content)(iframeSelector).length > 0
+      })
+    })
+
+    it("wraps youtube iframes in a container element for stylability", function() {
+      assert(pagesWithYoutubes.length > 0)
+    })
+
+    it("removes width and height property from youtube iframes", function() {
+      pagesWithYoutubes.forEach(function(page){
+        var iframe = cheerio.load(page.content)(iframeSelector)
+        assert(iframe.attr("src"))
+        assert(!iframe.attr("width"))
+        assert(!iframe.attr("height"))
       })
     })
 

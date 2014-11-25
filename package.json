@@ -42,6 +42,7 @@
     "walkdir": "0.0.7"
   },
   "devDependencies": {
+    "cheerio": "^0.18.0",
     "mocha": "^1.21.4",
     "nodemon": "^1.2.1",
     "supertest": "^0.14.0"
