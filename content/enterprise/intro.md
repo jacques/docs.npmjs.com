@@ -13,7 +13,7 @@ featured: true
 
 <p>So let's set up your enterprise server.</p>
 
-<iframe width="640" height="480" src="//www.youtube.com/embed/XWRjLeZt98A" frameborder="0" allowfullscreen></iframe>
+<iframe width="640" height="480" src="//www.youtube.com/embed/EK4fv4iC-4Y" frameborder="0" allowfullscreen></iframe>
 
 <h2>Before you start</h2>
 
