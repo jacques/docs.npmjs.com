@@ -37,6 +37,15 @@ header
   .pageHeading
     text-decoration underline
 
+.youtube-video
+  width 100%
+  height videoHeightDesktop
+  iframe
+    width 100%
+    height 100%
+  @media only screen and (max-width: mobileVideoBreakpoint)
+    height videoHeightMobile
+
 h1
   font-size 48px
   font-weight 600
