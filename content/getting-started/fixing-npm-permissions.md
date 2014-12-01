@@ -3,7 +3,9 @@ title: 03 - Fixing npm permissions
 featured: true
 -->
 
-<iframe src="//www.youtube.com/embed/axQykBc9lGk" frameborder="0" allowfullscreen></iframe>
+# Fixing npm permissions
+
+<iframe src="//www.youtube.com/embed/bxvybxYFq2o" frameborder="0" allowfullscreen></iframe>
 
 If you get an EACCES error when you try to install things globally, this means that you don't have permission to write to the directories that npm uses to store global packages and commands.
 
