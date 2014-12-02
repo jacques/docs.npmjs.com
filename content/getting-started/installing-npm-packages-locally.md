@@ -5,7 +5,7 @@ featured: true
 
 # Installing npm packages locally
 
-<iframe width="640" height="480" src="//www.youtube.com/embed/yzdK75mckDI" frameborder="0" allowfullscreen></iframe>
+<iframe src="//www.youtube.com/embed/JDSfqFFbNYQ" frameborder="0" allowfullscreen></iframe>
 
 There are two ways to install npm packages: locally or globally. You choose which kind of installation to use based on how you want to use the package.
 
