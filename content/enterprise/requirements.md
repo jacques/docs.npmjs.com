@@ -40,6 +40,12 @@ sudo npm install npm -g
 
 (depending on your local setup, you may be able to omit sudo)
 
+## Remove password requirement for sudo
+
+npm Enterprise must be installed from an account that has passwordless sudo as part of the installation process npm Enterprise creates the npme user.
+
+See [How to remove password prompt](http://askubuntu.com/questions/235084/how-do-i-remove-ubuntus-password-requirement).
+
 ## Hardware requirements
 
 npm Enterprise does not use a great deal of processor or memory, so stock
