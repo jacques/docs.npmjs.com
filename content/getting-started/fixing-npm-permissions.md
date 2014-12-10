@@ -57,3 +57,7 @@ In this case, you can configure npm to use a different directory.
 Test: Download a package globally without using `sudo`.
 
         npm install -g jshint
+
+Instead of steps 2-4 you can also use the corresponding ENV variable (e.g. if you don't want to modify `~/.profile`):
+
+        NPM_CONFIG_PREFIX=~/npm-global npm install -g jshint
