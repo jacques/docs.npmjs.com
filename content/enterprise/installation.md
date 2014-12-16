@@ -10,6 +10,8 @@ npmE runs locally, on a server you control, with no external dependencies. Many 
 
 ## Server setup
 
+Follow the instructions in the [quickstart video](/enterprise/intro), or do the following:
+
 1. [Sign up for a trial license](http://www.npmjs.org/enterprise#contact) for npm Enterprise.
 1. Make sure you have a machine that meets the [installation requirements](/enterprise/requirements). It can also be run in a [Docker container](https://github.com/npm/npme-docker).
 1. On the server, run ```npm install npme```. Do NOT run using `sudo`.
