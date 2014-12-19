@@ -1,57 +1,47 @@
 <!--
 order: 3
-title: Installation
+title: Installing the server
 featured: true
 -->
 
-# Installing npm Enterprise
+# Installing the npm Enterprise server
 
-npmE runs locally, on a server you control, with no external dependencies
-(mirroring the public registry of course requires external internet access, but
-mirroring is optional). Many organizations want this for security, regulatory,
-or operational reasons.
+npmE runs locally, on a server you control, with no external dependencies. Many organizations want this for security, regulatory, or operational reasons.
 
-As you would expect, npmE is installed using npm! Our installation process asks
-you a series of simple questions about your local environment, and sets up all
-the services it needs to run.
+## Server setup
 
-To get started, [sign up for a trial license](http://www.npmjs.org/enterprise#contact)
-for npm Enterprise. Make sure you have a machine that meets the
-[installation requirements](/enterprise/requirements), including an npm client
-version 2.x and the latest version of node.js.
+Follow the instructions in the [quickstart video](/enterprise/intro), or do the following:
 
-Then simply:
+1. [Sign up for a trial license](http://www.npmjs.org/enterprise#contact) for npm Enterprise.
+1. Make sure you have a machine that meets the [installation requirements](/enterprise/requirements). It can also be run in a [Docker container](https://github.com/npm/npme-docker).
+1. On the server, run ```npm install npme```. Do NOT run using `sudo`.
 
-```bash
-npm install npme
-```
-
-(Do NOT run sudo).
-
-The installation process will require the billing email and license key you
-received during signup.
+The installation process will require your billing email and the license key you received during signup.
 
 ## Installation questions
 
 The `npme` installer will ask you a series of questions as it configures your
-machine. Let's run through them:
+machine.
 
-- [sudo] password for *user*:
-
-The installer must run as root.
-
-- "This will install npmE's OS-dependencies (CouchDB, Nginx, etc). Only run on a new server image. Continue?"
-
-The installer assumes npm Enterprise (npmE) is the only service running on the
-machine. If you have other services that use the same ports as npmE you
-may run into errors.
-
-- enter your billing email
-
-This is the email address you used to sign up for the trial. It does not need
-to be an npm user.
-
-- enter your license key
-
-You received this via email when you signed up for the trial. It looks like
-`xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx`.
+<dl>
+    <dt>[sudo] password for *user*</dt>
+    <dd>Your system is requesting the system admin password. The installer must run as root.</dd>
+    <dt>this will install npmE on the server (you should only run this on a dedicated machine), continue?</dt>
+    <dd>The installer assumes npm Enterprise (npmE) is the only service running on the
+        machine. If you have other services that use the same ports as npmE you may run
+        into errors.</dd>
+    <dt>enter your billing email</dt>
+    <dd>This is the email address you used to sign up for the trial. It does not need
+        to be an npm user.</dd>
+    <dt>enter your license key</dt>
+    <dd>You received this via email when you signed up for the trial. It looks like
+        `xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx`.</dd>
+    <dt>full url of front-facing host that npm Enterprise will run on. Include 'http' and ':8080'</dt>
+    <dd>This url needs to be accessible from your users' machines and also accessible to the appliance itself. It must include the port number, e.g. `http://registry.example.com:8080`</dd>
+    <dt>path to package whitelist used by public registry follower</dt>
+    <dd>The location of the whitelist file. This defaults to `/etc/npme/whitelist` and you should not need to change this.</dd>
+    <dt>full url of your Github Enterprise appliance</dt>
+    <dd>The url of your GitHub Enterprise appliance. This defaults to using GitHub itself.</dd>
+    <dt>folder on HD to store package binaries</dt>
+    <dd>The location to store the npm Enterprise binaries. This defaults to `/etc/npme/packages` and you should not need to change this.</dd>
+</dl>
