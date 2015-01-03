@@ -63,7 +63,7 @@ describe("content", function() {
     it("always has content", function() {
       assert(content.pages.length)
       content.pages.forEach(function(page){
-        assert(page.content)
+        assert(page.content, page.filename + " has no content")
         assert.equal(typeof(page.content), "string")
       })
     })
@@ -89,53 +89,26 @@ describe("content", function() {
 
   })
 
-  describe("youtube videos", function() {
-    var iframeSelector = "div.youtube-video iframe"
-    var pagesWithYoutubes
+  describe("edit_url", function() {
 
-    before(function() {
-      pagesWithYoutubes = content.pages.filter(function(page) {
-        return cheerio.load(page.content)(iframeSelector).length > 0
+    it("is always present", function() {
+      assert(content.pages.length)
+      content.pages.forEach(function(page){
+        assert(page.edit_url)
       })
     })
 
-    it("wraps youtube iframes in a container element for stylability", function() {
-      assert(pagesWithYoutubes.length > 0)
-    })
+    it("points pages in `api` section to the npm repo", function() {
 
-    it("removes width and height property from youtube iframes", function() {
-      pagesWithYoutubes.forEach(function(page){
-        var iframe = cheerio.load(page.content)(iframeSelector)
-        assert(iframe.attr("src"))
-        assert(!iframe.attr("width"))
-        assert(!iframe.attr("height"))
+      var apiPages = content.pages.filter(function(page) {
+        return page.section === "api";
+      })
+      assert(apiPages.length)
+
+      apiPages.forEach(function(page){
+        assert.equal(page.edit_url, "https://github.com/npm/npm/edit/master/doc/" + page.filename)
       })
     })
-
-    describe("edit_url", function() {
-
-      it("is always present", function() {
-        assert(content.pages.length)
-        content.pages.forEach(function(page){
-          assert(page.edit_url)
-        })
-      })
-
-      it("points pages in `api` section to the npm repo", function() {
-
-        var apiPages = content.pages.filter(function(page) {
-          return page.section === "api";
-        })
-        assert(apiPages.length)
-
-        apiPages.forEach(function(page){
-          assert.equal(page.edit_url, "https://github.com/npm/npm/edit/master/doc/" + page.filename)
-        })
-      })
-
-    })
-
-
 
   })
 

@@ -5,16 +5,18 @@
 
 var path        = require("path")
 var fs          = require("fs")
-var marked      = require("marked")
 var fmt         = require("util").format
 var strftime    = require("strftime")
 var cheerio     = require("cheerio")
+var marky       = require("marky-markdown")
+var frontmatter = require("html-frontmatter")
 var _           = require("lodash")
+
 var compact     = _.compact
 var uniq        = _.uniq
 var pluck       = _.pluck
 var merge       = _.merge
-var frontmatter          = require("html-frontmatter")
+
 var contentFile = path.resolve(__dirname, "../content.json")
 
 // Flesh out the content object
@@ -66,28 +68,17 @@ emitter.on("file", function(filepath,stat){
     .replace(/## SEE ALSO/g, "## See Also")
 
   // Convert markdown to HTML
-  page.content = marked(page.content)
-
-  // Wrap YouTube videos so they can be styled.
-  var $ = cheerio.load(page.content)
-  $('iframe[src*="youtube.com"]').each(function(i, elem) {
-    $(this).removeAttr("width")
-    $(this).removeAttr("height")
-    $(this).before(fmt("<div class='youtube-video'>%s</div>", $(this).toString()));
-    $(this).remove()
-  });
-
-  page.content = $.html()
+  page.content = marky(page.content).html()
 
   // Remove basepath and extension from filename
-  filename = filename
+  page.filename = page.filename
     .replace(/.*\/content\//, "")
     .replace(/\.md$/, "")
 
   // Use filename as title if not specified in frontmatter
   // (and remove superfluous npm- prefix)
   if (!page.title)
-    page.title = path.basename(filename).replace(/^npm-/, "")
+    page.title = path.basename(page.filename).replace(/^npm-/, "")
 
   // Infer section from top directory
   if (page.filename.match(/\//))
