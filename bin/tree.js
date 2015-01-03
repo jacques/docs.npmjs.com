@@ -45,6 +45,10 @@ emitter.on("file", function(filepath,stat){
     content: fs.readFileSync(filepath).toString()
   }
 
+  // Get modified date
+  page.modified = fs.statSync(filepath).mtime
+  page.modifiedPretty = strftime("%B %d, %Y", page.modified)
+
   // Look for HTML frontmatter
   merge(page, frontmatter(page.content))
 
@@ -56,11 +60,7 @@ emitter.on("file", function(filepath,stat){
     page.content = page.content.replace(manHead[0], "")
   }
 
-  // Get modified date
-  page.modified = fs.statSync(filepath).mtime
-  page.modifiedPretty = strftime("%B %d, %Y", page.modified)
-
-  // Titlecase some things
+  // Titlecase some headings from the npm/npm docs
   page.content = page.content
     .replace(/## SYNOPSIS/g, "## Synopsis")
     .replace(/## DESCRIPTION/g, "## Description")
@@ -69,16 +69,6 @@ emitter.on("file", function(filepath,stat){
 
   // Convert markdown to HTML
   page.content = marky(page.content).html()
-
-  // Remove basepath and extension from filename
-  page.filename = page.filename
-    .replace(/.*\/content\//, "")
-    .replace(/\.md$/, "")
-
-  // Use filename as title if not specified in frontmatter
-  // (and remove superfluous npm- prefix)
-  if (!page.title)
-    page.title = path.basename(page.filename).replace(/^npm-/, "")
 
   // Infer section from top directory
   if (page.filename.match(/\//))
@@ -97,7 +87,7 @@ emitter.on("file", function(filepath,stat){
     .replace(/\/npm-/, "/")
     .replace(/\.md$/, "")
 
-  // Use filename as title if not specified in frontmatter
+  // Use href as title if not specified in frontmatter
   if (!page.title) {
     page.title = path.basename(page.href)
   }

@@ -1,4 +1,5 @@
 var assert = require("assert")
+var path = require("path")
 var some = require("lodash").some
 var cheerio = require("cheerio")
 
@@ -73,6 +74,17 @@ describe("content", function() {
       content.pages.forEach(function(page){
         assert(page.modified)
         assert(page.modified.match(/\d{4}-\d{2}-/))
+      })
+    })
+
+    it("always has a URL-friendly filename", function() {
+      assert(content.pages.length)
+      content.pages.forEach(function(page){
+        assert.equal(
+          path.basename(page.filename),
+          encodeURIComponent(path.basename(page.filename)),
+          "page filename is not its encoded self: " + page.filename
+        )
       })
     })
 
