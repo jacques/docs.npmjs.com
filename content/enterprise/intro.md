@@ -29,7 +29,8 @@ featured: true
 
 <h2>Configuring the server</h2> <a href="https://www.youtube.com/watch?v=EK4fv4iC-4Y#t=64">video</a>
 
-<p>npm Enterprise should be installed on a dedicated server.</p> <ol> <li>Install the latest version of Node. For Ubuntu, we recommend the distribution put together by our friends at <a href="https://nodesource.com/">NodeSource</a>. <pre><code> curl -sL https://deb.nodesource.com/setup | sudo bash - sudo apt-get install nodejs </code></pre> </li> <li><code>npm install npme</code> (do NOT use sudo on this command)</li> <li>Answer the questions as prompted. The two you are likely to want to customize are: <ul> <li>The full URL of your front-facing host, followed by the port number npm Enterprise is running on</li> <li>The URL of your GitHub Enterprise appliance. The default for this is public GitHub, which you can use if your company doesn't use GitHub Enterprise.</li> </ul> </li> <li><code>npme start</code></li> </ol>
+<p>npm Enterprise should be installed on a dedicated server.</p> <ol> <li>Install the latest version of Node. For Ubuntu, we recommend the distribution put together by our friends at <a href="https://nodesource.com/">NodeSource</a>. <pre><code>$ curl -sL https://deb.nodesource.com/setup | sudo bash -
+$ sudo apt-get install nodejs </code></pre> </li> <li><code>npm install npme</code> (do NOT use sudo on this command)</li> <li>Answer the questions as prompted. The two you are likely to want to customize are: <ul> <li>The full URL of your front-facing host, followed by the port number npm Enterprise is running on</li> <li>The URL of your GitHub Enterprise appliance. The default for this is public GitHub, which you can use if your company doesn't use GitHub Enterprise.</li> </ul> </li> <li><code>npme start</code></li> </ol>
 
 <p><strong>Test:</strong> To make sure that the server is up and running, use <code>curl http://localhost:8080</code>. You should get a JSON response.</p>
 
