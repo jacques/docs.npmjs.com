@@ -35,8 +35,8 @@ This will trigger mirroring for that package and all of its dependencies.
 
 If you do not want to set up your whitelist manually in advance, you can also configure your server to copy packages to your npm Enterprise server (and add them to the whitelist automatically) when they are requested by a client. For example, if a client requested `lodash` from your npm Enterprise server and it did not exist, then npm Enterprise would look for `lodash` in the public registry, copy it over, add it to the whitelist, and then serve it to the client.
 
-To allow clients to add packages to the whitelist, simply add `"--read-through-cache": "true"` to the `args` list in `/etc/npme/service.json`. Then
+To allow clients to add packages to the whitelist, set `"--read-through-cache": "true"` in your [server configuration](server-configuration).
 
 ## Full mirroring
 
-A full mirror will copy all packages from the public registry to your npm Enterprise server. This is enabled by adding `"--policy": "mirror"` to the `args` list.
+A full mirror will copy all packages from the public registry to your npm Enterprise server. Enable this by setting `"--policy": "mirror"` in your [server configuration](server-configuration).
