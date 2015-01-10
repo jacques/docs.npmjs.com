@@ -30,7 +30,7 @@ You should back-up your computer before moving forward.
 
         sudo chown -R `whoami` <directory>
 
-  If you don't want to change the permissions on the entire directory, you can change permissions on the subfolders `lib/nod_modules`, `bin`, and `share`.
+  If you don't want to change the permissions on the entire directory, you can change permissions on the subfolders `lib/node_modules`, `bin`, and `share`.
 
 ## Option 2: Change npm's default directory to another directory
 
