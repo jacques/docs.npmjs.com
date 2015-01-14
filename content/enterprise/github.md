@@ -2,7 +2,6 @@
 order: 6
 title: GitHub integration
 keywords: github, git, enterprise
-heading: Use your GitHub account for access control
 featured: true
 -->
 
@@ -29,5 +28,12 @@ npmE uses OAuth to interact with GitHub, and will support any other OAuth2
 providers. A standalone solution for authentication and authorization is
 coming soon.
 
+## Logging in with two-factor authentication
 
-<meta name="mascot" content="Octocat">
+If you use two-factor authentication for your GitHub account, you will need to
+manually generate a token and add it to your `~/.npmrc` file.
+
+```
+@npminc:registry=https://npme-private.npmjs.com/
+//npme-private.npmjs.com/:_authToken=3aa689a8a6772ab997bb333d096b8c1f48a9ccc
+```
