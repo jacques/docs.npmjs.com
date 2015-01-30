@@ -38,10 +38,10 @@ To run the app locally:
 
 ```sh
 npm install
-npm start
+npm run dev
 ```
 
-Now you have a server running at at [localhost:5000](http://localhost:5000)
+Now you have a server running [nodemon](https://www.npmjs.com/package/nodemon) at [localhost:5000](http://localhost:5000).
 
 ## The Build Process
 
