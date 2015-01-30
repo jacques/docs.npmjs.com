@@ -68,7 +68,7 @@ emitter.on("file", function(filepath,stat){
     .replace(/## SEE ALSO/g, "## See Also")
 
   // Convert markdown to HTML
-  page.content = marky(page.content).html()
+  page.content = marky(page.content, {sanitize: false}).html()
 
   // Infer section from top directory
   if (page.filename.match(/\//))
