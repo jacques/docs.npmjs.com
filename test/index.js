@@ -1,4 +1,5 @@
 var assert = require("assert")
+var path = require("path")
 var some = require("lodash").some
 var cheerio = require("cheerio")
 
@@ -15,12 +16,12 @@ describe("content", function() {
     assert.equal(typeof content, 'object')
   })
 
-  it("is has a sections array", function() {
+  it("has a sections array", function() {
     assert(content.sections)
     assert(Array.isArray(content.sections))
   })
 
-  it("is has a pages array", function() {
+  it("has a pages array", function() {
     assert(content.pages)
     assert(Array.isArray(content.pages))
   })
@@ -63,7 +64,7 @@ describe("content", function() {
     it("always has content", function() {
       assert(content.pages.length)
       content.pages.forEach(function(page){
-        assert(page.content)
+        assert(page.content, page.filename + " has no content")
         assert.equal(typeof(page.content), "string")
       })
     })
@@ -73,6 +74,17 @@ describe("content", function() {
       content.pages.forEach(function(page){
         assert(page.modified)
         assert(page.modified.match(/\d{4}-\d{2}-/))
+      })
+    })
+
+    it("always has a URL-friendly filename", function() {
+      assert(content.pages.length)
+      content.pages.forEach(function(page){
+        assert.equal(
+          path.basename(page.filename),
+          encodeURIComponent(path.basename(page.filename)),
+          "page filename is not its encoded self: " + page.filename
+        )
       })
     })
 
@@ -89,26 +101,24 @@ describe("content", function() {
 
   })
 
-  describe("youtube videos", function() {
-    var iframeSelector = "div.youtube-video iframe"
-    var pagesWithYoutubes
+  describe("edit_url", function() {
 
-    before(function() {
-      pagesWithYoutubes = content.pages.filter(function(page) {
-        return cheerio.load(page.content)(iframeSelector).length > 0
+    it("is always present", function() {
+      assert(content.pages.length)
+      content.pages.forEach(function(page){
+        assert(page.edit_url)
       })
     })
 
-    it("wraps youtube iframes in a container element for stylability", function() {
-      assert(pagesWithYoutubes.length > 0)
-    })
+    it("points pages in `api` section to the npm repo", function() {
 
-    it("removes width and height property from youtube iframes", function() {
-      pagesWithYoutubes.forEach(function(page){
-        var iframe = cheerio.load(page.content)(iframeSelector)
-        assert(iframe.attr("src"))
-        assert(!iframe.attr("width"))
-        assert(!iframe.attr("height"))
+      var apiPages = content.pages.filter(function(page) {
+        return page.section === "api";
+      })
+      assert(apiPages.length)
+
+      apiPages.forEach(function(page){
+        assert.equal(page.edit_url, "https://github.com/npm/npm/edit/master/doc/" + page.filename)
       })
     })
 

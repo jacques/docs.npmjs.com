@@ -68,5 +68,12 @@ documentation and accompanying metadata with a single HTTP call.
 ## Deployment
 
 ```sh
-export NODE_ENV=production
+git push origin +master:deploy-staging
+git push origin +master:deploy-production
+```
+
+If you get dissed with an "Everything up-to-date" message, make an empty commit and push again:
+
+```
+git commit -avm "emptiness" --allow-empty
 ```
