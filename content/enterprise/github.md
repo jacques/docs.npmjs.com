@@ -33,7 +33,13 @@ coming soon.
 If you use two-factor authentication for your GitHub account, you will need to
 manually generate a token and add it to your `~/.npmrc` file.
 
+1. Visit github.com/settings/tokens/new to create a new "Personal access token".
+1. Use a descriptive name for your token, like "myco npmE"
+1. Leave the default scopes as they are.
+1. Click "Generate Token" and you'll be redirected to a new page that displays your token. Copy the token right away, as it will only be displayed on screen once.
+1. Copy the token and paste it into the bottom of your `~/.npmrc` file:
+
 ```
-@npminc:registry=https://npme-private.npmjs.com/
+@myco:registry=https://npme-private.npmjs.com/
 //npme-private.npmjs.com/:_authToken=3aa689a8a6772ab997bb333d096b8c1f48a9ccc
 ```
