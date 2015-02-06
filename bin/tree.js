@@ -42,7 +42,7 @@ emitter.on("file", function(filepath,stat){
     modified: null,
     modifiedPretty: null,
     edit_url: "https://github.com/npm/npm/edit/master/doc/api/npm-bugs.md",
-    content: fs.readFileSync(filepath).toString()
+    content: fs.readFileSync(filepath, "utf-8")
   }
 
   // Get modified date
