@@ -42,7 +42,7 @@ emitter.on("file", function(filepath,stat){
     modified: null,
     modifiedPretty: null,
     edit_url: "https://github.com/npm/npm/edit/master/doc/api/npm-bugs.md",
-    content: fs.readFileSync(filepath).toString()
+    content: fs.readFileSync(filepath, "utf-8")
   }
 
   // Get modified date
@@ -77,7 +77,7 @@ emitter.on("file", function(filepath,stat){
   if (page.filename.match(/\//))
     page.section = page.filename.split("/")[0]
 
-  // IN what repository does this doc live?
+  // In what repository does this doc live?
   if (["api", "cli", "files", "misc"].indexOf(page.section) > -1) {
     page.edit_url = "https://github.com/npm/npm/edit/master/doc/" + page.filename
   } else if (page.section === "policies") {

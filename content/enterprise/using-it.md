@@ -16,7 +16,7 @@ npmE makes private modules a first-class citizen.
 npm Enterprise requires a 2.x version of the npm client. You can get this
 by running
 
-```bash
+```sh
 [sudo] npm install npm -g
  ```
 
@@ -25,7 +25,7 @@ by running
 Once you have an up-to-date client, log in to your registry using your
 GitHub or GitHub Enterprise credentials:
 
-```bash
+```sh
 npm login --registry=http://myreg.mycompany.com --scope=@myco
 ```
 
@@ -34,7 +34,7 @@ npm login --registry=http://myreg.mycompany.com --scope=@myco
 Now you can install private modules without any additional work, the same way
 you do with public modules:
 
-```bash
+```sh
 npm install @myco/somepackage
 ```
 
@@ -54,16 +54,15 @@ require('@myco/somepackage');
 Publishing private modules is similarly easy. Simply give your package
 name a scope in package.json:
 
-```js
+```json
 {
-  "name": "@myco/anypackage",
-  ..
+  "name": "@myco/anypackage"
 }
 ```
 
 Then publish as usual:
 
-```bash
+```sh
 npm publish
 ```
 
