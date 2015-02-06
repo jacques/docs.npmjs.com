@@ -30,6 +30,11 @@ can be overridden by using a numerical `order` frontmatter property. It is
 not necessary to order all pages in a section: Any pages in a section that
 don't have an `order` property will be relegated to the end of that section.
 
+## Redirects
+
+If you rename or remove a file, add it to [lib/redirects.js](lib/redirects.js) too keep
+things from breaking.
+
 ## Development
 
 Download node at [nodejs.org](http://nodejs.org) and install it, if you haven't already.
