@@ -9,6 +9,7 @@ var isNumber = require("lodash").isNumber
 var sortBy = require("lodash").sortBy
 var any = require("lodash").any
 var suggest = require(__dirname + "/lib/suggestions")
+var redirects = require(__dirname + "/lib/redirects")
 
 // Load section and page data
 var content = require(path.resolve(__dirname, "content.json"))
@@ -81,6 +82,11 @@ app.get("/all", function(req, res) {
 })
 
 app.get("/*", function(req, res) {
+
+  if (req.path in redirects) {
+    return res.redirect(301, redirects[req.path])
+  }
+
   var page = find(content.pages, function(page) {
     return page.href === req.path
   })

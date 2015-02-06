@@ -64,3 +64,13 @@ describe('GET /cli/nonexistent', function() {
       })
   })
 })
+
+describe('redirects', function() {
+
+  it('301s whitelist to mirroring', function(done) {
+    supertest(app)
+      .get('/enterprise/whitelist')
+      .expect('Location', /\/enterprise\/mirroring/)
+      .expect(301, done)
+  })
+})
