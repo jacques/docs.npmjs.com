@@ -16,6 +16,7 @@ cp -pr node_modules/npm/doc/api content/
 cp -pr node_modules/npm/doc/cli content/
 cp -pr node_modules/npm/doc/files content/
 cp -pr node_modules/npm/doc/misc content/
+rm -f  content/misc/npm-index.md
 
 cp -pr node_modules/@npm/policies content/
 
