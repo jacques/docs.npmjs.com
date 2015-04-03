@@ -43,3 +43,5 @@ manually generate a token and add it to your `~/.npmrc` file.
 @myco:registry=https://npme-private.npmjs.com/
 //npme-private.npmjs.com/:_authToken=3aa689a8a6772ab997bb333d096b8c1f48a9ccc
 ```
+
+Note: you do not need to run `npm login` if you set up two-factor authentication this way.
