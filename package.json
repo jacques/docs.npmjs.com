@@ -1,7 +1,7 @@
 {
   "name": "docs.npmjs.com",
   "version": "1.1.0",
-  "description": "The place where all things npm will one day be documented",
+  "description": "The place where all things npm are documented",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/npm/docs.npmjs.com"
+    "url": "https://github.com/npm/docs"
   },
   "keywords": [
     "npm",
@@ -25,9 +25,9 @@
   "author": "Zeke Sikelianos <zeke@sikelianos.com> (http://zeke.sikelianos.com/)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/npm/docs.npmjs.com/issues"
+    "url": "https://github.com/npm/docs/issues"
   },
-  "homepage": "https://github.com/npm/docs.npmjs.com",
+  "homepage": "https://github.com/npm/docs",
   "dependencies": {
     "@npm/policies": "git://github.com/npm/policies",
     "cors": "^2.4.2",

@@ -83,7 +83,7 @@ emitter.on("file", function(filepath,stat){
   } else if (page.section === "policies") {
     page.edit_url = "https://github.com/npm/policies/edit/master/" + path.basename(page.filename)
   } else if (page.section) {
-    page.edit_url = "https://github.com/npm/docs.npmjs.com/edit/master/content/" + page.filename
+    page.edit_url = "https://github.com/npm/docs/edit/master/content/" + page.filename
   }
 
   page.href = "/" + page.filename

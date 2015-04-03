@@ -1,6 +1,6 @@
 # [docs.npmjs.com](https://docs.npmjs.com)
 
-The place where all things npm will one day be documented.
+The place where all things npm are documented.
 
 ## Editing Content
 
