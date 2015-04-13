@@ -9,6 +9,10 @@ Scopes are like namespaces for npm modules. Each npm user has their own scope.
 @username/project-name
 ```
 
+## Update npm
+
+You need a version of npm greater than `2.7.0`. Run `sudo npm install -g npm` to update npm.
+
 ## Initializing a scoped package
 
 To create a scoped package, you simply use a package name that starts with your scope.
