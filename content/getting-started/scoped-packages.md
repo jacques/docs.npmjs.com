@@ -1,3 +1,8 @@
+<!--
+title: 13 - Working with scoped packages
+featured: true
+-->
+
 Scopes are like namespaces for npm modules. Each npm user has their own scope.
 
 ```
