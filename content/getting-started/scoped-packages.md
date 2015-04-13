@@ -26,6 +26,12 @@ If you use `npm init`, you can add your scope as an option to that command.
 $ npm init --scope=username
 ```
 
+If you use the same scope all the time, you will probably want to set this option in your `~/.npmrc` file.
+
+```
+$ npm config set scope username
+```
+
 ## Using a scoped package
 
 To use a scoped package, you simply include the scope wherever you use the package name.
