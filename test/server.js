@@ -17,7 +17,7 @@ describe("GET /_monitor/status", function() {
       .expect(200)
       .end(function(err, res) {
         if (err) return done(err)
-        assert(res.body.name)
+        assert.equal(res.body.name, "docs")
         assert(res.body.pid)
         assert.equal(typeof res.body.uptime, "number")
         assert(res.body.rss)
