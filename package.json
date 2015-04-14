@@ -1,5 +1,5 @@
 {
-  "name": "docs.npmjs.com",
+  "name": "docs",
   "version": "1.1.0",
   "description": "The place where all things npm are documented",
   "main": "index.js",
