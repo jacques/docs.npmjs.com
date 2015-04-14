@@ -59,7 +59,7 @@ app.get("/_monitor/ping", cors(), function(req, res) {
 
 app.get("/_monitor/status", cors(), function(req, res) {
   res.json({
-    name: "hiring",
+    name: "docs",
     pid: process.pid,
     uptime: process.uptime(),
     rss: process.memoryUsage(),
