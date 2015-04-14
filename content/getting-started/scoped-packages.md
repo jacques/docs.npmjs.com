@@ -33,8 +33,6 @@ If you use `npm init`, you can add your scope as an option to that command.
 $ npm init --scope=username
 ```
 
-The `--scope` flag for `npm init` is available in npm@2.7.0 and newer, so be sure to [upgrade your npm client](https://docs.npmjs.com/getting-started/installing-node#updating-npm) if you're on an older version.
-
 If you use the same scope all the time, you will probably want to set this option in your `~/.npmrc` file.
 
 ```
