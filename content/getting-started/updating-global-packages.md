@@ -13,4 +13,4 @@ npm install -g jshint
 
 To find out which packages need to be updated, you can use `npm outdated -g --depth=0`.
 
-There is a command that updates all global packages, `npm update -g`, but it is currently [not recommended](https://github.com/npm/npm/issues/6247). Until that issue is fixed, you can use [this script](https://gist.github.com/othiym23/4ac31155da23962afd0e) to update all outdated global packages.
+To update all global packages, you can use  `npm update -g`. However, for npm versions less than 2.6.1, [this script](https://gist.github.com/othiym23/4ac31155da23962afd0e) is recommended to update all outdated global packages.
