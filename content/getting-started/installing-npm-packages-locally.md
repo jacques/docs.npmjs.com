@@ -46,7 +46,7 @@ Test: Run the code using `node index.js`. It should output `[2, 3]`.
 
 ## Using package.json and the --save flag
 
-Another way to manage npm packages locally is to create a package.json file. If you have a `package.json` file in your directory and you run `npm install`, then npm will look at the dependencies that are listed in that file and download the latest versions satsifying [semver rules](https://docs.npmjs.com/getting-started/semantic-versioning) for all of those. This is nice because it makes your build reproducible, which means that you can share it with other developers.
+Another way to manage npm packages locally is to create a `package.json` file. If you have a `package.json` file in your directory and you run `npm install`, then npm will look at the dependencies that are listed in that file and download the latest versions satisfying [semver rules](https://docs.npmjs.com/getting-started/semantic-versioning) for all of those. This is nice because it makes your build reproducible, which means that you can share it with other developers.
 
 Create a file called `package.json` in your app directory.
 
