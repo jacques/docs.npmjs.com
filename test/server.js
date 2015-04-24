@@ -81,4 +81,12 @@ describe('redirects', function() {
       .expect(301, done)
   })
 
+  it('301s /package.json to /files/package.json', function(done) {
+    supertest(app)
+      .get('/package.json')
+      .expect('Location', /\/files\/package\.json$/)
+      .expect(301, done)
+  })
+
+
 })
