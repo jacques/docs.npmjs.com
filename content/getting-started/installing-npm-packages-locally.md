@@ -23,6 +23,12 @@ This will create the `node_modules` directory (if one doesn't exist yet), and wi
 
 Test: Run `ls node_modules`. You should see a lodash directory inside.
 
+## Which version of the package is installed?
+
+If there is no `package.json` file in the local directory, the latest version of the package is installed. 
+
+If there is `package.json` file, the latest version satisfying the [semver rule](https://docs.npmjs.com/getting-started/semantic-versioning) declared in `package.json` for that package (if there is any) is installed.
+
 ## Using the installed package
 
 Once the package is in node_modules, you can use it in your code. For example, if you are creating a Node module, you can require it.
@@ -38,9 +44,9 @@ console.log(output);
 
 Test: Run the code using `node index.js`. It should output `[2, 3]`.
 
-## Using the --save flag with package.json
+## Using package.json and the --save flag
 
-Another way to manage npm packages locally is to create a package.json file. If you have a package.json file in your directory and you run `npm install`, then npm will look at the dependencies that are listed in that file and download all of those. This is nice because it makes your build reproducible, which means that you can share it with other developers.
+Another way to manage npm packages locally is to create a `package.json` file. If you have a `package.json` file in your directory and you run `npm install`, then npm will look at the dependencies that are listed in that file and download the latest versions satisfying [semver rules](https://docs.npmjs.com/getting-started/semantic-versioning) for all of those. This is nice because it makes your build reproducible, which means that you can share it with other developers.
 
 Create a file called `package.json` in your app directory.
 
@@ -57,7 +63,7 @@ Download the package with the --save flag.
 npm install lodash --save
 ```
 
-This will download the package as before, but will also add it to the dependencies in `package.json`.
+This will download the package as before, but will also add it to the dependencies in `package.json` (unless it was already there).
 
 Test: Check the `dependencies` key in package.json. `lodash` should be listed as a dependency.
 
@@ -75,3 +81,7 @@ Add another package to your dependencies, e.g.:
 ```
 
 Test: Run `npm install`, then `ls node_modules`. You should see a `tap` directory.
+
+Note that if any package is already installed and satisfies the semver rule in `package.json`, running `npm install` will not update it to the latest version, even if there is one satisfying the same rule. In fact, no change is made to the package in this case, even if it was modified.
+
+Thus, to reliably reinstall the latest versions of all packages satisfying the semver rules in `package.json`, delete the `node_modules` folder and run `npm install`.
