@@ -70,6 +70,15 @@ The [content.json](/content.json) file is served publicly at `/content.json`
 with CORS support, allowing browsers on other domains to fetch all the npm
 documentation and accompanying metadata with a single HTTP call.
 
+## Tests
+
+```sh
+npm install
+npm test
+```
+
+[![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
+
 ## Deployment
 
 ```sh
