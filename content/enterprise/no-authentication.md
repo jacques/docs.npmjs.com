@@ -10,7 +10,7 @@ configure npm Enterprise to accept whatever credentials users log in with, and
 allow everyone access to everything.
  
 In order to do so, set the following settings in
-[`service.json`](/enterprise/server-configuration):
+[`/etc/npme/service.json`](/enterprise/server-configuration):
 
   * `args.--authentication-method` and `args.--authorization-method`
 to `"fake"`
