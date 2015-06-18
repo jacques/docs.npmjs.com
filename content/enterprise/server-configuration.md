@@ -23,13 +23,13 @@ README for instructions.
 
 Authentication method.
 
-Possible values: [`"github"`](/enterprise/github), [`"fake"`](/enteprise/no-authentication)
+Possible values: [`"github"`](/enterprise/github), [`"fake"`](/enterprise/no-authentication)
 
 ## `--authorization-method`
 
 Authorization method.
 
-Possible values: [`"github"`](/enterprise/github), [`"fake"`](/enteprise/no-authentication)
+Possible values: [`"github"`](/enterprise/github), [`"fake"`](/enterprise/no-authentication)
 
 ## `--session-handler`
 
