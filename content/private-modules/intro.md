@@ -5,9 +5,9 @@ featured: true
 
 # Working with private modules
 
-With private modules, you can use npm's infrastructure to host your private code&mdash;for example, business logic in your REST apps or front-end component libraries that you don't want to share with the rest of the world.
+Private modules make it possible for you to have control over who can download and publish packages.
 
-## Scopes
+## Publishing a private package
 
 All private packages are scoped. Your paid access applies to your scope, which is your username with an `@` in front.
 
@@ -17,7 +17,7 @@ All private packages are scoped. Your paid access applies to your scope, which i
 
 Read more about [scopes](https://docs.npmjs.com/getting-started/scoped-packages).
 
-## Access
+## Giving access to others
 
 The access page gives you control over access to your package. To get to it, go to your package page at `https://www.npmjs.com/package/@username/your-package/access`, or click on the Collaborators link on the package page.
 
@@ -41,12 +41,9 @@ npm access restricted <package_name>
 
 The package will be removed from listings on the site within a few minutes of making it private.
 
-Learn more about [package access](@LINK).
-
 ### Adding collaborators to a project
 
-You can now add collaborators to your project on the website. The new interface is available for
-private modules as well as existing unscoped modules.
+Add collaborators by entering the username and hitting enter.
 
 <p class="centered">
   <img src="http://npmblog-images.surge.sh/static-pages/add-collaborator.gif" class="bordered">
@@ -60,8 +57,7 @@ npm owner add <user> <package name>
 
 ### Changing collaborator access
 
-If you want to give a user write access, change their access on the package page by clicking on `read-write`. You can also remove collaborators by clicking on the X.
-
+If you want to give a user write access, change their access on the package page by clicking on `read-write`. You can remove collaborators by clicking on the X.
 
 ## Logging in
 
