@@ -22,7 +22,7 @@ npm login
 
 All private packages are scoped.
 
-Scopes are a new feature of npm. If a package's name begins with `@`, then it is a scoped package. The scope is everything from the `@` to the slash.
+Scopes are a new feature of npm. If a package's name begins with `@`, then it is a scoped package. The scope is everything in between the `@` and the slash.
 
 ```
 @scope/project-name
