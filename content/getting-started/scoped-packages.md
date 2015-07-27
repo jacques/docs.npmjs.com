@@ -5,11 +5,19 @@ featured: true
 
 # Working with scoped packages
 
-Scopes are like namespaces for npm modules. Each npm user has their own scope.
+Scopes are like namespaces for npm modules. If a package's name begins with `@`, then it is a scoped package. The scope is everything in between the `@` and the slash.
+
+```
+@scope/project-name
+```
+
+Each npm user has their own scope.
 
 ```
 @username/project-name
 ```
+
+You can find more in depth information about scopes in the [CLI documentation](https://docs.npmjs.com/misc/scope#publishing-public-scoped-packages-to-the-public-npm-registry).
 
 ## Update npm and log in
 
