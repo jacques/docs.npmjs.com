@@ -39,7 +39,6 @@ describe('content', function () {
         assert(section.id)
       })
     })
-
   })
 
   describe('page', function () {
@@ -95,7 +94,6 @@ describe('content', function () {
         assert(section_ids.indexOf(page.section) > -1, "page doesn't have a section: " + page.title)
       })
     })
-
   })
 
   describe('edit_url', function () {
@@ -105,7 +103,5 @@ describe('content', function () {
         assert(page.edit_url)
       })
     })
-
   })
-
 })

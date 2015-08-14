@@ -101,7 +101,6 @@ app.get('/*', function (req, res) {
     page: page,
     content: content
   })
-
 })
 
 // This module.parent thing allows us to test the server using

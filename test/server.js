@@ -88,5 +88,4 @@ describe('redirects', function () {
       .expect('Location', /\/files\/package\.json$/)
       .expect(301, done)
   })
-
 })

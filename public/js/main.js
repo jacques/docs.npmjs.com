@@ -14,5 +14,4 @@ $(function () {
         $('#npm-install-instructions').show()
       }
     })
-
 })
