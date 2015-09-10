@@ -2,6 +2,7 @@
 title: 14 - Working with Organizations
 featured: true
 -->
+
 # **Working with npm Organizations**
 We are so excited to offer support for Organizations! Thank you for taking the time to be our first users.
 
