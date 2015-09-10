@@ -13,24 +13,24 @@ The beta currently has a few limitations worth noting:
 * All of these limitations will be addressed over the course of the beta
 
 ## **Step 1)** Sign-up for Orgs
-* follow this [link](www.npmjs.com/org?join-beta)
-* login with the username you gave Laurie
+* Follow this [link](www.npmjs.com/org?join-beta)
+* Login with the username you gave Laurie
 * Give a human-readable name to your org, e.g "npm, Inc."
-* then name your org scope, e.g. @npminc
-* click ‘make it so’ button to proceed to the next page
+* Name your org scope, e.g. @npminc
+* Click ‘make it so’ button to proceed to the next page
 * Add team members (by their npm username) to your org
 
 ## **Step 2)**  Team Admins create teams
-* check who you’ve added to your org:
+* Check who you’ve added to your org:
 ```
 npm team ls <org>:developers
 ```
-* each org automatically is given a "developers" team, so you can see the whole list of team members in your org. This team gets access to all packages.
-* create a new team:
+* Each org is automatically given a "developers" team, so you can see the whole list of team members in your org. This team gets access to all packages, but you can edit that with the `access` command.
+* Create a new team:
 ```
 npm team create <org:team>
 ```
-* add members to that team:
+* Add members to that team:
 ```
 npm team add <org:team> <user>
 ```
@@ -41,12 +41,12 @@ npm team add <org:team> <user>
 npm init --scope=<org>
 ```
 to scope it for your org & publish as usual
-* Team admins: set package access.
-* grant access:  
+* Team admins can now set package access.
+* Grant access:  
 ```
 npm access grant <read-only|read-write> <org:team> [<package>]
 ```
-* revoke access:
+* Revoke access:
 ```
 npm access revoke <org:team> [<package>]
 ```
