@@ -23,7 +23,7 @@ The beta currently has a few limitations worth noting:
 ## **Step 2)**  Team Admins create teams
 * check who you’ve added to your org:
 ```
-npm team ls <org-scope>:developers
+npm team ls <org>:developers
 ```
 * each org automatically is given a "developers" team, so you can see the whole list of team members in your org. This team gets access to all packages.
 * create a new team:
