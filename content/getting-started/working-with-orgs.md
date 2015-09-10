@@ -13,7 +13,7 @@ The beta currently has a few limitations worth noting:
 * All of these limitations will be addressed over the course of the beta
 
 ## **Step 1)** Sign-up for Orgs
-* Follow this [link](www.npmjs.com/org?join-beta)
+* Follow this [link](https://www.npmjs.com/org?join-beta)
 * Login with the username you gave Laurie
 * Give a human-readable name to your org, e.g "npm, Inc."
 * Name your org scope, e.g. @npminc
