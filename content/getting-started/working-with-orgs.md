@@ -21,19 +21,41 @@ The beta currently has a few limitations worth noting:
 * Add team members (by their npm username) to your org
 
 ## **Step 2)**  Team Admins create teams
-* check who you’ve added to your org: ```npm team ls <org-scope>:developers```
+* check who you’ve added to your org:
+```
+npm team ls <org-scope>:developers
+```
 * each org automatically is given a "developers" team, so you can see the whole list of team members in your org. This team gets access to all packages.
-* create a new team: ```npm team create <org:team>```
+* create a new team:
+```
+npm team create <org:team>
+```
 * add members to that team: ```npm team add <org:team> <user>```
 
 ## **Step 3)** Publish a package and adjust package access via CLI
-* In package directory, run ```npm init --scope=<org>``` to scope it for your org & publish as usual
+* In package directory, run
+```
+npm init --scope=<org>
+```
+to scope it for your org & publish as usual
 * Team admins: set package access.
-* grant access:  ```npm access grant <read-only|read-write> <org:team> [<package>]```
-* revoke access: ```npm access revoke <org:team> [<package>]```
+* grant access:  
+```
+npm access grant <read-only|read-write> <org:team> [<package>]
+```
+* revoke access:
+```
+npm access revoke <org:team> [<package>]
+```
 
 ## **Step 4)** Monitor your package access
-* See what org packages a team member can access: ```npm access ls-packages <org> <user>```
-* See packages available to a specific team: ```npm access ls-packages <org:team>```
+* See what org packages a team member can access:
+```
+npm access ls-packages <org> <user>
+```
+* See packages available to a specific team:
+```
+npm access ls-packages <org:team>
+```
 * Check which teams are collaborating on a package: ```npm access ls-collaborators <pkg>```
 ## **Step 5)** Enjoy how much easier your job has become thanks to npm Organization support!
