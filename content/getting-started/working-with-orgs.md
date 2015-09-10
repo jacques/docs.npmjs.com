@@ -18,7 +18,7 @@ The beta currently has a few limitations worth noting:
 
 * All of these limitations will be addressed over the course of the beta
 
-#### **Step 1)** Sign-up for Orgs via the [special link] (www.npmjs.com/org?join-beta)
+#### **Step 1)** Sign-up for Orgs through this link www.npmjs.com/org?join-beta
 
 * login with the username you gave Laurie
 
