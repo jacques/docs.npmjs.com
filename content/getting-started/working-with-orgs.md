@@ -30,7 +30,10 @@ npm team ls <org-scope>:developers
 ```
 npm team create <org:team>
 ```
-* add members to that team: ```npm team add <org:team> <user>```
+* add members to that team:
+```
+npm team add <org:team> <user>
+```
 
 ## **Step 3)** Publish a package and adjust package access via CLI
 * In package directory, run
@@ -57,5 +60,8 @@ npm access ls-packages <org> <user>
 ```
 npm access ls-packages <org:team>
 ```
-* Check which teams are collaborating on a package: ```npm access ls-collaborators <pkg>```
+* Check which teams are collaborating on a package:
+```
+npm access ls-collaborators <pkg>
+```
 ## **Step 5)** Enjoy how much easier your job has become thanks to npm Organization support!
