@@ -29,7 +29,7 @@
 
   <nav>
     {{#each content.sections}}
-      <section id="{{id}}" {{#equal id ../page.section}}class="active"{{/equal}}>
+      <section {{#equal id ../page.section}}class="active"{{/equal}}>
 
         <h2 title="{{title}}">
           <a href="#">{{title}}</a>
