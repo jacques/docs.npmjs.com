@@ -3,7 +3,6 @@ title: 14 - Working with Organizations
 featured: true
 -->
 
-
 # **Working with npm Organizations**
 
 We are so excited to offer support for Organizations! Thank you for taking the time to be our first users.
@@ -18,7 +17,9 @@ The beta currently has a few limitations worth noting:
 
 * All of these limitations will be addressed over the course of the beta
 
-#### **Step 1)** Sign-up for Orgs through this link www.npmjs.com/org?join-beta
+## **Step 1)** Sign-up for Orgs
+
+* follow this [link](www.npmjs.com/org?join-beta)
 
 * login with the username you gave Laurie
 
@@ -30,7 +31,7 @@ The beta currently has a few limitations worth noting:
 
 * Add team members (by their npm username) to your org
 
-#### **Step 2)**  Team Admins create teams
+## **Step 2)**  Team Admins create teams
 
 * check who you’ve added to your org: `npm team ls <org-scope>:developers`
 
@@ -40,7 +41,7 @@ The beta currently has a few limitations worth noting:
 
 * add members to that team: `npm team add <org:team> <user>`
 
-#### **Step 3)** Publish a package and adjust package access via CLI
+## **Step 3)** Publish a package and adjust package access via CLI
 
 * In package directory, run `npm init --scope=<org>` to scope it for your org & publish as usual
 
@@ -50,7 +51,7 @@ The beta currently has a few limitations worth noting:
 
 * revoke access: `npm access revoke <org:team> [<package>] `
 
-#### **Step 4)** Monitor your package access
+## **Step 4)** Monitor your package access
 
 * See what org packages a team member can access: `npm access ls-packages <org> <user>`
 
@@ -58,4 +59,4 @@ The beta currently has a few limitations worth noting:
 
 * Check which teams are collaborating on a package: `npm access ls-collaborators <pkg>`
 
-#### **Step 5)** Enjoy how much easier your job has become thanks to npm Organization support!
+## **Step 5)** Enjoy how much easier your job has become thanks to npm Organization support!
