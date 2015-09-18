@@ -17,9 +17,6 @@
   "id": "files",
   "title": "Configuring npm"
 }, {
-  "id": "api",
-  "title": "Using npm programmatically"
-}, {
   "id": "policies",
   "title": "npm policy documents"
 }, {

@@ -35,7 +35,7 @@ emitter.on('file', function (filepath, stat) {
     filename: filepath.replace(/.*\/content\//, ''),
     modified: null,
     modifiedPretty: null,
-    edit_url: 'https://github.com/npm/npm/edit/master/doc/api/npm-bugs.md',
+    edit_url: 'https://github.com/npm/npm/edit/master/doc/cli/npm-bugs.md',
     content: fs.readFileSync(filepath, 'utf-8')
   }
 
@@ -73,7 +73,7 @@ emitter.on('file', function (filepath, stat) {
   }
 
   // In what repository does this doc live?
-  if (['api', 'cli', 'files', 'misc'].indexOf(page.section) > -1) {
+  if (['cli', 'files', 'misc'].indexOf(page.section) > -1) {
     page.edit_url = 'https://github.com/npm/npm/edit/master/doc/' + page.filename
   } else if (page.section === 'policies') {
     page.edit_url = 'https://github.com/npm/policies/edit/master/' + path.basename(page.filename)
@@ -91,7 +91,6 @@ emitter.on('file', function (filepath, stat) {
   }
 
   content.pages.push(page)
-
 })
 
 emitter.on('end', function () {
@@ -101,5 +100,4 @@ emitter.on('end', function () {
 
   fs.writeFileSync(contentFile, JSON.stringify(content, null, 2))
   console.log('Wrote %s', path.relative(process.cwd(), contentFile))
-
 })
