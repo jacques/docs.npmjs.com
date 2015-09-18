@@ -106,17 +106,6 @@ describe('content', function () {
       })
     })
 
-    it('points pages in `api` section to the npm repo', function () {
-      var apiPages = content.pages.filter(function (page) {
-        return page.section === 'api'
-      })
-      assert(apiPages.length)
-
-      apiPages.forEach(function (page) {
-        assert.equal(page.edit_url, 'https://github.com/npm/npm/edit/master/doc/' + page.filename)
-      })
-    })
-
   })
 
 })
