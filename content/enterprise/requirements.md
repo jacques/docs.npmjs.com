@@ -31,7 +31,7 @@ For Ubuntu, we recommend the distribution put together by our friends at
 
 ```bash
 curl -sL https://deb.nodesource.com/setup | sudo bash -
-apt-get install nodejs
+sudo apt-get install nodejs
 ```
 
 ## Install the latest version of npm
