@@ -9,8 +9,18 @@ We are so excited to offer support for Organizations! Thank you for taking the t
 The beta currently has a few limitations worth noting:
 * You can only create and manage teams via the command-line npm client, not yet on the website. Only the Super-Admin can see the organization UI on the website. (The "collaborators" screen for a package will not allow you to modify package access for an org-owned package, since access must be handled by a team)
 * Team admins cannot be modified once created. (Team admins have the ability to create new teams and add/remove users in the org to and from teams.)
-* There is not yet automatic migration from a user to an org. If you have a username reserved you would like to use as the @scope of your org, please email support and ask them to delete the user. The scope will then be available for you to register as an org.
 * All of these limitations will be addressed over the course of the beta
+
+## Migrating an existing username to an Org
+Many users have already registered an npm user with the @scope they want to use for their org. If you attempt to register an org with a scope already in use, and you are already logged in as that user, you will be prompted to automatically migrate that user to an org.
+
+Once your @scope is owned by an org, **you can no longer log in as your former username**. Orgs are not users and do not have usernames and passwords. During migration, you will be prompted to pick a new username. This new user will have the same password as your old user, but all packages that belonged to your old user will now belong to the org. Your new user will have Super-Admin privileges to the org.
+
+## **Step 0)** Provide your username (and admin username if necessary)
+* Reply to your invitation email from Laurie providing the username(s)
+* The feature is whitelisted, so you need to provide the name of an existing npm user to be admin
+* If you are migrating a username to an org, we will also need the name you intend to pick for your new user
+* These restrictions only apply during the beta
 
 ## **Step 1)** Sign-up for Orgs
 * Follow this [link](https://www.npmjs.com/org?join-beta)
