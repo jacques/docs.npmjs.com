@@ -16,11 +16,10 @@ Many users have already registered an npm user with the @scope they want to use 
 
 Once your @scope is owned by an org, **you can no longer log in as your former username**. Orgs are not users and do not have usernames and passwords. During migration, you will be prompted to pick a new username. This new user will have the same password as your old user, but all packages that belonged to your old user will now belong to the org. Your new user will have Super-Admin privileges to the org.
 
-## **Step 0)** Provide your username (and admin username if necessary)
-* Reply to your invitation email from Laurie providing the username(s)
+## **Step 0)** Provide your username
 * The feature is whitelisted, so you need to provide the name of an existing npm user to be admin
-* If you are migrating a username to an org, we will also need the name you intend to pick for your new user
-* These restrictions only apply during the beta
+* Reply to your invitation email from Laurie, providing the username
+* This restriction applies only during the beta
 
 ## **Step 1)** Sign-up for Orgs
 * Follow this [link](https://www.npmjs.com/org?join-beta)
