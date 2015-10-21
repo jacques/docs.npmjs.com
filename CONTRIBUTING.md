@@ -1,7 +1,6 @@
 # How to Contribute to npm docs
 
 Participation in this open source project is subject to the [npm Code of Conduct](http://www.npmjs.com/policies/conduct).
-
 Please also ensure your contribution conforms to the [Contributing Guidelines](https://github.com/npm/npm/wiki/Contributing-Guidelines).
 
 ## To submit a new issue
@@ -21,8 +20,14 @@ If you're keen on tackling something, go for it! To contribute:
 * Push up your branch
 * Put in a pull request
 
-Not sure what to work on? Take a look at the issues under the [Patch Welcome label](https://github.com/npm/docs/labels/patch%20welcome)!
+## Issue Labels
 
-### Tests
+- [`your-first-pr`][1]: reserved for people with little to no Github contributions- we're here to help you start your OS journey!
+- [`patches welcome`][2]: these issues are specifically well suited for outside contributors
+
+# Tests
 
 Please make sure your tests pass. Pull requests without passing tests (or relevant tests that have been added) will not be merged.
+
+[1]: https://github.com/npm/docs/labels/your-first-pr
+[2]: https://github.com/npm/docs/labels/patches%20welcome
