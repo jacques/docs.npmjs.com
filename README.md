@@ -31,7 +31,7 @@ don't have an `order` property will be relegated to the end of that section.
 
 ## Redirects
 
-If you rename or remove a file, add it to [lib/redirects.js](lib/redirects.js) too keep
+If you rename or remove a file, add it to [lib/redirects.js](lib/redirects.js) to keep
 things from breaking.
 
 ## Development
