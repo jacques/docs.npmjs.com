@@ -36,12 +36,12 @@ machine.
     <dt>enter your license key</dt>
     <dd>You received this via email when you signed up for the trial. It looks like
         `xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx`.</dd>
-    <dt>full url of front-facing host that npm Enterprise will run on. Include 'http' and ':8080'</dt>
-    <dd>This url needs to be accessible from your users' machines and also accessible to the appliance itself. It must include the port number, e.g. `http://registry.example.com:8080`</dd>
+    <dt>full URL of front-facing host that npm Enterprise will run on. Include 'http' and ':8080'</dt>
+    <dd>This URL needs to be accessible from your users' machines and also accessible to the appliance itself. It must include the port number, e.g. `http://registry.example.com:8080`</dd>
     <dt>path to package whitelist used by public registry follower</dt>
     <dd>The location of the whitelist file. This defaults to `/etc/npme/whitelist` and you should not need to change this.</dd>
-    <dt>full url of your Github Enterprise appliance</dt>
-    <dd>The url of your GitHub Enterprise appliance. This defaults to using GitHub itself.</dd>
+    <dt>full URL of your GitHub Enterprise appliance</dt>
+    <dd>The URL of your GitHub Enterprise appliance. This defaults to using GitHub itself.</dd>
     <dt>folder on HD to store package binaries</dt>
     <dd>The location to store the npm Enterprise binaries. This defaults to `/etc/npme/packages` and you should not need to change this.</dd>
 </dl>

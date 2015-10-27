@@ -22,7 +22,7 @@ If you're keen on tackling something, go for it! To contribute:
 
 ## Issue Labels
 
-- [`your-first-pr`][1]: reserved for people with little to no Github contributions- we're here to help you start your OS journey!
+- [`your-first-pr`][1]: reserved for people with little to no GitHub contributions- we're here to help you start your OS journey!
 - [`patches welcome`][2]: these issues are specifically well suited for outside contributors
 
 # Tests
