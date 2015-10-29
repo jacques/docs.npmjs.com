@@ -8,6 +8,7 @@ var fs = require('fs')
 var strftime = require('strftime')
 var marky = require('marky-markdown')
 var frontmatter = require('html-frontmatter')
+var mansplain = require('mansplain')
 var _ = require('lodash')
 
 var merge = _.merge
@@ -66,6 +67,10 @@ emitter.on('file', function (filepath, stat) {
     sanitize: false, // allow script tags and stuff
     prefixHeadingIds: false // don't apply safe prefixes to h1/h2... DOM ids
   }).html()
+
+  // Convert npm-cmd(#) style "links" to anchor elements"
+  var prefix_hash = { 1: 'cli', 5: 'files', 7: 'misc' }
+  page.content = mansplain({ input: page.content, prefix: prefix_hash })
 
   // Infer section from top directory
   if (page.filename.match(/\//)) {
