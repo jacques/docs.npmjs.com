@@ -1,5 +1,5 @@
-#npm Private Modules
-##Publish, share and install proprietary code easily
+# npm Private Modules
+## Publish, share and install proprietary code easily
 
 Private modules are ordinary npm packages that only you, and people you select,
 can view, install, and publish. You publish them in your namespace or your team's namespace, just by giving them a name in package.json:

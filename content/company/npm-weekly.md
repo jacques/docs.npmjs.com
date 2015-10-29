@@ -1,6 +1,5 @@
-
-#npm Weekly
-##Find out what we've been working on, thinking about, and talking about every week.
+# npm Weekly
+## Find out what we've been working on, thinking about, and talking about every week.
 
 
 <form action="//npmjs.us9.list-manage.com/subscribe/post?u=077dfd41302a71310cef619e5&amp;id=e17fe5d778" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
