@@ -2,6 +2,8 @@
 
 The place where all things npm are documented.
 
+[![Build Status](https://travis-ci.org/npm/docs.svg?branch=master)](https://travis-ci.org/npm/docs)
+
 ## Editing Content
 
 All the markdown files can be found in the [content](content) directory. Some of these files live here in this repository, others live in other repositories and are imported during the build process. These imported files are [ignored by git](.gitignore) to prevent people from accidentally editing the wrong files.
