@@ -31,6 +31,7 @@ emitter.on('file', function (filepath, stat) {
   var page = {
     title: null,
     heading: null,
+    subtitle: null,
     section: null,
     href: null,
     filename: filepath.replace(/.*\/content\//, ''),
@@ -51,7 +52,10 @@ emitter.on('file', function (filepath, stat) {
   var manPattern = new RegExp('^(.*) -- (.*)\\n=+\\n')
   if (page.content.match(manPattern)) {
     var manHead = manPattern.exec(page.content)
-    page.heading = manHead[2]
+    // remove man style (#) from title
+    var title = manHead[1].substring(0, manHead[1].length - 3)
+    page.heading = title
+    page.subtitle = manHead[2]
     page.content = page.content.replace(manHead[0], '')
   }
 
