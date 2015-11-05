@@ -21,11 +21,11 @@ npm install lodash
 
 This will create the `node_modules` directory (if one doesn't exist yet), and will download the package to that directory.
 
-Test: Run `ls node_modules`. You should see a lodash directory inside.
+Test: Run `ls node_modules` on *nix systems, e.g. OSX, or `dir node_modules` on Windows. You should see a lodash directory inside.
 
 ## Which version of the package is installed?
 
-If there is no `package.json` file in the local directory, the latest version of the package is installed. 
+If there is no `package.json` file in the local directory, the latest version of the package is installed.
 
 If there is `package.json` file, the latest version satisfying the [semver rule](https://docs.npmjs.com/getting-started/semantic-versioning) declared in `package.json` for that package (if there is any) is installed.
 
