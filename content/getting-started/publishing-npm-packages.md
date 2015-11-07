@@ -1,5 +1,5 @@
 <!--
-title: 11 - Publishing npm packages
+title: 12 - Publishing npm packages
 featured: true
 -->
 

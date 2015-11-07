@@ -1,5 +1,5 @@
 <!--
-title: 07 - Installing npm packages globally
+title: 08 - Installing npm packages globally
 featured: true
 -->
 

@@ -1,5 +1,5 @@
 <!--
-title: 05 - Updating local packages
+title: 06 - Updating local packages
 featured: true
 -->
 

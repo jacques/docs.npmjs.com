@@ -1,5 +1,5 @@
 <!--
-title: 06 - Uninstalling local packages
+title: 07 - Uninstalling local packages
 featured: true
 -->
 

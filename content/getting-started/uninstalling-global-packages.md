@@ -1,5 +1,5 @@
 <!--
-title: 09 - Uninstalling global packages
+title: 10 - Uninstalling global packages
 featured: true
 -->
 

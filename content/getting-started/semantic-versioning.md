@@ -1,5 +1,5 @@
 <!--
-title: 12 - Semantic versioning and npm
+title: 13 - Semantic versioning and npm
 featured: true
 -->
 

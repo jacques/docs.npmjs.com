@@ -1,5 +1,5 @@
 <!--
-title: 08 - Updating global packages
+title: 09 - Updating global packages
 featured: true
 -->
 
