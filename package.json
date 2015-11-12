@@ -1,5 +1,5 @@
 {
-  "name": "npm-docs",
+  "name": "docs",
   "version": "1.2.2",
   "description": "The place where all things npm are documented",
   "main": "index.js",
