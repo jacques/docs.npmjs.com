@@ -7,7 +7,7 @@ featured: true
 
 ## Integrates with GitHub and GitHub Enterprise
 
-If your organization uses GitHub or GitHub Enterprise, npmE can be configured
+If your organization uses GitHub or GitHub Enterprise, npm On-Site can be configured
 to automatically use them for login and access control. Simply add a
 repository field to your package.json that points to your repo:
 
@@ -20,13 +20,18 @@ repository field to your package.json that points to your repo:
 }
 ```
 
-Depending on your configuration, npmE can restrict installation of your
-package to users who have access to the repo for that package, and restrict
+npm On-Site restricts installation of your
+package to users who have access to the repo for that package, and restricts
 publishing of that package to users who have commit access to the repo.
 
-npmE uses OAuth to interact with GitHub, and will support any other OAuth2
-providers. A standalone solution for authentication and authorization is
-coming soon.
+## Pointing at your GitHub Enterprise appliance
+
+To point npm On-Site at your GitHub Enterprise appliance:
+
+1. visit the admin console at _http://myreg.mycompany.com:8800_
+2. choose `GitHub` as the authentication strategy.
+3. choose `GitHub Enterprise`.
+4. enter your GitHub Enterprise appliance's host and scheme.
 
 ## Logging in with two-factor authentication
 
