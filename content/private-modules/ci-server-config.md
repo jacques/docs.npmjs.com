@@ -15,7 +15,7 @@ One of the things that has changed in npm is that we now use auth tokens to auth
 //registry.npmjs.org/:_authToken=00000000-0000-0000-0000-000000000000
 ```
 
-The token is not derived from your password password, but changing your password will invalidate all tokens. The token will be valid until the password is changed. You can also invalidate a single token by logging out on a machine that is logged in with that token.
+The token is not derived from your password, but changing your password will invalidate all tokens. The token will be valid until the password is changed. You can also invalidate a single token by logging out on a machine that is logged in with that token.
 
 ## Setting up environment variables
 
