@@ -115,7 +115,7 @@ list the packages you'd like to use in your `package.json` file. There are
 2 types of packages you can list:
 
 - `"dependencies"`: these packages are required by your application in production
-- `"devDependencies"`: these pacjages are only needed for development and testing
+- `"devDependencies"`: these packages are only needed for development and testing
 
 ### Manually editing your `package.json`
 
