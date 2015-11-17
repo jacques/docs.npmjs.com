@@ -5,6 +5,9 @@
   "id": "private-modules",
   "title": "Private Modules"
 }, {
+  "id": "orgs",
+  "title": "Organizations"
+}, {
   "id": "misc",
   "title": "Using npm"
 }, {
