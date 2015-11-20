@@ -20,3 +20,9 @@ Node comes with npm installed so you should have a version of npm. However, npm 
 `sudo npm install npm -g`
 
 Test: Run `npm -v`. The version should be higher than 2.1.8.
+
+## Installing npm manually
+
+> For more advanced users.
+
+The npm module is available for download at `https://registry.npmjs.org/npm/-/npm-{VERSION}.tgz`.
