@@ -15,7 +15,7 @@ with private modules.</p>
 
 <p>So let's set up your npm On-Site server:</p>
 
-<iframe width="640" height="480" src="//www.youtube.com/embed/XNr48kvz38o" frameborder="0" allowfullscreen></iframe>
+<iframe width="640" height="480" src="https://www.youtube.com/embed/mKMaG0cixXw" frameborder="0" allowfullscreen></iframe>
 
 <h2>Before you start</h2>
 
