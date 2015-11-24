@@ -27,6 +27,10 @@ When you first create an Organization, a team called `developers`
 is created. This team contains all the people you have added to
 your Organization.
 
+** Please do NOT delete your developers team. This will break your account and
+you will need to contact support@npmjs.com. The npmjs team is currently working
+on a fix for this, which will be available soon.**
+
 A [Super Admin] can check who has been added to an organization: 
 
 ```

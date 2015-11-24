@@ -14,8 +14,14 @@ have an interface with the general public:
   The user who creates the Organization is automatically set as the 
   Super Admin. 
 
-  Currently, only one Super Admin is allowed and the Super Admin
-  User cannot be changed.
+  ** Please do NOT delete your Super Admin account. This will lock you out of your
+  Organization and you will need to contact support@npmjs.com. The npmjs team is
+  currently working on a fix for this, which will be available soon. **
+
+  **Currently, only one Super Admin is allowed and the Super Admin
+  User cannot be changed. New versions of our Orgs product will make
+  this possible.**
+
 
   - can see/do everything regarding their org
   - can pay for the org
