@@ -48,8 +48,23 @@ To run the app locally:
 npm install
 npm run dev
 ```
-
 Now you have a server running [nodemon](https://www.npmjs.com/package/nodemon) at [localhost:5000](http://localhost:5000).
+
+NOTE: If you are using `iojs`, or Node versions 4 or 5, on a Linux or OSX box,
+you will need to do the following steps:
+```
+$ sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test
+$ sudo apt-get update -qq
+$ sudo apt-get install -qq -y g++-4.8
+$ sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-4.8 50
+```
+
+NOTE: If you have changed Node.js versions and are still getting
+and error on a supported version of Node.js, you may need to rebuild npm:
+
+```
+$ npm rebuild
+```
 
 ## The Build Process
 
