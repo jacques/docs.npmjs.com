@@ -1,3 +1,5 @@
+if (typeof GLOBAL.Promise === 'undefined') GLOBAL.Promise = require('bluebird')
+
 var express = require('express')
 var hbs = require('hbs')
 var harp = require('harp')
