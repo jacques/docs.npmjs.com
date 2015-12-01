@@ -52,7 +52,7 @@ The extended CLI Q&A experience is not for everyone, and often if you are
 comfortable with using a `package.json` you'd like a more expedited
 experience. 
 
-You can get a default `package.json` but running `npm init` with the `--yes`
+You can get a default `package.json` by running `npm init` with the `--yes`
 or `-y` flag:
 
 ```
