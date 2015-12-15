@@ -1,5 +1,5 @@
 <!--
-title: 04 - npm Basics
+title: 03 - npm Basics
 featured: true
 -->
 
