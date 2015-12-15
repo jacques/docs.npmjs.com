@@ -1,5 +1,5 @@
 <!--
-title: 04 - npm v2
+title: 05 - npm v2
 featured: true
 -->
 
