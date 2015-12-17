@@ -37,12 +37,12 @@ https://www.npmjs.com/org/<org>
 ## Adding Members to an Organization
 
 By default, your Organization is set up with a [developers team][8].
-This team contains the whole of Members you can assign to [Teams][9]
-within your org.
+The purpose of this team is  to contain the whole of your Organization's
+members. When you add a member to your Organization that user is 
+automatically added to the developers team.
 
-** Please do NOT delete your developers team. This will break your account and
-you will need to contact support@npmjs.com. The npmjs team is currently working
-on a fix for this, which will be available soon.**
+You may delete the developers team. If you do, newly added Organization
+members will not be added to any teams by default.
 
 To add a member to your organization, you add them by their npm
 username via the [Organization Dashboard][10].
@@ -51,10 +51,6 @@ username via the [Organization Dashboard][10].
 
 As the creator of the Organization you are granted the role of
 [Super Admin][13]. 
-
-** Please do NOT delete your Super Admin account. This will lock you out of your 
-Organization and you will need to contact support@npmjs.com. The npmjs team is
-currently working on a fix for this, which will be available soon. **
 
 For more information about the [Super Admin][13] and [Team Admin][6] 
 roles, checkout the [Roles][7] documentation.

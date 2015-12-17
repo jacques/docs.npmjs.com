@@ -24,14 +24,30 @@ Member] roles is done through the web interface.
 ## The `developers` Team
 
 When you first create an Organization, a team called `developers`
-is created. This team contains all the people you have added to
-your Organization.
+is created. The purpose of this team is to contain the whole of
+your Organization's members. When you add a member to your
+Organization that user is automatically added to the developers team.
 
-** Please do NOT delete your developers team. This will break your account and
-you will need to contact support@npmjs.com. The npmjs team is currently working
-on a fix for this, which will be available soon.**
+### Removing the `developers` team
 
-A [Super Admin] can check who has been added to an organization: 
+You may delete the developers team. If you do, newly added Organization
+members will not be added to any teams by default. Additionally,
+you will not be able to see all users in your org from the CLI, as
+one can only view the members of a team via the CLI.
+
+### Reinstating the `developers` team
+
+If you've removed the developers team, but now want it back, you can
+reinstate it by creating a new team called `developers` (case sensitive!).
+You will need to add all current members of the Organization to the 
+new `developers` team, but, going forward  all newly added Organization
+members will be automatically added to the new `developers` team.
+
+### Listing the members of your Organization
+
+Assuming you have *not* deleted the developers team in your Organization,
+A [Super Admin] can check who has been added to an organization using
+the `team ls` command:
 
 ```
 > npm team ls <org>:developers
