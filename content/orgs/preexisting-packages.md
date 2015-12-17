@@ -24,7 +24,7 @@ that are also:
 
 - an admin member of the package's org, for org-scoped packages
 - the user, for user-scoped packages
-- the last publisher on a public package*
+- the last publisher on a public package* (available as of `npm@3.5.0/npm@2.14.12`)
 
 ... are able to grant Organization team access to packages that are
 not scoped within the Organization.
