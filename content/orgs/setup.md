@@ -75,7 +75,7 @@ org. Your new user will have Super-Admin privileges to the org.
 [5]: https://www.npmjs.com/login
 [6]: /orgs/roles#team-admin
 [7]: /orgs/roles
-[8]: /orgs/teams#the-developers-team
+[8]: /orgs/developers-team
 [9]: /orgs/teams
 [10]: #organization-dashboard
 [11]: #create-an-organization-with-a-new-scope
