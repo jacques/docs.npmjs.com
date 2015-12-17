@@ -10,6 +10,11 @@ is created. The purpose of this team is to contain the whole of
 your Organization's members. When you add a member to your
 Organization that user is automatically added to the developers team.
 
+## Package Access
+
+All members of an Organization's `developers` team automatically have
+read/write access to all organization-scoped packages.
+
 When a package scoped to the Organization is published, all
 members `developers` team are set as the maintainers of the package.
 
@@ -45,3 +50,4 @@ the `team ls` command:
 ```
 ...where `<org>` is the name of the Organization, e.g. `@npminc`.
 
+[Super Admin]: http://localhost:5000/orgs/roles#super-admin
