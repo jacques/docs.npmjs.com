@@ -50,4 +50,4 @@ the `team ls` command:
 ```
 ...where `<org>` is the name of the Organization, e.g. `@npminc`.
 
-[Super Admin]: http://localhost:5000/orgs/roles#super-admin
+[Super Admin]: /orgs/roles#super-admin
