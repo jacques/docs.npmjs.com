@@ -24,7 +24,10 @@ that are also:
 
 - an admin member of the package's org, for org-scoped packages
 - the user, for user-scoped packages
-- the last publisher on a public package* (available as of `npm@3.5.0/npm@2.14.12`)
+
+and, as of `npm@3.5.0/npm@2.14.12`:
+
+- the last publisher on a public package
 
 ... are able to grant Organization team access to packages that are
 not scoped within the Organization.
@@ -37,7 +40,7 @@ not scoped within the Organization.
 
 - `puppyco\corgis` Team Admin, Lewis, has a personal private package, 
   `@lewis\corgis`. Lewis can grant the `puppyco\corgis` team access
-  to his `@lewis\corgis` pacakge.
+  to his `@lewis\corgis` package.
 
 - `cactus-inc` Super Admin, Corey, was also the last person to publish
   the public package, `bdaypresent`. Corey can grant the 

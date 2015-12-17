@@ -3,19 +3,12 @@ title: 07 - Package Access
 featured: true
 -->
 
-# Managing Package Access
+# Managing Organization Package Access
 
 Once you have scoped a package to your Organization, users with 
 [Super Admin] or [Team Admin] roles in your Organization can
 [grant][1], [revoke][2], and [monitor][3] team access to that
 package.
-
-## Restrictions
-
-Currently, one can only manage access to scoped packages via the CLI
-[`npm access`] command. If you would like to manage access to a unscoped,
-public package, you must use the [Organization Dashboard][4] in the
-web interface.
 
 ## Access Levels 
 
