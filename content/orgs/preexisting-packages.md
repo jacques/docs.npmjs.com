@@ -22,7 +22,7 @@ However, Organization members who are either a
 
 that are also:
 
-- an admin member of the org, for org-scoped packages
+- an admin member of the package's org, for org-scoped packages
 - the user, for user-scoped packages
 - the last publisher on a public package*
 
