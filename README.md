@@ -38,6 +38,10 @@ don't have an `order` property will be relegated to the end of that section.
 If you rename or remove a file, add it to [lib/redirects.js](lib/redirects.js) to keep
 things from breaking.
 
+## Sections
+
+If you rename a directory inside the `content` directory, you'll need to change it in [sections.json](/sections.json) to allow the [content.json](/content.json) to pick up the changes. 
+
 ## Development
 
 Download node at [nodejs.org](http://nodejs.org) and install it, if you haven't already.
