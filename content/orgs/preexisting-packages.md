@@ -35,16 +35,16 @@ not scoped within the Organization.
 ### Examples
 
 - `meow-org` Super Admin, Irina, is also a Team Admin for `pizza-org`.
-  Irina can grant the `meow-org\cyborgs` team access to the 
-  `pizza-org\pepperoni` package.
+  Irina can grant the `meow-org/cyborgs` team access to the 
+  `pizza-org/pepperoni` package.
 
-- `puppyco\corgis` Team Admin, Lewis, has a personal private package, 
-  `@lewis\corgis`. Lewis can grant the `puppyco\corgis` team access
-  to his `@lewis\corgis` package.
+- `puppyco/corgis` Team Admin, Lewis, has a personal private package, 
+  `@lewis/corgis`. Lewis can grant the `puppyco/corgis` team access
+  to his `@lewis/corgis` package.
 
 - `cactus-inc` Super Admin, Corey, was also the last person to publish
   the public package, `bdaypresent`. Corey can grant the 
-  `cactus-inc\friends` team access to the `bdaypresent` package.
+  `cactus-inc/friends` team access to the `bdaypresent` package.
 
 (*yup. this is weird. we know.)
 
@@ -60,7 +60,7 @@ collaborate on within the Organization `@ag_org`.
 
 First, ensure that you have the correct permissions. The user must:
 - Be a [Super Admin] or [Team Admin] in the Organization
-- Be an admin  the package, `@ag_dubs/foo`
+- Be an admin of the package, `@ag_dubs/foo`
 
 Then, you can [grant team access to a package][3], as though it were scoped
 to the Organization:
