@@ -5,18 +5,16 @@ featured: true
 
 # The Developers Team
 
-When you first create an Organization, a team called `developers`
-is created. The purpose of this team is to contain the whole of
-your Organization's members. When you add a member to your
-Organization that user is automatically added to the developers team.
+When you first create an Organization, a team called `developers` is created.
 
-## Package Access
+The `developers` team is a **special team**. While it can be deleted 
+[if you so choose][#removing-the-developers-team], by default it acts as a "catch-all" 
+team. This means:
 
-All members of an Organization's `developers` team automatically have
-read/write access to all organization-scoped packages.
-
-When a package scoped to the Organization is published, all
-members `developers` team are set as the maintainers of the package.
+  - new Organization members will be added to the `developers` team by default
+  - the `developers` team has write access to all new Organization-scope package publishes
+ 
+The effects of deleting the team are [covered below][#removing-the-developers-team].
 
 ## Removing the `developers` team
 
@@ -38,16 +36,5 @@ reinstate it by creating a new team called `developers` (case sensitive!).
 You will need to add all current members of the Organization to the 
 new `developers` team, but, going forward  all newly added Organization
 members will be automatically added to the new `developers` team.
-
-### Listing the members of your Organization
-
-Assuming you have *not* deleted the developers team in your Organization,
-A [Super Admin] can check who has been added to an organization using
-the `team ls` command:
-
-```
-> npm team ls <org>:developers
-```
-...where `<org>` is the name of the Organization, e.g. `@npminc`.
 
 [Super Admin]: /orgs/roles#super-admin
