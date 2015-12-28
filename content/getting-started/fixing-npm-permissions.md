@@ -34,21 +34,21 @@ You should back-up your computer before moving forward.
 
 ## Option 2: Change npm's default directory to another directory
 
-There are times when you do not want to change ownership of the default directory that npm uses; for example, if you are sharing a machine with other users.
+There are times when you do not want to change ownership of the default directory that npm uses (i.e. `/usr`) as this could cause some problems, for example if you are sharing the system with other users.
 
-In this case, you can configure npm to use a different directory.
+Instead, you can configure npm to use a different directory altogether. In our case, this will be a hidden directory in our home folder.
 
 1. Make a directory for global installations:
 
-        mkdir ~/npm-global
+        mkdir ~/.npm-global
 
 1. Configure npm to use the new directory path:
 
-        npm config set prefix '~/npm-global'
+        npm config set prefix '~/.npm-global'
 
 1. Open or create a `~/.profile` file and add this line:
 
-        export PATH=~/npm-global/bin:$PATH
+        export PATH=~/.npm-global/bin:$PATH
 
 1. Back on the command line, update your system variables:
 
@@ -60,4 +60,4 @@ Test: Download a package globally without using `sudo`.
 
 Instead of steps 2-4 you can also use the corresponding ENV variable (e.g. if you don't want to modify `~/.profile`):
 
-        NPM_CONFIG_PREFIX=~/npm-global npm install -g jshint
+        NPM_CONFIG_PREFIX=~/.npm-global npm install -g jshint
