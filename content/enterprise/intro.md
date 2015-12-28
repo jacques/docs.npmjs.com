@@ -121,7 +121,7 @@ Here's a quick video to help walk you through this process:
 
     The username, password, and email you use should respect the configured authentication strategy in your On-Site admin web console. If using the "Open" authentication strategy, any values will work.
 
-    Note that this will add content to your `~/.npmrc` file, similar to the following:
+    Note that this will add content to your [`.npmrc`](https://docs.npmjs.com/files/npmrc) file, similar to the following:
 
     ```
     @myco:registry=http://<your-server>:8080/
@@ -138,7 +138,7 @@ Here's a quick video to help walk you through this process:
     $ npm config set registry http://<your-server>:8080
     ```
 
-    This will add the following to your `~/.npmrc` file:
+    This will add the following to your [`.npmrc`](https://docs.npmjs.com/files/npmrc) file:
 
     ```
     registry=http://<your-server>:8080/
