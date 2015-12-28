@@ -37,12 +37,13 @@ https://www.npmjs.com/org/<org>
 ## Adding Members to an Organization
 
 By default, your Organization is set up with a [developers team][8].
-The purpose of this team is  to contain the whole of your Organization's
-members. When you add a member to your Organization that user is 
-automatically added to the developers team.
+Whenever you add a new member to your Organization, they are automatically
+added to the developers team.
 
 You may delete the developers team. If you do, newly added Organization
 members will not be added to any teams by default.
+
+For more information about the developers team, see [/orgs/developers-team]
 
 To add a member to your organization, you add them by their npm
 username via the [Organization Dashboard][10].
