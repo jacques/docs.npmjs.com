@@ -1,5 +1,5 @@
 <!--
-title: 07 - Pre-Existing Packages
+title: 08 - Pre-Existing Packages
 featured: true
 -->
 
@@ -15,12 +15,38 @@ there is currently no way to make that exact package scoped to
 the Organization, `@ag_org`, i.e. `@ag_org/foo` without creating
 a new package.
 
-However, it is possible for a [Super Admin] or [Team Admin] with
-write access to a scoped package to grant team access to that
-package.
+However, Organization members who are either a 
 
-Note: To manage access to unscoped packages, you must use the 
-[Organization Dashboard] in the web interface.
+- [Super Admin], or
+- [Team Admin]
+
+that are also:
+
+- an admin member of the package's org, for org-scoped packages
+- the user, for user-scoped packages
+
+and, as of `npm@3.5.0/npm@2.14.12`:
+
+- the last publisher on a public package
+
+... are able to grant Organization team access to packages that are
+not scoped within the Organization.
+
+### Examples
+
+- `meow-org` Super Admin, Irina, is also a Team Admin for `pizza-org`.
+  Irina can grant the `meow-org/cyborgs` team access to the 
+  `pizza-org/pepperoni` package.
+
+- `puppyco/corgis` Team Admin, Lewis, has a personal private package, 
+  `@lewis/corgis`. Lewis can grant the `puppyco/corgis` team access
+  to his `@lewis/corgis` package.
+
+- `cactus-inc` Super Admin, Corey, was also the last person to publish
+  the public package, `bdaypresent`. Corey can grant the 
+  `cactus-inc/friends` team access to the `bdaypresent` package.
+
+(*yup. this is weird. we know.)
 
 Note: It is possible to migrate a User scope to an Organization scope.
 For more information on that check out the
@@ -34,7 +60,7 @@ collaborate on within the Organization `@ag_org`.
 
 First, ensure that you have the correct permissions. The user must:
 - Be a [Super Admin] or [Team Admin] in the Organization
-- Have write-acess to the package, `@ag_dubs/foo`
+- Be an admin of the package, `@ag_dubs/foo`
 
 Then, you can [grant team access to a package][3], as though it were scoped
 to the Organization:

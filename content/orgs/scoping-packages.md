@@ -1,5 +1,5 @@
 <!--
-title: 05 - Scoping New Packages
+title: 06 - Scoping New Packages
 featured: true
 -->
 

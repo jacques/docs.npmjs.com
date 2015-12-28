@@ -1,5 +1,5 @@
 <!--
-title: 04 - Teams
+title: 05 - Teams
 featured: true
 -->
 
@@ -20,23 +20,6 @@ organization.
 
 Organization creation and management of [Team Admin] and [Team
 Member] roles is done through the web interface.
-
-## The `developers` Team
-
-When you first create an Organization, a team called `developers`
-is created. This team contains all the people you have added to
-your Organization.
-
-** Please do NOT delete your developers team. This will break your account and
-you will need to contact support@npmjs.com. The npmjs team is currently working
-on a fix for this, which will be available soon.**
-
-A [Super Admin] can check who has been added to an organization: 
-
-```
-> npm team ls <org>:developers
-```
-...where `<org>` is the name of the Organization, e.g. `@npminc`.
 
 ## Creating Teams
 
