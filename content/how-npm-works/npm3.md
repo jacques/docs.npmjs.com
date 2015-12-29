@@ -5,7 +5,7 @@ featured: true
 
 # npm v3 Dependency Resolution
 
-## Example
+## Example - <a class="button" href="https://github.com/ashleygwilliams/npm-sandbox/tree/master/npm3/example1">Explore on Github</a>
 
 Imagine we have a module, A. A requires B.
 
