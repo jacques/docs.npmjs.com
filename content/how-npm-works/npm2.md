@@ -5,7 +5,7 @@ featured: true
 
 # npm v2 Dependency Resolution
 
-## Example
+## Example - <a class="button" href="https://github.com/ashleygwilliams/npm-sandbox/tree/master/npm2/example1">Explore on Github</a>
 
 Imagine there are three modules: A, B, and C. A requires
 B at v1.0, and C also requires B, but at v2.0. We can
