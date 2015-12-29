@@ -5,7 +5,7 @@ featured: true
 
 # Installing npm packages locally
 
-<iframe src="//www.youtube.com/embed/JDSfqFFbNYQ" frameborder="0" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/JDSfqFFbNYQ" frameborder="0" allowfullscreen></iframe>
 
 There are two ways to install npm packages: locally or globally. You choose which kind of
 installation to use based on how you want to use the package.
@@ -19,7 +19,7 @@ To learn more about the `install` command's behavior, check out the [CLI doc pag
 
 ## Installing
 
-A package can be downloaded with the command 
+A package can be downloaded with the command
 
 ```
 > npm install <package_name>
@@ -37,7 +37,7 @@ on Windows.
 
 #### Example:
 
-Install a package called `lodash`. Confirm that it ran successfully by listing the 
+Install a package called `lodash`. Confirm that it ran successfully by listing the
 contents of the `node_modules` directory and seeing a directory called `lodash`.
 
 ```

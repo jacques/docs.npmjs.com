@@ -7,7 +7,7 @@ featured: true
 
 With npm private modules, you can use the npm registry to host your own private code and the npm command line to manage it. This makes it easy to use public modules like Express and Browserify side-by-side with your own private code.
 
-<iframe src="//www.youtube.com/embed/O6JoXGnHK_Y" frameborder="0" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/O6JoXGnHK_Y" frameborder="0" allowfullscreen></iframe>
 
 ## Before we start
 

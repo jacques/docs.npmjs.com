@@ -5,7 +5,7 @@ featured: true
 
 # Installing Node.js and updating npm
 
-<iframe src="//www.youtube.com/embed/wREima9e6vk" frameborder="0" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/wREima9e6vk" frameborder="0" allowfullscreen></iframe>
 
 ## Installing Node.js
 

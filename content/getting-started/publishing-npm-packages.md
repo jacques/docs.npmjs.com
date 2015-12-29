@@ -5,7 +5,7 @@ featured: true
 
 # Publishing npm packages
 
-<iframe src="//www.youtube.com/embed/BkotrAFtBM0" frameborder="0" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/BkotrAFtBM0" frameborder="0" allowfullscreen></iframe>
 
 You can publish any directory that has a `package.json` file, e.g. a [node module](/getting-started/creating-node-modules).
 

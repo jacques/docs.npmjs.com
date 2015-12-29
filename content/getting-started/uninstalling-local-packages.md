@@ -5,7 +5,7 @@ featured: true
 
 # Uninstalling local packages
 
-<iframe src="//www.youtube.com/embed/Z-BpYj6cSoQ" frameborder="0" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/Z-BpYj6cSoQ" frameborder="0" allowfullscreen></iframe>
 
 You can remove a package from your node_modules directory using `npm uninstall <package>`:
 
