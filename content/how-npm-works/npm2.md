@@ -32,6 +32,24 @@ nested under the module that requires it.
 
 ![what npm does](/images/how-npm-works/deps4.png)
 
+
+In the terminal, this looks like this:
+
+![tree](/images/how-npm-works/tree.png)
+
+You can list the dependencies and still see their relationships using
+`npm ls`:
+
+![npmls](/images/how-npm-works/npmls.png)
+
+If you want to just see your primary dependencies, you can use:
+
+```
+npm ls --depth=0
+```
+
+![npmlsdepth0](/images/how-npm-works/npmlsdepth0.png)
+
 ## npm and the Node.js Module Loader
 
 However, npm doing this is *not enough*. Despite the fact that
