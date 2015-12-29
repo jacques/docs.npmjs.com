@@ -5,7 +5,7 @@ featured: true
 
 # Semantic versioning and npm
 
-<iframe src="//www.youtube.com/embed/kK4Meix58R4" frameborder="0" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/kK4Meix58R4" frameborder="0" allowfullscreen></iframe>
 
 Semantic versioning is a standard that a lot of projects use to communicate what kinds of changes are in this release. It's important to communicate what kinds of changes are in a release because sometimes those changes will break the code that depends on the package.
 

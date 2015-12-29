@@ -5,7 +5,7 @@ featured: true
 
 # Creating Node.js modules
 
-<iframe src="//www.youtube.com/embed/3I78ELjTzlQ" frameborder="0" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/3I78ELjTzlQ" frameborder="0" allowfullscreen></iframe>
 
 Node.js modules are one kind of package which can be published to npm. When you create a new module, you want to start with the `package.json` file.
 
