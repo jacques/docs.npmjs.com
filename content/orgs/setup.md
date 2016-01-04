@@ -21,7 +21,7 @@ a npm user with a verified email address. To create an npm user,
 
 1. Log in to [http://www.npmjs.com/][5]
 2. Visit [https://www.npmjs.com/org/][3]
-3. Click the big read button "Create an Organization" 
+3. Click the big red button "Create an Organization" 
 
 ## Organization Dashboard
 
