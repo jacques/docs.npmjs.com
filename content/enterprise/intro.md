@@ -52,11 +52,10 @@ Here's a quick video to help walk you through this process:
     CentOS/RHEL:
 
     ```
-    $ sudo su -
-    # curl --silent --location https://rpm.nodesource.com/setup | bash -
-    # yum -y install nodejs
-    # npm i -g npm@latest
-    # node -v && npm -v
+    $ curl -sL https://rpm.nodesource.com/setup_4.x | sudo -E bash -
+    $ sudo yum -y install nodejs
+    $ sudo npm i -g npm@latest
+    $ node -v && npm -v
     ```
 
 - Use npm to install `npmo`
@@ -64,6 +63,8 @@ Here's a quick video to help walk you through this process:
     ```
     $ sudo npm install npmo -g --unsafe
     ```
+
+    Watch for and answer any prompts.
 
     This will install Docker and run an admin web console on port 8800, which you will use to configure your On-Site instance and complete the installation below.
 
@@ -146,6 +147,8 @@ Here's a quick video to help walk you through this process:
     ```
 
     With this in place, all installs will go through your On-Site registry.
+
+    If using this option, you should make sure the "Read Through Cache" setting is enabled (default) in the admin console of your server.
 
 <a name="4-use"></a>
 ## 4. Publish, install, and search for packages
