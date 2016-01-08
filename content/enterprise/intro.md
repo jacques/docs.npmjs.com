@@ -33,7 +33,8 @@ Here's a quick video to help walk you through this process:
     - a 64-bit version of Ubuntu 14/15 or CentOS/RHEL 7
     - 4 GB of RAM
     - at least 10 GB of disk space
-    - ports 8080, 8081, and 8800 opened for inbound TCP traffic
+    - ports 8080, 8081, 8082, and 8800 opened for inbound TCP traffic
+    - access to the public internet, either directly or via proxy
 
     On AWS, use an m3.large instance type and define a Security Group to open the ports above.
 
