@@ -51,7 +51,7 @@ If you rename a directory inside the `content` directory, you'll need to change 
 
 ## Development
 
-Download node at [nodejs.org](http://nodejs.org) and install it, if you haven't already.
+Download node at [nodejs.org](https://nodejs.org) and install it, if you haven't already.
 
 To run the app locally:
 

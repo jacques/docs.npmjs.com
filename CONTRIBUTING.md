@@ -1,6 +1,6 @@
 # How to Contribute to npm docs
 
-Participation in this open source project is subject to the [npm Code of Conduct](http://www.npmjs.com/policies/conduct).
+Participation in this open source project is subject to the [npm Code of Conduct](https://www.npmjs.com/policies/conduct).
 Please also ensure your contribution conforms to the [Contributing Guidelines](https://github.com/npm/npm/wiki/Contributing-Guidelines).
 
 ## To submit a new issue
