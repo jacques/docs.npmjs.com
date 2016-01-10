@@ -10,10 +10,17 @@ The place where all things npm are documented.
 
 All the markdown files can be found in the [content](content) directory. Some of these files live here in this repository, others live in other repositories and are imported during the build process. These imported files are [ignored by git](.gitignore) to prevent people from accidentally editing the wrong files.
 
-- [cli](https://github.com/npm/npm/tree/master/doc/cli) is copied from [npm](https://github.com/npm/npm/tree/master/doc/api).
-- [onsite](content/enterprise) lives in this repo.
-- [files](https://github.com/npm/npm/tree/master/doc/files) is copied from npm.
-- [misc](https://github.com/npm/npm/tree/master/doc/misc) is copied from npm.
+### In this repo
+- [Getting Started](content/getting-started)
+- [How npm Works](content/how-npm-works)
+- [Private Modules](content/private-modules)
+- [Organizations](content/orgs)
+- [npm On-site](content/enterprise)
+
+### Copied from npm/npm
+- [CLI commands](https://github.com/npm/npm/tree/master/doc/cli)
+- [Configuring npm](https://github.com/npm/npm/tree/master/doc/files)
+- [Using npm](https://github.com/npm/npm/tree/master/doc/misc)
 
 ## HTML Frontmatter for Page Metadata
 
