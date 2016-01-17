@@ -19,6 +19,8 @@ Test: Use `npm config ls` to ensure that the credentials are stored on your clie
 
 Use `npm publish` to publish the package.
 
+Note that everything in the directory will be included unless it is ignored by a local `.gitignore` or `.npmignore` file as described in [`npm-developers`](/misc/developers).
+
 Test: Go to `https://npmjs.com/package/<package>`. You should see the information for your new package.
 
 ## Updating the package
