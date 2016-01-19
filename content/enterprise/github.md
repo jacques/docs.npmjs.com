@@ -36,13 +36,13 @@ To point npm On-Site at your GitHub Enterprise appliance:
 ## Logging in with two-factor authentication
 
 If you use two-factor authentication for your GitHub account, you will need to
-manually generate a token and add it to your [`.npmrc`](https://docs.npmjs.com/files/npmrc) file.
+manually generate a token and add it to your [`.npmrc`](/files/npmrc) file.
 
 1. Visit github.com/settings/tokens/new to create a new "Personal access token".
 1. Use a descriptive name for your token, like "myco npmE"
 1. Leave the default scopes as they are.
 1. Click "Generate Token" and you'll be redirected to a new page that displays your token. Copy the token right away, as it will only be displayed on screen once.
-1. Copy the token and paste it into the bottom of your [`.npmrc`](https://docs.npmjs.com/files/npmrc) file:
+1. Copy the token and paste it into the bottom of your [`.npmrc`](/files/npmrc) file:
 
 ```
 @myco:registry=https://npme-private.npmjs.com/
