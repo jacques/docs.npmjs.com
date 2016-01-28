@@ -43,7 +43,7 @@ added to the developers team.
 You may delete the developers team. If you do, newly added Organization
 members will not be added to any teams by default.
 
-For more information about the developers team, see [/orgs/developers-team]
+For more information about the developers team, see [Developers Team][8]
 
 To add a member to your organization, you add them by their npm
 username via the [Organization Dashboard][10].
