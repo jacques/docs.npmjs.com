@@ -108,6 +108,9 @@ You can also set several config options for the init command. Some useful ones:
 > npm set init.license "MIT"
 ```
 
+#### NOTE:
+If there is no description field in the package.json, npm uses the first line of the README.md or README instead. The description helps people find your package on npm search, so it's definitely useful to make a custom description in the package.json to make your package more discoverable.
+
 ## Specifying Packages
 
 To specify the packages your project depends on, you need to 
