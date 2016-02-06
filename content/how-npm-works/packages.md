@@ -32,7 +32,7 @@ A package is any of:
 * f) a `<name>` that has a `latest` tag satisfying (e)
 * g) a `git` url that, when cloned, results in (a).
 
-Noting all these `package` possibilies, it follows that even if you never
+Noting all these `package` possibilities, it follows that even if you never
 publish your package to the public registry, you can still get a lot of
 benefits of using npm:
 
