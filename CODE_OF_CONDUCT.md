@@ -109,7 +109,7 @@ the right to do so.  This includes complying with all software license
 agreements or other intellectual property restrictions. For example,
 redistributing an MIT-licensed module with the copyright notice
 removed, would not be allowed.  You will be responsible for any
-violation of laws or intellectual property rights.
+violation of laws or intellectual property rights.
 
 Packages must not be malware.  For example, a package which is
 designed to maliciously exploit or damage computer systems, is not
