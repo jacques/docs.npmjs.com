@@ -12,7 +12,7 @@ To install the latest version of npm On-Site, you need a server fulfilling these
 - One of the following Linux flavors (see [note on supported platforms](#note-platforms) below):
     - Ubuntu 14.04 / 15.10
     - CentOS 7.x
-    - RHEL 7.x
+    - Red Hat Enterprise Linux (RHEL) 7.x
     - Debian 7.7
 - Any number of CPUs/cores
 - At least 4 GB of memory/RAM
