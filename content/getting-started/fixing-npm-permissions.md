@@ -25,7 +25,7 @@ You should back-up your computer before moving forward.
 
   For many systems, this will be `/usr/local`.
 
-  **WARNING**: If the displayed path is *just* `/usr`, switch to [Option 2](#option-2-change-npm-s-default-directory-to-another-directory).
+  **WARNING**: If the displayed path is *just* `/usr`, switch to [Option 2](#option-2-change-npms-default-directory-to-another-directory).
 
 2. Change the owner of npm's directories to the name of the current user (your username!):
 
