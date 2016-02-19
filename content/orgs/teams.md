@@ -30,7 +30,7 @@ To create a team one can type:
 > npm team create <org:team>
 ```
 ...where `<org:team>` is the name of the Organization, followed by
-the name of the new team. 
+the name of the new team.
 
 For example, to create a team called `wombats` in the `@npminc`
 Organization, a [Super Admin] or [Team Admin] would type:
@@ -89,11 +89,6 @@ users on a particular team. To do so, type:
 ### List a Team's Members
 ```
 > npm team ls <org:team>
-```
-
-### List Teams a Member Belongs to
-```
-> npm team ls <org> <user>
 ```
 
 ## CLI Documentation
