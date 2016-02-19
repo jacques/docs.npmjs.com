@@ -91,11 +91,6 @@ users on a particular team. To do so, type:
 > npm team ls <org:team>
 ```
 
-### List Teams a Member Belongs to
-```
-> npm team ls <org> <user>
-```
-
 ## CLI Documentation
 
 For detailed information on the `team` command, check out the CLI
