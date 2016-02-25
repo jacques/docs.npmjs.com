@@ -18,24 +18,23 @@ You can fix this problem using one of three options:
 You should back-up your computer before moving forward.
 
 
-## Option 1: Change the permission to npm's default directory
+## Option A: Change the permission to npm's default directory
 
 1. Find the path to npm's directory:
 
         npm config get prefix
-
-  For many systems, this will be `/usr/local`.
-
-  **WARNING**: If the displayed path is *just* `/usr`, switch to [Option 2](#option-2-change-npms-default-directory-to-another-directory).
+        
+    For many systems, this will be `/usr/local`.
+    >**WARNING**: If the displayed path is *just* `/usr`, **switch to [Option B](#option-2-change-npms-default-directory-to-another-directory)** or you will mess up your permissions.
 
 2. Change the owner of npm's directories to the name of the current user (your username!):
 
         sudo chown -R $(whoami) $(npm config get prefix)/{lib/node_modules,bin,share}
 
-  This changes the permissions of the sub-folders used by npm and some other tools (`lib/node_modules`, `bin`, and `share`).
+    This changes the permissions of the sub-folders used by npm and some other tools (`lib/node_modules`, `bin`, and `share`).
 
 
-## Option 2: Change npm's default directory to another directory
+## Option B: Change npm's default directory to another directory
 
 There are times when you do not want to change ownership of the default directory that npm uses (i.e. `/usr`) as this could cause some problems, for example if you are sharing the system with other users.
 
