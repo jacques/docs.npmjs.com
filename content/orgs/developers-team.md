@@ -8,13 +8,13 @@ featured: true
 When you first create an Organization, a team called `developers` is created.
 
 The `developers` team is a **special team**. While it can be deleted 
-[if you so choose][#removing-the-developers-team], by default it acts as a "catch-all" 
+[if you so choose](#removing-the-developers-team), by default it acts as a "catch-all" 
 team. This means:
 
   - new Organization members will be added to the `developers` team by default
   - the `developers` team has write access to all new Organization-scope package publishes
  
-The effects of deleting the team are [covered below][#removing-the-developers-team].
+The effects of deleting the team are [covered below](#removing-the-developers-team).
 
 ## Removing the `developers` team
 
