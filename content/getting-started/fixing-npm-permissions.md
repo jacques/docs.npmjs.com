@@ -9,10 +9,11 @@ featured: true
 
 You may receive an `EACCES` error when you try to install a package globally. This indicates that you do not have permission to write to the directories that npm uses to store global packages and commands.
 
-You can fix this problem using one of two options:
+You can fix this problem using one of three options:
 
 1. Change the permission to npm's default directory.
 2. Change npm's default directory to another directory.
+3. Install node with a package manager that takes care of this for you.
 
 You should back-up your computer before moving forward.
 
@@ -62,3 +63,10 @@ Test: Download a package globally without using `sudo`.
 Instead of steps 2-4 you can also use the corresponding ENV variable (e.g. if you don't want to modify `~/.profile`):
 
         NPM_CONFIG_PREFIX=~/.npm-global npm install -g jshint
+        
+
+## Option 3: Use a package manager that takes care of this for you.
+
+If you're doing a fresh install of node on Mac OS you can avoid this problem altogether by using the [Hombrew](brew.sh) package manager.  Homebrew sets things up out of the box with the correct permissions.
+
+    brew install node
