@@ -10,9 +10,9 @@ The best way to manage locally installed npm packages is to create a
 
 A `package.json` file affords you a lot of great things:
 
-1. It serves as documentation for what packages your project depends on
+1. It serves as documentation for what packages your project depends on.
 2. It allows you to specify the versions of a package that your project
-can use using [semantic versioning rules][1]
+can use using [semantic versioning rules][1].
 3. Makes your build reproducable which means that its *way* easier
 to share with other developers.
 
