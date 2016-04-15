@@ -9,11 +9,11 @@ featured: true
 
 <iframe width="670" height="480" src="https://www.youtube.com/embed/x03fjb2VlGY" frameborder="0" allowfullscreen></iframe>
 
- <p>If you've been working with Javascript for awhile, you might have heard of npm: npm makes it easy for Javascript developers to share the code that they've created to solve particular problems, and for other developers to reuse that code in their own applications.</p>
+ <p>If you've been working with Javascript for a while, you might have heard of npm: npm makes it easy for Javascript developers to share the code that they've created to solve particular problems, and for other developers to reuse that code in their own applications.</p>
  
  <p>Once you're depending on this code from other developers, npm makes it really easy to check to see if they've made any updates to it, and to download those updates when they're made.</p>
  
- <p>These bits of reusable code are called packages, or sometimes modules. A package is just a directory with one or more files in it, that also has a file called "package.json" with some meta data about this package. A typical application, such as a website, will depend on dozens or hundreds of packages. These packages are often small. The general idea is that you create a small building block which solves one problem and solves it well. This makes it possible for you to compose larger, custom solutions out of these small, shared building blocks.</p>
+ <p>These bits of reusable code are called packages, or sometimes modules. A package is just a directory with one or more files in it, that also has a file called "package.json" with some metadata about this package. A typical application, such as a website, will depend on dozens or hundreds of packages. These packages are often small. The general idea is that you create a small building block which solves one problem and solves it well. This makes it possible for you to compose larger, custom solutions out of these small, shared building blocks.</p>
   
   <p>There's lots of benefits to this. It makes it possible for your team to draw on expertise outside of your organization by bringing in packages from people who have focused on particular problem areas. But even if you don't reuse code from people outside of your organization, using this kind of module based approach can actually help your team work together better, and can also make it possible to reuse code across projects.</p> 
  
