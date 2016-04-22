@@ -8,7 +8,7 @@ var cors = require('cors')
 var find = require('lodash').find
 var merge = require('lodash').merge
 var sortBy = require('lodash').sortBy
-var any = require('lodash').any
+var some = require('lodash').some
 var suggest = require(__dirname + '/lib/suggestions')
 var redirects = require(__dirname + '/lib/redirects')
 
@@ -23,7 +23,7 @@ content.sections.forEach(function (section) {
 
   // Sort section pages if any of the pages have an `order` property
   // Pages without the order property will come last
-  if (any(section.pages, 'order')) {
+  if (some(section.pages, 'order')) {
     section.pages = sortBy(section.pages, function (page) {
       return Number(page.order || 10000)
     })
