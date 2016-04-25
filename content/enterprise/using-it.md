@@ -1,6 +1,6 @@
 <!--
 order: 4
-title: Using npm On-Site
+title: Using npm Enterprise
 -->
 
 # Private, scoped modules
@@ -9,11 +9,11 @@ Lots of companies using Node.js love the "many small modules" pattern that is
 part of the Node culture. However, splitting internal applications and private
 code up into small modules has been inconvenient, requiring git dependencies or
 other workarounds to avoid publishing sensitive code to the public registry.
-npm On-Site makes private modules a first-class citizen.
+npm Enterprise makes private modules a first-class citizen.
 
 ## Get the latest npm client
 
-npm On-Site requires a 2.x+ version of the npm client. You can get this
+npm Enterprise requires a 2.x+ version of the npm client. You can get this
 by running
 
 ```sh
@@ -41,7 +41,7 @@ npm install @myco/somepackage
 ## Requiring
 
 npm automatically knows that any package with the @myco scope should be
-installed from your npm On-Site installation. Scoped packages will be installed into
+installed from your npm Enterprise installation. Scoped packages will be installed into
 your `node_modules` folder and can be used in your JavaScript just like any
 other module:
 
@@ -66,5 +66,5 @@ Then publish as usual:
 npm publish
 ```
 
-npm will automatically publish to your npm On-Site, and will refuse to publish scoped
+npm will automatically publish to your npm Enterprise, and will refuse to publish scoped
 packages to the public registry.

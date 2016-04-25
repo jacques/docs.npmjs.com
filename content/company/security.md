@@ -30,7 +30,7 @@ For more information about how we handle your personal data, you may wish to rev
 
 ## Higher Levels of security
 
-For firms interested in greater levels of physical and operational security, [npm On-Site](/enterprise) is a self-hosted version of the npm Registry that allows total control of the operation and policies of the registry.
+For firms interested in greater levels of physical and operational security, [npm Enterprise](/enterprise/index) is a self-hosted version of the npm Registry that allows total control of the operation and policies of the registry.
 
 ## Contact Us
 

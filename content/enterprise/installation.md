@@ -4,9 +4,9 @@ title: Installing the server
 featured: true
 -->
 
-# npm On-Site Installation Guide
+# npm Enterprise Installation Guide
 
-This document is meant to be a comprehensive guide to installing npm On-Site
+This document is meant to be a comprehensive guide to installing npm Enterprise
 onto your server. When you are done going through the steps, you should have a
 usable private registry and website.
 
@@ -26,7 +26,7 @@ Before you get started, please make sure you have the following ready to go:
 - Your license key and billing email
 
     If you do not have a license key, please
-    <a href="https://www.npmjs.com/onsite#free-trial" target="_blank">register
+    <a href="https://www.npmjs.com/enterprise" target="_blank">register
     for one here</a>.
 
 ## Summary
@@ -36,11 +36,11 @@ The installation consists of these 4 main steps.
 1. Install Node.js and npm via
    <a href="https://nodejs.org/en/download/package-manager/" target="_blank">
    instructions here</a>
-2. Install npmo: `sudo npm install npmo -g --unsafe`
-3. Configure your instance via admin web console at: <br>`https:<your-server>:8800`
+2. Install npme: `sudo npm install npme -g --unsafe`
+3. Configure your instance via admin web console at: <br>`https://<your-server>:8800`
 4. Start the services from the Dashboard there
 
-Your npm On-Site instance will then be fully operational!
+Your npm Enterprise instance will then be fully operational!
 
 ## Details
 
@@ -48,7 +48,7 @@ Follow along for details of each of the 4 main steps.
 
 ### 1. Install Node.js and npm on your server
 
-Node.js and npm are required to run the `npmo` installer in the next main step.
+Node.js and npm are required to run the `npme` installer in the next main step.
 
 - SSH into your server
 
@@ -98,18 +98,18 @@ Node.js and npm are required to run the `npmo` installer in the next main step.
     $ sudo npm install npm@latest -g
     ```
 
-### 2. Install npmo on your server
+### 2. Install npme on your server
 
-npm On-Site is distributed via the `npmo` package, which acts as an installer
+npm Enterprise is distributed via the `npme` package, which acts as an installer
 and CLI tool. It will automatically install Docker and an orchestration layer
 that comes with its own CLI (`replicated`) and runs an admin web console on
-port `8800` of your server. Once `npmo` is installed, you will need to complete
+port `8800` of your server. Once `npme` is installed, you will need to complete
 the installation by configuring your instance using the admin web console.
 
-- Use npm to install `npmo`:
+- Use npm to install `npme`:
 
     ```
-    $ sudo npm install npmo -g --unsafe
+    $ sudo npm install npme -g --unsafe
     ```
 
     Note that the installer may prompt you on whether or not a proxy should be
@@ -158,7 +158,7 @@ If any are not up, try running the installer again. On some systems, it's
 possible that dependencies may not be loaded in the correct order the first time.
 
 Once you have confirmed the daemons are running, there will be an admin web
-console listening on port `8800`. You can now use it to configure your On-Site
+console listening on port `8800`. You can now use it to configure your Enterprise
 instance and complete the installation.
 
 ### 3. Configure your installation via the admin web console
@@ -188,7 +188,7 @@ console and activate your instance with your license key.
     When you signed up for a license, the key was displayed on the npm website
     and sent to the billing email address you provided. This information is
     needed to validate your license and activate your server instance. Note that
-    a single license will allow you to run multiple instances of npm On-Site.
+    a single license will allow you to run multiple instances of npm Enterprise.
 
     ![Validate License](/images/npmo-install2.png)
 
@@ -213,7 +213,7 @@ console and activate your instance with your license key.
 
         The registry will bind to port `8080` and the website will bind to port
         `8081` on your server. However, it is typical to put a routing layer or
-        load balancer in front of your On-Site instance that will use a DNS name
+        load balancer in front of your Enterprise instance that will use a DNS name
         and port of your choosing, possibly terminating SSL/TLS there. The
         front-facing URLs you choose for your network topology should be entered
         here. **Note** that these values will be stored with package metadata
@@ -234,7 +234,7 @@ console and activate your instance with your license key.
 
     - **Authentication**
 
-        npm On-Site supports several strategies for authentication and
+        npm Enterprise supports several strategies for authentication and
         authorization, leveraging the credentials and permissions you have
         already defined in another backing system.
 
@@ -272,7 +272,7 @@ top-left panel does not say "Starting", then hit the "Start Now" button.
 
     ![Dashboard Metrics](/images/npmo-install7.png)
 
-    Your npm On-Site registry is ready to use!
+    Your npm Enterprise registry is ready to use!
 
 - Verify registry and website
 

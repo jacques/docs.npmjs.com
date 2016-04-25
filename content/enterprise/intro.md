@@ -4,16 +4,16 @@ title: Quickstart
 featured: true
 -->
 
-# npm On-Site Quickstart
+# npm Enterprise Quickstart
 
-This is the fastest way to get started with npm On-Site - your own private npm registry and website!
+This is the fastest way to get started with npm Enterprise - your own private npm registry and website!
 
 ## tl;dr
 
 Here's what we're going to cover in this guide:
 
-1. [Install npm On-Site on your server](#1-install)
-2. [Configure and start your On-Site instance](#2-configure-server)
+1. [Install npm Enterprise on your server](#1-install)
+2. [Configure and start your Enterprise instance](#2-configure-server)
 3. [Configure the npm CLI to talk to your registry](#3-configure-client)
 4. [Publish, install, and search for packages](#4-use)
 
@@ -24,7 +24,7 @@ Here's a quick video to help walk you through this process:
 <iframe width="640" height="480" src="https://www.youtube.com/embed/mKMaG0cixXw" frameborder="0" allowfullscreen></iframe>
 
 <a name="1-install"></a>
-## 1. Install npm On-Site on your server
+## 1. Install npm Enterprise on your server
 
 - Provision a modern Linux server fulfilling the [prereqs](/enterprise/requirements)
 
@@ -58,20 +58,20 @@ Here's a quick video to help walk you through this process:
     $ node -v && npm -v
     ```
 
-- Use npm to install `npmo`
+- Use npm to install `npme`
 
     ```
-    $ sudo npm install npmo -g --unsafe
+    $ sudo npm install npme -g --unsafe
     ```
 
     Watch for and answer any prompts.
 
-    This will install Docker and run an admin web console on port 8800, which you will use to configure your On-Site instance and complete the installation below.
+    This will install Docker and run an admin web console on port 8800, which you will use to configure your Enterprise instance and complete the installation below.
 
 <a name="2-configure-server"></a>
-## 2. Configure and start your On-Site instance
+## 2. Configure and start your Enterprise instance
 
-- Get a license key by <a href="https://www.npmjs.com/onsite#free-trial" target="_blank">signing up</a> for a free trial license
+- Get a license key by <a href="https://www.npmjs.com/enterprise" target="_blank">signing up</a> for a free trial license
 
     You will need a license key to continue.
 
@@ -101,7 +101,7 @@ Here's a quick video to help walk you through this process:
 
 - Quickly verify that your registry is running and accessible
 
-    Either run `curl http://<your-server>:8080` or visit that url in your browser. If you get a JSON response, your On-Site registry is good to go!
+    Either run `curl http://<your-server>:8080` or visit that url in your browser. If you get a JSON response, your Enterprise registry is good to go!
 
 <a name="3-configure-client"></a>
 ## 3. Configure the npm CLI to talk to your registry
@@ -121,7 +121,7 @@ Here's a quick video to help walk you through this process:
     Email: (this IS public) me@myco.com
     ```
 
-    The username, password, and email you use should respect the configured authentication strategy in your On-Site admin web console. If using the "Open" authentication strategy, any values will work.
+    The username, password, and email you use should respect the configured authentication strategy in your Enterprise admin web console. If using the "Open" authentication strategy, any values will work.
 
     Note that this will add content to your [`.npmrc`](/files/npmrc) file, similar to the following:
 
@@ -130,11 +130,11 @@ Here's a quick video to help walk you through this process:
     //<your-server>:8080/:_authToken=abc123
     ```
 
-    With this in place, any publishes or installs of packages with the `@myco` scope will automatically go to or come from your private On-Site registry.
+    With this in place, any publishes or installs of packages with the `@myco` scope will automatically go to or come from your private Enterprise registry.
 
-    For more details on configuring the npm client for your On-Site registry, see [this page](/enterprise/client-configuration).
+    For more details on configuring the npm client for your Enterprise registry, see [this page](/enterprise/client-configuration).
 
-- Optionally set your On-Site registry as your primary registry
+- Optionally set your Enterprise registry as your primary registry
 
     ```
     $ npm config set registry http://<your-server>:8080
@@ -146,14 +146,14 @@ Here's a quick video to help walk you through this process:
     registry=http://<your-server>:8080/
     ```
 
-    With this in place, all installs will go through your On-Site registry.
+    With this in place, all installs will go through your Enterprise registry.
 
     If using this option, you should make sure the "Read Through Cache" setting is enabled (default) in the admin console of your server.
 
 <a name="4-use"></a>
 ## 4. Publish, install, and search for packages
 
-- Publish a scoped package to your On-Site registry
+- Publish a scoped package to your Enterprise registry
 
     Create a test package named after your scope and `npm publish` it. Here's an example:
 
@@ -167,9 +167,9 @@ Here's a quick video to help walk you through this process:
 
     Visit your registry's website at `http://<your-server>:8081/` and find the `@myco/test-pkg` package under "recently updated packages".
 
-    For more details on publishing packages to your On-Site registry, see [this page](/enterprise/using-it).
+    For more details on publishing packages to your Enterprise registry, see [this page](/enterprise/using-it).
 
-- Install a scoped package from your On-Site registry
+- Install a scoped package from your Enterprise registry
 
     Verify you can install the test package created above. Go to another directory and `npm install` it.
 
@@ -191,4 +191,4 @@ Here's a quick video to help walk you through this process:
 
 - Search for package using the website
 
-    Visit your registry's website at `http://<your-server>:8081/` and use the "find on-site packages" search bar at the top.
+    Visit your registry's website at `http://<your-server>:8081/` and use the search bar at the top.

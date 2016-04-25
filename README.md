@@ -17,7 +17,7 @@ All the markdown files can be found in the [content](content) directory. Some of
 - [How npm Works](content/how-npm-works)
 - [Private Modules](content/private-modules)
 - [Organizations](content/orgs)
-- [npm On-site](content/enterprise)
+- [npm Enterprise](content/enterprise)
 
 ### Copied from npm/npm
 - [CLI commands](https://github.com/npm/npm/tree/master/doc/cli)
@@ -49,7 +49,7 @@ things from breaking.
 
 ## Sections
 
-If you rename a directory inside the `content` directory, you'll need to change it in [sections.json](/sections.json) to allow the [content.json](/content.json) to pick up the changes. 
+If you rename a directory inside the `content` directory, you'll need to change it in [sections.json](/sections.json) to allow the [content.json](/content.json) to pick up the changes.
 
 ## Development
 

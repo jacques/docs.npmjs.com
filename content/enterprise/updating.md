@@ -1,8 +1,8 @@
 <!--
 order: 7
-title: Updating npm On-Site
+title: Updating npm Enterprise
 -->
 
-## Updating npm On-Site
+## Updating npm Enterprise
 
-To update npm On-Site, simply click `Check Now` in the admin console.
+To update npm Enterprise, simply click `Check Now` in the admin console.

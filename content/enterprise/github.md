@@ -7,7 +7,7 @@ featured: true
 
 ## Integrates with GitHub and GitHub Enterprise
 
-If your organization uses GitHub or GitHub Enterprise, npm On-Site can be configured
+If your organization uses GitHub or GitHub Enterprise, npm Enterprise can be configured
 to automatically use them for login and access control. Simply add a
 repository field to your package.json that points to your repo:
 
@@ -20,13 +20,13 @@ repository field to your package.json that points to your repo:
 }
 ```
 
-npm On-Site restricts installation of your
+npm Enterprise restricts installation of your
 package to users who have access to the repo for that package, and restricts
 publishing of that package to users who have commit access to the repo.
 
 ## Pointing at your GitHub Enterprise appliance
 
-To point npm On-Site at your GitHub Enterprise appliance:
+To point npm Enterprise at your GitHub Enterprise appliance:
 
 1. visit the admin console at _http://myreg.mycompany.com:8800_
 2. choose `GitHub` as the authentication strategy.
