@@ -1,6 +1,6 @@
 # Nice People Matter: npm is hiring
 
-We currently are looking for interns to join us in summer 2015. Even if that's not what you're looking for, if you would like to work with us and have skills you think would be helpful, please send an email with evidence of your experience (like your resume, or links to LinkedIn/GitHub/wherever) to jobs@npmjs.com.
+If you would like to work with us and have skills you think would be helpful, please send an email with evidence of your experience (like your resume, or links to LinkedIn/GitHub/wherever) to jobs@npmjs.com.
 
 We’d like to hear from you.
 
