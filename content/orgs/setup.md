@@ -20,7 +20,7 @@ a npm user with a verified email address. To create an npm user,
 ### Create an Organization with a new scope: 
 
 1. Log in to [http://www.npmjs.com/][5]
-2. Visit [https://www.npmjs.com/org/][3]
+2. Visit [https://www.npmjs.com/org/create][3]
 3. Click the big red button "Create an Organization" 
 
 ## Organization Dashboard
@@ -71,7 +71,7 @@ org. Your new user will have Super-Admin privileges to the org.
 
 [1]: #creating-an-organization
 [2]: #adding-members-to-an-organization
-[3]: https://www.npmjs.com/org
+[3]: https://www.npmjs.com/org/create
 [4]: https://www.npmjs.com/signup
 [5]: https://www.npmjs.com/login
 [6]: /orgs/roles#team-admin
