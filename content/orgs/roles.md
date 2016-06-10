@@ -41,7 +41,7 @@ have an interface with the general public:
 
   - can [see the teams they're on][7]
   - can [see the packages associated with those teams][8]
-  - can [add a new org-scoped][4]
+  - can [add a new org-scoped package][4]
   - cannot pay
   - cannot add users
 
