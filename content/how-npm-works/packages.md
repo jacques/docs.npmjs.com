@@ -6,7 +6,7 @@ featured: true
 # Packages and Modules
 
 One of the key steps in becoming immersed in an ecosystem is learning
-its vocabulary. Node.js and npm have very specific definitions of 
+its vocabulary. Node.js and npm have very specific definitions of
 packages and modules, which are easy to mix up. We'll discuss those
 definitions here, make them distinct, and explain why certain
 default files are named the way they are.
@@ -14,10 +14,10 @@ default files are named the way they are.
 ## tl;dr
 
 - A **package** is a file or directory that is described by a `package.json`.
-  This can happen in a bunch of different ways! For more info, see 
+  This can happen in a bunch of different ways! For more info, see
   ["What is a `package`?](#what-is-a-package), below.
-- A **module** is any file or directory that can be loaded by Node.js' 
-  `require()`. Again, there are several configurations that allow this to 
+- A **module** is any file or directory that can be loaded by Node.js'
+  `require()`. Again, there are several configurations that allow this to
   happen. For more info, see ["What is a `module`?"](#what-is-a-module), below.
 
 ## What is a `package`?
@@ -88,8 +88,8 @@ we might say that "The variable `req` refers to the `request` module".
 - So, why is it the `node_modules` folder, but `package.json` file?
 - Why not `node_packages` or `module.json`?
 
-The `package.json` file defines the package.  (See 
-["What is a `package`?"](#what-is-a-packae), above.)
+The `package.json` file defines the package.  (See
+["What is a `package`?"](#what-is-a-package), above.)
 
 The `node_modules` folder is the place Node.js looks for modules.
 (See ["What is a `module`?"](#what-is-a-module), above.)
