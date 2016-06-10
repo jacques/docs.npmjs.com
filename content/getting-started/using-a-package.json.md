@@ -25,6 +25,8 @@ As a bare minimum, a `package.json` must have:
   - one word, no spaces
   - dashes and underscores allowed
 - `"version"`
+  - in the form of `x.x.x`
+  - follows (semver spec)[https://docs.npmjs.com/getting-started/semantic-versioning]
 
 For example:
 
