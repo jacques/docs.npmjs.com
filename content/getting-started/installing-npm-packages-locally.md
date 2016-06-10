@@ -32,7 +32,7 @@ and will download the package to that directory.
 
 To confirm that `npm install` worked correctly, check to see that a `node_modules`
 directory exists and that it contains a directory for the package(s) you installed.
-You can do this by run `ls node_modules` on Unix systems, e.g. "OSX", "Debian", or `dir node_modules`
+You can do this by running `ls node_modules` on Unix systems, e.g. "OSX", "Debian", or `dir node_modules`
 on Windows.
 
 #### Example:
@@ -62,7 +62,7 @@ are creating a Node.js module, you can `require` it.
 
 #### Example:
 
-Create a file named index.js, with the following code:
+Create a file named `index.js`, with the following code:
 
 ```javascript
 // index.js

@@ -65,7 +65,7 @@ npm publish --access=public
 
 To use a scoped package, you simply include the scope wherever you use the package name.
 
-In package.json:
+In `package.json`:
 
 ```json
 {
