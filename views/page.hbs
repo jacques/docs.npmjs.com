@@ -1,4 +1,10 @@
 <div class="container">
+  {{#breadcrumbs}}
+  <div class="breadcrumbs print-only">
+    <h3>{{section}}</h3>
+  {{#if prev}}{{cleanPageTitle prev.title}} > {{/if}}<span>{{cleanPageTitle page.title}}</span>{{#if next}} > {{cleanPageTitle next.title}}{{/if}}
+  </div>
+  {{/breadcrumbs}}
   <div id="page">
     {{#if page.heading}}
     <h1>{{page.heading}}</h1>
