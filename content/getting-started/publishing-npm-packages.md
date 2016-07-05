@@ -21,6 +21,8 @@ Use `npm publish` to publish the package.
 
 Note that everything in the directory will be included unless it is ignored by a local `.gitignore` or `.npmignore` file as described in [`npm-developers`](/misc/developers).
 
+Also make sure there isn't already a package with the same name, owned by somebody else.
+
 Test: Go to `https://npmjs.com/package/<package>`. You should see the information for your new package.
 
 ## Updating the package
