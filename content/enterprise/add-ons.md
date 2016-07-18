@@ -18,8 +18,10 @@ Add-ons are installed via the `npme` admin tool on your Enterprise server:
 2. run `npme addon <add-on-identifier>`.
 3. _third-parties may require an additional step, such as verifying your
    email address._
-4. that's all there is to it, visit the npm Enterprise website to
-   view the newly installed add-on:
+4. that's all there is to it, visit any package page in your
+   npm Enterprise website:
+
+![npm Enterprise Add-Ons](/images/npme-addon.png)
 
 ## Add-Ons Currently Available
 
