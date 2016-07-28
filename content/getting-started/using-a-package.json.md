@@ -26,7 +26,7 @@ As a bare minimum, a `package.json` must have:
   - dashes and underscores allowed
 - `"version"`
   - in the form of `x.x.x`
-  - follows (semver spec)[https://docs.npmjs.com/getting-started/semantic-versioning]
+  - follows [semver spec](https://docs.npmjs.com/getting-started/semantic-versioning)
 
 For example:
 
