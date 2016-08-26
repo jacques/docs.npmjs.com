@@ -61,7 +61,7 @@ Here's a quick video to help walk you through this process:
 - Use npm to install `npme`
 
     ```
-    $ sudo npm install npme -g --unsafe
+    $ sudo npm install npme -g --unsafe-perm
     ```
 
     Watch for and answer any prompts.

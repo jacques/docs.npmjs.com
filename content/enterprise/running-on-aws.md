@@ -237,7 +237,7 @@ $ sudo npm install npm@latest -g
 Next, install `npme` and answer any prompts:
 
 ```sh
-$ sudo npm install npme -g --unsafe
+$ sudo npm install npme -g --unsafe-perm
 ```
 
 Once that’s done, complete the installation by configuring your Enterprise instance via the admin web console at `https://<your-server>:8800`. At this point we’ll defer to the [installation doc](/enterprise/installation#3-configure-your-installation-via-the-admin-web-console), with the exception that we should configure storage settings to use our mounted EBS volume.
