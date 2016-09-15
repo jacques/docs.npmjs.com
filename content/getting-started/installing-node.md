@@ -18,7 +18,7 @@ Test: Run `node -v`. The version should be higher than v0.10.32.
 
 Node comes with npm installed so you should have a version of npm. However, npm gets updated more frequently than Node does, so you'll want to make sure it's the latest version.
 
-`npm install npm -g`
+`npm install npm@latest -g`
 
 Test: Run `npm -v`. The version should be higher than 2.1.8.
 
