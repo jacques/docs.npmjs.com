@@ -36,7 +36,7 @@ The installation consists of these 4 main steps.
 1. Install Node.js and npm via
    <a href="https://nodejs.org/en/download/package-manager/" target="_blank">
    instructions here</a>
-2. Install npme: `sudo npm install npme -g --unsafe`
+2. Install npme: `sudo npm install npme -g --unsafe-perm`
 3. Configure your instance via admin web console at: <br>`https://<your-server>:8800`
 4. Start the services from the Dashboard there
 
@@ -109,7 +109,7 @@ the installation by configuring your instance using the admin web console.
 - Use npm to install `npme`:
 
     ```
-    $ sudo npm install npme -g --unsafe
+    $ sudo npm install npme -g --unsafe-perm
     ```
 
     Note that the installer may prompt you on whether or not a proxy should be
