@@ -71,7 +71,7 @@ describe('redirects', function () {
   it('301s /enterprise/whitelist to /enterprise/mirroring', function (done) {
     supertest(app)
       .get('/enterprise/whitelist')
-      .expect('Location', /\/enterprise\/mirroring$/)
+      .expect('Location', /https:\/\/npme\.npmjs\.com\/docs\/workflow\/mirroring\.html/)
       .expect(301, done)
   })
 

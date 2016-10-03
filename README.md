@@ -17,7 +17,6 @@ All the markdown files can be found in the [content](content) directory. Some of
 - [How npm Works](content/how-npm-works)
 - [Private Modules](content/private-modules)
 - [Organizations](content/orgs)
-- [npm Enterprise](content/enterprise)
 
 ### Copied from npm/npm
 - [CLI commands](https://github.com/npm/npm/tree/master/doc/cli)
