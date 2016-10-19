@@ -113,6 +113,37 @@ You can also set several config options for the init command. Some useful ones:
 #### NOTE:
 If there is no description field in the `package.json`, npm uses the first line of the `README.md` or README instead. The description helps people find your package on npm search, so it's definitely useful to make a custom description in the `package.json` to make your package more discoverable.
 
+### Customizing the `init` process
+
+It is also possible to totally customize the information created and the questions asked during the init process.  This is done by creating a custom `.npm-init.js`.  By default, npm will look in your home directory.  `~/.npm-init.js`
+
+A simple `.npm-init.js` could look something like this:
+
+```
+module.exports = {
+  customField: 'Custom Field',
+  otherCustomField: 'This field is really cool'
+}
+```
+
+Running `npm init` with this file in your home directory, would output a `package.json` similiar to this:
+
+```
+{
+  customField: 'Custom Field',
+  otherCustomField: 'This field is really cool'
+}
+```
+
+Customizing the questions is also possible, by using the `prompt` function.
+
+```
+  module.exports = prompt("what's your favorite flavor of ice cream buddy?", "I LIKE THEM ALL");
+```
+
+To learn more on how to create more advanced customizations,  checkout the docs for [init-package-json](https://github.com/npm/init-package-json)
+
+
 ## Specifying Packages
 
 To specify the packages your project depends on, you need to 
