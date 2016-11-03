@@ -106,7 +106,7 @@ All scoped packages default to private. This ensures that you don't make somethi
   <img src="http://npmblog-images.surge.sh/static-pages/make-private-ui.gif" class="bordered">
 </p>
 
-You can also manage package access via the command:
+You can also manage package access via the command line:
 
 ```sh
 npm access restricted <package_name>
