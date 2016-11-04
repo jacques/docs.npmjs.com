@@ -22,7 +22,7 @@ default files are named the way they are.
 
 ## What is a `package`?
 
-A package is any of:
+A package is any of the following:
 
 * a) a folder containing a program described by a `package.json` file
 * b) a gzipped tarball containing (a)
@@ -68,8 +68,8 @@ Generally, npm packages that are used in Node.js program are loaded
 with `require`, making them modules. However, there's no requirement
 that an npm package be a module!  
 
-Some packages, e.g., `cli` packages only contain an executable
-command-line interface, and don't provide a `main` field for use in
+Some packages, e.g., `cli` packages, only contain an executable
+command-line interface and don't provide a `main` field for use in
 Node.js programs. These packages are *not* modules.
 
 Almost all npm packages (at least, those that are Node programs)
@@ -96,7 +96,7 @@ The `node_modules` folder is the place Node.js looks for modules.
 
 For example, if you create a file at `node_modules/foo.js` and then
 had a program that did `var f = require('foo.js')`, it would load
-the module.  However, `foo.js` is not a "package" in this case,
+the module.  However, `foo.js` is not a "package" in this case
 because it does not have a package.json.
 
 Alternatively, if you create a package which does not have an
