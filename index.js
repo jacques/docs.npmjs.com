@@ -6,6 +6,7 @@ var harp = require('harp')
 var path = require('path')
 var cors = require('cors')
 var find = require('lodash').find
+var findIndex = require('lodash').findIndex
 var merge = require('lodash').merge
 var sortBy = require('lodash').sortBy
 var some = require('lodash').some
@@ -44,6 +45,32 @@ app.use(express.static(__dirname + '/public'))
 app.use(harp.mount(__dirname + '/public'))
 hbs.registerPartials(__dirname + '/views/partials')
 hbs.registerHelper('equal', require('handlebars-helper-equal'))
+hbs.registerHelper('breadcrumbs', function (options) {
+  if (!options.fn) throw new Error('Handlebar helper "breadcrumbs" requires closing block.')
+
+  var currSection = find(options.data.root.content.sections, function (section) {
+    return section.id === options.data.root.page.section
+  })
+
+  var pageIndex = findIndex(currSection.pages, function (page) {
+    return page.title === options.data.root.page.title
+  })
+
+  var out = {
+    page: options.data.root.page,
+    next: currSection.pages[pageIndex + 1],
+    prev: currSection.pages[pageIndex - 1],
+    section: currSection.title
+  }
+
+  return options.fn(out)
+})
+
+hbs.registerHelper('cleanPageTitle', function(context) {
+  var re = /([0-9][0-9] - )(.*)/;
+  var result = context.match(re);
+  return (result) ?  result[2] : context;
+})
 
 app.get('/', function (req, res) {
   res.render('index', {
@@ -77,7 +104,8 @@ app.get('/content.lite.json', cors(), function (req, res) {
 app.get('/all', function (req, res) {
   res.render('multi', {
     content: content,
-    heading: 'All Docs'
+    heading: 'All Docs',
+    pageId: 'all-docs'
   })
 })
 

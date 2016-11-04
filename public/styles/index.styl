@@ -263,3 +263,63 @@ ul.pageColumns
       padding 50px 20px 0 20px
     h2
       centeredColumn(mobileColumnMaxWidth)
+
+.print-only
+  display none
+
+@media print
+  .print-only
+    display block
+  html
+    height auto
+  body
+    font-size 10px
+  header
+    display none
+  nav
+    display none
+  div#page
+    h1
+      font-size 2em
+      margin-top 0
+    margin-top 0
+  #logo
+    position static
+  .youtube-video
+    display none
+  .breadcrumbs
+    h3
+      margin-bottom 0
+    span
+      color npmred
+  footer
+    display none
+
+  p.colophon
+    font-size 10px
+
+  [data-page=all-docs]
+    nav
+      display block
+      position static
+      width 700px
+      padding 10px
+      margin 0 auto
+
+      .smallLink
+        display none
+
+      h2
+        font-size 14px
+        font-weight 600
+        padding-left 0
+
+      .pages
+        display block
+
+        a
+          line-height 1
+          text-decoration underline
+          font-size 12px
+          border none
+          transition none
