@@ -19,4 +19,4 @@ To remove it from the dependencies in `package.json`, you will need to use the s
 npm uninstall --save lodash
 ```
 
-Note: if you installed the package as a "devDependency" (i.e. with `--save-dev`) then `--save` won't remove it from `package.json`  You have use `--save-dev` to uninstall it.
+Note: if you installed the package as a "devDependency" (i.e. with `--save-dev`) then `--save` won't remove it from `package.json`  You have to use `--save-dev` to uninstall it.
