@@ -30,7 +30,7 @@
   "homepage": "https://github.com/npm/docs",
   "dependencies": {
     "@npm/policies": "git://github.com/npm/policies",
-    "bluebird": "^3.0.5",
+    "bluebird": "^3.4.0",
     "cors": "^2.7.1",
     "express": "^4.13.3",
     "handlebars-helper-equal": "^1.0.0",
