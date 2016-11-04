@@ -5,8 +5,6 @@ learn you some npm for great good
 [![Build Status](https://travis-ci.org/npm/docs.svg?branch=master)](https://travis-ci.org/npm/docs)
 [![Code Climate](https://codeclimate.com/github/npm/docs/badges/gpa.svg)](https://codeclimate.com/github/npm/docs)
 [![David-DM](https://david-dm.org/npm/docs.svg)](https://david-dm.org/npm/docs)
-[![Issue Stats](http://issuestats.com/github/npm/docs/badge/pr)](http://issuestats.com/github/npm/docs)
-[![Issue Stats](http://issuestats.com/github/npm/docs/badge/issue)](http://issuestats.com/github/npm/docs)
 
 ## Editing Content
 
