@@ -5,10 +5,10 @@ featured: true
 
 # Updating global packages
 
-To update global packages, you can use `npm install -g <package>`:
+To update global packages, you can use `npm update -g <package>`:
 
 ```
-npm install -g jshint
+npm update -g jshint
 ```
 
 To find out which packages need to be updated, you can use `npm outdated -g --depth=0`.
