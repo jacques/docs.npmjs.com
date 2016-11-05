@@ -103,9 +103,17 @@ emitter.on('file', function (filepath, stat) {
 })
 
 emitter.on('end', function () {
-  content.pages = _.sortBy(content.pages, function (page) {
-    return page.title.toLowerCase()
-  })
+  // Get the ids for each section
+  var sectionIds = _.map(content.sections, 'id')
+
+  content.pages = _.sortBy(content.pages, [
+    function (page) {
+      return sectionIds.indexOf(page.section)
+    },
+    function (page) {
+      return page.title.toLowerCase()
+    }
+  ])
 
   fs.writeFileSync(contentFile, JSON.stringify(content, null, 2))
   console.log('Wrote %s', path.relative(process.cwd(), contentFile))
