@@ -11,6 +11,9 @@
   "id": "orgs",
   "title": "Organizations"
 }, {
+  "id": "troubleshooting",
+  "title": "Troubleshooting"
+}, {
   "id": "misc",
   "title": "Using npm"
 }, {
