@@ -5,9 +5,9 @@ featured: true
 
 # Try the latest stable version of node
 
-Node 0.4 and 0.6 are [no longer supported](https://github.com/npm/npm/issues/4379#issuecomment-31183058).
+Node 0.4, 0.6, 0.10 and iojs are no longer supported.
 
-If you're experiencing issues while using a version of node which is unsupported (e.g 0.4.x or 0.6.x) or unstable (odd numbered versions e.g. 0.7.x, 0.9.x, 0.11.x), it's very possible your issue will be fixed by simply using the latest stable version of node.
+If you're experiencing issues while using a version of node which is unsupported (e.g 0.4, 0.6) or unstable (odd numbered versions e.g. 0.7.x, 0.9.x, 0.11.x), it's very possible your issue will be fixed by simply using the [LTS](https://github.com/nodejs/LTS) version of node.
 
 ## See what version of node you're running:
 

@@ -21,12 +21,12 @@ You can upgrade to the latest version of npm using:
 npm install -g npm@latest
 ```
 
-Or upgrade to the most recent LTS release:
+Or upgrade to the most recent release:
 ```
-npm install -g npm@lts
+npm install -g npm@next
 ```
 
-### Upgrading on Windows
+## Upgrading on Windows
 _Microsoft wrote a small command line tool to automate the steps below. [You can go and download it here](https://github.com/felixrieseberg/npm-windows-upgrade) - or stick with the manual path outlined below._
 
 ___
