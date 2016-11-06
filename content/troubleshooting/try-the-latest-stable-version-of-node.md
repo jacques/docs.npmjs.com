@@ -33,6 +33,12 @@ or if you are using [homebrew](http://brew.sh/)
 brew install node
 ```
 
-### Installing or updating node without elevated permissions
+### An easy way to stay up-to-date
 
-If you want to install/update node on a unix-like system but don't have root permissions, [here are a number of ways to do that](https://gist.github.com/isaacs/579814)!
+Node.js has lots of versions, and its development is very active. As a good practice to manage the various versions, we recommend that you use a version manager for your Node.js installation. There are many great options, here are a few:
+
++ [NVM](https://github.com/creationix/nvm)
++ [nodist](https://github.com/marcelklehr/nodist)
++ [n](https://github.com/tj/n)
++ [nave](https://github.com/isaacs/nave)
++ [nodebrew](https://github.com/hokaccha/nodebrew)
