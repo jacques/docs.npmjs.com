@@ -34,7 +34,7 @@
     "cors": "^2.7.1",
     "express": "^4.13.3",
     "handlebars-helper-equal": "^1.0.0",
-    "harp": "^0.22.0",
+    "harp": "^0.23.0",
     "hbs": "^4.0.0",
     "html-frontmatter": "^1.5.1",
     "js-beautify": "^1.5.10",
