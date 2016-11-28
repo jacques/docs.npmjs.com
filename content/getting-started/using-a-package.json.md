@@ -13,7 +13,7 @@ A `package.json` file affords you a lot of great things:
 1. It serves as documentation for what packages your project depends on.
 2. It allows you to specify the versions of a package that your project
 can use using [semantic versioning rules][1].
-3. Makes your build reproducable which means that its *way* easier
+3. Makes your build reproducible which means that its *way* easier
 to share with other developers.
 
 ## Requirements
@@ -45,7 +45,7 @@ To create a `package.json` run:
 > npm init
 ```
 
-This will initate a command line questionnaire that will conclude with the 
+This will initiate a command line questionnaire that will conclude with the 
 creation of a `package.json` in the directory you initiated the command.
 
 ### The `--yes` init flag
