@@ -11,7 +11,7 @@ packages and modules, which are easy to mix up. We'll discuss those
 definitions here, make them distinct, and explain why certain
 default files are named the way they are.
 
-## tl;dr
+## Quick Summary
 
 - A **package** is a file or directory that is described by a `package.json`.
   This can happen in a bunch of different ways! For more info, see
