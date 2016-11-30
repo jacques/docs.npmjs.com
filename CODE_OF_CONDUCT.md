@@ -11,7 +11,7 @@ friendly, safe, and accepting; free from intimidation or harassment.
 Towards this end, certain behaviors and practices will not be
 tolerated.
 
-## tl;dr
+## In Summary
 
 * Be respectful.
 * We're here to help: <abuse@npmjs.com>
