@@ -45,7 +45,7 @@ teams in your Organization. You can do that by typing:
 > npm team ls <org>
 ```
 
-or by visiting the [Organization Dashboard] in the [web interface].
+or by visiting the [Organization Dashboard] in the web interface.
 
 ## Adding Users to a Team
 
