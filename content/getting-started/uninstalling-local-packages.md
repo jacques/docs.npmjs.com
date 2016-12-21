@@ -20,3 +20,30 @@ npm uninstall --save lodash
 ```
 
 Note: if you installed the package as a "devDependency" (i.e. with `--save-dev`) then `--save` won't remove it from `package.json`  You have to use `--save-dev` to uninstall it.
+
+#### Test:
+
+To confirm that `npm uninstall` worked correctly, check to see that the `node_modules`
+directory exists, but that it does not contain a directory for the package(s) you uninstalled.
+You can do this by running `ls node_modules` on Unix systems, e.g. "OSX", "Debian", or `dir node_modules`
+on Windows.
+
+#### Example:
+
+Install a package called `lodash`. Confirm that it ran successfully by listing the
+contents of the `node_modules` directory and seeing a directory called `lodash`.
+
+Uninstall `lodash` with `npm uninstall`. Confirm that it ran successfully by listing the
+contents of the `node_modules` directory and confirming the absence of a directory called `lodash`.
+
+```
+> npm install lodash
+> ls node_modules               # use `dir` for Windows
+
+#=> lodash
+
+> npm uninstall lodash
+> ls node_modules
+
+#=>
+```
