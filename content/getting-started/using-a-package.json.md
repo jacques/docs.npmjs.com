@@ -61,8 +61,7 @@ or `-y` flag:
 > npm init --yes
 ```
 
-This will ask you only one question, `author`. Otherwise it will fill in default
-values: 
+This will ask no questions, and instead will generate a default `package.json` using information extracted from the current directory.
 
 ```
 > npm init --yes
@@ -71,17 +70,18 @@ Wrote to /home/ag_dubs/my_package/package.json:
 {
   "name": "my_package",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "ag_dubs",
-  "license": "ISC",
   "repository": {
     "type": "git",
     "url": "https://github.com/ashleygwilliams/my_package.git"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/ashleygwilliams/my_package/issues"
   },
@@ -89,17 +89,17 @@ Wrote to /home/ag_dubs/my_package/package.json:
 }
 ```
 
-- `name`: defaults to author name unless in a `git` directory, in which case it
-    will be the name of the repository
+- `name`: the current directory name
 - `version`: always `1.0.0`
+- `description`: info from the readme, else an empty string `""`
 - `main`: always `index.js`
-- `scripts`: by default creates a empty `test` script
-- `keywords`: empty
-- `author`: whatever you provided the CLI
+- `scripts`: a placeholder `test` script
+- `repository`: info from the current directory, if present
+- `keywords`: an empty array `[]`
+- `author`: an empty string
 - `license`: [`ISC`][2]
-- `repository`: will pull in info from the current directory, if present
-- `bugs`: will pull in info from the current directory, if present
-- `homepage`: will pull in info from the current directory, if present
+- `bugs`: info from the current directory, if present
+- `homepage`: info from the current directory, if present
 
 You can also set several config options for the init command. Some useful ones:
 
