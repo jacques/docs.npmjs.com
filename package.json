@@ -37,7 +37,7 @@
     "harp": "^0.23.0",
     "hbs": "^4.0.0",
     "html-frontmatter": "^1.5.1",
-    "js-beautify": "^1.5.10",
+    "js-beautify": "^1.6.11",
     "leven": "^2.0.0",
     "lodash": "^4.11.1",
     "marky-markdown": "^8.1.0",
