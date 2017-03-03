@@ -40,7 +40,7 @@
     "js-beautify": "^1.6.11",
     "leven": "^2.0.0",
     "lodash": "^4.11.1",
-    "marky-markdown": "^8.1.0",
+    "marky-markdown": "^9.0.2",
     "npm": "latest",
     "strftime": "^0.10.0",
     "walkdir": "0.0.11"
