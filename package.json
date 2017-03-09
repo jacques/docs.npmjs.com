@@ -30,19 +30,19 @@
   "homepage": "https://github.com/npm/docs",
   "dependencies": {
     "@npm/policies": "git://github.com/npm/policies",
-    "bluebird": "^3.4.0",
+    "bluebird": "^3.5.0",
     "cors": "^2.7.1",
     "express": "^4.13.3",
     "handlebars-helper-equal": "^1.0.0",
     "harp": "^0.23.0",
     "hbs": "^4.0.0",
     "html-frontmatter": "^1.5.1",
-    "js-beautify": "^1.5.10",
+    "js-beautify": "^1.6.11",
     "leven": "^2.0.0",
     "lodash": "^4.11.1",
-    "marky-markdown": "^8.1.0",
+    "marky-markdown": "^9.0.2",
     "npm": "latest",
-    "strftime": "^0.9.2",
+    "strftime": "^0.10.0",
     "walkdir": "0.0.11"
   },
   "devDependencies": {
@@ -51,6 +51,6 @@
     "mocha": "^3.1.0",
     "nodemon": "^1.8.1",
     "standard": "^8.3.0",
-    "supertest": "^2.0.1"
+    "supertest": "^3.0.0"
   }
 }

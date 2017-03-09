@@ -1,4 +1,4 @@
-if (typeof GLOBAL.Promise === 'undefined') GLOBAL.Promise = require('bluebird')
+if (typeof global.Promise === 'undefined') global.Promise = require('bluebird')
 
 var express = require('express')
 var hbs = require('hbs')
@@ -32,6 +32,12 @@ content.sections.forEach(function (section) {
 })
 
 var lite = merge({}, content)
+lite.sections = lite.sections.map(function (section) {
+  section.pages = section.pages.map(function (page) {
+    return page.href
+  })
+  return section
+})
 lite.pages = lite.pages.map(function (page) {
   delete page.content
   return page

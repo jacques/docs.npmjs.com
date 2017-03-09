@@ -9,7 +9,7 @@ featured: true
 
 <iframe width="670" height="480" src="https://www.youtube.com/embed/x03fjb2VlGY" frameborder="0" allowfullscreen></iframe>
 
- <p>If you've been working with Javascript for a while, you might have heard of npm: npm makes it easy for Javascript developers to share the code that they've created to solve particular problems, and for other developers to reuse that code in their own applications.</p>
+ <p>If you've been working with JavaScript for a while, you might have heard of npm: npm makes it easy for JavaScript developers to share the code that they've created to solve particular problems, and for other developers to reuse that code in their own applications.</p>
  
  <p>Once you're depending on this code from other developers, npm makes it really easy to check to see if they've made any updates to it, and to download those updates when they're made.</p>
  
