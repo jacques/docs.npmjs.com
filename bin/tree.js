@@ -70,7 +70,7 @@ emitter.on('file', function (filepath, stat) {
   page.content = marky(page.content, {
     sanitize: false, // allow script tags and stuff
     prefixHeadingIds: false // don't apply safe prefixes to h1/h2... DOM ids
-  }).html()
+  })
 
   // Convert npm-cmd(#) style "links" to anchor elements"
   var prefix_hash = { 1: 'cli', 5: 'files', 7: 'misc' }
