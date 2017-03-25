@@ -12,6 +12,7 @@ rm -rf content/policies
 
 # The -p flag preserves file timestamps
 
+npm install npm
 cp -pr node_modules/npm/doc/cli content/
 cp -pr node_modules/npm/doc/files content/
 cp -pr node_modules/npm/doc/misc content/
