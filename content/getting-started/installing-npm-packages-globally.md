@@ -22,3 +22,9 @@ If you get an EACCES error, you _should_ [fix your permissions](/getting-started
 ```
 sudo npm install -g jshint
 ```
+
+If you get errors due to proxy configuration *(happens because `http_proxy` is usually set for current user, and `sudo` uses `root`)*, give parameter `-E` to `sudo`.
+
+```
+sudo -E npm install -g jshint
+```
