@@ -55,7 +55,7 @@ npm config set scope username
 
 Scoped packages are private by default. To publish private modules, you need to be a paid [private modules](https://www.npmjs.com/private-modules) user.
 
-However, public scoped modules are free and don't require a paid subscription. To publish a public scoped module, set the access option when publishing it. This option will remain set for all subsequent publishes.
+Public scoped modules are free and don't require a paid subscription. To publish a public scoped module, set the access option when publishing it. This option will remain set for all subsequent publishes.
 
 ```
 npm publish --access=public
@@ -63,7 +63,7 @@ npm publish --access=public
 
 ## Using a scoped package
 
-To use a scoped package, you simply include the scope wherever you use the package name.
+To use a scoped package, simply include the scope wherever you use the package name.
 
 In `package.json`:
 
