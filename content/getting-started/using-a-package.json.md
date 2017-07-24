@@ -8,17 +8,17 @@ featured: true
 The best way to manage locally installed npm packages is to create a
 `package.json` file. 
 
-A `package.json` file affords you a lot of great things:
+A `package.json` file offers you a lot of great things:
 
 1. It serves as documentation for what packages your project depends on.
 2. It allows you to specify the versions of a package that your project
 can use using [semantic versioning rules][1].
-3. Makes your build reproducible which means that its *way* easier
+3. It makes your build reproducible, which means that it's *much* easier
 to share with other developers.
 
 ## Requirements
 
-As a bare minimum, a `package.json` must have:
+At a bare minimum, a `package.json` must have:
 
 - `"name"`
   - all lowercase
@@ -50,7 +50,7 @@ creation of a `package.json` in the directory you initiated the command.
 
 ### The `--yes` init flag
 
-The extended CLI Q&A experience is not for everyone, and often if you are
+The extended CLI Q&A experience is not for everyone, and if you are
 comfortable with using a `package.json` you'd like a more expedited
 experience. 
 
@@ -115,7 +115,7 @@ If there is no description field in the `package.json`, npm uses the first line 
 
 ### Customizing the `init` process
 
-It is also possible to totally customize the information created and the questions asked during the init process.  This is done by creating a custom `.npm-init.js`.  By default, npm will look in your home directory.  `~/.npm-init.js`
+It is also possible to totally customize the information created and the questions asked during the init process. This is done by creating a custom `.npm-init.js`. By default, npm will look in your home directory.  `~/.npm-init.js`
 
 A simple `.npm-init.js` could look something like this:
 
@@ -126,7 +126,7 @@ module.exports = {
 }
 ```
 
-Running `npm init` with this file in your home directory, would output a `package.json` similiar to this:
+Running `npm init` with this file in your home directory would output a `package.json` similiar to this:
 
 ```
 {
@@ -135,13 +135,13 @@ Running `npm init` with this file in your home directory, would output a `packag
 }
 ```
 
-Customizing the questions is also possible, by using the `prompt` function.
+Customizing the questions is also possible by using the `prompt` function.
 
 ```
-  module.exports = prompt("what's your favorite flavor of ice cream buddy?", "I LIKE THEM ALL");
+  module.exports = prompt("what's your favorite flavor of ice cream, buddy?", "I LIKE THEM ALL");
 ```
 
-To learn more on how to create more advanced customizations,  checkout the docs for [init-package-json](https://github.com/npm/init-package-json)
+To learn more on how to create more advanced customizations, check out the docs for [init-package-json](https://github.com/npm/init-package-json)
 
 
 ## Specifying Packages
@@ -150,22 +150,22 @@ To specify the packages your project depends on, you need to
 list the packages you'd like to use in your `package.json` file. There are
 2 types of packages you can list:
 
-- `"dependencies"`: these packages are required by your application in production
-- `"devDependencies"`: these packages are only needed for development and testing
+- `"dependencies"`: These packages are required by your application in production.
+- `"devDependencies"`: These packages are only needed for development and testing.
 
 ### Manually editing your `package.json`
 
 You can manually edit your `package.json`. You'll need to create an attribute
 in the package object called `dependencies` that points to an object. This object
-will hold attributes named after the packages you'd like to use, that point to a 
+will hold attributes named after the packages you'd like to use and point to a 
 [semver][1] expression that specifies what versions of that project are 
 compatible with your project.
 
 If you have dependencies you only need to use during local development, you will
 follow the same instructions as above but in an attribute called `devDependencies`.
 
-For example: The project below uses any version of the package `my_dep` that matches
-major version 1 in production, and requires any version of the package `my_test_framework`
+For example, the project below uses any version of the package `my_dep` that matches
+major version 1 in production and requires any version of the package `my_test_framework`
 that matches major version 3, but only for development:
 
 ```
@@ -205,7 +205,7 @@ npm uses Semantic Versioning, or, as we often refer to it, SemVer, to manage ver
 and ranges of versions of packages.
 
 If you have a `package.json` file in your directory and you run
-`npm install`, then npm will look at the dependencies that are listed in
+`npm install`, npm will look at the dependencies that are listed in
 that file and download the latest versions satisfying [semver rules][1]
 for all of those.
 

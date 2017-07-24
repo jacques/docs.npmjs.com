@@ -11,7 +11,7 @@ Node.js modules are one kind of package which can be published to npm. When you 
 
 You can use `npm init` to create the `package.json`. It will prompt you for values for the `package.json` fields. The two required fields are 'name' and 'version'. You'll also want to have a value for 'main'. You can use the default, `index.js`.
 
-If you want to add information for the author field, you can use the following format (email and web site are both optional):
+If you want to add information for the author field, you can use the following format (email and website are both optional):
 
 ```
 Your Name <email@example.com> (http://example.com)
