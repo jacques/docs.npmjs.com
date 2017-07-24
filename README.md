@@ -1,6 +1,6 @@
 # [docs.npmjs.com](https://docs.npmjs.com)
 
-learn you some npm for great good
+Learn you some npm for great good.
 
 [![Build Status](https://travis-ci.org/npm/docs.svg?branch=master)](https://travis-ci.org/npm/docs)
 [![Code Climate](https://codeclimate.com/github/npm/docs/badges/gpa.svg)](https://codeclimate.com/github/npm/docs)
@@ -50,7 +50,7 @@ If you rename a directory inside the `content` directory, you'll need to change 
 
 ## Development
 
-Download node at [nodejs.org](https://nodejs.org) and install it, if you haven't already.
+Download Node at [nodejs.org](https://nodejs.org) and install it, if you haven't already.
 
 To run the app locally:
 
@@ -60,7 +60,7 @@ npm run dev
 ```
 Now you have a server running [nodemon](https://www.npmjs.com/package/nodemon) at [localhost:5000](http://localhost:5000).
 
-NOTE: If you are using `iojs`, or Node versions 4 or 5, on a Linux or OSX box,
+NOTE: If you are using `iojs`, or Node versions 4 or 5 on a Linux or OSX box,
 you will need to do the following steps:
 ```
 $ sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test
@@ -78,19 +78,19 @@ $ npm rebuild
 
 ## The Build Process
 
-The build is run automatically after every `npm install` and before `npm start`. Here's an overview of what it does.
+The build is run automatically after every `npm install` and before `npm start`. Here's an overview of what it does:
 
-1. Copies [npm documentation](https://github.com/npm/npm/tree/master/doc) from `./node_modules/npm/doc` to `./content`
+1. Copies [npm documentation](https://github.com/npm/npm/tree/master/doc) from `./node_modules/npm/doc` to `./content`.
 1. Walks the [content directory](/content) collecting markdown files.
 1. Reads the contents of each markdown file.
-1. Parses [HTML Frontmatter](#html-frontmatter) from the markdown files
-1. Converts markdown to HTML
+1. Parses [HTML Frontmatter](#html-frontmatter) from the markdown files.
+1. Converts markdown to HTML.
 1. Writes [content.json](/content.json) with HTML content of each file included.
 
 The copied and generated files are [ignored](/.gitignore) for two reasons:
 
 1. Keeps the git history uncluttered.
-1. Prevents humans from accidentally editing auto-generated files
+1. Prevents humans from accidentally editing auto-generated files.
 
 ## Webservice
 

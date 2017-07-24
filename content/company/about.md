@@ -2,7 +2,7 @@
 
 npm is lots of things.
 
-* npm is the package manager for [Node.js](https://nodejs.org/).  It was created in 2009 as an [open source project](https://github.com/npm/npm) to help JavaScript developers easily share packaged modules of code.
+* npm is the package manager for [Node.js](https://nodejs.org/). It was created in 2009 as an [open source project](https://github.com/npm/npm) to help JavaScript developers easily share packaged modules of code.
 * The npm Registry is a public collection of packages of open-source code for Node.js, [front-end web apps](http://www.ember-cli.com/), [mobile apps](https://cordova.apache.org/), [robots](https://tessel.io/), [routers](https://linerate.f5.com/), and countless other needs of the JavaScript community.
 * npm is the command line client that allows developers to install and publish those packages.
 * npm, Inc. is the company that hosts and maintains all of the above.

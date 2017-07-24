@@ -1,6 +1,6 @@
 # npm Code of Conduct
 
-npm exists to facilitate sharing code, by making it easy for
+npm exists to facilitate sharing code by making it easy for
 JavaScript module developers to publish and distribute packages.
 
 npm is a piece of technology, but more importantly, it is a community.
@@ -31,7 +31,7 @@ affairs.
 
 This policy covers the usage of the npm registry, as well as the npm
 website, npm related events, and any other services offered by or on
-behalf of npm, Inc. (collectively, the "Service").  It also applies to
+behalf of npm, Inc. (collectively, the "Service"). It also applies to
 behavior in the context of the npm Open Source project communities,
 including but not limited to public GitHub repositories, IRC channels,
 social media, mailing lists, and public events.
@@ -44,25 +44,25 @@ The definitions of various subjective terms such as "discriminatory",
 "hateful", or "confusing" will be decided at the sole discretion of
 the npm abuse team.
 
-## Friendly Harassment-Free Space
+## Friendly, Harassment-Free Space
 
-We are committed to providing a friendly, safe and welcoming
+We are committed to providing a friendly, safe, and welcoming
 environment for all, regardless of gender identity, sexual
 orientation, disability, ethnicity, religion, age, physical
 appearance, body size, race, or similar personal characteristics.
 
 We ask that you please respect that people have differences of opinion
-regarding technical choices, and that every design or implementation
-choice carries a trade-off and numerous costs.  There is seldom a
-single right answer.  A difference of technology preferences is not a
+regarding technical choices and that every design or implementation
+choice carries a trade-off and numerous costs. There is seldom a
+single right answer. A difference of technology preferences is not a
 license to be rude.
 
 Disputes over package rights must be handled respectfully, according
-to the terms described in the npm Dispute Resolution document.  There
+to the terms described in the npm Dispute Resolution document. There
 is never a good reason to be rude over package name disputes.
 
 Any spamming, trolling, flaming, baiting, or other attention-stealing
-behavior is not welcome, and will not be tolerated.
+behavior is not welcome and will not be tolerated.
 
 Harassing other users of the Service is never tolerated, whether via
 public or private media.
@@ -84,36 +84,36 @@ inappropriate physical contact; and unwelcome sexual attention.
 ## Acceptable Package Content
 
 <!--
-TODO: This should probably be split out into a separate doc.  Maybe
+TODO: This should probably be split out into a separate doc. Maybe
 just link to the appropriate location in the Terms of Use once we have
 it.
 -->
 
 The Service administrators reserve the right to make judgment calls
-about what is and isn't appropriate in published packages.  These are
+about what is and isn't appropriate in published packages. These are
 guidelines to help you be successful in our community.
 
 Packages published to the Service must be created using the npm
-command-line client, or a functionally equivalent implementation.  For
+command-line client, or a functionally equivalent implementation. For
 example, a "package" must not be a PNG or JPEG image, movie file, or
-text document.  Using the Service as a personal general-purpose
-database is also not allowed for this reason.  Packages should be npm
-packages, and nothing else.
+text document. Using the Service as a personal general-purpose
+database is also not allowed for this reason. Packages should be npm
+packages and nothing else.
 
-Packages must contain some functionality.  "Squatting", that is,
+Packages must contain some functionality. "Squatting", that is,
 publishing an empty package to "reserve" a name, is not allowed.
 
-Packages must not contain illegal or infringing content.  You should
+Packages must not contain illegal or infringing content. You should
 only publish packages or other materials to the Service if you have
-the right to do so.  This includes complying with all software license
+the right to do so. This includes complying with all software license
 agreements or other intellectual property restrictions. For example,
 redistributing an MIT-licensed module with the copyright notice
-removed, would not be allowed.  You will be responsible for any
+removed would not be allowed. You will be responsible for any
 violation of laws or intellectual property rights.
 
-Packages must not be malware.  For example, a package which is
-designed to maliciously exploit or damage computer systems, is not
-allowed.  However, an explicitly documented penetration testing
+Packages must not be malware. For example, a package which is
+designed to maliciously exploit or damage computer systems is not
+allowed. However, an explicitly documented penetration testing
 library designed to be used for white-hat security research would most
 likely be fine.
 
@@ -124,7 +124,7 @@ abusive, inappropriate, or harassing content.
 
 If you believe someone is harassing you or has otherwise violated this
 Code of Conduct, please contact us at <abuse@npmjs.com> to send us an
-abuse report.  If this is the initial report of a problem, please
+abuse report. If this is the initial report of a problem, please
 include as much detail as possible. It is easiest for us to address
 issues when we have more context.
 
@@ -150,7 +150,7 @@ service).
 ## Addressing Grievances
 
 If you feel you have been falsely or unfairly accused of violating
-this Code of Conduct, you should notify npm, Inc.  We will do our best
+this Code of Conduct, you should notify npm, Inc. We will do our best
 to ensure that your grievance is handled appropriately.
 
 In general, we will choose the course of action that we judge as being
@@ -163,7 +163,7 @@ address a grievance related to an abuse report.
 
 You are also encouraged to contact us if you are curious about
 something that might be "on the line" between appropriate and
-inappropriate content.  We are happy to provide guidance to help you
+inappropriate content. We are happy to provide guidance to help you
 be a successful part of our community.
 
 ## Changes
