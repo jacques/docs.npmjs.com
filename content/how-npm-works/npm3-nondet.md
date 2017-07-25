@@ -13,13 +13,13 @@ If you, and your development team, use a `package.json`, as well
 as the interactive `npm install` command to add pkgs (like most
 teams using npm do), it is likely that you will run into a situation
 where your local `node_modules` directory will differ from both
-your coworkers' `node_modules` directories, as well as the `node_modules`
+your coworker's `node_modules` directories, as well as the `node_modules`
 directories on your staging, testing, or production servers.
 
 In short? __npm3 does not install dependencies in a deterministic way.__
 
 That's probably not a comforting statement to read, but in this article
-we'll discuss why this happens, as well as assure you that it has no
+we'll discuss why this happens. We'll also assure you that it has no
 implications for your application, as well as explain the steps to
 reliably (re)create a single, consistent, `node_modules` directory, should
 you want to do that.
@@ -123,10 +123,10 @@ on the project, all modules listed in the `package.json` were already
 installed in the `node_modules` folder. **Then** Module A v2.0 was 
 installed.
 
-It follows, then, that Module Bv1.0, a top level dependency because of
+It follows, then, that Module B v1.0, a top level dependency because of
 Module A v1.0, then anchored by Module E v1.0, remains a top level
 dependency. Because Module Bv1.0 occupies the top-level, no other version
-of Module B can-- therefore, Module Bv2.0 remains a nested dependency
+of Module B can-- therefore, Module B v2.0 remains a nested dependency
 under Module C v1.0 and Module D v1.0, and becomes a nested dependency
 for the new Module A v2.0 dependency.
 

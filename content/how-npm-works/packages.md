@@ -5,7 +5,7 @@ featured: true
 
 # Packages and Modules
 
-One of the key steps in becoming immersed in an ecosystem is learning
+One of the keys in becoming immersed in an ecosystem is learning
 its vocabulary. Node.js and npm have very specific definitions of
 packages and modules, which are easy to mix up. We'll discuss those
 definitions here, make them distinct, and explain why certain
@@ -24,21 +24,21 @@ default files are named the way they are.
 
 A package is any of the following:
 
-* a) a folder containing a program described by a `package.json` file
-* b) a gzipped tarball containing (a)
-* c) a url that resolves to (b)
-* d) a `<name>@<version>` that is published on the registry with (c)
-* e) a `<name>@<tag>` that points to (d)
-* f) a `<name>` that has a `latest` tag satisfying (e)
-* g) a `git` url that, when cloned, results in (a).
+* a) A folder containing a program described by a `package.json` file.
+* b) A gzipped tarball containing (a).
+* c) A url that resolves to (b).
+* d) A `<name>@<version>` that is published on the registry with (c).
+* e) A `<name>@<tag>` that points to (d).
+* f) A `<name>` that has a `latest` tag satisfying (e).
+* g) A `git` url that, when cloned, results in (a).
 
 Noting all these `package` possibilities, it follows that even if you never
 publish your package to the public registry, you can still get a lot of
 benefits of using npm:
 
-- if you just want to write a node program, and/or
-- if you also want to be able to easily install it elsewhere after packing
-  it up into a tarball
+- If you just want to write a node program, and/or,
+- If you also want to be able to easily install it elsewhere after packing
+  it up into a tarball.
 
 Git urls can be of the form:
 
@@ -50,12 +50,12 @@ git+https://user@hostname/project/blah.git#commit-ish
 ```
 
 The `commit-ish` can be any tag, sha, or branch which can be supplied as
-an argument to `git checkout`.  The default is `master`.
+an argument to `git checkout`. The default is `master`.
 
 ## What is a `module`?
 
 A module is anything that can be loaded with `require()` in a Node.js
-program.  The following are all examples of things that can be
+program. The following are all examples of things that can be
 loaded as modules:
 
 * A folder with a `package.json` file containing a `main` field.
@@ -77,7 +77,7 @@ Almost all npm packages (at least, those that are Node programs)
 `require()` is a module).
 
 In the context of a Node program, the `module` is also the thing that
-was loaded *from* a file.  For example, in the following program:
+was loaded *from* a file. For example, in the following program:
 
     var req = require('request')
 
@@ -85,10 +85,10 @@ we might say that "The variable `req` refers to the `request` module".
 
 ## File and Directory Names in the Node.js and npm Ecosystem
 
-- So, why is it the `node_modules` folder, but `package.json` file?
-- Why not `node_packages` or `module.json`?
+So, why is it the `node_modules` folder, but `package.json` file?
+Why not `node_packages` or `module.json`?
 
-The `package.json` file defines the package.  (See
+The `package.json` file defines the package. (See
 ["What is a `package`?"](#what-is-a-package), above.)
 
 The `node_modules` folder is the place Node.js looks for modules.
@@ -96,10 +96,10 @@ The `node_modules` folder is the place Node.js looks for modules.
 
 For example, if you create a file at `node_modules/foo.js` and then
 had a program that did `var f = require('foo.js')`, it would load
-the module.  However, `foo.js` is not a "package" in this case
+the module. However, `foo.js` is not a "package" in this case
 because it does not have a package.json.
 
 Alternatively, if you create a package which does not have an
 `index.js` or a `"main"` field in the `package.json` file, then it is
-not a module.  Even if it's installed in `node_modules`, it can't be
+not a module. Even if it's installed in `node_modules`, it can't be
 an argument to `require()`.
