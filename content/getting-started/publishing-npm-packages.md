@@ -11,7 +11,7 @@ You can publish any directory that has a `package.json` file, e.g. a [node modul
 
 ## Creating a user
 
-To publish, you must have a user on the npm registry. If you don't have one, create it with `npm adduser`. If you created one on the site, use `npm login` to store the credentials on the client.
+To publish, you must be a user on the npm registry. If you don't have one, create it with `npm adduser`. If you created one on the site, use `npm login` to store the credentials on the client.
 
 Test: Use `npm config ls` to ensure that the credentials are stored on your client. Check that it has been added to the registry by going to [https://npmjs.com/~](https://npmjs.com/~)<username>.
 
@@ -21,7 +21,7 @@ Use `npm publish` to publish the package.
 
 Note that everything in the directory will be included unless it is ignored by a local `.gitignore` or `.npmignore` file as described in [`npm-developers`](/misc/developers).
 
-Also make sure there isn't already a package with the same name, owned by somebody else.
+Also, make sure there isn't already a package with the same name owned by somebody else.
 
 Test: Go to `https://npmjs.com/package/<package>`. You should see the information for your new package.
 

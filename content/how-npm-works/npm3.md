@@ -15,11 +15,11 @@ dependency that requires it.
 
 The key major differences are: 
 
-  - position in the directory structure no longer predicts the type
-    (primary, secondary, etc) a dependency is
-  - dependency resolution depends on *install order*, or the order
+  - Position in the directory structure no longer predicts the type
+    (primary, secondary, etc) a dependency is.
+  - Dependency resolution depends on *install order*, or the order
     in which things are installed will change the `node_modules`
-    directory tree structure 
+    directory tree structure.
 
 ## Example - <a class="button" href="https://github.com/ashleygwilliams/npm-sandbox/tree/master/npm3/example1">Explore on Github</a>
 

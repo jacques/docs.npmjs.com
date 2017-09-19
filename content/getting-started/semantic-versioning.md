@@ -14,9 +14,9 @@ Semantic versioning is a standard that a lot of projects use to communicate what
 If a project is going to be shared with others, it should start at `1.0.0`, though some projects on npm don't follow this rule.
 
 After this, changes should be handled as follows:
-* Bug fixes and other minor changes: Patch release, increment the last number, e.g. 1.0.1
-* New features which don't break existing features: Minor release, increment the middle number, e.g. 1.1.0
-* Changes which break backwards compatibility: Major release, increment the first number, e.g. 2.0.0
+* Bug fixes and other minor changes: Patch release, increment the last number, e.g. 1.0.1.
+* New features which don't break existing features: Minor release, increment the middle number, e.g. 1.1.0.
+* Changes which break backwards compatibility: Major release, increment the first number, e.g. 2.0.0.
 
 ## Semver for consumers
 

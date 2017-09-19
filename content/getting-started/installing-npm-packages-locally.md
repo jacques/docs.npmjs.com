@@ -19,13 +19,13 @@ To learn more about the `install` command's behavior, check out the [CLI doc pag
 
 ## Installing
 
-A package can be downloaded with the command
+A package can be downloaded with the command:
 
 ```
 > npm install <package_name>
 ```
 
-This will create the `node_modules` directory in your current directory(if one doesn't exist yet),
+This will create the `node_modules` directory in your current directory (if one doesn't exist yet)
 and will download the package to that directory.
 
 #### Test:

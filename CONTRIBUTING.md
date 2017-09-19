@@ -18,7 +18,7 @@ Please also ensure your contribution conforms to the [Contributing Guidelines].
 ## Commit Messages
 
 The commit history of a project should read like that project's recipe.
-Commit messages should be written in the active, present, tense, e.g.,:
+Commit messages should be written in the active present tense, e.g.,:
 
 `fix typo in how-npm-works dedupe section`
 
@@ -26,15 +26,15 @@ Other items:
 - You will be asked to [squash your commits].
 - Rebase is preferred over merge.
 
-Note: Everything in git can be fixed. So don't be intimidated by these
-requirements! We're here to help you through it, if you need it :)
+Note: Everything in git can be fixed, so don't be intimidated by these
+requirements! We're here to help you through it, if you need it :).
 
 ## Issue Labels
 
 - [`your-first-pr`][1]: reserved for people with little to no
   GitHub contributions- we're here to help you start your OS journey!
 - [`patches welcome`][2]: these issues are specifically well suited
-  for outside contributors
+  for outside contributors.
 
 [1]: https://github.com/npm/docs/labels/your-first-pr
 [2]: https://github.com/npm/docs/labels/patches%20welcome

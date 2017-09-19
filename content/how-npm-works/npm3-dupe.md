@@ -8,8 +8,8 @@ featured: true
 Let's continue with our example before. Currently we have an application
 that depends on 2 modules:
 
-  - Module-A, depends on Module B v1.0
-  - Module-C, depends on Module B v2.0
+  - Module-A, depends on Module B v1.0.
+  - Module-C, depends on Module B v2.0.
 
 ![our app so far](/images/appsofar.png)
 
@@ -66,11 +66,11 @@ command means that Module A v2.0 is the last package installed.
 
 As a result, npm3 does the following things when we run `npm install mod-a@2 --save`:
 
-- it removes Module A v1.0
-- it installs Modules A v2.0
-- it leaves Module Bv1.0 because Module E v1.0 still depends on it
-- it installs Module Bv2.0 as a nested dependency under Module A v2.0, since 
-  Module B v1.0 is already occupying the top level in the directory hierarchy
+- It removes Module A v1.0.
+- It installs Modules A v2.0.
+- It leaves Module Bv1.0 because Module E v1.0 still depends on it.
+- It installs Module Bv2.0 as a nested dependency under Module A v2.0, since 
+  Module B v1.0 is already occupying the top level in the directory hierarchy.
 
 ![bv1.0 stays even though a doesn't dep on it anymore](/images/npm3deps10.png)
 
@@ -85,11 +85,11 @@ instead of Module B v1.0, just like the Module A update.
 
 npm3 performs the following things:
 
-- it removes Module E v1.0
-- it installs Module E v2.0
-- it removes Module B v1.0 because nothing depends on it anymore
-- it installs Module B v2.0 in the top level of the directory because there is
-  no other version of Module B there
+- It removes Module E v1.0.
+- It installs Module E v2.0.
+- It removes Module B v1.0 because nothing depends on it anymore.
+- It installs Module B v2.0 in the top level of the directory because there is
+  no other version of Module B there.
 
 ![now we have Bv2.0 everywhere](/images/npm3deps12.png)
 
