@@ -94,7 +94,7 @@ Wrote to /home/ag_dubs/my_package/package.json:
 - `version`: always `1.0.0`
 - `description`: info from the readme, else an empty string `""`
 - `main`: always `index.js`
-- `scripts`: by default creates a empty `test` script
+- `scripts`: by default creates an empty `test` script
 - `keywords`: empty
 - `author`: empty
 - `license`: [`ISC`][2]
