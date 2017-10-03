@@ -21,7 +21,7 @@ As part of the introduction of 2FA, npm has enhanced or added new security featu
 * Profiles can be edited from the command line interface
 * You can change passwords from the command line interface 
 * You can edit profile settings from the command line, including passwords
-* Limit access to your code according to IP addressranges (CIDR) 
+* Limit access to your code according to IP address ranges (CIDR) 
 * One-time use Password Recovery codes have been implemented for greater security
 * Limit code to read or read-write control by controlling tokens 
 * Create and delete specialized tokens to allow targeted and controlled distribution 
@@ -57,7 +57,7 @@ The first step toward greater security is to add 2FA to your profile. This will 
 
 `npm profile enable-tfa auth-and-writes`
 
- 2a. If you chose the default setting, this message will appear: 
+ 2a. If you choose the default setting, this message will appear: 
 ````
 $ npm profile enable-tfa
 
@@ -72,8 +72,6 @@ $ npm profile enable-tfa auth-and-writes
 ````
 
 3. When prompted, enter your npm password.
-
-![2fa QR code](/images/2fa-QR-code.png)
 
 4. npm will present a QVR code with this message:
 
@@ -110,25 +108,5 @@ $ npm profile disable-2fa
 
 >Enter one-time password from your authenicator: 123456
 
-Two factor authentication diabled. 
+Two factor authentication disabled. 
 ````
-
-### What to do if you lose your password
- 
-## Working with Tokens 
-
-A token is another type of two-factor authentication. A *token*
-Tokens can be used to provide access to packages. There is now a way to ensure that a token provides read-only access. Tokens are also tied to your profile.
-
-You can now:
-* delete tokens from the command line
-* set tokens to be either read-only, or read-and-write
-* create new tokens from the command line
-
-## Controlling Tokens 
-
-### Restricting by IP address
-
-### Restricting by Read or Write
-
-### Adding and Removing Tokens

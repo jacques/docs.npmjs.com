@@ -40,7 +40,6 @@
     "js-beautify": "^1.6.11",
     "leven": "^2.0.0",
     "lodash": "^4.11.1",
-    "marky-markdown": "^10.0.1",
     "marky-markdown": "^9.0.2",
     "npm": "^5.4.2",
     "strftime": "^0.10.0",
