@@ -102,7 +102,7 @@ You will need these to recover access to your account if you lose your device.
 3. Enter a one-time password from your authenticator. The authenticator can be Authy or any other standard authenticators. Your screen will look like this:
 
 ````
-$ npm profile disable-2fa
+$ npm profile disable-tfa
 
 > npm password:
 
@@ -110,3 +110,7 @@ $ npm profile disable-2fa
 
 Two factor authentication disabled. 
 ````
+
+### Note
+
+The commands `npm profile enable-tfa` and `npm profile enable-2fa`, with or without dash `'-'`, are aliases. Similarly, `npm profile disable-tfa` and `npm profile disable-2fa`, with or without dash `'-'` are aliases.
