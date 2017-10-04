@@ -7,7 +7,7 @@ featured: true
 
 To meet the increasing need for strong digital security, npm has introduced two-factor authentication (2FA) to profiles and tokens. 2FA prevents unauthorized access to your accounts and projects. You have probably used 2FA before. For example, if you need to provide a code from your phone in addition to logging in with a password to access your bank account, your bank has enabled 2FA. Two-factor means that there are two pathways you must use to gain access to code or an account. 2FA would also include having a card key to get into a building, plus a physical key to get into an office. If you had one without the other, you could not get into the office. 
 
-To get started using 2FA with npm you will need to have an authentication package that can provide the second authentication factor. If you don't have one, please download a product such as Authy or Google Authenticator. 
+To get started using 2FA with npm you will need to have an authentication package that can provide the second authentication factor. If you don't have one, please download a product such as [Authy](https://authy.com/download/) or [Google Authenticator](https://support.google.com/accounts/answer/1066447). 
 
 (Note: npm will not use SMS (text-to-phone) as a method for authenticating users.)
 
