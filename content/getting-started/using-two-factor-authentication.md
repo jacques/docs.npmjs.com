@@ -130,3 +130,7 @@ The first step toward greater security is to add 2FA to your profile. This will 
 
     Two factor authentication disabled.
     ````
+
+### Note
+
+The commands `npm profile enable-tfa` and `npm profile enable-2fa`, with or without dash `'-'`, are aliases. Similarly, `npm profile disable-tfa` and `npm profile disable-2fa`, with or without dash `'-'` are aliases.
