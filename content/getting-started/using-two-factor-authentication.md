@@ -37,9 +37,9 @@ For several of the new commands, you can select between two levels of authentica
 
 ### Quick Start: New Profile Commands
 
-  `npm profile enable-tfa [auth-only|auth-and-writes]`
+  `npm profile enable-2fa [auth-only|auth-and-writes]`
 
-  `npm profile disable-tfa`
+  `npm profile disable-2fa`
 
   `npm profile get`
 
@@ -51,17 +51,17 @@ The first step toward greater security is to add 2FA to your profile. This will 
 
 1.  Enter the command to enable two factor authentication
 
-    1.  Type either of these commands to enable tfa authentication and enable write access to your profile:
+    1.  Type either of these commands to enable 2fa authentication and enable write access to your profile:
 
         ````
-        npm profile enable-tfa
-        npm profile enable-tfa auth-and-writes
+        npm profile enable-2fa
+        npm profile enable-2fa auth-and-writes
         ````
 
-    2.  Type this command to enable tfa authentication-only to your profile:
+    2.  Type this command to enable 2fa authentication-only to your profile:
 
         ````
-        npm profile enable-tfa auth-only
+        npm profile enable-2fa auth-only
         ````
 
 2.  Check you have chosen the right setting.
@@ -69,22 +69,22 @@ The first step toward greater security is to add 2FA to your profile. This will 
     1.  If you choose the default setting, this message will appear:
 
         ````
-        $ npm profile enable-tfa
+        $ npm profile enable-2fa
 
         > npm notice profile Enabling two factor authentication for auth-and-writes
         ````
 
-    2.  If you chose the `auth-and-writes` tfa setting, the same message will appear:
+    2.  If you chose the `auth-and-writes` 2fa setting, the same message will appear:
         ````
-        $ npm profile enable-tfa auth-and-writes
+        $ npm profile enable-2fa auth-and-writes
 
         > npm notice profile Enabling two factor authentication for auth-and-writes
         ````
 
-    3.  If you chose the `auth-only` tfa setting, this message will appear:
+    3.  If you chose the `auth-only` 2fa setting, this message will appear:
 
         ````
-        $ npm profile enable-tfa auth-only
+        $ npm profile enable-2fa auth-only
 
         > npm notice profile Enabling two factor authentication for auth-only
         ````
@@ -114,7 +114,7 @@ The first step toward greater security is to add 2FA to your profile. This will 
 1.  To remove 2FA from your profile, type this command:
 
     ````
-    npm profile disable-tfa
+    npm profile disable-2fa
     ````
 
 2.  Enter your npm password when prompted.
