@@ -126,7 +126,7 @@ The first step toward greater security is to add 2FA to your profile. This will 
 
     > npm password:
 
-    >Enter one-time password from your authenicator: 123456
+    >Enter one-time password from your authenticator: 123456
 
     Two factor authentication disabled.
     ````
