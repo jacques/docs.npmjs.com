@@ -53,14 +53,14 @@ The first step toward greater security is to add 2FA to your profile. This will 
 
     1.  Type either of these commands to enable 2fa authentication and enable write access to your profile:
 
-        ````
+        ```
         npm profile enable-2fa
         npm profile enable-2fa auth-and-writes
-        ````
+        ```
 
     2.  Type this command to enable 2fa authentication-only to your profile:
 
-        ````
+        ```
         npm profile enable-2fa auth-only
         ````
 
@@ -68,42 +68,42 @@ The first step toward greater security is to add 2FA to your profile. This will 
 
     1.  If you choose the default setting, this message will appear:
 
-        ````
+        ```
         $ npm profile enable-2fa
 
         > npm notice profile Enabling two factor authentication for auth-and-writes
-        ````
+        ```
 
     2.  If you chose the `auth-and-writes` 2fa setting, the same message will appear:
-        ````
+        ```
         $ npm profile enable-2fa auth-and-writes
 
         > npm notice profile Enabling two factor authentication for auth-and-writes
-        ````
+        ```
 
     3.  If you chose the `auth-only` 2fa setting, this message will appear:
 
-        ````
+        ```
         $ npm profile enable-2fa auth-only
 
         > npm notice profile Enabling two factor authentication for auth-only
-        ````
+        ```
 
 3.  When prompted, enter your npm password.
 
 4.  npm will present a QR code with this message:
 
-    ````
+    ```
     Scan into your authenticator app or enter code [**your code**]
     And an OTP code from your authenticator:
-    ````
+    ```
 
 5.  Use your authenticator app to scan the code, or to enter the codes as directed. After you do this, you will see this message:
 
-    ````
-    TFA successfully enabled. Below are your recovery codes, please print these out.
+    ```
+    2FA successfully enabled. Below are your recovery codes, please print these out.
     You will need these to recover access to your account if you lose your authentication device.
-    ````
+    ```
 
 6.  This statement is followed by a series of codes. Please print them or save them as described in the message.
 
@@ -113,15 +113,15 @@ The first step toward greater security is to add 2FA to your profile. This will 
 
 1.  To remove 2FA from your profile, type this command:
 
-    ````
+    ```
     npm profile disable-2fa
-    ````
+    ```
 
 2.  Enter your npm password when prompted.
 
 3.  Enter a one-time password from your authenticator. The authenticator can be Authy or any other standard authenticators. Your screen will look like this:
 
-    ````
+    ```
     $ npm profile disable-2fa
 
     > npm password:
@@ -129,7 +129,7 @@ The first step toward greater security is to add 2FA to your profile. This will 
     >Enter one-time password from your authenticator: 123456
 
     Two factor authentication disabled.
-    ````
+    ```
 
 ### Note
 
