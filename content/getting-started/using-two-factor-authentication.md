@@ -5,15 +5,26 @@ featured: true
 
 # Using Two-Factor Authentication
 
-To meet the increasing need for strong digital security, npm has introduced two-factor authentication (2FA) to profiles and tokens. 2FA prevents unauthorized access to your accounts and projects. You have probably used 2FA before. For example, if you need to provide a code from your phone in addition to logging in with a password to access your bank account, your bank has enabled 2FA. Two-factor means that there are two pathways you must use to gain access to code or an account. 2FA would also include having a card key to get into a building, plus a physical key to get into an office. If you had one without the other, you could not get into the office.
+To meet the increasing need for strong digital security, npm has introduced two-factor
+authentication (2FA) to profiles and tokens. 2FA prevents unauthorized access to your
+accounts and projects. You have probably used 2FA before. For example, if you need to
+provide a code from your phone in addition to logging in with a password to access your
+bank account, your bank has enabled 2FA. Two-factor means that there are two pathways
+you must use to gain access to code or an account. 2FA would also include having a card
+key to get into a building, plus a physical key to get into an office. If you had one
+without the other, you could not get into the office.
 
-To get started using 2FA with npm you will need to have an authentication package that can provide the second authentication factor. If you don't have one, please download a product such as [Authy](https://authy.com/download/) or [Google Authenticator](https://support.google.com/accounts/answer/1066447).
+To get started using 2FA with npm you will need to have an application that can provide
+the second authentication factor. If you don't have one, please download a product such
+as [Authy](https://authy.com/download/) or 
+[Google Authenticator](https://support.google.com/accounts/answer/1066447).
 
 (Note: npm will not use SMS (text-to-phone) as a method for authenticating users.)
 
 ## Summary of Features
 
-As part of the introduction of 2FA, npm has enhanced or added new security features. Read this doc to learn how to use them.
+As part of the introduction of 2FA, npm has enhanced or added new security features.
+Read this doc to learn how to use them.
 
 ### New Security Options
 
@@ -31,7 +42,8 @@ As part of the introduction of 2FA, npm has enhanced or added new security featu
 For several of the new commands, you can select between two levels of authentication:
 
 *   *auth only* means authenticate only, which gives you read access.
-*   *auth-and-writes* means read, write, and delete access. Someone with this access can also grant access to others.
+*   *auth-and-writes* means read, write, and delete access. Someone with this access
+    can also grant access to others.
 
 ## Working with the new Profile Options
 
@@ -47,11 +59,13 @@ For several of the new commands, you can select between two levels of authentica
 
 ## How to Add Two-Factor Authentication to your Profile
 
-The first step toward greater security is to add 2FA to your profile. This will prevent spoof attacks, where someone logs in as if they were you.
+The first step toward greater security is to add 2FA to your profile. This will
+prevent spoof attacks, where someone logs in as if they were you.
 
 1.  Enter the command to enable two factor authentication
 
-    1.  Type either of these commands to enable 2fa authentication and enable write access to your profile:
+    1.  Type either of these commands to enable 2fa authentication and enable write
+        access to your profile:
 
         ```
         npm profile enable-2fa
@@ -98,16 +112,20 @@ The first step toward greater security is to add 2FA to your profile. This will 
     And an OTP code from your authenticator:
     ```
 
-5.  Use your authenticator app to scan the code, or to enter the codes as directed. After you do this, you will see this message:
+5.  Use your authenticator app to scan the code, or to enter the codes as directed. After
+    you do this, you will see this message:
 
     ```
     2FA successfully enabled. Below are your recovery codes, please print these out.
     You will need these to recover access to your account if you lose your authentication device.
     ```
 
-6.  This statement is followed by a series of codes. Please print them or save them as described in the message.
+6.  This statement is followed by a series of codes. Please print them or save them as
+    described in the message.
 
-    >**WARNING**: You must save these codes somewhere safe, such as a location that is not normally near your device. If you lose the device that provides the second method of security, or forget your password, these codes will be your only way to get back online.
+    >**WARNING**: You must save these codes somewhere safe, such as a location that is not
+     normally near your device. If you lose the device that provides the second method of
+     security, or forget your password, these codes will be your only way to get back online.
 
 ## How to Remove Two-Factor Authentication from your Profile
 
@@ -119,7 +137,8 @@ The first step toward greater security is to add 2FA to your profile. This will 
 
 2.  Enter your npm password when prompted.
 
-3.  Enter a one-time password from your authenticator. The authenticator can be Authy or any other standard authenticators. Your screen will look like this:
+3.  Enter a one-time password from your authenticator. The authenticator can be Authy or any
+    other standard authenticators. Your screen will look like this:
 
     ```
     $ npm profile disable-2fa
@@ -133,4 +152,6 @@ The first step toward greater security is to add 2FA to your profile. This will 
 
 ### Note
 
-The commands `npm profile enable-tfa` and `npm profile enable-2fa`, with or without dash `'-'`, are aliases. Similarly, `npm profile disable-tfa` and `npm profile disable-2fa`, with or without dash `'-'` are aliases.
+The commands `npm profile enable-tfa` and `npm profile enable-2fa`, with or without dash `'-'`,
+are aliases. Similarly, `npm profile disable-tfa` and `npm profile disable-2fa`, with or without
+dash `'-'` are aliases.
