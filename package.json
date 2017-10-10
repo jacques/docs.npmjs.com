@@ -34,21 +34,21 @@
     "cors": "^2.7.1",
     "express": "^4.13.3",
     "handlebars-helper-equal": "^1.0.0",
-    "harp": "^0.23.0",
+    "harp": "~0.24.1",
     "hbs": "^4.0.0",
     "html-frontmatter": "^1.5.1",
     "js-beautify": "^1.6.11",
     "leven": "^2.0.0",
     "lodash": "^4.11.1",
-    "marky-markdown": "^9.0.2",
-    "npm": "^5.4.2",
+    "marky-markdown": "~11.3.2",
+    "npm": "~5.4.2",
     "strftime": "^0.10.0",
-    "walkdir": "0.0.11"
+    "walkdir": "0.0.12"
   },
   "devDependencies": {
-    "cheerio": "^0.22.0",
+    "cheerio": "~1.0.0-rc.2",
     "mansplain": "^3.0.0",
-    "mocha": "^3.1.0",
+    "mocha": "~4.0.1",
     "nodemon": "^1.8.1",
     "standard": "^10.0.1",
     "supertest": "^3.0.0"
