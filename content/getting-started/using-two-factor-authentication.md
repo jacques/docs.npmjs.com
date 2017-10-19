@@ -5,127 +5,145 @@ featured: true
 
 # Using Two-Factor Authentication
 
-To meet the increasing need for strong digital security, npm has introduced two-factor authentication (2FA).  2FA prevents unauthorized access to your
-accounts and projects. *Two-factor*  means that someone cannot break into your account with a single method. For example, if you need a card to get into your building, plus a key to access your office, you can't get into the building with only the card or only the key. 
-
-You have probably used 2FA before. For example, if you need to provide a code from your phone in addition to logging in with a password to access your online bank account, your bank has enabled 2FA.  
-
-Set two-factor authentication to restrict access to your account, and to limit or prevent the ability of others to modify packages.  
+To meet the increasing need for strong digital security, npm has introduced two-factor authentication (2FA).  Two-factor authentication prevents unauthorized access to your account by confirming your identity using two methods. One factor is something you know, such as your username and password, the other factor is something you have, such as a phone or tablet device. For example, if your bank uses 2FA, the first time you logged in to your online banking system, the bank sent a code to your cell phone number, then prompted you to enter the code online, proving that the cell phone was in your possession and linking it to your account for authentication. After that,  if the bank detects anything unusual, such as a login from a different laptop, it will send a temporary code to your phone that you must enter before you can login. This provides an extra layer of security because, even if someone obtains your login credentials, they are unlikely to have your device in their possession as well. Two-factor authentication multiplies the protection against attacks, and we recommend that you implement this with your npm account.  
 
 ## Preparation
 
-To get started using 2FA with your npm account, you will need an application that can provide a second authentication factor. If you don't have one, please download a product such as [Authy](https://authy.com/download/) or 
-[Google Authenticator](https://support.google.com/accounts/answer/1066447). 
+To enable 2FA with your npm account, you will need an application that can generate a One Time Password, or OTP. For example, [Authy](https://authy.com/download/) or 
+[Google Authenticator](https://support.google.com/accounts/answer/1066447), can generate one time passwords (OTP's).  These products use a Time-Based One-Time Password Algorithm (TOTP) to create temporary codes.  Install the application on a mobile device or a second laptop that will always be available when you work in your npm account. (Note: npm does not use SMS (text-to-phone) as a method for authenticating users.)
 
-Some authenticators scan QR codes, others generate a one-time password, or OTP. 
-
-(Note: npm will not use SMS (text-to-phone) as a method for authenticating users.)
-
-## New Security Options Related to Two-Factor Authentication
-
-Here are actions you can take to increase security:
-
-* Enable two-factor authentication on your user profile to prevent spoofing
-* Limit access according to IP address ranges (CIDR)
-* Generate one-time use Password Recovery codes in case you forget your password
-* Create and delete (revoke) specialized tokens to allow targeted and controlled distribution, testing, and modifications
-
-## Working with the New Profile Options
-
-You can now make changes to your profile from the Command Line Interface (CLI). Even though 2FA is set via the command line, the settings also apply to website access. This documentation highlights the most common commmands. Please see the CLI doc for additional details.  
-
-### New Profile Commands
-
-  `npm profile enable-2fa [auth-only|auth-and-writes]`
-  `npm profile disable-2fa`
+## Levels of Authentication 
   
-There are two levels of authentication, *auth only* and *auth-and-writes*:
+There are two levels of authentication, ***auth-only*** and ***auth-and-writes***.
 
-* *auth only*  requires a one-time-password (OTP) when logging on or making changes to your account's authentification. 
-* *auth-and-writes*  requires an OTP in all instances that auth-only does. Additionally, this setting requires an OTP when publishing a module, setting the latest version, changing access, and other actions. 
+If you enable 2FA in **auth-only** mode, npm will require an OTP when you:
 
-### How to Add Two-Factor Authentication to your Profile
+* log in
+* remove 2FA
 
-The first step toward greater security is to add 2FA to your profile. This will prevent spoof attacks, where someone logs in as if they were you.
+If you enable 2FA in **auth-and-writes** mode, which is the default, npm will require an OTP when you:
 
-#### Enabling Auth-and-Writes Two-Factor Authentication
+* log in
+* change your profile
+* create or revoke tokens 
+* publish packages 
+* change access
+* change your password
+* make other sensitive changes to packages
+* remove 2FA
 
-To require two-factor authentication when logging in, writing, publishing, and making other changes, type either command. (The auth-and-writes setting is the default.)
+To add the OTP to a command, append it as shown:
+
+```
+npm owner add <user > --otp=123456
+```
+
+Other examples are listed below.
+
+## How Do I Enable 2FA? 
+
+To require two-factor authentication, type the command that meets the level of security you wish to apply (auth-and-writes is the default).
   
         npm profile enable-2fa
         npm profile enable-2fa auth-and-writes 
-        
-        npm will return this message:
-        
-        $ npm profile enable-2fa
-        > npm notice profile Enabling two factor authentication for auth-and-writes
-   
-#### Enabling Auth-Only Two-Factor Authentification
-
-If you want to enable 2FA, but you only want it to be activated when you first login, use the *auth-only* setting. 
-
         npm profile enable-2fa auth-only
+      
+npm will return this message:
+            
+        > npm notice profile Enabling two factor authentication for auth-and-writes   
+       
+   or this message: 
         
- npm will return this message: 
- 
-        ```
-        $ npm profile enable-2fa auth-only
-        > npm notice profile Enabling two factor authentication for auth-only
-        ```
+      > npm notice profile Enabling two factor authentication for auth-only
+      
+  depending on the setting you provided.    
+      
+Next, npm will display a QR code:
 
-#####Entering the Second Factor
+![Masked QR Code And Prompt](/images/qr_code_and_prompt_masked.png)
 
-After you specify the setting you want to enable, npm will present a QR code with this message:
+1. Add a new account to your authenticator app. 
+2. Scan the QR code, or enter the number displayed just below the QR code. 
 
-   
-    Scan into your authenticator app or enter code: [**your code**]
-    And an OTP code from your authenticator:
-    
-Use your authenticator app to scan the QR code, or to enter the OTP code as directed.  After you do this, you will see this message:
+This will configure the authenticator app for future use, linking authentication to the device that generated the authentication. 
+
+Using your authenticator app, enter an OTP at the prompt shown:
+
+````
+    Add an OTP code from your authenticator:
+````
+
+After you have entered the one-time password,  npm will display this message:
 
     2FA successfully enabled. 
     Below are your recovery codes, please print these out. 
     You will need these to recover access to your account 
     if you lose your authentication device.
  
-This statement will be followed by a series of codes. Please print them or save them as described in the message.
+#### Recovery Codes 
 
-    >**WARNING**: You must save these codes in a location that is not  
-    not normally near the device you use to authenticate. If you lose this device, or forget your password, these codes will be your only way to get back online.
+As described above, after you set up two-factor authentication, a series of recovery codes will appear on your screen. Please print them and save them as described. Note: Some authenticator applications provide a method for you to store recovery codes.
 
+    >**WARNING**: Save these codes in a location that is not 
+    normally near the device you use to authenticate. 
+    If you lose the device, the codes are required to login. 
+    The recovery procedure is explained below.
+    
+    
 ### How to Remove Two-Factor Authentication from your Profile
 
-1.  To remove 2FA from your profile, type this command:
+To remove 2FA from your profile, type this command:
 
-    ```
+```
     npm profile disable-2fa
-    ```
-npm will display:
+```
+   
+npm will prompt for your password:
 
 ````
-    $ npm profile disable-2fa
-    > npm password:
-    
+    > npm password:   
 ````
+Enter your npm password as prompted, then npm will display: 
 
-2.  Enter your npm password as prompted. 
+```
+   >Enter one-time password from your authenticator: 123456
+``` 
+ npm will confirm: 
 
-    npm will display: 
-    
-````
- >Enter one-time password from your authenticator: 123456
- 
-````
-	npm will confirm: 
+```
+   Two factor authentication disabled.   
+```
 
-````
- Two factor authentication disabled.
-````
+### How to Send an OTP Value from the Command Line 
+
+If you have enabled 2FA auth-and-writes, you will need to send the OTP from the command line for certain commands. To do this, append  `--otp=123456` (where *123456* is the code genearated by your authenticator) at the end of the command. Here are a few examples: 
+
+```
+npm publish [<tarball>|<folder>][--tag <tag>] --otp=123456
+npm owner add <user > --otp=123456
+npm owner rm <user> --otp=123456
+npm dist-tags add <pkg>@<version> [<tag>] --otp=123456
+npm access edit [<package>) --otp=123456
+npm unpublish [<@scope>/]<pkg>[@<version>] --otp=123456
+
+```
+
+## What to Do if You Misplace Your Second Device
+
+If you cannot locate the device that provided second-factor authentication:
+
+1. Find the recovery codes you saved when you enabled 2FA.
+2. If you are logged out, login normally using your login and npm password. When prompted for an OTP, enter a recovery code. 
+3. Once you are logged in, type `npm profile disable-2fa` and enter your npm password if prompted.  
+4. Enter an unused recovery code when you see this prompt:
+  ```
+   >Enter one-time password from your authenticator: 
+``` 
+5. npm will confirm that two-factor authenication has been disabled.
+6. type `npm profile enable-2fa` to re-enable 2FA, assign a different device to your account, and generate new recovery codes. 
+
+If you have misplaced your recovery codes, please contact npm customer support. 
 
 ### Note
 
-The commands `npm profile enable-tfa` and `npm profile enable-2fa`, with or without dash `'-'`, are aliases. Similarly, `npm profile disable-tfa` and `npm profile disable-2fa`, with or without dash `'-'` are aliases.
-
-Please see the command line documentation for more details. 
-
-#Tokens 
+Settings you define using the Command Line Interface (CLI) will also apply to the website. At this time, you can only activate 2FA from the command line.
