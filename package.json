@@ -41,7 +41,6 @@
     "leven": "^2.0.0",
     "lodash": "^4.11.1",
     "marky-markdown": "~11.3.2",
-    "npm": "~5.5.1",
     "strftime": "^0.10.0",
     "walkdir": "0.0.12"
   },
