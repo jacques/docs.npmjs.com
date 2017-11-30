@@ -1,44 +1,65 @@
 <!--
-title: 03 - Fixing npm permissions
+title: 03 - Working with Permissions and Versions
 featured: true
 -->
 
-# Fixing npm permissions
+#Working with Permissions and Versions 
 
-<iframe src="https://www.youtube.com/embed/bxvybxYFq2o" frameborder="0" allowfullscreen></iframe>
+*Note: Permissions issues on Microsoft Windows machines are solved by altering the PATH, working with admin users, and similar standard permissions solutions. This chapter mostly applies to Macintosh Linux and OS/X users.*
 
-You may receive an `EACCES` error when you try to install a package globally. This indicates that you do not have permission to write to the directories that npm uses to store global packages and commands.
+By default, the Node.js installation process will install npm in this  directory:
 
-You can fix this problem using one of three options:
+`usr/local`
 
-1. Change the permission to npm's default directory.
-2. Change npm's default directory to another directory.
-3. Install Node with a package manager that takes care of this for you.
+This works well when you are working with locally installed packages. (Locally installed code can run only from certain directories, or when accessed by certain users.) However, if you try to install a package that was designed to be accessed globally (from any file location of your computer or any user) you might see permissions errors such as `EACCES`. This error occurs when the package does not have the sufficient level of access to work.   
 
-You should back-up your computer before moving forward.
+To solve the problem of permissions errors, there are two major approaches. npm recommends the first approach as a best practice.
+
+1. Install a node version manager.
+2. Move npm files to another file location.
+
+To gain a basic understanding of local versus global permissions, plese see ["Permmissions Quick Tip"](###permissions-quick-tip) below.
+
+##Node Version Managers
+
+Software is always changing, and so it’s often a good practice to use a version manager to help manage this change, especially since different versions might impact your code. For this reason (and many others!) we recommend that you use a version manager for your Node.js installation.
+
+###Why Use a Version Manager? 
+
+Most developers install version managers to manage their npm projects. Version managers solve several problems:
+
+*  The version manager solves permissions issues by installing npm and node in file locations that avoid permissions issues. 
+* Although Node.js and npm are intertwined, npm versions are not always certified with the latest node.js version, so you may want to change the version of Node.js or npm that you are using.
+* When someone writes a new npm package, the package may not work with prior versions of npm or node. It is helpful to be able to quickly shift to another version to isolate or get around the issue.
+* When you use an older npm package, the package may not work with current versions of npm or node. 
+* Developers find it useful to quickly switch between versions in order to test, debug, and write new code.
+* Using a node version manager can allow you to change versions on the fly as needed. 
+
+The version manager most often used at npm, and recommended by us the most, is [nvm] 
+(https://github.com/creationix/nvm#install-script)
 
 
-## Option 1: Change the permission to npm's default directory
+ There are many other great options; here are a few*:
 
-1. Find the path to npm's directory:
+* nodist
+* n
+* nave
 
-        npm config get prefix
-        
-    For many systems, this will be `/usr/local`.
-    >**WARNING**: If the displayed path is *just* `/usr`, **switch to [Option 2](#option-2-change-npms-default-directory-to-another-directory)** or you will mess up your permissions.
+*To learn how to install and use the version manager, please refer to its documentation.*
+ 
+If you don't see your favorite version manager here, send us a note on the doc issues page. 
 
-2. Change the owner of npm's directories to the name of the current user (your username!):
+Some npm users install brew, then use brew to install nvm. If you're doing a fresh install of Node on Mac OS, you can also try the [Homebrew](http://brew.sh) package manager. Homebrew sets things up out of the box with the correct permissions.
 
-        sudo chown -R $(whoami) $(npm config get prefix)/{lib/node_modules,bin,share}
-
-    This changes the permissions of the sub-folders used by npm and some other tools (`lib/node_modules`, `bin`, and `share`).
+    brew install node 
+    
 
 
-## Option 2: Change npm's default directory to another directory
+##How to Change npm's Default Directory
 
-There are times when you do not want to change ownership of the default directory that npm uses (i.e. `/usr`) as this could cause some problems, for example if you are sharing the system with other users.
+npm recommends that you use a node version manager to control permissions, and to allow global packages to be installed, rather than using this option. However, it is provided for advanced developers. 
 
-Instead, you can configure npm to use a different directory altogether. In our case, this will be a hidden directory in our home folder.
+You can configure npm to use a different directory altogether. In our case, this will be a hidden directory in our home folder.
 
 1. Make a directory for global installations:
 
@@ -63,10 +84,13 @@ Test: Download a package globally without using `sudo`.
 Instead of steps 2-4, you can use the corresponding ENV variable (e.g. if you don't want to modify `~/.profile`):
 
         NPM_CONFIG_PREFIX=~/.npm-global
-        
 
-## Option 3: Use a package manager that takes care of this for you.
 
-If you're doing a fresh install of Node on Mac OS, you can avoid this problem altogether by using the [Homebrew](http://brew.sh) package manager. Homebrew sets things up out of the box with the correct permissions.
+###Permissions Quick Tip
 
-    brew install node
+####What is the difference between *locally* and *globally* available packages?
+
+Why do we get permissions errors such as EACCES? Well, think of permissions this way. Suppose that only the Gryffindors could use the Water-Making spell and they could only use it in Hogwart's entrance hall. They couldn't send water to any other location and they couldn't use the spell anywhere else. This would be an example of a command that is only available locally. Suppose Headmistress McGonagall changes the permissions of the command, overriding it so that everyone within Hogwarts could use it, creating water and depositing it any where they were located. This would now be a globally available command. As an additional benefit to controlling versioning, the Node Version Managers install npm in a location that gives it full powers. 
+
+*Note: For a quick get started page that incorporates chapter 2 and 3, click* [here] 
+(https://www.npmjs.com/get-npm)*
