@@ -2,10 +2,15 @@
 title: 16 - Using two-factor authentication
 featured: true
 -->
-
 # Using Two-Factor Authentication
+>Requires npm version 5.5.1 or greater.
 
-To meet the increasing need for strong digital security, npm has introduced two-factor authentication (2FA).  Two-factor authentication prevents unauthorized access to your account by confirming your identity using two methods. One factor is something you know, such as your username and password, the other factor is something you have, such as a phone or tablet device. For example, if your bank uses 2FA, the first time you logged in to your online banking system, the bank sent a code to your cell phone number, then prompted you to enter the code online, proving that the cell phone was in your possession and linking it to your account for authentication. After that,  if the bank detects anything unusual, such as a login from a different laptop, it will send a temporary code to your phone that you must enter before you can login. This provides an extra layer of security because, even if someone obtains your login credentials, they are unlikely to have your device in their possession as well. Two-factor authentication multiplies the protection against attacks, and we recommend that you implement this with your npm account.  
+To meet the increasing need for strong digital security, npm has introduced two-factor authentication (2FA).  Two-factor authentication prevents unauthorized access to your account by confirming your identity using two methods:
+
+* something you know (such as your username and password) 
+* something you have (such as a phone or tablet)
+
+For example, if your bank uses 2FA, the first time you logged in to your online banking system, the bank sent a code to your cell phone number, then prompted you to enter the code online, proving that the cell phone was in your possession and linking it to your account for authentication. After that, whenever the bank detects anything unusual, such as a login from a different laptop, it will send a temporary code to your phone that you must enter before you can login. This provides an extra layer of security because, even if someone obtains your login credentials, they are unlikely to have your device in their possession as well. Or, if someone finds your phone, they are unlikely to also be able to hack your laptop's password. Two-factor authentication multiplies the protection against attacks, and we recommend that you implement this with your npm account.  
 
 ## Preparation
 
@@ -50,7 +55,7 @@ To require two-factor authentication, type the command that meets the level of s
       
 npm will return this message:
             
-        > npm notice profile Enabling two factor authentication for auth-and-writes   
+        npm notice profile Enabling two factor authentication for auth-and-writes   
        
    or this message: 
         
@@ -80,16 +85,35 @@ After you have entered the one-time password,  npm will display this message:
     You will need these to recover access to your account 
     if you lose your authentication device.
  
+  After you have applied two-factor authentication, you can use the `npm profile get` command to confirm that it has been set.
+ 
+ ![Profile After 2FA Enabled](/images/profile_after_tfa_enabled.png)
+ 
+###Example: Setting Profile Values after Enabling 2fa
+
+Once you have installed 2FA, you will need to enter an OTP for security-relevant commands. For example, whenever you use the command `npm profile set` you will need to enter an OTP before you can set or change a value, such as your fullname: 
+
+```
+$npm profile set fullname Carolyn A. Wombat
+Enter OTP: 567452
+Set fullname to Carolyn A. Wombat
+```
+ 
+ Use `npm profile get' to confirm the new setting. 
+ 
+ ![Profile After Adding Setting](/images/after_setting_profile_with_tfa_fullname.png)
+   
+ *Note to our readers: We have reset the account used in screen shots; neither the QR nor the codes are still active. But thank you to those who have asked us about this.*
+ 
 #### Recovery Codes 
 
 As described above, after you set up two-factor authentication, a series of recovery codes will appear on your screen. Please print them and save them as described. Note: Some authenticator applications provide a method for you to store recovery codes.
 
-    >**WARNING**: Save these codes in a location that is not 
-    normally near the device you use to authenticate. 
-    If you lose the device, the codes are required to login. 
-    The recovery procedure is explained below.
-    
-    
+>	Tip: Save these codes in a location that is not normally near the device you use to authenticate. 
+    For example, if you get your OTP from a tablet, don't save the codes in a case with your tablet. 
+        
+   The recovery procedure is explained below.    
+   
 ### How to Remove Two-Factor Authentication from your Profile
 
 To remove 2FA from your profile, type this command:
@@ -116,7 +140,7 @@ Enter your npm password as prompted, then npm will display:
 
 ### How to Send an OTP Value from the Command Line 
 
-If you have enabled 2FA auth-and-writes, you will need to send the OTP from the command line for certain commands. To do this, append  `--otp=123456` (where *123456* is the code genearated by your authenticator) at the end of the command. Here are a few examples: 
+If you have enabled 2FA auth-and-writes, you will need to send the OTP from the command line for certain commands. To do this, append  `--otp=123456` (where *123456* is the code generated by your authenticator) at the end of the command. Here are a few examples: 
 
 ```
 npm publish [<tarball>|<folder>][--tag <tag>] --otp=123456
@@ -133,17 +157,23 @@ npm unpublish [<@scope>/]<pkg>[@<version>] --otp=123456
 If you cannot locate the device that provided second-factor authentication:
 
 1. Find the recovery codes you saved when you enabled 2FA.
-2. If you are logged out, login normally using your login and npm password. When prompted for an OTP, enter a recovery code. 
+2. If you are logged out, login normally using your login and npm password. When prompted for an OTP, enter a recovery code. (Note that this might create a second authenticator account with the same npm account name. Be sure to use the newly created account.) 
 3. Once you are logged in, type `npm profile disable-2fa` and enter your npm password if prompted.  
 4. Enter an unused recovery code when you see this prompt:
   ```
    >Enter one-time password from your authenticator: 
 ``` 
-5. npm will confirm that two-factor authenication has been disabled.
+5. npm will confirm that two-factor authentication has been disabled.
 6. type `npm profile enable-2fa` to re-enable 2FA, assign a different device to your account, and generate new recovery codes. 
 
 If you have misplaced your recovery codes, please contact npm customer support. 
 
+###What if You See an Error after Entering the OTP?
+
+If you are entering what seems to be a valid OTP but you see an error, be sure that you are using the correct authenticator account. In the screen shot below, the current account in Authy was set incorrectly because the developer had multiple npm test accounts. This will cause the OTP to fail. Also, as stated earlier, when you reset 2fa after it has been disabled, the authenticator might create a second account with the same name. Please see the authenticator documentation to delete the old account. 
+
+ ![Multiple Authenticator Accounts](/images/multiple_authy_accounts.png)
+
 ### Note
 
-Settings you define using the Command Line Interface (CLI) will also apply to the website. At this time, you can only activate 2FA from the command line.
+Settings you define using the Command Line Interface (CLI) will also apply to the website. At this time, you cannot activate 2FA from web interface.

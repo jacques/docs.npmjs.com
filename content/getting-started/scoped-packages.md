@@ -4,6 +4,7 @@ featured: true
 -->
 
 # Working with scoped packages
+>Requires npm version 2 or greater.
 
 Scopes are like namespaces for npm modules. If a package's name begins with `@`, then it is a scoped package. The scope is everything in between the `@` and the slash.
 
@@ -16,18 +17,7 @@ Each npm user has their own scope.
 ```
 @username/project-name
 ```
-
 You can find more in depth information about scopes in the [CLI documentation](https://docs.npmjs.com/misc/scope#publishing-public-scoped-packages-to-the-public-npm-registry).
-
-## Update npm and log in
-
-You need a version of npm greater than `2.7.0`, and you'll need to log in to npm again
-on the command line if this is your first time using scoped modules.
-
-```sh
-sudo npm install -g npm
-npm login
-```
 
 ## Initializing a scoped package
 

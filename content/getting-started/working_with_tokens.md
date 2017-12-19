@@ -2,18 +2,17 @@
 title: 17 - Working with tokens
 featured: true
 -->
-
 # Working with Tokens
+>Requires npm version 5.5.1 or greater.
 
-
-Read this chapter to learn how to enhance security by working with tokens. Whenever you login to npm, a security token (a hexidecimal string) is generated. Tokens authenticate your account, and provide the rights you need to publish and access your modules. Tokens are often used with continuous integration testing environments.  For example, Travis-CI provides an environment variable that you can assign to a token value. This gives Travis-CI the ability to run npm as your npm user, including the ability to install private packages to which you have access. 
+Read this chapter to learn how to enhance security by working with tokens. Whenever you login to npm, a security token (a hexadecimal string) is generated. Tokens authenticate your account, and provide the rights you need to publish and access your modules. Tokens are often used with continuous integration testing environments.  For example, Travis-CI provides an environment variable that you can assign to a token value. This gives Travis-CI the ability to run npm as your npm user, including the ability to install private packages to which you have access. 
 
 **Note**: *There are additional steps required if you wish to use tokens for testing and other special purposes. These steps are out of the scope of this chapter.* 
 
 Token commands empower you to:
 
 * View tokens for easier tracking and management
-* Create new tokens, specifiying read-only or full-permission
+* Create new tokens, specifying read-only or full-permission
 * Delete/revoke tokens  
 * Limit access according to IP address ranges (CIDR)
 
@@ -90,7 +89,7 @@ Note that read-only is set to *true*.
 
 To limit the token so that it can only be used from specified ip addresses, you can create a CIDR-restricted token. CIDR is an acronym for Classless Inter-Domain Routing. The [CIDR Wiki page](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing) will get you started. 
 
-Using a CIDR restriction makes it possibe for you to force anyone or any system using the token to either physically or remotely be within the specified ip address range. 
+Using a CIDR restriction makes it possible for you to force anyone or any system using the token to either physically or remotely be within the specified ip address range. 
 ```
 	npm token create --[--cidr=list]
 ```

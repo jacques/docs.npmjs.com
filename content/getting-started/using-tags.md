@@ -29,8 +29,7 @@ npm publish --tag beta
 ## Installing with tags
 
 Like `npm publish`, `npm install <pkg>` will use the `latest` tag by default.
-To override this behavior, use `npm install <pkg>@<tag>`. The following example
-will install the `somepkg` at the version that has been tagged with `beta`.
+To override this behavior, use `npm install <pkg>@<tag>`. The following example will install the `somepkg` at the version that has been tagged with `beta`.
 
 ```
 npm install somepkg@beta

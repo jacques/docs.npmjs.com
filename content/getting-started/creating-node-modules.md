@@ -33,4 +33,4 @@ Test:
 1. Make a new directory outside of your project and cd into it.
 1. Run `npm install <package>`.
 1. Create a test.js file which requires the package and calls the method.
-1. Run `node test.js`. The message should be output.
+1. Run `node test.js`. The message sent to the console.log should appear. 
