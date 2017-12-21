@@ -1,5 +1,5 @@
 <!--
-title: 04 - How to install local npm packages that run locally
+title: 04 - How to install local npm packages
 featured: true
 -->
 
