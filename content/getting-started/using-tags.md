@@ -5,16 +5,15 @@ featured: true
 
 # Using dist-tags
 
-Tags are a supplement to [semver](http://semver.org/) (e.g., v0.12) for
-organizing and labeling different versions of packages. In addition to being
+Tags are a supplement to [semver](http://semver.org/) (e.g., v0.12). Use them to  organize and label different versions of packages. In addition to being
 more human-readable, tags allow publishers to distribute their packages more
 effectively.
 
 ## Adding tags
 
-To add a tag to a specific version of your package, use
-`npm dist-tag add <pkg>@<version> [<tag>]`. See
-[the CLI docs](https://docs.npmjs.com/cli/dist-tag) for more information.
+To add a tag to a specific version of your package, use:
+
+`npm dist-tag add <pkg>@<version> [<tag>]`
 
 ## Publishing with tags
 
@@ -37,6 +36,11 @@ npm install somepkg@beta
 
 ## Caveats
 
-Because dist-tags share the same namespace with semver, avoid using any tag
+Because dist-tags share the same namespace as semver, avoid using tag
 names that may cause a conflict. The best practice is to avoid using tags
 beginning with a number or the letter "v".
+
+##Learn More
+
+See [this CLI doc](https://docs.npmjs.com/cli/dist-tag) for more about tags.
+See [Chapter 13](https://docs.npmjs.com/getting-started/semantic-versioning) for more about semantic versioning. 

@@ -3,14 +3,14 @@ title: 05 - Using a `package.json`
 featured: true
 -->
 
-# Using a `package.json`
+# How to Use a package.json File
 
 The best way to manage locally installed npm packages is to create a
 `package.json` file. 
 
 A `package.json` file: 
 
-* serves as documentation that lists the packages your project depends on.
+* lists the packages that your project depends on.
 * allows you to specify the versions of a package that your project
 can use using [semantic versioning rules][1].
 * makes your build reproducible, and therefore *much* easier
@@ -91,7 +91,7 @@ Wrote to /home/ag_dubs/my_package/package.json:
 
 - `name`: the current directory name
 - `version`: always `1.0.0`
-- `description`: info from the readme, else an empty string `""`
+- `description`: info from the readme, or an empty string `""`
 - `main`: always `index.js`
 - `scripts`: by default creates an empty `test` script
 - `keywords`: empty
@@ -111,9 +111,9 @@ You can also set several config options for the init command. Some useful ones:
 
 #### NOTE:
 
-If there is no description field in the `package.json`, npm uses the first line of the `README.md` or README instead. The description helps people find your package on npm search, so it's definitely useful to make a custom description in the `package.json` to make your package easier to find.
+If there is no description field in the `package.json`, npm uses the first line of the `README.md` or README instead. The description helps people find your package when searching npm, so it's definitely useful to make a custom description in the `package.json` to make your package easier to find.
 
-### How to Customize the `package.json` questionnairre 
+### How to Customize the `package.json` questionnaire 
 
 If you expect to create many package.json files, you might wish to customize the questions asked during the init process, so that the files always contain key information that you expect. You can customize the fields as well as the questions that are asked. 
 
@@ -198,14 +198,16 @@ npm install <package_name> --save-dev
 
 ## Managing dependency versions 
 
-npm uses Semantic Versioning, or, as we often refer to it, SemVer, to manage versions
-and ranges of versions of packages.
+npm uses Semantic Versioning, or, as we often refer to it, SemVer, to manage versions and ranges of versions of packages.
 
 If you have a `package.json` file in your directory and you run `npm install`, npm will look at the dependencies that are listed in that file and download the latest versions, using semantic versioning. 
+
+## Learn More 
+
+To understand more about the power of package.json, see the video "Installing npm packages locally" which you can find in [Chapter 8](https://docs.npmjs.com/getting-started/installing-npm-packages-globally). 
 
 To learn more about semantic versioning, see [Getting Started "Semver" page][1].
 
 [1]: docs.npmjs.com/getting-started/semantic-versioning
 [2]: https://opensource.org/licenses/ISC
 
-> To understand more about the power of package.json, see the video "Installing npm packages locally" which you can find in [Chapter 8](https://docs.npmjs.com/getting-started/installing-npm-packages-globally). 

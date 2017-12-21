@@ -4,9 +4,11 @@ featured: true
 -->
 
 # Working with scoped packages
->Requires npm version 2 or greater.
+*Requires npm version 2 or greater*
 
-Scopes are like namespaces for npm modules. If a package's name begins with `@`, then it is a scoped package. The scope is everything in between the `@` and the slash.
+Scopes are used to group related packages together, and to create a namespace, like a domain, for npm modules. This is explained in more detail [here](https://docs.npmjs.com/cli/version).
+
+If a package's name begins with `@`, then it is a scoped package. The scope is everything in between the `@` and the slash.
 
 ```
 @scope/project-name
@@ -19,7 +21,7 @@ Each npm user has their own scope.
 ```
 You can find more in depth information about scopes in the [CLI documentation](https://docs.npmjs.com/misc/scope#publishing-public-scoped-packages-to-the-public-npm-registry).
 
-## Initializing a scoped package
+## How to Initialize a Scoped Package
 
 To create a scoped package, you simply use a package name that starts with your scope.
 
@@ -41,9 +43,9 @@ If you use the same scope all the time, you will probably want to set this optio
 npm config set scope username
 ```
 
-## Publishing a scoped package
+## Publishing a Scoped Package
 
-Scoped packages are private by default. To publish private modules, you need to be a paid [private modules](https://www.npmjs.com/private-modules) user.
+By default, scoped packages are private. To publish private modules, you need to be a paid [private modules](https://www.npmjs.com/private-modules) user.
 
 Public scoped modules are free and don't require a paid subscription. To publish a public scoped module, set the access option when publishing it. This option will remain set for all subsequent publishes.
 
@@ -51,7 +53,7 @@ Public scoped modules are free and don't require a paid subscription. To publish
 npm publish --access=public
 ```
 
-## Using a scoped package
+## Using a Scoped Package
 
 To use a scoped package, simply include the scope wherever you use the package name.
 

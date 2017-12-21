@@ -7,11 +7,11 @@ featured: true
 
 <iframe src="https://www.youtube.com/embed/kK4Meix58R4" frameborder="0" allowfullscreen></iframe>
 
-Semantic versioning is a standard that a lot of projects use to communicate what kinds of changes are in this release. It's important to communicate what kinds of changes are in a release because sometimes those changes will break the code that depends on the package.
+Semantic versioning is a standard that communicates the extent of changes are in a new code release. It's important to communicate what kinds of changes are in a release, because sometimes updates can break code that depends on the package.
 
 ## Semver for publishers
 
-If a project is going to be shared with others, it should start at `1.0.0`, though some projects on npm don't follow this rule.
+If a project is going to be shared with others, it should start at `1.0.0`, (though some projects on npm don't follow this rule).
 
 After this, changes should be handled as follows:
 

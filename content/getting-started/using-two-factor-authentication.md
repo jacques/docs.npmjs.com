@@ -3,14 +3,17 @@ title: 16 - Using two-factor authentication
 featured: true
 -->
 # Using Two-Factor Authentication
->Requires npm version 5.5.1 or greater.
+
+*Requires npm version 5.5.1 or greater*
 
 To meet the increasing need for strong digital security, npm has introduced two-factor authentication (2FA).  Two-factor authentication prevents unauthorized access to your account by confirming your identity using two methods:
 
 * something you know (such as your username and password) 
 * something you have (such as a phone or tablet)
 
-For example, if your bank uses 2FA, the first time you logged in to your online banking system, the bank sent a code to your cell phone number, then prompted you to enter the code online, proving that the cell phone was in your possession and linking it to your account for authentication. After that, whenever the bank detects anything unusual, such as a login from a different laptop, it will send a temporary code to your phone that you must enter before you can login. This provides an extra layer of security because, even if someone obtains your login credentials, they are unlikely to have your device in their possession as well. Or, if someone finds your phone, they are unlikely to also be able to hack your laptop's password. Two-factor authentication multiplies the protection against attacks, and we recommend that you implement this with your npm account.  
+For example, if your bank uses 2FA, the first time you logged in to your online banking system, the bank sent a code to your cell phone number, then prompted you to enter the code online. This proved that the cell phone was in your possession, and linked it to your account for authentication. After that, whenever the bank detects anything unusual, such as a login from a different laptop, it will send a temporary code to your phone that you must enter before you can login. This provides an extra layer of security because, even if someone obtains your login credentials, they are unlikely to have your device in their possession as well. Even if someone finds your phone, they are unlikely to also be able to hack your laptop's password. 
+
+Two-factor authentication multiplies the protection against attacks, and we recommend that you implement this with your npm account.  
 
 ## Preparation
 
@@ -103,14 +106,13 @@ Set fullname to Carolyn A. Wombat
  
  ![Profile After Adding Setting](/images/after_setting_profile_with_tfa_fullname.png)
    
- *Note to our readers: We have reset the account used in screen shots; neither the QR nor the codes are still active. But thank you to those who have asked us about this.*
+ *Note to our readers: We have reset the account used in screen shots; neither the QR nor the codes are still active. But thank you to those alert and kind wombats who have asked us about this.*
  
 #### Recovery Codes 
 
 As described above, after you set up two-factor authentication, a series of recovery codes will appear on your screen. Please print them and save them as described. Note: Some authenticator applications provide a method for you to store recovery codes.
 
->	Tip: Save these codes in a location that is not normally near the device you use to authenticate. 
-    For example, if you get your OTP from a tablet, don't save the codes in a case with your tablet. 
+*Tip: Save these codes in a location that is not normally near the device you use to authenticate. For example, if you get your OTP from a tablet, don't save the codes in a case with your tablet.* 
         
    The recovery procedure is explained below.    
    

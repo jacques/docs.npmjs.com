@@ -3,19 +3,28 @@ title: 09 - Updating global packages
 featured: true
 -->
 
-# Updating global packages
-> Requires version 2.6.1 or greater. See below if you are using an older version.
+# Updating Global Packages
 
-To update global packages, you can use `npm update -g <package>`:
+*Requires version 2.6.1 or greater. See below if you are using an older version.*
+
+To update global packages, type:
+
+ `npm update -g <package>`
+ 
+ For example, to update a packages called jshint, you'd type:
 
 ```
 npm update -g jshint
 ```
 
-To find out which packages need to be updated, you can use `npm outdated -g --depth=0`.
+To find out which packages need to be updated, type:
 
-To update all global packages, you can use  `npm update -g`. 
+ `npm outdated -g --depth=0`.
+
+To update all global packages, type:
+
+  `npm update -g`. 
 
 ####If you are using version 2.6.0 or less
 
-For npm versions less than 2.6.1, [this script](https://gist.github.com/othiym23/4ac31155da23962afd0e) is recommended to update all outdated global packages.
+For npm versions less than 2.6.1, run [this script](https://gist.github.com/othiym23/4ac31155da23962afd0e) to update all outdated global packages.

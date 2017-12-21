@@ -3,7 +3,7 @@ title: 17 - Working with tokens
 featured: true
 -->
 # Working with Tokens
->Requires npm version 5.5.1 or greater.
+*Requires npm version 5.5.1 or greater*
 
 Read this chapter to learn how to enhance security by working with tokens. Whenever you login to npm, a security token (a hexadecimal string) is generated. Tokens authenticate your account, and provide the rights you need to publish and access your modules. Tokens are often used with continuous integration testing environments.  For example, Travis-CI provides an environment variable that you can assign to a token value. This gives Travis-CI the ability to run npm as your npm user, including the ability to install private packages to which you have access. 
 
@@ -26,13 +26,7 @@ To view the tokens associated with your account, type:
 
 The following table explains the token list. 
 
-List Result| Purpose
--------------| -------------
-id	| Use the id to refer to the token in commands
-token | This is the first part of the actual token 
-created | Date the token was created
-readonly | If no, the token provides full permissions
-CIDR whitelist| Restricts token use by IP address
+![tokenlisttable](/images/token-list-table.png)
 
 A token can be both read-only as well as CIDR-whitelisted. 
 

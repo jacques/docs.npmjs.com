@@ -7,30 +7,52 @@ featured: true
 
 <iframe src="https://www.youtube.com/embed/BkotrAFtBM0" frameborder="0" allowfullscreen></iframe>
 
-You can publish any directory that has a `package.json` file, e.g. a [node module](/getting-started/creating-node-modules).
+You can publish any directory that has a `package.json` file, for example, a [node module](/getting-started/creating-node-modules).
 
 ## Creating a user
 
-To publish, you must be a user on the npm registry. If you don't have one, create it with `npm adduser`. If you created one on the site, use `npm login` to store the credentials on the client.
+To publish, you must be a user on the npm registry. If you aren't a user, create an account by using  `npm adduser`. If you created a user account on the site, use `npm login` to store the credentials on your client.
 
-Test: Use `npm config ls` to ensure that the credentials are stored on your client. Check that it has been added to the registry by going to [https://npmjs.com/~](https://npmjs.com/~)<username>.
+Test: Use `npm config ls` to ensure that your credentials are stored on your client. Check that the user has been added to the registry at  [https://npmjs.com/~](https://npmjs.com/~)<username>.
 
 ## Publishing the package
+
+Choose a unique name for your package. Try to choose a descriptive name that:
+
+*  isn't already owned by somebody else
+*  is not spelled like another name, but with typos
+*  will not confuse others about the authorship
+
+*Note: Naming is not an issue if you are working with [scopes](https://docs.npmjs.com/cli/version).*
 
 Use `npm publish` to publish the package.
 
 Note that everything in the directory will be included unless it is ignored by a local `.gitignore` or `.npmignore` file as described in [`npm-developers`](/misc/developers).
 
-Also, make sure there isn't already a package with the same name owned by somebody else.
-
 Test: Go to `https://npmjs.com/package/<package>`. You should see the information for your new package.
+
+# Congratulations on Publishing! 
+
+Now that you've published your first package (congratulations!) it's a great time to review npm's [code of conduct](https://docs.npmjs.com/policies/conduct) in case you have questions about site etiquette or other [npm policies](https://docs.npmjs.com/). (Scroll down on the doc page to see the policies). 
 
 ## Updating the package
 
-When you make changes, you can update the package using `npm version <update_type>`, where update_type is one of the [semantic versioning](https://docs.npmjs.com/getting-started/semantic-versioning) release types, patch, minor, or major. This command will change the version number in `package.json`. Note that this will also add a tag with this release number to your git repository if you have one.
+### How To Update the Version Number 
 
-After updating the version number, you can `npm publish` again.
+When you make changes, you can update the package using 
+
+`npm version <update_type>`
+
+where <update_type> is one of the [semantic versioning](https://docs.npmjs.com/getting-started/semantic-versioning) release types, patch, minor, or major. 
+
+This command will change the version number in `package.json`. 
+
+*Note: this will also add a tag with the updated release number to your git repository if you have one.*
+
+After updating the [version number](https://docs.npmjs.com/cli/version), run `npm publish` again.
 
 Test: Go to `https://npmjs.com/package/<package>`. The package number should be updated.
+
+### How to Update the Read Me File 
 
 The README displayed on the site will not be updated unless a new version of your package is published, so you would need to run `npm version patch` and `npm publish` to have a documentation fix displayed on the site.

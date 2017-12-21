@@ -4,7 +4,7 @@ featured: true
 -->
 
 # Modifying Profile Settings from the Command Line
->Requires npm version 5.5.1 or greater.
+*Requires npm version 5.5.1 or greater.*
 
 To view and set profile properties from the Command Line Interface (CLI), use these commands: 
 

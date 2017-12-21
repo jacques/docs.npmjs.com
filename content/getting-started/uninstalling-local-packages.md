@@ -3,7 +3,7 @@ title: 07 - Uninstalling local packages
 featured: true
 -->
 
-# Uninstalling local packages
+# How to Uninstall Local Packages 
 
 <iframe src="https://www.youtube.com/embed/Z-BpYj6cSoQ" frameborder="0" allowfullscreen></iframe>
 
@@ -23,9 +23,9 @@ Note: if you installed the package as a "devDependency" (i.e. with `--save-dev`)
 
 #### Test:
 
-To confirm that `npm uninstall` worked correctly, check to see that the `node_modules` directory exists, but that it does not contain a directory for the package(s) you uninstalled.
+To confirm that `npm uninstall` worked correctly, find the `node_modules` directory. Be sure that it no longer contains a directory for the package(s) you uninstalled.
 
-You can do this by running `ls node_modules` on Unix systems, e.g. "OSX", "Debian", or `dir node_modules` on Windows.
+You can do this by running `ls node_modules` on Unix systems such as "OSX", or `dir node_modules` on Windows.
 
 #### Example:
 
@@ -33,14 +33,18 @@ Install a package called `lodash`. Confirm that it ran successfully by listing t
 
 Uninstall `lodash` with `npm uninstall`. Confirm that it ran successfully by listing the contents of the `node_modules` directory and confirming the absence of a directory called `lodash`.
 
+#####Install Lodash
 ```
 > npm install lodash
-> ls node_modules               # use `dir` for Windows
+> dir node_modules               # use `ls node_modules` for Unix
+```
 
+##### Uninstall Lodash
+```
 #=> lodash
 
 > npm uninstall lodash
-> ls node_modules
+> dir node_modules               # use `ls node_modules` for Unix
 
 #=>
 ```
