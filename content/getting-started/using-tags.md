@@ -1,13 +1,11 @@
 <!--
-title: 15 - Using tags
+title: 15 - How to label packages with dist-tags
 featured: true
 -->
 
-# Using dist-tags
+# How to Label Packages with Dist-tags 
 
-Tags are a supplement to [semver](http://semver.org/) (e.g., v0.12). Use them to  organize and label different versions of packages. In addition to being
-more human-readable, tags allow publishers to distribute their packages more
-effectively.
+Distribution tags (dist-tags) supplement [semantic versioning](http://semver.org/) (e.g., v0.12). Use them to  organize and label different versions of packages. In addition to being more human-readable than semver numbering, tags allow publishers to distribute their packages more effectively.
 
 ## Adding tags
 

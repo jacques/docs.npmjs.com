@@ -1,14 +1,14 @@
 <!--
-title: 14 - Working with scoped packages
+title: 14 - How to work with scoped packages
 featured: true
 -->
 
-# Working with scoped packages
+# How to Work with Scoped Packages
 *Requires npm version 2 or greater*
 
 Scopes are used to group related packages together, and to create a namespace, like a domain, for npm modules. This is explained in more detail [here](https://docs.npmjs.com/cli/version).
 
-If a package's name begins with `@`, then it is a scoped package. The scope is everything in between the `@` and the slash.
+If a package's name begins with `@`, then it is a **scoped package**. The scope is everything in between the `@` and the slash.
 
 ```
 @scope/project-name

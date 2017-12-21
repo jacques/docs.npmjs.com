@@ -1,9 +1,9 @@
 <!--
-title: 05 - Using a `package.json`
+title: 05 - Working with package.json files
 featured: true
 -->
 
-# How to Use a package.json File
+# Working with package.json files
 
 The best way to manage locally installed npm packages is to create a
 `package.json` file. 

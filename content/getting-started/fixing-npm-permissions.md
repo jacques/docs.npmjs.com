@@ -1,5 +1,5 @@
 <!--
-title: 03 - How to Prevent Permissions Errors
+title: 03 - How to prevent permissions errors
 featured: true
 -->
 
@@ -16,7 +16,6 @@ If you are using npm version 5.2 or greater, you might also want to explore tool
 This is the best way to avoid permissions issues. This is described in [Chapter 2](docs.npmjs.com/getting-started/installation-and-version-management.md). You do not need to remove your current version of npm or Node.js before installing a node version manager. 
 
 ### Option Two: Change npm's Default Directory 
-
 
 *This section does not apply to Microsoft Windows. The chapter will be updated to address Windows in the near future.* 
 

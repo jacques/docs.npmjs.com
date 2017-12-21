@@ -1,9 +1,9 @@
 <!--
-title: 04 - Installing npm packages locally
+title: 04 - How to install local npm packages that run locally
 featured: true
 -->
 
-# Installing npm Packages Locally
+# How to install local npm packages
 
 <iframe src="https://www.youtube.com/embed/JDSfqFFbNYQ" frameborder="0" allowfullscreen></iframe>
 

@@ -1,16 +1,13 @@
 <!--
-title: 11 - Creating Node.js modules
+title: 11 - How to create Node.js modules
 featured: true
 -->
 
-# Creating Node.js Modules
+# How to Create Node.js Modules
 
 <iframe src="https://www.youtube.com/embed/3I78ELjTzlQ" frameborder="0" allowfullscreen></iframe>
 
-
-Node.js modules are a type of package that can be published to npm. 
-
-To create a new module,  start by creating a `package.json` file.
+Node.js modules are a type of package that can be published to npm.  To create a new module, start by creating a `package.json` file.
 
 Use `npm init` to create  `package.json`. It will prompt you for values for fields. The two required fields are 'name' and 'version'. You'll also need to set a value for 'main'. You can use the default, `index.js`. These steps are described in detail in [Chapter 5](https://docs.npmjs.com/getting-started/using-a-package.json).
 
@@ -37,4 +34,9 @@ Test:
 2. Switch to the new directory (`cd`)
 1. Run `npm install <package>`.
 1. Create a test.js file which requires the package and calls the method.
-1. Run `node test.js`. The message sent to the console.log should appear. 
+1. Run `node test.js`. The message sent to the console.log should appear.
+
+## Learn More
+
+To understand types of packages, click [here](https://docs.npmjs.com/how-npm-works/packages).
+ 

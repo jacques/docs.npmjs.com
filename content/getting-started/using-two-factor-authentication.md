@@ -1,12 +1,12 @@
 <!--
-title: 16 - Using two-factor authentication
+title: 16 - How to use two-factor authentication
 featured: true
 -->
-# Using Two-Factor Authentication
+# How to Use Two-Factor Authentication
 
 *Requires npm version 5.5.1 or greater*
 
-To meet the increasing need for strong digital security, npm has introduced two-factor authentication (2FA).  Two-factor authentication prevents unauthorized access to your account by confirming your identity using two methods:
+To meet the increasing need for strong digital security, npm introduced two-factor authentication (2FA) with version 5.5.1. Two-factor authentication prevents unauthorized access to your account by confirming your identity using two methods:
 
 * something you know (such as your username and password) 
 * something you have (such as a phone or tablet)
@@ -88,7 +88,7 @@ After you have entered the one-time password,  npm will display this message:
     You will need these to recover access to your account 
     if you lose your authentication device.
  
-  After you have applied two-factor authentication, you can use the `npm profile get` command to confirm that it has been set.
+After you have applied two-factor authentication, you can use the `npm profile get` command to confirm that it has been set.
  
  ![Profile After 2FA Enabled](/images/profile_after_tfa_enabled.png)
  
@@ -112,9 +112,9 @@ Set fullname to Carolyn A. Wombat
 
 As described above, after you set up two-factor authentication, a series of recovery codes will appear on your screen. Please print them and save them as described. Note: Some authenticator applications provide a method for you to store recovery codes.
 
-*Tip: Save these codes in a location that is not normally near the device you use to authenticate. For example, if you get your OTP from a tablet, don't save the codes in a case with your tablet.* 
+*Tip: Save these codes in a different location than the device you use to authenticate. For example, if you get your OTP from a tablet, don't save the codes in a case with your tablet.* 
         
-   The recovery procedure is explained below.    
+The recovery procedure is explained below.    
    
 ### How to Remove Two-Factor Authentication from your Profile
 

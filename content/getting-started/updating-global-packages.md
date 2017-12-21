@@ -1,9 +1,9 @@
 <!--
-title: 09 - Updating global packages
+title: 09 - How to update global packages
 featured: true
 -->
 
-# Updating Global Packages
+# How to Update Global Packages
 
 *Requires version 2.6.1 or greater. See below if you are using an older version.*
 

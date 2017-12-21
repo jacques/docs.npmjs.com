@@ -1,14 +1,14 @@
 <!--
-title: 02 - Installing npm & Managing npm Versions
+title: 02 - How to install npm & manage npm versions 
 -->
 
 #How to Install npm & Manage npm Versions
 
-npm is written in Node.js, so you need Node.js installed in order to run it. However, the two products are managed by different entities, so updates and maintenance can become complex. Also, the Node.js installation process installs npm in a directory that doesn't have global permissions. So, to solve both these issues, npm recommends that you use a *node version manager*, or *nvm*, to install npm. The version manager will avoid permissions errors, and solve the complexities of updating Node.js and npm. In addition, many developers like to test their applications on multiple versions of npm. Using a version manager makes this easier to do. 
+npm is written in Node.js, so your system needs to have Node.js before you can use npm. However, the two products are managed by different entities, so updates and maintenance can become complex. Also, the Node.js installation process installs npm in a directory that doesn't have global permissions. This can cause permissions errors when you attempt to run packages globally. 
 
-####Warning 
+To solve both these issues, npm recommends that you use a *node version manager*, or *nvm*, to install npm. The version manager will avoid permissions errors, and will solve the complexities of updating Node.js and npm. 
 
-If you install Node.js and npm directly, you may encounter permissions issues and errors (such as `EACCESS`), especially on macOS and Linux. 
+In addition, many developers like to test their applications on multiple versions of npm. Using a version manager makes it easy to switch versions.
 
 ##Installing npm from a Version Manager 
 
@@ -27,8 +27,6 @@ Many Macintosh developers use [Homebrew](https://brew.sh/), a valuable tool for 
 2. After you've installed Homebrew, run `brew install node` 
 
 3. Homebrew will install Node.js and npm. 
-
-4. To learn how to use nvm, click [here](https://github.com/creationix/nvm/blob/master/README.md#usage).
 
 ####Installing NVM Directly
 
@@ -83,4 +81,7 @@ If you want to try the next, unreleased version of npm to test packages you have
 
 This may simply reinstall the current version, depending on the development cycle. 
 
-##
+## Learn More
+
+To learn how to use nvm, click [here](https://github.com/creationix/nvm/blob/master/README.md#usage).
+

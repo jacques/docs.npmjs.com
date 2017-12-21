@@ -1,9 +1,9 @@
 <!--
-title: 10 - Uninstalling global packages
+title: 10 - How to unistall global packages
 featured: true
 -->
 
-# Uninstalling global packages
+# How to uninstall global packages
 
 <iframe src="https://www.youtube.com/embed/XbvjZxUZJGg" frameborder="0" allowfullscreen></iframe>
 

@@ -1,11 +1,13 @@
 <!--
-title: 17 - Working with tokens
+title: 17 - How to work with security tokens
 featured: true
 -->
-# Working with Tokens
+# How to Work with Security Tokens
 *Requires npm version 5.5.1 or greater*
 
-Read this chapter to learn how to enhance security by working with tokens. Whenever you login to npm, a security token (a hexadecimal string) is generated. Tokens authenticate your account, and provide the rights you need to publish and access your modules. Tokens are often used with continuous integration testing environments.  For example, Travis-CI provides an environment variable that you can assign to a token value. This gives Travis-CI the ability to run npm as your npm user, including the ability to install private packages to which you have access. 
+Whenever you login to npm, a security token (a hexadecimal string) is generated. Tokens authenticate your account, and provide the rights you need to publish and access your modules. Tokens are often used with continuous integration testing environments. For example, Travis-CI provides an environment variable that you can assign to a token value. This gives Travis-CI the ability to run npm as your npm user, including the ability to install private packages to which you have access. 
+
+Read this chapter to learn how to manage security tokens. 
 
 **Note**: *There are additional steps required if you wish to use tokens for testing and other special purposes. These steps are out of the scope of this chapter.* 
 

@@ -1,9 +1,9 @@
 <!--
-title: 18 - Modifying profile settings from the command line
+title: 18 - How to change profile settings from the CLI
 featured: true
 -->
 
-# Modifying Profile Settings from the Command Line
+# How to Change Profile Settings from the CLI
 *Requires npm version 5.5.1 or greater.*
 
 To view and set profile properties from the Command Line Interface (CLI), use these commands: 
