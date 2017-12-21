@@ -7,11 +7,12 @@ featured: true
 
 <iframe src="https://www.youtube.com/embed/3I78ELjTzlQ" frameborder="0" allowfullscreen></iframe>
 
-Node.js modules are one kind of packages which can be published to npm. 
 
-When you create a new module,  start by creating a `package.json` file.
+Node.js modules are a type of package that can be published to npm. 
 
-You can use `npm init` to create the `package.json`. It will prompt you for values for the `package.json` fields. The two required fields are 'name' and 'version'. You'll also want to have a value for 'main'. You can use the default, `index.js`. These steps are described in detail in [Chapter 5](https://docs.npmjs.com/getting-started/using-a-package.json).
+To create a new module,  start by creating a `package.json` file.
+
+Use `npm init` to create  `package.json`. It will prompt you for values for fields. The two required fields are 'name' and 'version'. You'll also need to set a value for 'main'. You can use the default, `index.js`. These steps are described in detail in [Chapter 5](https://docs.npmjs.com/getting-started/using-a-package.json).
 
 If you want to add information for the author field, use the following format (email and website are both optional):
 
