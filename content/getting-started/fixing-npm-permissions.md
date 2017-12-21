@@ -5,15 +5,21 @@ featured: true
 
 # How to Prevent Permissions Errors
 
-If you see an `EACCES` error when you try to install a package globally, read this chapter. The `EACCES` error can usually be avoided if you change the directory npm runs from, either by reinstalling it with a version manager, or by changing its default directory. To install a version manager, see [Chapter 2](https://docs.npmjs.com/getting-started/installing-node). To alter npm's default directory, see option two, below. 
+If you see an `EACCES` error when you try to install a package globally, read this chapter. This error can be avoided if you change the directory where npm is installed. To do this, either:
+
+1.  Reinstall npm with a version manager (recommended), 
+ 
+ 	or
+ 
+1.  Change npm's default directory manually. 
 
 ####Tip
 
-If you are using npm version 5.2 or greater, you might also want to explore tools such as [npx](https://www.npmjs.com/package/npx) to circumvent permissions issues when running a package. 
+If you are using npm version 5.2 or greater, explore tools such as [npx](https://www.npmjs.com/package/npx) to circumvent permissions issues. 
 
 ### Option One: Reinstall with a Node Version Manager
 
-This is the best way to avoid permissions issues. This is described in [Chapter 2](docs.npmjs.com/getting-started/installation-and-version-management.md). You do not need to remove your current version of npm or Node.js before installing a node version manager. 
+This is the best way to avoid permissions issues. This is described in [Chapter 2](https://docs.npmjs.com/getting-started/installing-node). You do not need to remove your current version of npm or Node.js before installing a node version manager. 
 
 ### Option Two: Change npm's Default Directory 
 

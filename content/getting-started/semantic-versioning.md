@@ -1,5 +1,5 @@
 <!--
-title: 13 - How to use semantic versioning with npm
+title: 13 - How to use semantic versioning
 featured: true
 -->
 
