@@ -7,8 +7,8 @@ featured: true
 
 <iframe src="https://www.youtube.com/embed/BkotrAFtBM0" frameborder="0" allowfullscreen></iframe>
 
-You can publish any directory that has a `package.json` file, for example, a [node module](/getting-started/creating-node-modules). (To understand the difference between *node modules* and other types of *packages*, click [here](https://docs.npmjs.com/how-npm-works/packages).
-
+You can publish any directory that has a `package.json` file, for example, a [node module](/getting-started/creating-node-modules). (To understand the difference between *node modules* and other types of *packages*, click [here]
+(https://docs.npmjs.com/getting-started/packages).
 ## Creating a user
 
 To publish, you must be a user on the npm registry. If you aren't a user, create an account by using  `npm adduser`. If you created a user account on the site, use `npm login` to store the credentials on your client.
@@ -66,7 +66,7 @@ The README displayed on the site will not be updated unless a new version of you
 
 ##Learn More
 
-To find out more about node modules and packages, see [here](https://docs.npmjs.com/how-npm-works/packages).
+To find out more about node modules and packages, see [here](https://docs.npmjs.com/getting-started/packages).
 
 To learn about semantic versioning, click [here](https://docs.npmjs.com/getting-started/semantic-versioning). 
 

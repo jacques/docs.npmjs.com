@@ -1,5 +1,5 @@
 <!--
-title: 10 - How to unistall global packages
+title: 10 - How to uninstall global packages
 featured: true
 -->
 

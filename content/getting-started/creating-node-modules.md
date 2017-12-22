@@ -38,5 +38,5 @@ Test:
 
 ## Learn More
 
-To understand types of packages, click [here](https://docs.npmjs.com/how-npm-works/packages).
+To understand types of packages, click [here](https://docs.npmjs.com/getting-started/packages).
  

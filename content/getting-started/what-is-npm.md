@@ -15,7 +15,7 @@ npm makes it possible for your team to draw on the expertise of people who have 
   
 To find packages, browse the npm [website](https://www.npmjs.com). 
 
-While browsing, you'll find lots of Node modules, which makes sense, since npm started as the Node package manager. Node modules can be used on the server side. There are also many packages which add commands for you to use in the command line. And there are an ever-increasing amount of packages that can be used on the front end. (To understand the difference between node modules and packages, click [here](https://docs.npmjs.com/how-npm-works/packages)).
+While browsing, you'll find lots of Node modules, which makes sense, since npm started as the Node package manager. Node modules can be used on the server side. There are also many packages which add commands for you to use in the command line. And there are an ever-increasing amount of packages that can be used on the front end. (To understand the difference between node modules and packages, click [here](https://docs.npmjs.com/getting-started/packages)).
  
 npm consists of three distinct pieces: 
  
