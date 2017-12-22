@@ -1,15 +1,11 @@
 <!--
-title: 19 - More About Packages and Modules
+title: 19 - Understanding packages and modules  
 featured: true
 -->
 
-# Packages and Modules
+# Understanding Packages and Modules
 
-One of the keys in becoming immersed in an ecosystem is learning
-its vocabulary. Node.js and npm have very specific definitions of
-packages and modules, which are easy to mix up. We'll discuss those
-definitions here, make them distinct, and explain why certain
-default files are named the way they are.
+Node.js and npm have very specific definitions of packages and modules, which are easy to mix up. We'll discuss those definitions here, make them distinct, and explain why certain default files are named the way they are.
 
 ## Quick Summary
 
