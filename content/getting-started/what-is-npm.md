@@ -5,7 +5,7 @@ featured: true
 
 # What is npm?
 
-npm is the package manager for JavaScript. It's also the world's largest software registry. There are over 350,000 packages of JavaScript code available to download. npm makes it easy for JavaScript developers to reuse code other developers have shared. Adapt it to new applications, or incorporate it as is. When someone revises their code, you can easily update your application to incorporate the newly improved code.
+npm is the package manager for JavaScript. It's also the world's largest software registry. There are over 600,000 packages of JavaScript code available to download, with approximately 3 billion downolads per week. npm makes it easy for JavaScript developers to reuse code other developers have shared. Adapt it to new applications, or incorporate it as is. When someone revises their code, you can easily update your application to incorporate the newly improved code.
 
 <iframe width="670" height="480" src="https://www.youtube.com/embed/x03fjb2VlGY" frameborder="0" allowfullscreen></iframe>
   
