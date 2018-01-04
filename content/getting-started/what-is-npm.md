@@ -5,13 +5,13 @@ featured: true
 
 # What is npm?
 
-npm is the package manager for JavaScript. It's also the world's largest software registry. There are over 600,000 packages of JavaScript code available to download, with approximately 3 billion downolads per week. npm makes it easy for JavaScript developers to reuse code other developers have shared. Adapt it to new applications, or incorporate it as is. When someone revises their code, you can easily update your application to incorporate the newly improved code.
+npm is the package manager for JavaScript. It's also the world's largest software registry. There are over 600,000 packages of JavaScript code available to download, with approximately 3 billion downloads per week. npm makes it easy for JavaScript developers to reuse code other developers have shared. Adapt it to new applications, or incorporate it as is. When someone revises their code, you can easily update your application to incorporate the newly improved code.
 
 <iframe width="670" height="480" src="https://www.youtube.com/embed/x03fjb2VlGY" frameborder="0" allowfullscreen></iframe>
   
 Developers create a small building block of code that solves one problem well, then "package" the code into a directory that follows npm guidelines. A typical application, such as a website, will consist of dozens or hundreds of small packages. Its developer uses the packages to compose larger custom solutions.
   
-npm makes it possible for your team to draw on the expertise of people who have focused on a particular problem areas, whether in your organization, or outside of it. Use npm to help your team work together better, sharing developer talent across projects. Use npm to manage multiple versions of code.
+npm makes it possible for your team to draw on the expertise of people who have focused on particular problem areas, whether in your organization, or outside of it. Use npm to help your team work together better, sharing developer talent across projects. Use npm to manage multiple versions of code.
   
 To find packages, browse the npm [website](https://www.npmjs.com). 
 
