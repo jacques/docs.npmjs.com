@@ -5,7 +5,7 @@ featured: true
 
 # How to Prevent Permissions Errors
 
-If you see an `EACCES` error when you try to install a package globally, read this chapter. This error can be avoided if you change the directory where npm is installed. To do this, either:
+If you see an `EACCES` error when you try to install a package globally, read this chapter. This error can often be avoided if you change the directory where npm is installed. To do this, either:
 
 1.  Reinstall npm with a version manager (recommended), 
  
@@ -13,9 +13,6 @@ If you see an `EACCES` error when you try to install a package globally, read th
  
 1.  Change npm's default directory manually. 
 
-####Tip
-
-If you are using npm version 5.2 or greater, explore tools such as [npx](https://www.npmjs.com/package/npx) to circumvent permissions issues. 
 
 ### Option One: Reinstall with a Node Version Manager
 
@@ -23,11 +20,11 @@ This is the best way to avoid permissions issues. This is described in [Chapter 
 
 ### Option Two: Change npm's Default Directory 
 
-*This section does not apply to Microsoft Windows. The chapter will be updated to address Windows in the near future.* 
+*This section does not apply to Microsoft Windows. This chapter will be updated to address Windows in the near future.* 
 
-To minimize chances of permissions errors, you can configure npm to use a different directory. In this example, it will be a hidden directory on your home folder.
+To minimize the chance of permissions errors, you can configure npm to use a different directory. In this example, it will be a hidden directory on your home folder.
 
-Back-up your computer before moving forward.
+1. Back-up your computer before you start. 
 
 1. Make a directory for global installations:
 
@@ -53,6 +50,6 @@ Instead of steps 2-4, you can use the corresponding ENV variable (e.g. if you do
 
         NPM_CONFIG_PREFIX=~/.npm-global
      
-### More about npx
+#### Tip: Consider npx
 
-Click here to read an excellent article about [npx](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b).
+If you are using npm version 5.2 or greater, explore [npx](https://www.npmjs.com/package/npx) as an alternative way to run global commands, especially if you just need a command occassionally. Click here to read an excellent article about [npx](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b).
