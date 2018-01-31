@@ -28,3 +28,8 @@ To update all global packages, type:
 ####If you are using version 2.6.0 or less
 
 For npm versions less than 2.6.1, run [this script](https://gist.github.com/othiym23/4ac31155da23962afd0e) to update all outdated global packages.
+
+However, please consider upgrading to the latest version of npm. To do this, type:
+
+`npm install npm@latest -g`.
+
