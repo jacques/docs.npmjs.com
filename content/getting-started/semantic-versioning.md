@@ -15,7 +15,7 @@ If a project is going to be shared with others, it should start at `1.0.0`, (tho
 
 After this, changes should be handled as follows:
 
-![SemVerTable](/images/sem_ver_table.png)
+![SemVerTable](/images/semvertable.png)
 
 ## Semver for Consumers
 

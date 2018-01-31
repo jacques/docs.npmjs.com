@@ -1,5 +1,5 @@
 <!--
-title: 12 - How to publish a package
+title: 12 - How to publish & update a package
 featured: true
 -->
 
@@ -7,7 +7,7 @@ featured: true
 
 <iframe src="https://www.youtube.com/embed/BkotrAFtBM0" frameborder="0" allowfullscreen></iframe>
 
-You can publish any directory that has a `package.json` file, for example, a [node module](/getting-started/creating-node-modules). (To understand the difference between *node modules* and other types of *packages*, click [here]
+You can publish any directory that has a `package.json` file, for example, a [node module](https://docs.npmjs.com/getting-started/creating-node-modules). (To understand the difference between *node modules* and other types of *packages*, click [here]
 (https://docs.npmjs.com/getting-started/packages).
 
 ## Preparation
@@ -36,16 +36,29 @@ Note that everything in the directory will be included unless it is ignored by a
 
 Read [Working with package.json](https://docs.npmjs.com/getting-started/using-a-package.json) to be sure that the details you want are reflected in your package.
 
-### Choose a name
+##### Choose a name
 
 Choose a unique name for your package. Try to choose a descriptive name that:
 
 *  isn't already owned by somebody else
 *  is not spelled like another name, except with typos
 *  will not confuse others about the authorship
-*  meets [npm policy guidelines](https://https://www.npmjs.com/policies). For example, do not name your package something offensive, and don't use someone else's trademarked name. 
+*  meets [npm policy guidelines](https://www.npmjs.com/policies). For example, do not name your package something offensive, and don't use someone else's trademarked name. 
+*  Specify the name in the appropriate line of the package.json file. 
 
 *Note: The first 3 caveats don't apply if you are using [scopes](https://docs.npmjs.com/cli/version).*
+
+#### Include Documentation (readme.md)
+
+npm recommends that you include a readme file to document your package. The readme file must have the filename `readme.md`.  The file extension `.md` indicates that the file is a [*markdown*](https://guides.github.com/features/mastering-markdown/#what) file. This file will appear on the npm website when someone finds your package. 
+
+Before you begin, please look at some of the package pages to get ideas for the information you can add to your readme file, and to see why this is so important. 
+
+1. Create a file using any text editor. 
+ 
+2. Save it in the project directory with the name **readme.md** 
+
+3. When you publish, this documenation will display on the web page where people download your package. 
 
 ## Publish! 
 
@@ -53,15 +66,18 @@ Use `npm publish` to publish the package.
 
 ## Test  
 
- Go to `https://npmjs.com/package/<package>`. You should see the information for your new package.
+Go to `https://npmjs.com/package/<package>`. You should see a page all about your new package. It might look a bit like this: 
+
+![yargswelcomepage](/images/yargs-example-readme.png) 
+ 
 
 # Congratulations on Publishing! 
 
 Now that you've published your first package (congratulations!) it's a great time to review npm's [code of conduct](https://www.npmjs.com/policies/conduct) in case you have questions about site etiquette or other [npm policies](https://www.npmjs.com/policies). 
 
-# Updating Your Package
+# How to Update a Package
 
-## How To Update the Version Number 
+## How to Update the Version Number 
 
 When you make changes, you can update the package using 
 

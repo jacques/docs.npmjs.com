@@ -4,7 +4,9 @@ featured: true
 -->
 # What is npm?
 
-npm is the world's largest software registry, with approximately 3 billion downloads per week. npm opens up an entire world of JavaScript talent to you and to your team. The registry contains over 600,000 _packages_ (building blocks of code).  Open-source developers from every continent share and borrow packages through npm, accessing algorithms designed across the planet or across the street. Packages follow specific structures to enable you to track and manage versions and multiple dependencies. Here is a quick introduction to npm:
+npm opens up an entire world of JavaScript talent to you and to your team. It's the world's largest software registry, with approximately 3 billion downloads per week.The registry contains over 600,000 _packages_ (building blocks of code).  Open-source developers from every continent use npm to share and borrow packages. Packages follow specific structures to enable you to track and manage versions and multiple dependencies. 
+
+Here is a quick introduction to npm:
 
 <iframe width="670" height="480" src="https://www.youtube.com/embed/x03fjb2VlGY" frameborder="0" allowfullscreen></iframe>
 
@@ -42,7 +44,7 @@ To find packages, start with the npm [search bar](https://www.npmjs.com).
 
 While browsing, you'll find:
 
-*  Node modules, which can be used on the server side.
+*  node modules, which can be used on the server side.
 *  packages that add commands for you to use in the command line.
 *  packages that can be used on the front end of websites.  
 
@@ -76,4 +78,4 @@ Now that you know what npm is, and a bit about how to use it, it's time to get s
 
 To learn more about npm as a product, new features on the way, and interesting uses of npm, sign up for our newsletter at [npm-weekly](https://www.npmjs.com/npm-weekly).
 
-To explore additional features that you might wish to use as your project evolves, click [here] (https://www.npmjs.com/pricing).``
+To explore additional features that you might wish to use as your project evolves, click [here] (https://www.npmjs.com/pricing).
