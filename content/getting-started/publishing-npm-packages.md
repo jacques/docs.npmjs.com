@@ -3,14 +3,20 @@ title: 12 - How to publish & update a package
 featured: true
 -->
 
-# How to Publish a Package
+# How to Publish & Update a Package
 
 <iframe src="https://www.youtube.com/embed/BkotrAFtBM0" frameborder="0" allowfullscreen></iframe>
 
-You can publish any directory that has a `package.json` file, for example, a [node module](https://docs.npmjs.com/getting-started/creating-node-modules). (To understand the difference between *node modules* and other types of *packages*, click [here]
-(https://docs.npmjs.com/getting-started/packages).
+You can publish any directory that has a `package.json` file. This chapter explains how to publish a package for the first time, and how to update it later. 
+
+
+#How to Publish a Package
 
 ## Preparation
+
+### Understand npm policies
+
+Before you begin, it's a good idea to review npm's policies, in case you have questions about site etiquette, naming, licensing, or other [guidelines](https://www.npmjs.com/policies). 
 
 ### Create a User Account
 
@@ -69,15 +75,12 @@ Use `npm publish` to publish the package.
 Go to `https://npmjs.com/package/<package>`. You should see a page all about your new package. It might look a bit like this: 
 
 ![yargswelcomepage](/images/yargs-example-readme.png) 
- 
 
-# Congratulations on Publishing! 
-
-Now that you've published your first package (congratulations!) it's a great time to review npm's [code of conduct](https://www.npmjs.com/policies/conduct) in case you have questions about site etiquette or other [npm policies](https://www.npmjs.com/policies). 
+### *Congratulations!*
 
 # How to Update a Package
 
-## How to Update the Version Number 
+### How to Update the Version Number 
 
 When you make changes, you can update the package using 
 
@@ -93,11 +96,11 @@ After updating the [version number](https://docs.npmjs.com/cli/version), run `np
 
 Test: Go to `https://npmjs.com/package/<package>`. The package number should be updated.
 
-## How to Update the Read Me File 
+### How to Update the Read Me File 
 
 The README displayed on the site will not be updated unless a new version of your package is published, so you need to run `npm version patch` and `npm publish` to update the documentation displayed on the site. 
 
-##Learn More
+## Learn More
 
 To find out more about node modules and packages, see [here](https://docs.npmjs.com/getting-started/packages).
 
