@@ -4,7 +4,7 @@ featured: true
 -->
 # What is npm?
 
-npm opens up an entire world of JavaScript talent to you and to your team. It's the world's largest software registry, with approximately 3 billion downloads per week.The registry contains over 600,000 _packages_ (building blocks of code).  Open-source developers from every continent use npm to share and borrow packages. Packages follow specific structures to enable you to track and manage versions and multiple dependencies. 
+npm opens up an entire world of JavaScript talent to you and to your team. It's the world's largest software registry, with approximately 3 billion downloads per week.The registry contains over 600,000 _packages_ (building blocks of code).  Open-source developers from every continent use npm to share and borrow packages. Packages are structured to enable you to keep track of dependencies and versions. 
 
 Here is a quick introduction to npm:
 
@@ -22,21 +22,29 @@ The *registry* is a large database of information about packages.
 
 The [*CLI*](https://docs.npmjs.com/cli/npm) runs from a terminal. This is how most developers interact with npm.
 
-## A Few Key Ways to use npm
+## Use npm to . . . 
 
 * Adapt packages to your apps, or incorporate them as they are.
 
-* Download standalone tools to use right away.
+* Download standalone tools you can use right away.
 
 * Run packages without downloading using [npx](https://www.npmjs.com/package/npx).
 
-* Share code with any npm user, any where, or restrict code to specific developers.
+* Share code with any npm user, any where.
+
+* Restrict code to specific developers.
 
 * Form virtual teams (orgs).
 
 * Manage multiple versions of code and code dependencies.
 
 * Update applications easily when underlying code is updated.
+
+* Discover multiple ways to solve the same puzzle. 
+
+* Find other developers who are working on similar problems.  
+
+These are just a few examples of ways developers use npm. If you have one you'd like to see added, consider contributing it on the doc issues page [https://github.com/npm/docs/issues]. Use keyword `ways`.    
 
 ## How to Find Packages
 
