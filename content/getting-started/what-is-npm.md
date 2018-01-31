@@ -44,7 +44,7 @@ The [*CLI*](https://docs.npmjs.com/cli/npm) runs from a terminal. This is how mo
 
 * Find other developers who are working on similar problems.  
 
-These are just a few examples of ways developers use npm. If you have one you'd like to see added, consider contributing it on the doc issues page [https://github.com/npm/docs/issues]. Use keyword `ways`.    
+These are just a few examples of ways developers use npm. If you'd like to add a bullet point, comment [here](https://github.com/npm/docs/issues/944).   
 
 ## How to Find Packages
 
