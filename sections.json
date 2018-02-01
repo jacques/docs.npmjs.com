@@ -2,9 +2,6 @@
   "id": "getting-started",
   "title": "Getting Started"
 }, {
-  "id": "how-npm-works",
-  "title": "How npm works"
-}, {
   "id": "private-modules",
   "title": "Private Modules"
 }, {
@@ -19,9 +16,6 @@
 }, {
   "id": "files",
   "title": "Configuring npm"
-}, {
-  "id": "policies",
-  "title": "npm policy documents"
 }, {
   "id": "company",
   "title": "npm, the Company",
