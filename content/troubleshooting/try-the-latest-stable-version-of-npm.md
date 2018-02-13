@@ -31,7 +31,25 @@ _Microsoft wrote a small command line tool to automate the steps below. [You can
 
 ___
 
-By default, npm is installed alongside node in `C:\Program Files (x86)\nodejs`. npm's globally installed packages (including, potentially, npm itself) are stored separately in a user-specific directory (which is currently `C:\Users\<username>\AppData\Roaming\npm`). Because the installer puts `C:\Program Files (x86)\nodejs`  before `C:\Users\<username>\AppData\Roaming\npm` on your `PATH`, it will always use version of npm installed with node instead of the version of npm you installed using `npm -g install npm@<version>`. To get around this, you can do **one** of the following:
+By default, npm is installed alongside node in 
+
+`C:\Program Files (x86)\nodejs`
+
+npm's globally installed packages (including, potentially, npm itself) are stored separately in a user-specific directory (which is currently
+
+ `C:\Users\<username>\AppData\Roaming\npm`). 
+ 
+ Because the installer puts
+ 
+ `C:\Program Files (x86)\nodejs`  
+ 
+ before
+ 
+ `C:\Users\<username>\AppData\Roaming\npm` 
+ 
+ on your `PATH`, it will always use the version of npm installed with node instead of the version of npm you installed using `npm -g install npm@<version>`. 
+ 
+ To get around this, you can do **one** of the following:
 
 * Option 1: [edit your Windows installation's `PATH`](http://superuser.com/questions/284342/what-are-path-and-other-environment-variables-and-how-can-i-set-or-use-them) to put `%appdata%\npm` before `%ProgramFiles%\nodejs`.
 Remember that you'll need to restart `cmd.exe` (and potentially restart Windows) when you make changes to `PATH` or how npm is installed.

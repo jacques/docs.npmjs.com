@@ -5,42 +5,19 @@ featured: true
 
 # Common Errors
 
+
+## Random Errors--One Place to Start
+
+* Some strange issues can be resolved by simply running `npm cache clean` and trying again.
+* If you are having trouble with `npm install`, use the `-verbose` option to see more details.
+
 ## No compatible version found
 
 You have an outdated npm. [Please update to the latest stable npm](https://docs.npmjs.com/troubleshooting/try-the-latest-stable-version-of-npm).
 
-## Permission Error
+## Permissions Errors
 
-```
-npm ERR! code EPERM
-```
-
-```
-npm ERR! code EACCES
-```
-
-* Fix the permissions of your cache with `sudo chown -R $(whoami) "$HOME/.npm"`.
-* Try again with `sudo`. e.g. `sudo npm install express -g`. (You'll probably need to fix cache permissions afterwards, as above).
-* [Reinstall node so it doesn't require sudo](https://gist.github.com/isaacs/579814).
-
-## Travis projects using 0.8 can't upgrade to npm 2
-
-In your `.travis.yml` replace this:
-
-``` yaml
-before_install:
-- npm install -g npm@latest
-```
-
-with this:
-
-``` yaml
-before_install:
-- '[ "${TRAVIS_NODE_VERSION}" != "0.8" ] || npm install -g npm@1.4.28'
-- npm install -g npm@latest
-```
-
-This suggestion is based on [this Travis issue](https://github.com/travis-ci/travis-ci/issues/1785#issuecomment-31253761) and comes courtesy [@simondean](https://github.com/simondean).
+Please see the discussions in [Chapter 2](https://docs.npm.red/getting-started/installing-node) and [Chapter 3](https://docs.npmjs.com/getting-started/fixing-npm-permissions) about ways to avoid permissions errors. 
 
 ## `Error: ENOENT, stat 'C:\Users\<user>\AppData\Roaming\npm'` on Windows 7
 
@@ -65,7 +42,7 @@ npm ERR! not found: git
 ENOGIT
 ```
 
-You need to [install git](http://git-scm.com/book/en/Getting-Started-Installing-Git).
+You need to [install git](http://git-scm.com/book/en/Getting-Started-Installing-Git). Or, you may need to add your git information to your npm profile. You can do this from the [command line](https://docs.npm.red/getting-started/modifying_your_profile_from_command_line) or from the website. 
 
 ## running a Vagrant box on Windows fails due to path length issues
 
@@ -207,7 +184,6 @@ Look for lines defining the `tmp` config variable.  If you find more than one, r
 
 See <https://github.com/npm/npm/issues/7590> for more about this unusual problem.
 
-## Other
+## Why isn't npm running the latest version on my Windows machine?
 
-* Some strange issues can be resolved by simply running `npm cache clean` and trying again.
-* If you are having trouble with `npm install`, use the `-verbose` option to have more details.
+See the section about Windows [here](https://docs.npmjs.com/troubleshooting/try-the-latest-stable-version-of-npm).
