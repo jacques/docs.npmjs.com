@@ -1,11 +1,11 @@
 <!--
-title: 02 - Downloading modules to CI/deployment servers
+title: 02 - Downloading packages to CI/deployment servers
 featured: true
 -->
 
-# Downloading modules to CI/deployment servers
+# Downloading packages to CI/deployment servers
 
-If you are using deployment servers or testing with CI servers, you'll need a way to download your private modules to those servers. To do this, you can set up an [`.npmrc`](https://docs.npmjs.com/files/npmrc) file which will authenticate your server with npm.
+If you are using deployment servers or testing with CI servers, you'll need a way to download your private packages to those servers. To do this, you can set up an [`.npmrc`](https://docs.npmjs.com/files/npmrc) file which will authenticate your server with npm.
 
 ## Getting an authentication token
 
