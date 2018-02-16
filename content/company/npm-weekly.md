@@ -1,4 +1,4 @@
 <!--
-title: Security
+title: npm Weekly
 featured: true
 -->
