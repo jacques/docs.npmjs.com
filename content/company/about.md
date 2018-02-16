@@ -1,4 +1,4 @@
 <!--
-title: about npm
+title: About npm
 featured: true
 -->
