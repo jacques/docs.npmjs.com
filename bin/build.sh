@@ -18,6 +18,4 @@ cp -pr node_modules/npm/doc/files content/
 cp -pr node_modules/npm/doc/misc content/
 rm -f  content/misc/npm-index.md
 
-cp -pr node_modules/@npm/policies content/
-
 ./bin/tree.js
