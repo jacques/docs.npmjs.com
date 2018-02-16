@@ -1,12 +1,9 @@
 [{
   "id": "getting-started",
-  "title": "Getting Started"
-}, {
-  "id": "how-npm-works",
-  "title": "How npm works"
+  "title": "Getting started"
 }, {
   "id": "private-modules",
-  "title": "Private Modules"
+  "title": "Private packages"
 }, {
   "id": "troubleshooting",
   "title": "Troubleshooting"
@@ -15,15 +12,12 @@
   "title": "Using npm"
 }, {
   "id": "cli",
-  "title": "CLI Commands"
+  "title": "CLI commands"
 }, {
   "id": "files",
   "title": "Configuring npm"
 }, {
-  "id": "policies",
-  "title": "npm policy documents"
-}, {
   "id": "company",
-  "title": "npm, the Company",
+  "title": "npm, Inc.",
   "ignoreOnHomepage": true
 }]
