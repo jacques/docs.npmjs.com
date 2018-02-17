@@ -1,11 +1,11 @@
 <!--
-title: 01 - Working with private modules
+title: 01 - Working with private packages
 featured: true
 -->
 
-# Working with private modules
+# Working with private packages
 
-With npm private modules, you can use the npm registry to host your own private code and the npm command line to manage it. This makes it easy to use public modules like Express and Browserify side-by-side with your own private code.
+With npm private packages, you can use the npm registry to host your own private code and the npm command line to manage it. This makes it easy to use public packages like Express and Browserify side-by-side with your own private code.
 
 <iframe src="https://www.youtube.com/embed/O6JoXGnHK_Y" frameborder="0" allowfullscreen></iframe>
 
@@ -64,7 +64,7 @@ Once it's published, you should see it on the website with a private flag.
 
 ## Giving access to others
 
-If you want to give access to someone, they need to be subscribed to private modules as well. Once they are, you can give them read or read-write access.
+If you want to give access to someone, they need to be subscribed to private packages as well. Once they are, you can give them read or read-write access.
 
 You can control access to the package on the access page. To get to the page, click on the Collaborators link or the plus button.
 
@@ -84,9 +84,9 @@ You can also add collaborators on the command line:
 npm owner add <user> <package name>
 ```
 
-## Installing private modules
+## Installing private packages
 
-To install a private module, you must have access to the package. Then you can use install with the scoped package name.
+To install a private packages, you must have access to the package. Then you can use install with the scoped package name.
 
 ```
 npm install @scope/project-name

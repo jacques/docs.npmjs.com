@@ -1,4 +1,4 @@
 <!--
-title: About npm
+title: Jobs at npm
 featured: true
 -->
