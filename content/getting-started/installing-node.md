@@ -1,26 +1,106 @@
 <!--
-title: 02 - How to install npm & manage npm versions 
--->
+title: 02 - How to set up a new npm account & install npm-->
 
-#How to Install npm & Manage npm Versions
+#Getting Started 
+
+1. Creat an account from [npmjs.com](http://www.npmjs.com).
+
+2. Install npm from a terminal console.
+
+3. Login to the terminal with your new username. 
+
+Note: Many of the steps that you can take from the browser can also be taken directly from the Command Line Interface. Skip [here](#Related-CLI-Commands) to learn more. 
+
+## Create an Account
+
+1. Go to http://www.npmjs.com and click 'log in'.
+
+![firstloginmenu](first-screen.png)
+
+2. Complete the sign up page.  
+![signupmenu](npm-signup-page-comp.png)
+
+	**Full Name** First and Last Name. (You can enter middle name(s) as well).
+
+	**Public Email** Enter an email account. This email address will be added to the metadata when you publish a package. This means that the email address can be discovered by anyone who downloads your packages. In addition, npm will send email to this acccount when you update packages, as well as occassional product updates and information.   
+
+	**Username** Enter the username that will be shown when you publish packages or interact with other users within npm. Choose a name that doesn't violate our policy guidelines. The name must be lower case. It can have dashes and numerals, but there are restrictions in order to prevent fake accounts. 
+
+	**password** Follow the password guidelines on the screen.
+
+3. Click the two boxes according to your wishes. Then click `Create an Account'. 
+
+4. Open the email address that you entered.  
+
+5. Find a message with the title  _Welcome to npm_ (search _All Mail_ in case the email doesn't appear in the inbox).
+
+_If you can't find the welcome message, please click to resend:_  
+
+ ![emailnotif](email-notif.png)
+
+![signupemail](welcome-letter-snippet.png)
+
+_The welcome message has links to helpful resources; you might want to flag it for later reference._ 
+
+1.  Click the first link under the Account heading to validate your account.
+ 
+1.  Click `Create an Organization` from the menu.
+ 
+5. Click the link in your email. Success!  You will be sent to your new landing page. Notice the URL:
+
+`https://www.npmjs.com/~yourusername`
+
+This is a quick way to get to your page in the future.
+
+ ![landingpage](first-page-b4-setup.png)
+
+### After you set up your Login Account
+
+You now have a login account. Here are a few things you can do before (or after) you install npm:
+
+* [Create/Edit your Profile](https://docs.npmjs.com/getting-started/modifying_your_profile_from_command_line)
+* [Set up Two-Factor Authentication](https://docs.npmjs.com/getting-started/using-two-factor-authentication)
+* [Create an Organization, Add Members, and Form Teams](https://www.npmjs.com/docs/orgs/)
+* [Learn about Paid Accounts and Billing](https://www.npmjs.com/docs/orgs/managing-package-access.html)
+
+Or you can install npm in the terminal console, as explained below, then come back to these steps. 
+
+The following screen shot shows where the menu is if you want to explore the website, set up your profile, and get started right away:
+
+![profile-menu](profile-menu.png)
+
+## Install npm & Manage npm Versions
 
 npm is written in Node.js, so you need to install Node.js in order to use npm. You can install npm via the Node.js website, or by installing a _Node Version Manager_ or NVM. This chapter explains both options. 
 
 If you just want to get started exploring npm, using the Node.js installation method is fastest. If you are an advanced developer ready to jump in and work with versions, use the node version manager. If you aren't sure, please read this chapter before you decide. You can always change how you run npm in the future. 
 
-# Installing npm from the Node.js site
+### Installing npm from the Node.js site
 
-##1. Install Node.js & npm
+#### 1. Install Node.js & npm
+
+##### OS/X or Windows
 
 If you're using OS X or Windows, use one of the installers from the [Node.js download page](https://nodejs.org/en/download/). Be sure to install the version labeled **LTS**. Other versions have not yet been tested with npm. 
 
-![DOSPIC](/images/win-installing-node-lts.png)
+![DOSPIC](win-installing-node-lts.png)
 	
-If you're using Linux, you can find installers by scrolling on the [Node.js download page](https://nodejs.org/en/download/), or, check [NodeSource's binary distributions](https://github.com/nodesource/distributions) to see if there's a more recent version that works with your system.
+##### Linux
+
+If you're using Linux, choose one of these options:
+* click [here](https://nodejs.org/en/download/package-manager/) to install npm for Linux in the way many Linux developers prefer.
+* scroll through the installers on the [Node.js download page](https://nodejs.org/en/download/)
+* check [NodeSource's binary distributions](https://github.com/nodesource/distributions) to see if there's a more recent version that works with your system. 
+
+##### Less-Common Operating Systems
+
+Click [here](https://nodejs.org/en/download/package-manager/) to learn about installing node.js for a variety of operating systems. 
+
+#### 2. Test your Installation 
 	
 After installing, run `node -v`. The version should be v8.9.1 or higher.
 
-## 2. Update npm
+#### 3. Update npm
 
 When you install node.js, npm is automatically installed. However, npm gets updated more frequently than Node.js, so be sure that you have the latest version.
 
@@ -32,12 +112,7 @@ To be sure that this matches the latest version, scroll to the bottom of this pa
 
 This will install the latest official, tested version of npm. 
 
-To install a version that will be released in the future, run:
-
- `npm install npm@next -g`.
-
-
-# Using a Version Manager to install Node.js and npm
+### Using a Version Manager to install Node.js and npm
 
 Since npm and node.js products are managed by different entities, updates and maintenance can become complex. Also, the Node.js installation process installs npm in a directory that only has local permissions. This can cause permissions errors when you attempt to run packages globally. 
 
@@ -45,19 +120,33 @@ To solve both these issues, many developers opt to use a *node version manager*,
 
 In addition, developers can use an nvm to test their applications on multiple versions of npm. The nvm enables you to easily switch npm as well as node versions. This makes it easier to ensure that your applications work for most users, even if they are using other versions of npm. If you decide to install a version manager, use the instructions for the version manager you select to learn how to switch versions, and to learn how to keep up-to-date with the latest version of npm. 
 
-## Apple macOS 
+#### Apple macOS 
 
 Click [here](https://github.com/creationix/nvm/blob/master/README.md#installation) to learn how to install nvm for MacOs.  
 
-## Microsoft Windows 
+#### Microsoft Windows 
  
 To install and manage npm and Node.js on Windows, we suggest [nvm-windows](https://github.com/coreybutler/nvm-windows).
 
-## Linux 
+#### Linux 
 
 Click [here] (https://github.com/creationix/nvm/blob/master/README.md#installation) to learn how to install nvm for Linux.
 
-# Experimenting with the Next Release 
+## Login to npm from a terminal 
+
+To test your new account, type:
+
+`npm login`
+
+You will be promted for your username, password, and email. Be sure to spell your username exactly the same way as you entered it on the website, or you will create a new account. 
+
+![npmlogin](npm-login.png)
+
+If you have already set up two-factor authentication, you will be asked for a one-time password when you login. Please see [tfa](https://docs.npmjs.com/getting-started/using-two-factor-authentication) if you need more information.
+
+To test that you have successfully logged in, type `npm whoami`.
+
+## Experimenting with the Next Release 
 
 *For more advanced users*
 
@@ -65,10 +154,10 @@ If you want to try the next, unreleased version of npm to test that packages you
 
 `npm install npm@next -g`
 
-This may simply reinstall the current version, depending on the development cycle. Also, this early version is not final. So features may or may not match what is ultimately released.  
+This may simply reinstall the current version, depending on the development cycle. Also, this early version is not final. So features may or may not match what is ultimately released.   
 
 ## Learn More
 
 To learn more about how to use nvm, click [here](https://github.com/creationix/nvm/blob/master/README.md#usage).
 
-
+_Note: While relevant CLI commands are covered throughout this user documentation, the CLI includes command line help, its own [documentation section, and instant help (man pages)](https://docs.npmjs.com/cli/help)._

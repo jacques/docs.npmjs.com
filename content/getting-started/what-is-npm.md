@@ -20,7 +20,9 @@ The [*website*](https://npmjs.com) is the primary way developers discover packag
 
 The *registry* is a large database of information about packages.
 
-The [*CLI*](https://docs.npmjs.com/cli/npm) runs from a terminal. This is how most developers interact with npm.
+The [*CLI*](https://docs.npmjs.com/cli/npm) runs from a terminal. This is how most developers interact with npm. 
+
+
 
 ## Use npm to . . . 
 
@@ -87,3 +89,11 @@ Now that you know what npm is, and a bit about how to use it, it's time to get s
 To learn more about npm as a product, new features on the way, and interesting uses of npm, sign up for our newsletter at [npm-weekly](https://www.npmjs.com/npm-weekly).
 
 To explore additional features that you might wish to use as your project evolves, click [here] (https://www.npmjs.com/pricing).
+
+For details about setting up orgs, click [here](https://www.npmjs.com/docs/orgs).
+
+To learn more about npm Enterprise, click [here](https://npme.npmjs.com/docs). 
+
+### CLI Reference Doc / Online Help
+
+While relevant CLI commands are covered throughout this user documentation, the CLI includes command line help, its own [documentation section, and instant help (man pages)](https://docs.npmjs.com/cli/help). When you click a doc about [any CLI command](https://docs.npmjs.com/cli/help-search), a list of all CLI commands appears in the left-hand side bar. You can also access the list of CLI commands by scrolling down [the first docs page](https://docs.npmjs.com/docs).
