@@ -15,10 +15,10 @@ Note: Many of the steps that you can take from the browser can also be taken dir
 
 1. Go to http://www.npmjs.com and click 'log in'.
 
-![firstloginmenu](first-screen.png)
+![firstloginmenu](/images/first-screen.png)
 
 2. Complete the sign up page.  
-![signupmenu](npm-signup-page-comp.png)
+![signupmenu](/images/npm-signup-page-comp.png)
 
 	**Full Name** First and Last Name. (You can enter middle name(s) as well).
 
@@ -36,9 +36,9 @@ Note: Many of the steps that you can take from the browser can also be taken dir
 
 _If you can't find the welcome message, please click to resend:_  
 
- ![emailnotif](email-notif.png)
+ ![emailnotif](/images/email-notif.png)
 
-![signupemail](welcome-letter-snippet.png)
+![signupemail](/images/welcome-letter-snippet.png)
 
 _The welcome message has links to helpful resources; you might want to flag it for later reference._ 
 
@@ -52,7 +52,7 @@ _The welcome message has links to helpful resources; you might want to flag it f
 
 This is a quick way to get to your page in the future.
 
- ![landingpage](first-page-b4-setup.png)
+ ![landingpage](/images/first-page-b4-setup.png)
 
 ### After you set up your Login Account
 
@@ -67,7 +67,7 @@ Or you can install npm in the terminal console, as explained below, then come ba
 
 The following screen shot shows where the menu is if you want to explore the website, set up your profile, and get started right away:
 
-![profile-menu](profile-menu.png)
+![profile-menu](/images/profile-menu.png)
 
 ## Install npm & Manage npm Versions
 
@@ -140,7 +140,7 @@ To test your new account, type:
 
 You will be promted for your username, password, and email. Be sure to spell your username exactly the same way as you entered it on the website, or you will create a new account. 
 
-![npmlogin](npm-login.png)
+![npmlogin](/images/npm-login.png)
 
 If you have already set up two-factor authentication, you will be asked for a one-time password when you login. Please see [tfa](https://docs.npmjs.com/getting-started/using-two-factor-authentication) if you need more information.
 
