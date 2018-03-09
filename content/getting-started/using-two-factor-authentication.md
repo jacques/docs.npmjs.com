@@ -51,7 +51,7 @@ npm owner add <user > --otp=123456
 ```
 ## When do I need to enter a 2nd factor?
 
-![2nd Factor Table](when-you-need-the-otp-table.png)
+![2nd Factor Table](/images/when-you-need-the-otp-table.png)
 
 
 ## How Do I Enable 2FA? 
@@ -62,12 +62,12 @@ To require two-factor authentication, you can use the web site, or the command l
 
 1. Click your avatar to see the options menu. 
 
-![Click Avatar](find-profile-menu-arrow.png)
+![Click Avatar](/images/find-profile-menu-arrow.png)
 
 1. Click Profile Settings. 
 
 
-![Choosing Profile Settings](choosing-profile-settings.png)
+![Choosing Profile Settings](/images/choosing-profile-settings.png)
 
 
 
