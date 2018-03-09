@@ -62,7 +62,7 @@ To require two-factor authentication, you can use the web site, or the command l
 
 1. Click your avatar to see the options menu. 
 
-![Click Avatar](/images/find-profile-menu-arrow.png)
+![Click Avatar](/images/find-profile-menu-arrowPreWubWub.png)
 
 1. Click Profile Settings. 
 
@@ -105,7 +105,7 @@ npm will return this message:
       
 Next, npm will display a QR code:
 
-![Masked QR Code And Prompt](qr_code_and_prompt_masked.png)
+![Masked QR Code And Prompt](/images/qr_code_and_prompt_masked.png)
 
 1. Add a new account to your authenticator app. 
 2. Scan the QR code, or enter the number displayed just below the QR code. 
@@ -128,7 +128,7 @@ After you have entered the one-time password,  npm will display this message:
  
 After you have applied two-factor authentication, you can use the `npm profile get` command to confirm that it has been set.
  
- ![Profile After 2FA Enabled](profile_after_tfa_enabled.png)
+![Profile After 2FA Enabled](/images/profile-after-tfa-enabled.png)
  
  
 
@@ -146,7 +146,7 @@ Set fullname to Carolyn A. Wombat
  
  Use `npm profile get' to confirm the new setting. 
  
- ![Profile After Adding Setting](after_setting_profile_with_tfa_fullname.png)
+![Profile After Adding Setting](/images/after_setting_profile_with_tfa_fullname.png)
    
  *Note to our readers: We have reset the account used in screen shots; neither the QR nor the codes are still active. But thank you to those alert and kind wombats who have asked us about this.*
  
@@ -216,7 +216,7 @@ If you have misplaced your recovery codes, please contact npm customer support.
 
 If you are entering what seems to be a valid OTP but you see an error, be sure that you are using the correct authenticator account. In the screen shot below, the current account in Authy was set incorrectly because the developer had multiple npm test accounts. This will cause the OTP to fail. Also, as stated earlier, when you reset 2fa after it has been disabled, the authenticator might create a second account with the same name. Please see the authenticator documentation to delete the old account. 
 
- ![Multiple Authenticator Accounts](multiple_authy_accounts.png)
+![Multiple Authenticator Accounts](/images/multiple_authy_accounts.png)
 
 ### Note
 
