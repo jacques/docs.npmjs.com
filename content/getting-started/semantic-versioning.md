@@ -29,6 +29,8 @@ If you were starting with a package 1.0.4, this is how you would specify the ran
 
 ## Learn More
 
+For a great tool you can use to learn about how semver works with your favorite packages, see the [npm semver calculator](https://semver.npmjs.com).
+
 For more about using semantic versioning with package.json files, see [Chapter 5](https://docs.npmjs.com/getting-started/using-a-package.json#specifying-packages). 
 
 For another way to label releases, learn about [npm dist tags](https://docs.npmjs.com/cli/dist-tag), and [how they relate to semantic versioning](https://docs.npmjs.com/getting-started/using-tags).

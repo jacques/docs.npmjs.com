@@ -1,10 +1,11 @@
-# npm Code of Conduct
+# npm Policies 
 
 Please review npm policies [here](https://www.npmjs.com/policies).
 
-The policies cover the [Code of Conduct](https://www.npmjs.com/policies/conduct) as well as other topics:  
+The policies cover these topics, among others:
 
 * Terms of Use
+* Code of Conduct
 * Package Name Disputes
 * npm License
 * Priavay Policy

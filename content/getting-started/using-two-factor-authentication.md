@@ -6,6 +6,8 @@ featured: true
 
 *Requires npm version 5.5.1 or greater*
 
+###_Are you who you say you are? Let's double-check._
+
 To meet the increasing need for strong digital security, npm introduced two-factor authentication (2FA) with version 5.5.1. Two-factor authentication prevents unauthorized access to your account by confirming your identity using two methods:
 
 * something you know (such as your username and password) 
@@ -40,17 +42,52 @@ If you enable 2FA in **auth-and-writes** mode, which is the default, npm will re
 * make other sensitive changes to packages
 * remove 2FA
 
+Also, see the table in the next section. 
+
 To add the OTP to a command, append it as shown:
 
 ```
 npm owner add <user > --otp=123456
 ```
+## When do I need to enter a 2nd factor?
 
-Other examples are listed below.
+![2nd Factor Table](when-you-need-the-otp-table.png)
+
 
 ## How Do I Enable 2FA? 
 
-To require two-factor authentication, type the command that meets the level of security you wish to apply (auth-and-writes is the default).
+To require two-factor authentication, you can use the web site, or the command line interface (CLI). 
+
+### Enabling 2FA from npmjs.com   
+
+1. Click your avatar to see the options menu. 
+
+![Click Avatar](find-profile-menu-arrow.png)
+
+1. Click Profile Settings. 
+
+
+![Choosing Profile Settings](choosing-profile-settings.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Enabling 2FA from the Command Line
+
+Type the command that meets the level of security you wish to apply (auth-and-writes is the default).
   
         npm profile enable-2fa
         npm profile enable-2fa auth-and-writes 
@@ -58,7 +95,7 @@ To require two-factor authentication, type the command that meets the level of s
       
 npm will return this message:
             
-        npm notice profile Enabling two factor authentication for auth-and-writes   
+       > npm notice profile Enabling two factor authentication for auth-and-writes   
        
    or this message: 
         
@@ -68,12 +105,13 @@ npm will return this message:
       
 Next, npm will display a QR code:
 
-![Masked QR Code And Prompt](/images/qr_code_and_prompt_masked.png)
+![Masked QR Code And Prompt](qr_code_and_prompt_masked.png)
 
 1. Add a new account to your authenticator app. 
 2. Scan the QR code, or enter the number displayed just below the QR code. 
 
 This will configure the authenticator app for future use, linking authentication to the device that generated the authentication. 
+
 
 Using your authenticator app, enter an OTP at the prompt shown:
 
@@ -90,9 +128,13 @@ After you have entered the one-time password,  npm will display this message:
  
 After you have applied two-factor authentication, you can use the `npm profile get` command to confirm that it has been set.
  
- ![Profile After 2FA Enabled](/images/profile_after_tfa_enabled.png)
+ ![Profile After 2FA Enabled](profile_after_tfa_enabled.png)
  
-###Example: Setting Profile Values after Enabling 2fa
+ 
+
+ 
+ 
+### Example: Setting Profile Values from the CLI after Enabling 2FA
 
 Once you have installed 2FA, you will need to enter an OTP for security-relevant commands. For example, whenever you use the command `npm profile set` you will need to enter an OTP before you can set or change a value, such as your fullname: 
 
@@ -104,16 +146,16 @@ Set fullname to Carolyn A. Wombat
  
  Use `npm profile get' to confirm the new setting. 
  
- ![Profile After Adding Setting](/images/after_setting_profile_with_tfa_fullname.png)
+ ![Profile After Adding Setting](after_setting_profile_with_tfa_fullname.png)
    
  *Note to our readers: We have reset the account used in screen shots; neither the QR nor the codes are still active. But thank you to those alert and kind wombats who have asked us about this.*
  
-#### Recovery Codes 
+## Recovery Codes 
 
-As described above, after you set up two-factor authentication, a series of recovery codes will appear on your screen. Please print them and save them as described. Note: Some authenticator applications provide a method for you to store recovery codes.
+After you set up two-factor authentication, a series of recovery codes will appear on your screen. Please print them and save them as described. Note: Some authenticator applications and password management applications provide a method for you to store recovery codes.
 
-*Tip: Save these codes in a different location than the device you use to authenticate. For example, if you get your OTP from a tablet, don't save the codes in a case with your tablet.* 
-        
+### *Tip: Save recovery codes in a different location than the device you use to authenticate. For example, if you get your OTP from a tablet, don't save the codes in a case with your tablet.* 
+         
 The recovery procedure is explained below.    
    
 ### How to Remove Two-Factor Authentication from your Profile
@@ -142,7 +184,7 @@ Enter your npm password as prompted, then npm will display:
 
 ### How to Send an OTP Value from the Command Line 
 
-If you have enabled 2FA auth-and-writes, you will need to send the OTP from the command line for certain commands. To do this, append  `--otp=123456` (where *123456* is the code generated by your authenticator) at the end of the command. Here are a few examples: 
+If you have enabled 2FA auth-and-writes, you will need to send the OTP from the command line for certain commands to work. To do this, append  `--otp=123456` (where *123456* is the code generated by your authenticator) at the end of the command. Here are a few examples: 
 
 ```
 npm publish [<tarball>|<folder>][--tag <tag>] --otp=123456
@@ -174,8 +216,8 @@ If you have misplaced your recovery codes, please contact npm customer support.
 
 If you are entering what seems to be a valid OTP but you see an error, be sure that you are using the correct authenticator account. In the screen shot below, the current account in Authy was set incorrectly because the developer had multiple npm test accounts. This will cause the OTP to fail. Also, as stated earlier, when you reset 2fa after it has been disabled, the authenticator might create a second account with the same name. Please see the authenticator documentation to delete the old account. 
 
- ![Multiple Authenticator Accounts](/images/multiple_authy_accounts.png)
+ ![Multiple Authenticator Accounts](multiple_authy_accounts.png)
 
 ### Note
 
-Settings you define using the Command Line Interface (CLI) will also apply to the website. At this time, you cannot activate 2FA from web interface.
+Settings you define using the Command Line Interface (CLI) will also apply to the website. 
