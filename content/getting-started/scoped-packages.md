@@ -14,7 +14,7 @@ If a package's name begins with `@`, then it is a **scoped package**. The scope 
 @scope/project-name
 ```
 
-Each npm user has their own scope.
+Each npm user has their own scope. npm Orgs also have scopes. 
 
 ```
 @username/project-name
