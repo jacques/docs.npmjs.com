@@ -16,13 +16,13 @@ npm consists of three distinct components:
 *  the registry
 *  the Command Line Interface (CLI)
 
-The [*website*](https://npmjs.com) is the primary way developers discover packages, set up profiles, and manage other aspects of their npm experience.
+The [*website*](https://npmjs.com) is the primary way to discover packages, set up profiles, and manage other aspects of your npm experience. For example, you can set up npm Orgs (organizations) to share access to packages. 
 
-The *registry* is a large database of information about packages.
+The *registry* is a large database of information about packages. If your company has npmE (npm Enterprise), it might have a custom registry. 
 
 The [*CLI*](https://docs.npmjs.com/cli/npm) runs from a terminal. This is how most developers interact with npm. 
 
-
+Basic npm accounts are free; you can upgrade to a paid account to get more features. 
 
 ## Use npm to . . . 
 
@@ -36,7 +36,7 @@ The [*CLI*](https://docs.npmjs.com/cli/npm) runs from a terminal. This is how mo
 
 * Restrict code to specific developers.
 
-* Form virtual teams (orgs).
+* Form virtual teams (Orgs).
 
 * Manage multiple versions of code and code dependencies.
 
@@ -64,19 +64,45 @@ While browsing, you'll find:
 
 For example, suppose you wanted to use bar codes (QR codes) in your application. Rather than spend weeks figuring out how to do this, why not see if someone has posted a package that creates QR codes? Start by entering a value in the search bar:
 
-![blanksearchbar](/images/search-bar-qr-scanner-what-is-npm.png)
+![blanksearchbar](/images/search-bar-qr-scanner-what-is-npm-small.png)
+![blanksearchbar](search-bar-qr-scanner-what-is-npm-small.png)
 
-Related options will appear:
+As you type, possible choices appear: 
 
-![choicessearchbar](/images/search-results-qr-what-is-npm.png)
+![search-results](/images/search-results-qr-scanner-what-is-npm.png)
+![search-esults](search-results-qr-scanner-what-is-npm.png)
 
-Or, click, to filter the possibilities even more:
+#### How to Choose Between Similar Packages 
 
-![filtersearchbar](/images/search-qr-what-is-npm.png)
+Press Enter to see rankings that will help you choose between similar packages:
+
+![rank packages](qr-image-help-u-choose.png)
+![rank packages](/images/qr-image-help-u-choose.png)
+
+Often, there are dozens or even hundreds of packages with similar names and/or similar purposes. To help you decide the best ones to explore, each package is ranked with 4 criteria:
+
+* Optimal
+* Popularity
+* Quality
+* Maintenance
+
+**Popularity** indicates how many times the package has been downloaded. This is a good indicator of packages that others have found to be especially useful, but not foolproof.
+
+**Quality**  (TBA --to be added)
+
+**Maintance** packages that are maintained more frequently, and more recently, are probably better to download than files that have not been touched for a while. They are more likely to work well with the current or upcoming versions of npm, for example. 
+
+**Optimal** combines the three criteria in a meaningful way. 
+
+Click the criteria that matters the most to you to sort by it.
+
+#### View a Package Page 
+
+
+
 
 When you choose a package to explore, more information appears. This information is written by the package author(s) so details vary.
 
-![searchresults](/images/page-results-qr-scanner-what-is-npm.png)
 
 Now, you can read the developer's instructions to discover how to use this package.
 
