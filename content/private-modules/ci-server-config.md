@@ -17,6 +17,8 @@ One of the things that has changed in npm is that we now use auth tokens to auth
 
 The token is not derived from your password, but changing your password will invalidate all tokens. The token will be valid until the password is changed. You can also invalidate a single token by logging out on a machine that is logged in with that token.
 
+For more options about working with tokens, [see](https://docs.npmjs.com/getting-started/working_with_tokens).
+ 
 ## Setting up environment variables
 
 To make this more secure when pushing it up to the server, you can set this token as an environment variable on the server. For example, in Heroku you would do this:

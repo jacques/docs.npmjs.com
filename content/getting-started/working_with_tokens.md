@@ -11,7 +11,7 @@ Because a token is simply a hexadecimal string, you can use the token in other t
 
 Read this chapter to learn how to manage security tokens. 
 
-**Note**: *There are additional steps required if you wish to use tokens for testing and other special purposes. These steps are not in the scope of this chapter.* 
+**Note**: *There are additional steps required if you wish to use tokens for testing and other special purposes. Find more details [here](https://docs.npmjs.com/private-modules/ci-server-config). 
 
 Token commands empower you to:
 
@@ -147,3 +147,7 @@ The following screen shot demonstrates these steps:
 *Note: All tokens shown in screen illustrations have been revoked.* 
 
 *Note: In certain cases, there may be a delay of up to an hour before a token is successfully revoked. npm is currently working to make revocation occur immediately in all cases.*  
+
+## Learn More
+
+For more information about using tokens with continuous integration testing, [see this chapter](https://docs.npmjs.com/private-modules/ci-server-config).

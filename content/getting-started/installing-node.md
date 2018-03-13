@@ -1,5 +1,5 @@
 <!--
-title: 02 - How to set up a new npm account & install npm-->
+title: 03 - How to set up a new npm account & install npm-->
 
 #Getting Started 
 
@@ -83,7 +83,7 @@ If you just want to get started exploring npm, using the Node.js installation me
 
 If you're using OS X or Windows, use one of the installers from the [Node.js download page](https://nodejs.org/en/download/). Be sure to install the version labeled **LTS**. Other versions have not yet been tested with npm. 
 
-![DOSPIC](win-installing-node-lts.png)
+![DOSPIC](/images/win-installing-node-lts.png)
 	
 ##### Linux
 

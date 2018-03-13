@@ -3,6 +3,8 @@ title: 01 - Working with private packages
 featured: true
 -->
 
+_To use private packages, you must run a version of npm greater than `2.7.0`. You also must be a paid npm user._
+
 # Working with private packages
 
 With npm private packages, you can use the npm registry to host your own private code and the npm command line to manage it. This makes it easy to use public packages like Express and Browserify side-by-side with your own private code.
@@ -11,10 +13,10 @@ With npm private packages, you can use the npm registry to host your own private
 
 ## Before we start
 
-You need a version of npm greater than `2.7.0`, and you'll need to log in to npm again.
+Log in to npm again after upgrading to the most recent version. 
 
 ```sh
-sudo npm install -g npm
+npm install -g npm
 npm login
 ```
 
@@ -22,16 +24,17 @@ npm login
 
 All private packages are scoped.
 
-Scopes are a new feature of npm. If a package's name begins with `@`, then it is a scoped package. The scope is everything in between the `@` and the slash.
+If a package's name begins with `@`, then it is a scoped package. The scope is everything in between the `@` and the slash.
 
 ```
 @scope/project-name
 ```
 
-When you sign up for private modules as an individual user, your scope is your username.
+When you sign up for private modules as an individual user, your scope is your username. If you create an npm Org, the orgname can be the scope. 
 
 ```
 @username/project-name
+@orgname/project-name
 ```
 
 If you use `npm init` to initialize your packages, you can pass in your scope like this:
@@ -64,7 +67,7 @@ Once it's published, you should see it on the website with a private flag.
 
 ## Giving access to others
 
-If you want to give access to someone, they need to be subscribed to private packages as well. Once they are, you can give them read or read-write access.
+If you want to give access to someone, they need to be subscribed to private packages as well. Once they are, you can give them read or read-write access. Or, you can set up an npm Org to give them access. Please refer to the online npm Orgs book for details. 
 
 You can control access to the package on the access page. To get to the page, click on the Collaborators link or the plus button.
 
@@ -96,7 +99,12 @@ You also use the scoped package name when requiring it.
 
 ```
 var project = require('@scope/project-name')
+
 ```
+
+## Working with Org Scopes
+
+Please refer to the Orgs book for details about how to create and assign teams, and work with Orgs scopes. 
 
 ## Switching from private to public
 
