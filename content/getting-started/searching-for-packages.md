@@ -17,7 +17,7 @@ For example, suppose you wanted to use bar codes (QR codes) in your application.
 
 As you type, possible choices appear: 
 
-<img src="/images/search-results-qr-scanner-what-is-npm.png" style="border: 1px solid gray;">
+<div style="text-align: center;"><img src="/images/search-results-qr-scanner-what-is-npm.png" style="border: 1px solid gray;"></div>
 <!-- ![longsearchbar](/images/search-results-qr-scanner-what-is-npm.png) -->
 ![longsearchbar](search-results-qr-scanner-what-is-npm.png)
 
@@ -27,7 +27,7 @@ After entering a search term in the search bar, press Enter to see rankings that
 
 
 
-<img src="/images/qr-image-help-u-choose.png" style="border: 1px solid gray;">
+<div style="text-align: center;"><img src="/images/qr-image-help-u-choose.png" style="border: 1px solid gray;"></div>
 <!-- ![rank packages](/images/qr-image-help-u-choose.png) -->
 ![rank packages](qr-image-help-u-choose.png)
 
@@ -49,7 +49,7 @@ Often, there are dozens or even hundreds of packages with similar names and/or s
 To list packages according to a specific criteria, click its label under `Sort Packages`. For example, to search by Popularity, click `Popularity`. 
 
 
-<img src="/images/qr-sort-criteria-blowup.png" style="border: 1px solid gray;">
+<div style="text-align: center;"><img src="/images/qr-sort-criteria-blowup.png" style="border: 1px solid gray;"></div>
 <!-- ![search criteria](/images/qr-sort-criteria-blowup.png) -->
 ![search criteria](qr-sort-criteria-blowup.png)
 
