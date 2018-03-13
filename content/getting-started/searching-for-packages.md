@@ -11,20 +11,25 @@ To find packages, start with the npm [search bar](https://www.npmjs.com).
 
 For example, suppose you wanted to use bar codes (QR codes) in your application. Rather than spend weeks figuring out how to do this, why not see if someone has posted a package that creates QR codes? Start by entering a value in the search bar:
 
-![search-results](/images/small-search-bar-qr.png)
+<img src="/images/small-search-bar-qr.png" style="border: 1px solid gray;">
+<!--![search-results](/images/small-search-bar-qr.png) -->
 ![search-results](small-search-bar-qr.png)
 
 As you type, possible choices appear: 
 
-![longsearchbar](/images/search-results-qr-scanner-what-is-npm.png)
+<img src="/images/search-results-qr-scanner-what-is-npm.png" style="border: 1px solid gray;">
+<!-- ![longsearchbar](/images/search-results-qr-scanner-what-is-npm.png) -->
 ![longsearchbar](search-results-qr-scanner-what-is-npm.png)
 
 ### How to Choose Between Similar Packages 
 
 After entering a search term in the search bar, press Enter to see rankings that will help you choose between similar packages:
 
+
+
+<img src="/images/qr-image-help-u-choose.png" style="border: 1px solid gray;">
+<!-- ![rank packages](/images/qr-image-help-u-choose.png) -->
 ![rank packages](qr-image-help-u-choose.png)
-![rank packages](/images/qr-image-help-u-choose.png)
 
 Often, there are dozens or even hundreds of packages with similar names and/or similar purposes. To help you decide the best ones to explore, each package has been ranked according to four criteria using the **npms analyzer**: 
 
@@ -43,7 +48,9 @@ Often, there are dozens or even hundreds of packages with similar names and/or s
 
 To list packages according to a specific criteria, click its label under `Sort Packages`. For example, to search by Popularity, click `Popularity`. 
 
-![search criteria](/images/qr-sort-criteria-blowup.png)
+
+<img src="/images/qr-sort-criteria-blowup.png" style="border: 1px solid gray;">
+<!-- ![search criteria](/images/qr-sort-criteria-blowup.png) -->
 ![search criteria](qr-sort-criteria-blowup.png)
 
 ### The Package Page 
