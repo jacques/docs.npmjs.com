@@ -3,9 +3,11 @@ title: 01 - Working with private packages
 featured: true
 -->
 
-_To use private packages, you must run a version of npm greater than `2.7.0`. You also must be a paid npm user._
 
 # Working with private packages
+
+
+_To use private packages, you must run a version of npm greater than `2.7.0`. You also must be a paid npm user._
 
 With npm private packages, you can use the npm registry to host your own private code and the npm command line to manage it. This makes it easy to use public packages like Express and Browserify side-by-side with your own private code.
 
@@ -30,7 +32,7 @@ If a package's name begins with `@`, then it is a scoped package. The scope is e
 @scope/project-name
 ```
 
-When you sign up for private modules as an individual user, your scope is your username. If you create an npm Org, the orgname can be the scope. 
+When you sign up for private modules as an individual user, your scope is your username. If you create an npm Org, the orgname can be the scope. Orgs can be free or paid. Using a public Org is the only free way to use scopes in package names. 
 
 ```
 @username/project-name

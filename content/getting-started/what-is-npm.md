@@ -1,5 +1,4 @@
-<!--
-title: 01 - What is npm?
+<!-- title: 01 - What is npm?
 featured: true
 -->
 # What is npm?
@@ -13,16 +12,15 @@ Here is a quick introduction to npm:
 npm consists of three distinct components:
 
 *  the website
-*  the registry
 *  the Command Line Interface (CLI)
+*  the registry
 
-The [*website*](https://npmjs.com) is the primary way to discover packages, set up profiles, and manage other aspects of your npm experience. For example, you can set up npm Orgs (organizations) to share access to packages. 
-
-The *registry* is a large public database of JavaScript software and the meta-information surrounding it. If you would prefer to have a private registry, consider [npm Enterprise](https://www.npmjs.com/enterprise). npmE allows your company to maintain its own registry, for internal software development.
+Use the [*website*](https://npmjs.com) to discover packages, set up profiles, and manage other aspects of your npm experience. For example, you can set up [Orgs](https://www.npmjs.com/features) (organizations) to manage access to public or private packages. 
 
 The [*CLI*](https://docs.npmjs.com/cli/npm) runs from a terminal. This is how most developers interact with npm. 
 
-Basic npm accounts are free; you can upgrade to a paid account to get more features. 
+The [*registry*](https://docs.npmjs.com/misc/registry) is a large public database of JavaScript software and the meta-information surrounding it. 
+
 
 ## Use npm to . . . 
 
@@ -40,28 +38,42 @@ Basic npm accounts are free; you can upgrade to a paid account to get more featu
 
 These are just a few examples of ways developers use npm. If you'd like to add a bullet point, comment [here](https://github.com/npm/docs/issues/944).   
 
-## Next Steps
+## Where do I Start?
 
-Now that you know what npm is, and a bit about how to use it, it's time to get started.  If you have a macintosh, run or install a terminal console that you like. If you have a machine running Windows, learn some basics about how to launch and use Windows shell. Next, find a text editor you like, and you will be ready for the next chapter. 
+Now that you know what npm is, and a bit about how to use it, it's time to get started.  [Install npm](https://docs.npmjs.com/getting-started/installing-node). We look forward to seeing what you create!
 
-[Install npm](https://docs.npmjs.com/getting-started/installing-node). We look forward to seeing what you create!
+### Your First Package Page
+
+First, you create an npm account, which is explained in the next chapter. You will then have you own page on npmjs.com, which will be http://www.npmjs.com/~*yourusername*. 
+
+<img src="\image\first-package-page.png" style="border: 1px solid gray;">
+
+<!--<<img src="first-package-page.png" style="border: 1px solid gray;">-->
+
+As you create packages, you will add them to the page. You can also add organizations to invite others to work with you. 
+
+## How do I share packages or collaborate with others?  
+
+If you want to share packages publicly, the cost is free. If you want them to be private, you can pay to upgrade your account. You can also create organizations, called **npm Orgs**,  and invite others to work with you, privately (for a fee) or publicly (for free). Or you can sign up for a custom, private type of npm for your company, called **npmE** for npm Enterprise.
+
+## Learn more about npm Orgs and npmE
+
+[npm Orgs](https://www.npmjs.com/features) provide tools for managing both public and private packages. Granting permissions is easy, and configuration is simplified, too. 
+
+If you would prefer to have your own private registry, so that you can develop packages internally that are not shared publicly,  consider [npm Enterprise](https://www.npmjs.com/enterprise).
 
 ## Learn More
 
-To learn more about npm as a product, new features on the way, and interesting uses of npm, sign up for our newsletter at [npm-weekly](https://www.npmjs.com/npm-weekly).
+To learn more about npm as a product, new features on the way, and interesting uses of npm, sign up for our newsletter at [npm-weekly](https://www.npmjs.com/npm-weekly), and follow follow @npmjs on twitter.
 
-To explore additional features that you might wish to use as your project evolves, click [here] (https://www.npmjs.com/pricing).
+To explore additional features that you might wish to use as your project evolves, click [here](https://www.npmjs.com/pricing).
 
 For details about setting up Orgs, click [here](https://www.npmjs.com/docs/orgs).
 
-To learn more about npm Enterprise, click [here](https://npme.npmjs.com/docs). 
-
-To keep up-to-date with npm news, follow @npmjs on twitter.
-
-For details about npm search, click [here](https://npms.io/about).
+To learn more about npm Enterprise, click [here](https://npme.npmjs.com/docs).  
 
 Finally, for mentoring, tutorials, and learning, vist [node school](https://nodeschool.io). Consider attending or hosting a nodeschool event (usually free!) at a site near you, or use the self-help tools you can find on the site. 
 
 ### CLI Reference Doc / Online Help
 
-While relevant CLI commands are covered throughout this user documentation, the CLI includes command line help, its own [documentation section, and instant help (man pages)](https://docs.npmjs.com/cli/help). When you click a doc about [any CLI command](https://docs.npmjs.com/cli/help-search), a list of all CLI commands appears in the left-hand side bar. You can also access the list of CLI commands by scrolling down [the first docs page](https://docs.npmjs.com/docs).
+While relevant CLI commands are covered throughout this user documentation, the CLI includes command line help, its own [documentation section, and instant help (man pages)](https://docs.npmjs.com/cli/help). When you click a doc about [any CLI command](https://docs.npmjs.com/cli/help-search), a list of all CLI commands appears in the left-hand side bar. You can also access the list of CLI commands by scrolling to CLI Commands on the [docs home page](https://docs.npmjs.com).

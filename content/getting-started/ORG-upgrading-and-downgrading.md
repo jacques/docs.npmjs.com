@@ -1,17 +1,14 @@
 <!--
 <!--
-title: QA-ORGS-2 - How to Upgrade and Downgrade Your Account
+title: QA-ORGS-- How to Upgrade and Downgrade Your Account
 featured: true
 -->
 -->
 # Upgrading and Downgrading 
 
-This page will teach you how to upgrade and downgrade your Organization's plan. It
-will also explain the implications of these actions for your package access and
-billing. 
+This page explains how to upgrade and downgrade your Organization's plan. It also explains the implications of these actions for your package access and billing. 
 
-You will need to have the Owner role to perform this work. For more information on
-roles, check out the [Roles and Privileges doc].
+You will need to have the Owner role to perform this work. For more information on roles, check out the [Roles and Privileges doc].
 
 <hr/>
 
@@ -32,12 +29,12 @@ To upgrade your Organization:
 
 1. Choose Billing Info from your avatar menu:
 
-![BillingInfo](billing-info-from-menu.png)
+<!--![BillingInfo](billing-info-from-menu.png)-->
 ![BillingInfo](/images/billing-info-from-menu.png)
 
  2. Click the green `upgrade plan` button:
 
-![UpgradeBilling](billing-info-upgrade.png)
+<!--![UpgradeBilling](billing-info-upgrade.png)-->
 ![UpgradeBilling](/images/billing-info-upgrade.png)
 
 The following screen will confirm your choice, and show the monthly cost depending on the current number of users that you have in your organization. In the screen shot, there will be 3 users, so the total is $21/month.

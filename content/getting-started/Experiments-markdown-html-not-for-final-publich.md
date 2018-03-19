@@ -1,5 +1,5 @@
 <!--
-title: 02 - How to find & select packages
+title: Z-Delete - How to find & select packages
 featured: true
 -->
 
@@ -16,15 +16,58 @@ For example, suppose you wanted to use bar codes (QR codes) in your application.
 
 As you type, possible choices appear: 
 
+
+# OPTIoN ONE
+
+
 <div style="text-align: center;"><img src="/images/search-results-qr-scanner-what-is-npm.png" style="border: 1px solid gray;"></div>
 <!--![longsearchbar](/images/search-results-qr-scanner-what-is-npm.png)-->
+<!--Does this comment show up?-->
+
+
+
+# OPTION TWO 
+
+Why is this hidden
+
+
+<div style="text-align: center;"><img src="/images/search-results-qr-scanner-what-is-npm.png" style="border: 1px solid gray;"></div>
+<!--![longsearchbar](/images/search-results-qr-scanner-what-is-npm.png)-->
+<!--Does this comment show up?-->
+
+
+#OPTION THREE
+
+
+<div style="text-align: center;"><img src="search-results-qr-scanner-what-is-npm.png" style="border: 1px solid gray;"></div>
+<!--![longsearchbar](search-results-qr-scanner-what-is-npm.png)-->
+<!--Does this comment show up?-->
+ 
+
+# COMMENTED OUT?
+Text below
+
+
+<!--<div style="text-align: center;"><img src="search-results-qr-scanner-what-is-npm.png" style="border: 1px solid gray;"></div>-->
+
+#NOT COMMENTED OUT:LOCAL
+
+
+Text below
+
+
+<!--<div style="text-align: center;"><img src="search-results-qr-scanner-what-is-npm.png" style="border: 1px solid gray;"></div>-->
+
+#COMMENTED OUT: LOCAL
+
+<div style="text-align: center;"><img src="search-results-qr-scanner-what-is-npm.png" style="border: 1px solid gray;"></div>
 
 ### How to Choose Between Similar Packages 
 
 After entering a search term in the search bar, press Enter to see rankings that will help you choose between similar packages:
 
 <div style="text-align: center;"><img src="/images/qr-image-help-u-choose.png" style="border: 1px solid gray;"></div>
-<!--![rank packages](qr-image-help-u-choose.png) -->
+<!-- ![rank packages](/images/qr-image-help-u-choose.png) -->
 
 Often, there are dozens or even hundreds of packages with similar names and/or similar purposes. To help you decide the best ones to explore, each package has been ranked according to four criteria using the **npms analyzer**: 
 
@@ -43,9 +86,12 @@ Often, there are dozens or even hundreds of packages with similar names and/or s
 
 To list packages according to a specific criteria, click its label under `Sort Packages`. For example, to search by Popularity, click `Popularity`. 
 
+
 <div style="text-align: center;"><img src="/images/qr-sort-criteria-blowup.png" style="border: 1px solid gray;"></div>
-<!--! [search criteria](qr-sort-criteria-blowup.png) -->
-<!--![search criteria](qr-sort-criteria-blowup.png)-->
+<!-- ![search criteria](/images/qr-sort-criteria-blowup.png) -->
+
+<img src="tokens-from-avatar.png" style="border: 1px solid gray;">
+<div style="text-align: center;"><img src="tokens-from-avatar.png" style="border: 1px solid gray;"></div>
 
 ### The Package Page 
 
@@ -58,3 +104,10 @@ The next chapter explains how to install npm. After you install npm, you will us
 ## Learn More
 For more information about how npms and the npms analyzer work, click [here](https://npms.io/about).  
 
+<img src="tokens-from-avatar.png" style="border: 1px solid gray;">
+<div style="text-align: center;"><img src="tokens-from-avatar.png" style="border: 1px solid gray;"></div>
+
+<div style="text-align: center;"><img src="/images/tokens-from-avatar.png" style="border: 1px solid gray;"></div>
+
+<!--![Token from avatar](tokens-from-avatar.png) -->
+<!--![search criteria](tokens-from-avatar.png)-->

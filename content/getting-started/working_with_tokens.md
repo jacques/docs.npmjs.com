@@ -2,16 +2,14 @@
 title: 17 - How to work with security tokens
 featured: true
 -->
-# How to Work with Security Tokens
+# How to Work with Authentication Tokens
 *Requires npm version 5.5.1 or greater*
 
-Whenever you login to npm, a security token is generated. Tokens authenticate your account, and give you rights to publish and access your modules. 
+Whenever you login to npm, an authentication token is generated. Tokens give you rights to publish and access your modules. 
 
 Because a token is simply a hexadecimal string, you can use the token in other tools, such as continuous integration testing environments, so that the tool can run with the access it needs to complete tasks. For example, Travis-CI provides an environment variable that you can assign to a token value. This gives Travis-CI the ability to run npm as your npm user, including the ability to install private packages to which you have access. 
 
 Read this chapter to learn how to manage security tokens. 
-
-**Note**: *There are additional steps required if you wish to use tokens for testing and other special purposes. Find more details [here](https://docs.npmjs.com/private-modules/ci-server-config). 
 
 Token commands empower you to:
 
@@ -20,7 +18,52 @@ Token commands empower you to:
 * Delete/revoke tokens.  
 * Limit access according to IP address ranges (CIDR).
 
-## How to View the Tokens On Your Account: 
+**Note**: *There are additional steps required if you wish to use tokens for testing and other special purposes. Find more details [here](https://docs.npmjs.com/private-modules/ci-server-config). 
+
+You can work with tokens from the web or the CLI, whichever is easiest. What you do in each environment will be reflected in the other environment.  
+
+#Working with tokens from the web
+
+To start go to the Tokens page. 
+
+1) Login to the [website](http://www.npmjs.com). 
+2) Choose Tokens from your Avatar User menu:
+
+<div style="text-align: center;"><img src="tokens-from-avatar.png" style="border: 1px solid gray;"></div>
+
+<div style="text-align: center;"><img src="/images/tokens-from-avatar.png" style="border: 1px solid gray;"></div>
+
+<!--![Token from avatar](tokens-from-avatar.png)-->
+<!--![search criteria](tokens-from-avatar.png)-->
+
+Or, if you are working in another tab on the web, you can click the Tokens tab:
+ 
+<div style="text-align: center;"><img src="tokens-tab.png" style="border: 1px solid gray;"></div>
+
+<div style="text-align: center;"><img src="/images/tokens-tab.png" style="border: 1px solid gray;"></div>
+
+<!--![Token from avatar](tokens-from-avatar.png)-->
+<!--![search criteria](tokens-from-avatar.png)-->
+
+## Create a New Token
+
+<div style="text-align: center;"><img src="new-user-token.png" style="border: 1px solid gray;"></div>
+
+<div style="text-align: center;"><img src="/images/new-user-token.png" style="border: 1px solid gray;"></div>
+
+
+## How to View the Tokens On Your Account
+
+
+<div style="text-align: center;"><img src="/images/token-new-created.png" style="border: 1px solid gray;"></div>
+
+
+<div style="text-align: center;"><img src="token-new-created.png" style="border: 1px solid gray;"></div>
+
+
+#Working with tokens from the CLI
+
+## How to View the Tokens On Your Account
 
 To view the tokens associated with your account, type: 
 
