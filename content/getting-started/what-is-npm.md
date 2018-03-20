@@ -40,17 +40,19 @@ These are just a few examples of ways developers use npm. If you'd like to add a
 
 ## Where do I Start?
 
-Now that you know what npm is, and a bit about how to use it, it's time to get started.  [Install npm](https://docs.npmjs.com/getting-started/installing-node). We look forward to seeing what you create!
+Now that you know what npm is, and a bit about how to use it, it's time to get started. 
 
 ### Your First Package Page
 
 First, you create an npm account, which is explained in the next chapter. You will then have you own page on npmjs.com, which will be http://www.npmjs.com/~*yourusername*. 
 
-<img src="\image\first-package-page.png" style="border: 1px solid gray;">
+<img src="/images/first-package-page.png" style="border: 1px solid gray;">
 
 <!--<<img src="first-package-page.png" style="border: 1px solid gray;">-->
 
 As you create packages, you will add them to the page. You can also add organizations to invite others to work with you. 
+
+The next step is to use a commmand line interface, and [install npm](https://docs.npmjs.com/getting-started/installing-node) so that you can start. We look forward to seeing what you create!
 
 ## How do I share packages or collaborate with others?  
 
@@ -68,11 +70,11 @@ To learn more about npm as a product, new features on the way, and interesting u
 
 To explore additional features that you might wish to use as your project evolves, click [here](https://www.npmjs.com/pricing).
 
-For details about setting up Orgs, click [here](https://www.npmjs.com/docs/orgs).
+To learn about tools to manage multiple packages and collaborators, see [npm Orgs](https://www.npmjs.com/docs/orgs).
 
 To learn more about npm Enterprise, click [here](https://npme.npmjs.com/docs).  
 
-Finally, for mentoring, tutorials, and learning, vist [node school](https://nodeschool.io). Consider attending or hosting a nodeschool event (usually free!) at a site near you, or use the self-help tools you can find on the site. 
+For mentoring, tutorials, and learning, vist [node school](https://nodeschool.io). Consider attending or hosting a nodeschool event (usually free!) at a site near you, or use the self-help tools you can find on the site. 
 
 ### CLI Reference Doc / Online Help
 

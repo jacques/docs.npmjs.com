@@ -15,18 +15,21 @@ Note: Many of the steps that you can take from the browser can also be taken dir
 
 1. Go to http://www.npmjs.com and click 'log in'.
 
-![firstloginmenu](/images/first-screen.png)
+<img src="/images/first-screen.png" style="border: 1px solid gray;">
+
+<!--<img src="first-screen.png" style="border: 1px solid gray;">-->
 
 2. Complete the sign up page.  
-![signupmenu](/images/npm-signup-page-comp.png)
 
-	**Full Name** First and Last Name. (You can enter middle name(s) as well).
+<img src="/images/npm-signup-page-comp.png" style="border: 1px solid gray;">
 
-	**Public Email** Enter an email account. This email address will be added to the metadata when you publish a package. This means that the email address can be discovered by anyone who downloads your packages. In addition, npm will send email to this acccount when you update packages, as well as occassional product updates and information.   
+**Full Name** First and Last Name. (You can enter middle name(s) as well).
 
-	**Username** Enter the username that will be shown when you publish packages or interact with other users within npm. Choose a name that doesn't violate our policy guidelines. The name must be lower case. It can have dashes and numerals, but there are restrictions in order to prevent fake accounts. 
+**Public Email** Enter an email account. This email address will be added to the metadata when you publish a package. This means that the email address can be discovered by anyone who downloads your packages. In addition, npm will send email to this acccount when you update packages, as well as occassional product updates and information.   
 
-	**password** Follow the password guidelines on the screen.
+**Username** Enter the username that will be shown when you publish packages or interact with other users within npm. Choose a name that doesn't violate our policy guidelines. The name must be lower case. It can have dashes and numerals, but there are restrictions in order to prevent fake accounts. 
+
+**Password** Follow the password guidelines on the screen.
 
 3. Click the two boxes according to your wishes. Then click `Create an Account'. 
 
@@ -34,17 +37,18 @@ Note: Many of the steps that you can take from the browser can also be taken dir
 
 5. Find a message with the title  _Welcome to npm_ (search _All Mail_ in case the email doesn't appear in the inbox).
 
-_If you can't find the welcome message, please click to resend:_  
+<div style="text-align: center;"><img src="/images/welcome-letter-snippet.png" style="border: 1px solid gray;"></div>
 
- ![emailnotif](/images/email-notif.png)
+<!--<div style="text-align: center;"><img src="welcome-letter-snippet.png" style="border: 1px solid gray;"></div>-->
 
-![signupemail](/images/welcome-letter-snippet.png)
+The welcome message has links to helpful resources; you might want to flag it for later reference. 
 
-_The welcome message has links to helpful resources; you might want to flag it for later reference._ 
+_Note: If you can't find the welcome message, please click to resend:_  
 
-1.  Click the first link under the Account heading to validate your account.
- 
-1.  Click `Create an Organization` from the menu.
+<div style="text-align: center;"><img src="/images/email-notif.png" style="border: 1px solid gray;"></div>
+
+<!--<div style="text-align: center;"><img src="email-notif.png" style="border: 1px solid gray;"></div>-->
+
  
 5. Click the link in your email. Success!  You will be sent to your new landing page. Notice the URL:
 
@@ -52,7 +56,7 @@ _The welcome message has links to helpful resources; you might want to flag it f
 
 This is a quick way to get to your page in the future.
 
- ![landingpage](/images/first-page-b4-setup.png)
+ <div style="text-align: center;"><img src="/images/first-page-b4-setup.png" style="border: 1px solid gray;"></div>
 
 ### After you set up your Login Account
 
@@ -67,7 +71,29 @@ Or you can install npm in the terminal console, as explained below, then come ba
 
 The following screen shot shows where the menu is if you want to explore the website, set up your profile, and get started right away:
 
-![profile-menu](/images/profile-menu.png)
+ <div style="text-align: center;"><img src="/images/profile-menu.png" style="border: 1px solid gray;"></div>
+
+## Terminals, Editors, and Git (For Beginners)
+
+_Skip this section if you've worked with terminals or editors in the past._
+
+At npm, we are thrilled to welcome many brand new coders to the javascript world. Before you begin using npm, you need to know about setting up a terminal, an editor, and git. Welcome!
+
+First: 
+
+1) Find the terminal emulator for your computer:
+
+	* Help with Apple's [Terminal](https://support.apple.com/guide/terminal/welcome/mac).
+
+	* Help with Microsoft Windows [PowerShell](https://docs.microsoft.com/en-us/powershell).
+ 
+	* Linux [terminal emulators](https://opensource.com/life/17/10/top-terminal-emulators). 
+
+2) Find and pick a text editor that you like. 
+
+3) Consider signing up for a [git account](https://help.github.com/articles/set-up-git) account if you haven't already. 
+
+There are additional resources for beginners and for everyone at the end of this chapter in the "Learn More" section.
 
 ## Install npm & Manage npm Versions
 
@@ -83,7 +109,7 @@ If you just want to get started exploring npm, using the Node.js installation me
 
 If you're using OS X or Windows, use one of the installers from the [Node.js download page](https://nodejs.org/en/download/). Be sure to install the version labeled **LTS**. Other versions have not yet been tested with npm. 
 
-![DOSPIC](/images/win-installing-node-lts.png)
+<div style="text-align: center;"><img src="/images/win-installing-node-lts.png" style="border: 1px solid gray;"></div>
 	
 ##### Linux
 
@@ -142,7 +168,7 @@ You will be promted for your username, password, and email. Be sure to spell you
 
 ![npmlogin](/images/npm-login.png)
 
-If you have already set up two-factor authentication, you will be asked for a one-time password when you login. Please see [tfa](https://docs.npmjs.com/getting-started/using-two-factor-authentication) if you need more information.
+If you have already set up two-factor authentication, you will be asked for a one-time password when you login. Please see [the chapter about two-factor authentication](https://docs.npmjs.com/getting-started/using-two-factor-authentication) if you need more information.
 
 To test that you have successfully logged in, type `npm whoami`.
 
@@ -159,5 +185,15 @@ This may simply reinstall the current version, depending on the development cycl
 ## Learn More
 
 To learn more about how to use nvm, click [here](https://github.com/creationix/nvm/blob/master/README.md#usage).
+
+For some tutorials, a chance to meet others, and step-by-steps, explore **node school** and its helpful [site](https://nodeschool.io/) 
+
+See npm's Laurie Voss on ["Stuff Everybod Knows Except You"](https://www.youtube.com/watch?v=JIJZnF_L5KI) if you are feeling overwhelmed in your dev learning. It will make you realize you are not alone! 
+
+* Apple's [Terminal](https://support.apple.com/guide/terminal/welcome/mac).
+  
+* Microsoft Windows [PowerShell](https://docs.microsoft.com/en-us/powershell).
+ 
+* Linux [terminal emulators](https://opensource.com/life/17/10/top-terminal-emulators). 
 
 _Note: While relevant CLI commands are covered throughout this user documentation, the CLI includes command line help, its own [documentation section, and instant help (man pages)](https://docs.npmjs.com/cli/help)._

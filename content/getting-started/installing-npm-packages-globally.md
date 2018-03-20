@@ -17,6 +17,6 @@ To download packages globally, use the command `npm install -g <package>`, e.g.:
 npm install -g jshint
 ```
 
-If you get an EACCES error, [see Chapter 3](/getting-started/fixing-npm-permissions). 
+If you get an EACCES error, [see this chapter about permissions](/getting-started/fixing-npm-permissions). 
 
 *Tip: Consider using npx to run packages globally, if you have npm 5.2 or greater installed.* 

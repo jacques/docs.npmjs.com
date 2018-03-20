@@ -44,7 +44,7 @@ Often, there are dozens or even hundreds of packages with similar names and/or s
 To list packages according to a specific criteria, click its label under `Sort Packages`. For example, to search by Popularity, click `Popularity`. 
 
 <div style="text-align: center;"><img src="/images/qr-sort-criteria-blowup.png" style="border: 1px solid gray;"></div>
-<!--! [search criteria](qr-sort-criteria-blowup.png) -->
+<!--![search criteria](qr-sort-criteria-blowup.png)-->
 <!--![search criteria](qr-sort-criteria-blowup.png)-->
 
 ### The Package Page 

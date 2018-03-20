@@ -42,50 +42,69 @@ If you enable 2FA in **auth-and-writes** mode, which is the default, npm will re
 * make other sensitive changes to packages
 * remove 2FA
 
-Also, see the table in the next section. 
-
-To add the OTP to a command, append it as shown:
-
-```
-npm owner add <user > --otp=123456
-```
-## When do I need to enter a 2nd factor?
-
-![2nd Factor Table](/images/when-you-need-the-otp-table.png)
+Also, see the table at the end of this chapter. 
 
 
 ## How Do I Enable 2FA? 
 
-To require two-factor authentication, you can use the web site, or the command line interface (CLI). 
+To set up two-factor authentication, you can use either use: 
+* the profile setting from  [the web site](https://www.npmjs.com).
+* the command line interface (CLI).
 
-### Enabling 2FA from npmjs.com   
+Both approaches are explained in this chapter. Choose the method you like best. 
 
-1. Click your avatar to see the options menu. 
+## Enabling 2FA from the web 
 
-![Click Avatar](/images/find-profile-menu-arrowPreWubWub.png)
+Two-factor authentication is now available as a profile setting from the website.    
+
+1. Login to npmjs.com.
+2. Click your avatar to see the options menu. 
+
+<img src="/images/menu-choose.png" style="border: 1px solid gray;">
 
 1. Click Profile Settings. 
 
+<img src="/images/choosing-profile-settings.png" style="border: 1px solid gray;">
 
-![Choosing Profile Settings](/images/choosing-profile-settings.png)
+<!--<img src="choosing-profile-settings.png" style="border: 1px solid gray;">-->
 
+2. Scroll down to the Security section:
 
+<img src="/images/two-factor-auth-button.png" style="border: 1px solid gray;">
 
+3. Enter your password on the next page:
 
-
-
-
-
-
-
-
+<img src="/images/wombat-lock.png" style="border: 1px solid gray;">
 
 
+4. On the next screen, choose the level of 2FA you want. 
+
+<img src="/images/2fa-settings.png" style="border: 1px solid gray;">
+
+_Note: If you aren't sure which setting you want, see the table at the end of this chapter._
+
+5. Click the plus sign to enable the level you want. (You can change the level later if you wish.) 
+
+A QR code will appear (in the screen shot, the code is masked for security reasons). 
+
+<img src="/images/2fa-present-qr-code.png" style="border: 1px solid gray;">
+
+6. Follow the instructions on the screen to scan the QR code, then enter it. 
+
+npm will display recovery codes. The recovery codes are what you will use to log in if you ever lose or forget your second factor device (for example, if you don't have your phone). 
+
+<img src="/images/masked-recovery-codes.png" style="border: 1px solid gray;">
+
+7. **Print, screen capture and save these recovery codes in a place that is not near your second factor device. Your password manager may provide a way to save these safely.**
+
+8. After you have saved the recovery codes, press `Go Back` to return to your profile.
+ 
+Success! You will see your Profile page, with a message confirming that you set up tfa, plus an indicator in the Security section of the page.
+
+<img src="/images/tfa-confirmation.png" style="border: 1px solid gray;">
 
 
-
-
-### Enabling 2FA from the Command Line
+## Enabling 2FA from the Command Line
 
 Type the command that meets the level of security you wish to apply (auth-and-writes is the default).
   
@@ -112,7 +131,6 @@ Next, npm will display a QR code:
 
 This will configure the authenticator app for future use, linking authentication to the device that generated the authentication. 
 
-
 Using your authenticator app, enter an OTP at the prompt shown:
 
 ````
@@ -131,8 +149,6 @@ After you have applied two-factor authentication, you can use the `npm profile g
 ![Profile After 2FA Enabled](/images/profile-after-tfa-enabled.png)
  
  
-
- 
  
 ### Example: Setting Profile Values from the CLI after Enabling 2FA
 
@@ -150,6 +166,14 @@ Set fullname to Carolyn A. Wombat
    
  *Note to our readers: We have reset the account used in screen shots; neither the QR nor the codes are still active. But thank you to those alert and kind wombats who have asked us about this.*
  
+## How to add an OTP to a command
+
+To add the OTP to a command, append it as shown:
+
+``
+npm owner add <user > --otp=123456
+``
+
 ## Recovery Codes 
 
 After you set up two-factor authentication, a series of recovery codes will appear on your screen. Please print them and save them as described. Note: Some authenticator applications and password management applications provide a method for you to store recovery codes.
@@ -217,6 +241,12 @@ If you have misplaced your recovery codes, please contact npm customer support.
 If you are entering what seems to be a valid OTP but you see an error, be sure that you are using the correct authenticator account. In the screen shot below, the current account in Authy was set incorrectly because the developer had multiple npm test accounts. This will cause the OTP to fail. Also, as stated earlier, when you reset 2fa after it has been disabled, the authenticator might create a second account with the same name. Please see the authenticator documentation to delete the old account. 
 
 ![Multiple Authenticator Accounts](/images/multiple_authy_accounts.png)
+
+## When Will npm Require the Second Factor?
+
+If you enable 2-factor authorization, you will need to enter the second factor at various points as you use npm. This table explains these details. 
+
+![2nd Factor Table](/images/when-you-need-the-otp-table.png)
 
 ### Note
 
