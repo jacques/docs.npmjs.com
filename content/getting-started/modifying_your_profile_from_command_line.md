@@ -1,7 +1,18 @@
 <!--
-title: 18 - How to change profile settings from the CLI
+title: 18 - How to change profile settings
 featured: true
 -->
+npmjs.com has been updated. There are now new profile settings you can enable from the website, or, you can use the command line interface if you prefer.  
+
+# Setting up Your Profile from the Web
+
+To set up your profile on npmjs.com, login. 
+
+Choose `Profile Settings` from the Avatar menu. The profile page appears. 
+
+<div style="text-align: center;"><img src="/images/profile-page.png" style="border: 1px solid gray;"></div>
+
+This section will be updated soon!
 
 # How to Change Profile Settings from the CLI
 *Requires npm version 5.5.1 or greater.*
@@ -22,7 +33,7 @@ npm profile get
 ```
 npm displays your profile settings in a table:
 
-![npmgetprofile](/images/profile_after_tfa_enabled.png)
+<div style="text-align: center;"><img src="/images/profile-after-tfa-enabled.png" style="border: 1px solid gray;"></div>
 
 You can set or modify the following profile properties from the command line:
 
@@ -65,9 +76,9 @@ Set fullname to nori pat marsupial
 
 ## Enabling and Disabling Two-Factor Authentication 
 
-You can also enable and disable two-factor authentication from the command line, using the steps described [here](https://docs.npmjs.com/getting-started/using-two-factor-authentication).
-
 Enable two-factor authentication if you would like to make it more difficult for attackers to gain access to your account and your publishing rights.
+
+You can enable and disable two-factor authentication from the command line, or from the web, using the steps described [here](https://docs.npmjs.com/getting-started/using-two-factor-authentication).
 
 ### Notes
 

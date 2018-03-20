@@ -1,9 +1,8 @@
 <!--
-<!--
-title: QA-ORGS-- How to Upgrade and Downgrade Your Account
+title: QA-ORGS-12 - How to Upgrade and Downgrade Your Account
 featured: true
 -->
--->
+
 # Upgrading and Downgrading 
 
 This page explains how to upgrade and downgrade your Organization's plan. It also explains the implications of these actions for your package access and billing. 
@@ -29,17 +28,14 @@ To upgrade your Organization:
 
 1. Choose Billing Info from your avatar menu:
 
-<!--![BillingInfo](billing-info-from-menu.png)-->
-![BillingInfo](/images/billing-info-from-menu.png)
+<div style="text-align: center;"><img src="/images/billing-info-from-menu.png" style="border: 1px solid gray;"></div>
 
  2. Click the green `upgrade plan` button:
 
-<!--![UpgradeBilling](billing-info-upgrade.png)-->
 ![UpgradeBilling](/images/billing-info-upgrade.png)
 
-The following screen will confirm your choice, and show the monthly cost depending on the current number of users that you have in your organization. In the screen shot, there will be 3 users, so the total is $21/month.
+The next screen will confirm your choice, displaying the monthly cost calculated according to the current number of users that you have in your organization. In the screen shot, there will be 3 users, so the total is $21/month.
 
-![Billing-total](upgrade-message-three-users.png)
 ![Billing-total](/images/upgrade-message-three-users.png)
 
 Your upgrade goes into effect immediately. You can now publish and install
@@ -47,7 +43,6 @@ private packages under your Organization scope. ([Learn more about publishing Or
 
 Your billing page shows a summary of your current account. As you add or subtract members, the billing page will reflect the change.
 
-![billing info](billing-info-paid-user.png)
 ![billing info](/images/billing-info-paid-user.png)
 
 If you run into any trouble with this process, please [contact npm support].
@@ -61,24 +56,18 @@ Not sure if you want to downgrade? ([Learn more about the plans we offer]).
 
 To downgrade your Organization:
 
-1. Choose Billing Info from your avatar menu:
-
-![BillingInfo](billing-info-from-menu.png)
-![BillingInfo](/images/billing-info-from-menu.png)
+1. Choose Billing Info from your avatar menu.
 
 2. Find the green `downgrade plan` button:
 
-![DowngradeBilling](why-you-should-not-downgrade.png)
 ![DowngradeBilling](/images/why-you-should-not-downgrade.png)
 
 3. If you click `downgrade plan', this screen will appear:
 
-![DowngradeBilling](downgrade-are-you-sure.png)
 ![DowngradeBilling](/images/downgrade-are-you-sure.png)
 
 Your billing page will confirm the downgrade, and list important dates, such as the date your publish/installaccess to your Private Packages will end. This usually coincides with the day your next billing period would have begun. Confirm that the bill now reads $0.00
 
-![bill page after downgrading](billing-screen-after-downgrade.png)
 ![bill page after downgrading](/images/billing-screen-after-downgrade.png)
 
 If you run into any trouble with this process, you should [contact npm support].

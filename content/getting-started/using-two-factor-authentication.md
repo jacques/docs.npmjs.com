@@ -87,7 +87,7 @@ _Note: If you aren't sure which setting you want, see the table at the end of th
 
 A QR code will appear (in the screen shot, the code is masked for security reasons). 
 
-<img src="/images/2fa-present-qr-code.png" style="border: 1px solid gray;">
+<img src="\images\2fa-present-qrcode.png" style="border: 1px solid gray;">
 
 6. Follow the instructions on the screen to scan the QR code, then enter it. 
 

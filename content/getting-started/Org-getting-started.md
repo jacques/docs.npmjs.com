@@ -15,11 +15,11 @@ You might want to [develop your profile settings](https://docs.npmjs.com/getting
 
 Choose `Create an Organization` from your avatar menu. Or, you can just click [the create website].
 
-![createmenu](choosing-create-org-from-menu.png)
+<div style="text-align: center;"><img src="/images/choosing-create-org-from-menu.png" style="border: 1px solid gray;"></div>
 
 Enter a name for your organization, then choose a plan:
 
-![new-org](create-org.png)
+<div style="text-align: center;"><img src="/images/create-org.png" style="border: 1px solid gray;"></div>
 
 ### Naming your Organization
 Please take your time to choose this name. Choose wisely, as changing your Organization name is complicated and requires [contacting npm Support]. 
@@ -63,7 +63,7 @@ If you chose an Organization with access to private packages, clicking the
 green "Create an Org" button will bring up a Stripe Payments
 prompt. 
 
-![creditcardaddress](credit-card-address.png)
+<div style="text-align: center;"><img src="/images/credit-card-address.png" style="border: 1px solid gray;"></div>
 
 After you enter a name and address, you'll see a credit card entry screen. Please enter the appropriate credit card information, note the total shown in the blue button, and press Pay to continue.
 
@@ -74,7 +74,7 @@ account of the person creating the Organization.
 
 After you press the green "Create an Org button" if it's an unpaid Org, or after you press the blue Pay button, if it's a paid Org, you will see the new page for your org:
 
-![neworgpaidscreen](new-paid-org.png)
+<div style="text-align: center;"><img src="/images/new-paid-org.png" style="border: 1px solid gray;"></div>
 
 You can now add new members. 
 
@@ -91,7 +91,7 @@ The user who created the Organization is:
 
 To add users to your Organization: 
 
-![invite](member-admin-owner-invite.png)
+<div style="text-align: center;"><img src="/images/member-admin-owner-invite.png" style="border: 1px solid gray;"></div>
 
 1. Enter their npm username into the text box.
 2. Click the member, admin, or owner box.
@@ -116,7 +116,7 @@ npm username, they'll need to create an npm user account. You can send them [thi
 
 Choose Billing Info from your Avatar menu to set billing information. For example, you might want billing emails to go to a different email than the one associated with your username. (This email does *not* have to match the owner's email). Your first bill date will be one month from the date you set up your Org. 
 
-![billsummary](bill-summary.png)
+<div style="text-align: center;"><img src="/images/bill-summary.png" style="border: 1px solid gray;"></div>
 
 **You can change your billing info at anytime through your Organization's
 billing page.**

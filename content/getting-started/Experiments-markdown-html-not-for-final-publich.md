@@ -1,26 +1,14 @@
-<!--
-title: Z-Delete - How to find & select packages
-featured: true
--->
-
-# Finding and Selecting Packages
-
-To find packages, start with the npm [search bar](https://www.npmjs.com).
-
-## Example: Finding a Package
-
-For example, suppose you wanted to use bar codes (QR codes) in your application. Rather than spend weeks figuring out how to do this, why not see if someone has posted a package that creates QR codes? Start by entering a value in the search bar:
-
-<img src="/images/small-search-bar-qr.png" style="border: 1px solid gray;">
-<!--![search-results](/images/small-search-bar-qr.png)-->
-
-As you type, possible choices appear: 
 
 
-# OPTIoN ONE
 
+
+#CENTER
 
 <div style="text-align: center;"><img src="/images/search-results-qr-scanner-what-is-npm.png" style="border: 1px solid gray;"></div>
+
+<div style="text-align: center;"><img src="search-results-qr-scanner-what-is-npm.png" style="border: 1px solid gray;"></div>
+
+choosing-create-org-from-menu.png
 <!--![longsearchbar](/images/search-results-qr-scanner-what-is-npm.png)-->
 <!--Does this comment show up?-->
 
@@ -35,6 +23,18 @@ Why is this hidden
 <!--![longsearchbar](/images/search-results-qr-scanner-what-is-npm.png)-->
 <!--Does this comment show up?-->
 
+# Finding and Selecting Packages
+
+To find packages, start with the npm [search bar](https://www.npmjs.com).
+
+## Example: Finding a Package
+
+For example, suppose you wanted to use bar codes (QR codes) in your application. Rather than spend weeks figuring out how to do this, why not see if someone has posted a package that creates QR codes? Start by entering a value in the search bar:
+
+<img src="/images/small-search-bar-qr.png" style="border: 1px solid gray;">
+<!--![search-results](/images/small-search-bar-qr.png)-->
+
+As you type, possible choices appear: 
 
 #OPTION THREE
 
