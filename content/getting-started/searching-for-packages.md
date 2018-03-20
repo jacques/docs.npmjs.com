@@ -51,6 +51,36 @@ To list packages according to a specific criteria, click its label under `Sort P
 
 When you choose a package, more information appears. This information is written by the package author(s) so details vary. This is where you can discover how to use this package. Developers often provide contact information as well. 
 
+Here are some examples of the type of information you will find on the package page.
+
+## Parts of the Package Page:
+
+These are the tabs available on the package page.
+
+<div style="text-align: center;"><img src="/images/package-choices.png" style="border: 1px solid gray;"></div>
+
+### Viewing Readme
+
+The readme file is created by the package developer. If done well, it explains the purpose of the package, and explains how to use it.
+
+### Viewing Dependencies
+
+Many packages are made up of other packages. These packages are called dependencies.
+
+<div style="text-align: center;"><img src="/images/package-viewing-dependencies.png" style="border: 1px solid gray;"></div>
+
+### Viewing Dependents
+
+Packages that use the package shown on the package page are called dependents.  
+
+<div style="text-align: center;"><img src="/images/package-viewing-dependents.png" style="border: 1px solid gray;"></div>
+
+### Viewing Versions
+
+If a package has been updated, a version will appear. 
+
+<div style="text-align: center;"><img src="/images/package-viewing-versions.png" style="border: 1px solid gray;"></div>
+
 #### Download a package
 
 The next chapter explains how to install npm. After you install npm, you will use a terminal console to download packages. This is explained in later chapters.
