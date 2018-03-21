@@ -9,22 +9,20 @@ To find packages, start with the npm [search bar](https://www.npmjs.com).
 
 ## Example: Finding a Package
 
-For example, suppose you wanted to use bar codes (QR codes) in your application. Rather than spend weeks figuring out how to do this, why not see if someone has posted a package that creates QR codes? Start by entering a value in the search bar:
+You want to use bar codes (QR codes) in your application. Rather than spend weeks figuring out how to do this, why not see if someone has posted a package that creates QR codes? Start by entering a value in the search bar:
 
 <img src="/images/small-search-bar-qr.png" style="border: 1px solid gray;">
-<!--![search-results](/images/small-search-bar-qr.png)-->
 
 As you type, possible choices appear: 
 
 <div style="text-align: center;"><img src="/images/search-results-qr-scanner-what-is-npm.png" style="border: 1px solid gray;"></div>
-<!--![longsearchbar](/images/search-results-qr-scanner-what-is-npm.png)-->
 
-### How to Choose Between Similar Packages 
+### How to Choose Between Similar Packages
+ 
 
 After entering a search term in the search bar, press Enter to see rankings that will help you choose between similar packages:
 
 <div style="text-align: center;"><img src="/images/qr-image-help-u-choose.png" style="border: 1px solid gray;"></div>
-<!--![rank packages](qr-image-help-u-choose.png) -->
 
 Often, there are dozens or even hundreds of packages with similar names and/or similar purposes. To help you decide the best ones to explore, each package has been ranked according to four criteria using the **npms analyzer**: 
 
@@ -44,8 +42,6 @@ Often, there are dozens or even hundreds of packages with similar names and/or s
 To list packages according to a specific criteria, click its label under `Sort Packages`. For example, to search by Popularity, click `Popularity`. 
 
 <div style="text-align: center;"><img src="/images/qr-sort-criteria-blowup.png" style="border: 1px solid gray;"></div>
-<!--![search criteria](qr-sort-criteria-blowup.png)-->
-<!--![search criteria](qr-sort-criteria-blowup.png)-->
 
 ### The Package Page 
 
@@ -61,7 +57,7 @@ These are the tabs available on the package page.
 
 ### Viewing Readme
 
-The readme file is created by the package developer. If done well, it explains the purpose of the package, and explains how to use it.
+The readme file is created by the package developer. If done well, it explains the purpose of the package, and how to use it.
 
 ### Viewing Dependencies
 
@@ -71,13 +67,13 @@ Many packages are made up of other packages. These packages are called dependenc
 
 ### Viewing Dependents
 
-Packages that use the package shown on the package page are called dependents.  
+Packages that incorporate the package shown in some way are called dependents.  
 
 <div style="text-align: center;"><img src="/images/package-viewing-dependents.png" style="border: 1px solid gray;"></div>
 
 ### Viewing Versions
 
-If a package has been updated, a version will appear. 
+When a package is updated, a list of previous versions appear. 
 
 <div style="text-align: center;"><img src="/images/package-viewing-versions.png" style="border: 1px solid gray;"></div>
 

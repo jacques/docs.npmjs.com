@@ -8,7 +8,7 @@ featured: true
 
 ###_Are you who you say you are? Let's double-check._
 
-To meet the increasing need for strong digital security, npm introduced two-factor authentication (2FA) with version 5.5.1. Two-factor authentication prevents unauthorized access to your account by confirming your identity using two methods:
+To meet the increasing need for strong digital security, npm introduced two-factor authentication (2FA) or (tfa) with version 5.5.1. Two-factor authentication prevents unauthorized access to your account by confirming your identity using two methods:
 
 * something you know (such as your username and password) 
 * something you have (such as a phone or tablet)
@@ -75,7 +75,6 @@ Two-factor authentication is now available as a profile setting from the website
 3. Enter your password on the next page:
 
 <img src="/images/wombat-lock.png" style="border: 1px solid gray;">
-
 
 4. On the next screen, choose the level of 2FA you want. 
 
@@ -147,7 +146,6 @@ After you have entered the one-time password,  npm will display this message:
 After you have applied two-factor authentication, you can use the `npm profile get` command to confirm that it has been set.
  
 ![Profile After 2FA Enabled](/images/profile-after-tfa-enabled.png)
- 
  
  
 ### Example: Setting Profile Values from the CLI after Enabling 2FA

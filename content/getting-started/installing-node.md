@@ -184,16 +184,16 @@ This may simply reinstall the current version, depending on the development cycl
 
 ## Learn More
 
-To learn more about how to use nvm, click [here](https://github.com/creationix/nvm/blob/master/README.md#usage).
+To learn more about how to use node version manager, nvm, click [here](https://github.com/creationix/nvm/blob/master/README.md#usage).
 
-For some tutorials, a chance to meet others, and step-by-steps, explore **node school** and its helpful [site](https://nodeschool.io/) 
+For tutorials, a chance to meet others, and step-by-steps, explore **node school** and its helpful [site](https://nodeschool.io/) 
 
-See npm's Laurie Voss on ["Stuff Everybod Knows Except You"](https://www.youtube.com/watch?v=JIJZnF_L5KI) if you are feeling overwhelmed in your dev learning. It will make you realize you are not alone! 
+See npm's Laurie Voss on ["Stuff Everybody Knows Except You"](https://www.youtube.com/watch?v=JIJZnF_L5KI) if you are feeling overwhelmed in your dev learning. It will make you realize you are not alone! 
 
-* Apple's [Terminal](https://support.apple.com/guide/terminal/welcome/mac).
+How to use Apple's terminal [Terminal](https://support.apple.com/guide/terminal/welcome/mac).
   
-* Microsoft Windows [PowerShell](https://docs.microsoft.com/en-us/powershell).
+How to use Microsoft Windows [PowerShell](https://docs.microsoft.com/en-us/powershell).
  
-* Linux [terminal emulators](https://opensource.com/life/17/10/top-terminal-emulators). 
+How to find a Linux [terminal emulators](https://opensource.com/life/17/10/top-terminal-emulators). 
 
 _Note: While relevant CLI commands are covered throughout this user documentation, the CLI includes command line help, its own [documentation section, and instant help (man pages)](https://docs.npmjs.com/cli/help)._

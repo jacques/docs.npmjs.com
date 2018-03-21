@@ -3,7 +3,7 @@ featured: true
 -->
 # What is npm?
 
-npm opens up an entire world of JavaScript talent to you and to your team. It's the world's largest software registry, with approximately 3 billion downloads per week.The registry contains over 600,000 _packages_ (building blocks of code). Open-source developers from every continent use npm to share and borrow packages. Packages are structured to enable you to keep track of dependencies and versions. 
+npm opens up an entire world of JavaScript talent for you and your team. It's the world's largest software registry, with approximately 3 billion downloads per week. The registry contains over 600,000 _packages_ (building blocks of code). Open-source developers from every continent use npm to share and borrow packages, and many organizations use npm to manage private development as well. 
 
 Here is a quick introduction to npm:
 
@@ -34,7 +34,7 @@ The [*registry*](https://docs.npmjs.com/misc/registry) is a large public databas
 * Manage multiple versions of code and code dependencies.
 * Update applications easily when underlying code is updated.
 * Discover multiple ways to solve the same puzzle. 
-* Find other developers who are working on similar problems.  
+* Find other developers who are working on similar problems and projects.   
 
 These are just a few examples of ways developers use npm. If you'd like to add a bullet point, comment [here](https://github.com/npm/docs/issues/944).   
 
@@ -50,25 +50,25 @@ First, you create an npm account, which is explained in the next chapter. You wi
 
 <!--<<img src="first-package-page.png" style="border: 1px solid gray;">-->
 
-As you create packages, you will add them to the page. You can also add organizations to invite others to work with you. 
+As you publish packages, they will appear on your page. You can add organizations to invite others to work with you. 
 
-The next step is to use a commmand line interface, and [install npm](https://docs.npmjs.com/getting-started/installing-node) so that you can start. We look forward to seeing what you create!
+After you set up an npm account, the next step is to use the commmand line interface (CLI) to [install npm](https://docs.npmjs.com/getting-started/installing-node). We look forward to seeing what you create!
 
 ## How do I share packages or collaborate with others?  
 
-If you want to share packages publicly, the cost is free. If you want them to be private, you can pay to upgrade your account. You can also create organizations, called **npm Orgs**,  and invite others to work with you, privately (for a fee) or publicly (for free). Or you can sign up for a custom, private type of npm for your company, called **npmE** for npm Enterprise.
+If you choose to share your packages publicly, there is no cost. To use and share private packages, you need to upgrade your account. To share with others, create organizations, called **npm Orgs**,  and invite others to work with you, privately (for a fee) or publicly (for free). Or you can sign up for a custom, private type of npm for your company, called **npmE** for npm Enterprise.
 
 ## Learn more about npm Orgs and npmE
 
-[npm Orgs](https://www.npmjs.com/features) provide tools for managing both public and private packages. Granting permissions is easy, and configuration is simplified, too. 
+[npm Orgs](https://www.npmjs.com/features) provide tools for managing both public and private packages. Granting permissions is easy, and configuration is simplified.
 
 If you would prefer to have your own private registry, so that you can develop packages internally that are not shared publicly,  consider [npm Enterprise](https://www.npmjs.com/enterprise).
 
 ## Learn More
 
-To learn more about npm as a product, new features on the way, and interesting uses of npm, sign up for our newsletter at [npm-weekly](https://www.npmjs.com/npm-weekly), and follow follow @npmjs on twitter.
+To learn more about npm as a product, new features on the way, and interesting uses of npm, sign up for our newsletter at [npm-weekly](https://www.npmjs.com/npm-weekly), and be sure to follow @npmjs on twitter.
 
-To explore additional features that you might wish to use as your project evolves, click [here](https://www.npmjs.com/pricing).
+To explore additional features and options, click [here](https://www.npmjs.com/pricing).
 
 To learn about tools to manage multiple packages and collaborators, see [npm Orgs](https://www.npmjs.com/docs/orgs).
 
