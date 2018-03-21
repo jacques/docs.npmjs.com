@@ -3,7 +3,6 @@ title: 01 - Working with private packages
 featured: true
 -->
 
-
 # Working with private packages
 
 
@@ -63,26 +62,26 @@ By default, scoped packages are published as private. You can read more about th
 
 Once it's published, you should see it on the website with a private flag.
 
-<p class="centered">
-  <img src="/images/private-modules/private-flag.png" class="bordered">
-</p>
+<img src="\images\private-package.png" style="border: 1px solid gray;">
 
-## Giving access to others
+## Sharing access from the web
 
-If you want to give access to someone, they need to be subscribed to private packages as well. Once they are, you can give them read or read-write access. Or, you can set up an npm Org to give them access. Please refer to the online npm Orgs book for details. 
+If you want to give access to someone, they need to be subscribed to private packages as well. Once they are, you can give them read or read-write access. Or, you can set up an npm Org to give them access through Orgs and teams. Please refer to the online npm Orgs book for details. 
 
-You can control access to the package on the access page. To get to the page, click on the Collaborators link or the plus button.
+To give someone access without using an org, navigate to the package page. You can find it at:
 
-<p class="centered">
-  <img src="http://npmblog-images.surge.sh/static-pages/collaborators-page.png" class="bordered">
-</p>
+`https://www.npmjs.com/package/your-package-name`
 
-Add collaborators by entering the username and hitting enter.
+<img src="\images\package-page-invite-collaborator.png" style="border: 1px solid gray;">
 
-<p class="centered">
-  <img src="http://npmblog-images.surge.sh/static-pages/add-collaborator.gif" class="bordered">
-</p>
+To control access to the package click the `+` button under `Collaborators` .
 
+<img src="\images\invite-maintainer.png" style="border: 1px solid gray;">
+
+Add the appropriate username, then click `Submit`. 
+
+
+## Sharing access from the CLI
 You can also add collaborators on the command line:
 
 ```sh
@@ -112,9 +111,7 @@ Please refer to the Orgs book for details about how to create and assign teams, 
 
 All scoped packages default to private. This ensures that you don't make something public by accident. You can change this on the access page.
 
-<p class="centered">
-  <img src="http://npmblog-images.surge.sh/static-pages/make-private-ui.gif" class="bordered">
-</p>
+<img src="\images\convert-private-to-public.png" style="border: 1px solid gray;">
 
 You can also manage package access via the command line:
 

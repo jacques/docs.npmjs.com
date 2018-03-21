@@ -50,7 +50,9 @@ _Note: If you can't find the welcome message, please click to resend:_
 <!--<div style="text-align: center;"><img src="email-notif.png" style="border: 1px solid gray;"></div>-->
 
  
-5. Click the link in your email. Success!  You will be sent to your new landing page. Notice the URL:
+6. Click the link in your email. Success!  You will be sent to your new landing page. 
+
+Notice the URL:
 
 `https://www.npmjs.com/~yourusername`
 

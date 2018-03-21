@@ -78,7 +78,7 @@ Two-factor authentication is now available as a profile setting from the website
 
 4. On the next screen, choose the level of 2FA you want. 
 
-<img src="/images/2fa-settings.png" style="border: 1px solid gray;">
+<img src="/images/tfa-settings.png" style="border: 1px solid gray;">
 
 _Note: If you aren't sure which setting you want, see the table at the end of this chapter._
 

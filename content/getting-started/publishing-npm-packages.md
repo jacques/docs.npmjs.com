@@ -74,7 +74,7 @@ Use `npm publish` to publish the package.
 
 Go to `https://npmjs.com/package/<package>`. You should see a page all about your new package. It might look a bit like this: 
 
-![yargswelcomepage](/images/yargs-example-readme.png) 
+<img src="/images/lodash-package-page.png" style="border: 1px solid gray;">
 
 ### *Congratulations!*
 

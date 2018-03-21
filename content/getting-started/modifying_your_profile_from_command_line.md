@@ -12,7 +12,15 @@ Choose `Profile Settings` from the Avatar menu. The profile page appears.
 
 <div style="text-align: center;"><img src="/images/profile-page.png" style="border: 1px solid gray;"></div>
 
-This section will be updated soon!
+Starting from this page, you can:
+
+* Change your avatar (the icon that represents you)
+* Add a Github user name
+* Add a Twitter user name 
+* Change the email that appears with packages
+* Change your password
+* Apply or revoke two-factor-authentication
+* View Packages
 
 # How to Change Profile Settings from the CLI
 *Requires npm version 5.5.1 or greater.*
